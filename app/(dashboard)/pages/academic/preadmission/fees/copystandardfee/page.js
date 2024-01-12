@@ -6,18 +6,18 @@ import { Breadcrumb, Button, Card, Col, Container, Form, Row } from 'react-boots
 import { PageHeading } from 'widgets'
 import useMounted from 'hooks/useMounted';
 
-const UserMapping = () => {
+const CopyStandardFees = () => {
     const hasMounted = useMounted();
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="User Mapping" />
+            <PageHeading heading="Copy Standard Fees" />
             <Breadcrumb>
-                <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
+            <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Course</Breadcrumb.Item>
-                <Breadcrumb.Item active>User Mapping</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Fees</Breadcrumb.Item>
+                <Breadcrumb.Item active>Copy Standard Fees</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
@@ -27,18 +27,17 @@ const UserMapping = () => {
                                 {hasMounted &&
                                     <Form>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Basic Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">From Session<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter Session Name" id="sessionname" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">User Name<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">To Session<span className="text-danger">*</span></Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Select type="email" placeholder="0" id="shortname" required />
                                             </Col>
                                         </Row>
-
                                         <Row className="align-items-center">
 
                                             <Col md={{ offset: 4, span: 8 }} xs={12} className="mt-4">
@@ -63,4 +62,4 @@ const UserMapping = () => {
     )
 }
 
-export default UserMapping
+export default CopyStandardFees

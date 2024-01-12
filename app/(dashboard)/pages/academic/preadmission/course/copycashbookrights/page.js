@@ -15,8 +15,8 @@ const CopyCashbookRights = () => {
             <PageHeading heading="Copy Cashbook Rights" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Academic Data</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Course</Breadcrumb.Item>
                 <Breadcrumb.Item active>Copy Cashbook Rights</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
@@ -35,7 +35,7 @@ const CopyCashbookRights = () => {
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">To Session<span className="text-danger">*</span></Form.Label>
                                             <Col md={9} xs={12}>
-                                                <Form.Select type="email" placeholder="0" id="shortname" required/>
+                                                <Form.Select type="email" placeholder="0" id="shortname" required />
                                             </Col>
                                         </Row>
                                         <Row className="align-items-center">

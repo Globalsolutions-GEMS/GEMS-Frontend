@@ -15,8 +15,8 @@ const CashbookRights = () => {
             <PageHeading heading="Cashbook Rights" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Academic Data</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Course</Breadcrumb.Item>
                 <Breadcrumb.Item active>Cashbook Rights</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">

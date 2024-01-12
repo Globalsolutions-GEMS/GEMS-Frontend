@@ -93,6 +93,18 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/preadmission/fees/copystandardfee', name: 'Copy Standard Fee'},
 						]
 					},
+					{ 
+						id: uuid(), 
+						link: '#', 
+						title: 'Other Fees Definition',
+						children: [
+							{ id: uuid(), link: '/pages/academic/preadmission/otherfeesdefination/generalfine', name: 'General Fine'},
+							{ id: uuid(), link: '/pages/academic/preadmission/otherfeesdefination/installmentfees', name: 'Installment Fees'},
+							{ id: uuid(), link: '/pages/academic/preadmission/otherfeesdefination/studentwiseinstallmentfees', name: 'Studentwise Installment Fees'},
+							{ id: uuid(), link: '/pages/academic/preadmission/otherfeesdefination/certificatefee', name: 'Certificate Fee'},
+							{ id: uuid(), link: '/pages/academic/preadmission/otherfeesdefination/studentwiseinstallmentclear', name: 'Studentwise Installment Clear'},
+						]
+					},
 				]
 			}
 		]
