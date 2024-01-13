@@ -39,21 +39,20 @@ const StudentwiseInstallmentFees = () => {
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
-                                        
+
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Course<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
-                                           
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Fee Type<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Fee Type" id="feetype" required />
                                             </Col>
-                                           
+
                                         </Row>
 
                                         <Row className="mb-3">
@@ -69,7 +68,46 @@ const StudentwiseInstallmentFees = () => {
                                                 <Form.Select type="text" placeholder="Please Select Fee Head" id="studenttype" required />
                                             </Col>
                                         </Row>
-                                       
+
+                                        <Container fluid className="p-3">
+                                            <Row>
+                                                <Col>
+                                                    <PageHeading heading="Search Student" />
+
+                                                    <Row className="mb-8">
+                                                        <Col xl={12} lg={8} md={12} xs={12}>
+                                                            <Card>
+                                                                <Card.Body>
+                                                                    <div>
+                                                                        {hasMounted && (
+                                                                            <Form>
+                                                                                <Row className="mb-3">
+                                                                                    
+                                                                                    <Row className="mb-3">
+                                                                                        <Form.Label className="col-sm-4 col-form-label form-label" htmlFor="fullName">Search By<span className="text-danger">*</span></Form.Label>
+                                                                                        <Col className="mb-3 mb-lg-0">
+                                                                                            <Form.Select type="text" placeholder="Please Select Course" id="course" required />
+                                                                                        </Col>
+                                                                                    </Row>
+                                                                                    <Row className="mb-3">
+                                                                                        <Form.Label className="col-sm-4 col-form-label form-label" htmlFor="fullName">Enter Input<span className="text-danger">*</span></Form.Label>
+                                                                                        <Col className="mb-3 mb-lg-0">
+                                                                                            <Form.Control type="text" placeholder="Student ID Number" id="course" required />
+                                                                                        </Col>
+                                                                                    </Row>
+                                                                                </Row>
+                                                                            </Form>
+                                                                        )}
+                                                                    </div>
+                                                                </Card.Body>
+                                                            </Card>
+                                                        </Col>
+                                                    </Row>
+                                                </Col>
+                                                <Col></Col>
+                                            </Row>
+                                        </Container>
+
                                         <Row className='mb-3'>
                                             <Form.Check.Label className="col-sm-3 col-form-label form-label" >Active</Form.Check.Label>
                                             <Col md={9} xs={12}>

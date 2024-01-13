@@ -22,7 +22,7 @@
     "react-dashboard",
     "bootstrap 5"
     ],
-  "scripts": {
+   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
