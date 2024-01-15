@@ -83,7 +83,7 @@ const FeesCollection = () => {
                                                                         <Col sm={6} className="mb-3 mb-lg-0">
                                                                             <Form.Control
                                                                                 type="text"
-                                                                                placeholder="Please Select"
+                                                                                placeholder="Please Enter Student ID."
                                                                                 id="session"
                                                                                 required
                                                                             />
