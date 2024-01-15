@@ -1,16 +1,16 @@
 import { v4 as uuid } from 'uuid';
 
 export const DashboardMenu = [
-	{
-		id: uuid(),
-		title: 'Authentication',
-		icon: 'lock',
-		children: [
-			{ id: uuid(), link: '/authentication/sign-in', name: 'Sign In' },
-			{ id: uuid(), link: '/authentication/sign-up', name: 'Sign Up' },
-			{ id: uuid(), link: '/authentication/forget-password', name: 'Forget Password'}			
-		]
-	},
+	// {
+	// 	id: uuid(),
+	// 	title: 'Authentication',
+	// 	icon: 'lock',
+	// 	children: [
+	// 		{ id: uuid(), link: '/authentication/sign-in', name: 'Sign In' },
+	// 		{ id: uuid(), link: '/authentication/sign-up', name: 'Sign Up' },
+	// 		{ id: uuid(), link: '/authentication/forget-password', name: 'Forget Password'}			
+	// 	]
+	// },
 	{
 		id: uuid(),
 		title: 'Dashboard',
