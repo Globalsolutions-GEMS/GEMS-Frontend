@@ -127,9 +127,9 @@ export const DashboardMenu = [
 						link: '#',
 						title: 'Collect Fees',
 						children: [
-							{ id: uuid(), link: '/pages/academic/preadmission/fees/basiccourse', name: 'Student Admission' },
+							{ id: uuid(), link: '/pages/academic/transaction/collectfees/studentadmission', name: 'Student Admission' },
 							{ id: uuid(), link: '/pages/academic/preadmission/fees/basiccourse', name: 'Fees Collection' },
-							{ id: uuid(), link: '/pages/academic/preadmission/fees/basiccourse', name: 'Receipt Reconcilliation' },
+							{ id: uuid(), link: '/pages/academic/transaction/collectfees/receiptreconcillation', name: 'Receipt Reconcilliation' },
 							{ id: uuid(), link: '/pages/academic/preadmission/fees/basiccourse', name: 'Outstanding Fees' },
 							{ id: uuid(), link: '/pages/academic/preadmission/fees/basiccourse', name: 'Fees Concession' },
 							{ id: uuid(), link: '/pages/academic/preadmission/fees/basiccourse', name: 'Fees Refund' },
