@@ -294,11 +294,10 @@ const OutstandingFees = () => {
                                             </Col>
                                             <Col></Col>
                                         </Row>
-                                        <Row className="mt-3 mb-3">
-                                            <Link /><a href=""> Click here for fees Concession</a><br />
+                                       
+                                        <Link /><a href=""> Click here for fees Concession</a><br />
                                             <Link /><a href=""> Click here for get fees details</a><br />
                                             <Link /><a href=""> Click here for get Installments Details</a>
-                                        </Row>
                                         <Container fluid className="p-3">
                                             <Row>
                                                 <Col>
