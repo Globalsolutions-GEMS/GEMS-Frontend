@@ -132,10 +132,14 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/transaction/collectfees/receiptreconcillation', name: 'Receipt Reconcilliation' },
 							{ id: uuid(), link: '/pages/academic/transaction/collectfees/outstandingfees', name: 'Outstanding Fees' },
 							{ id: uuid(), link: '/pages/academic/transaction/collectfees/feesconcession', name: 'Fees Concession' },
-							{ id: uuid(), link: '', name: 'Fees Refund' },
+							{ id: uuid(), link: '/', name: 'Fees Refund' },
 							{ id: uuid(), link: '/pages/academic/transaction/collectfees/scholarshipentry', name: 'Scholarship Entry' },
 							{ id: uuid(), link: '/', name: 'Demand Updation' },
 							{ id: uuid(), link: '/', name: 'Bulk Other Fees Demand' },
+							{ id: uuid(), link: '/', name: 'Bulk Adm Fees Demand Updation' }, 		//Student Type
+							{ id: uuid(), link: '/', name: 'Year End & Registered Stud Demand' },
+							{ id: uuid(), link: '/', name: 'Provisional Student Demand Cancellation' },
+							{ id: uuid(), link: '/', name: 'Student Direct Admission YE' },
 						]
 					},
 					{

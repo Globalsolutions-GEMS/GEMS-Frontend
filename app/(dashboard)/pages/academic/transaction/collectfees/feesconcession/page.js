@@ -46,8 +46,6 @@ const FeesConcession = () => {
                                                     required
                                                 />
                                             </Col>
-                                        </Row>
-                                        <Row className="mb-3">
                                             <Form.Label
                                                 className="col-sm-3 col-form-label form-label"
                                                 htmlFor="fullName"
@@ -62,6 +60,9 @@ const FeesConcession = () => {
                                                     required
                                                 />
                                             </Col>
+                                        </Row>
+                                        <Row className="mb-3">
+                                            
                                         </Row>
                                         <Row >
                                             <Form.Label
