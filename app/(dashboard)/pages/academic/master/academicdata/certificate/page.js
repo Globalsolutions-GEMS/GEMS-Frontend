@@ -8,7 +8,6 @@ import { PageHeading } from 'widgets'
 
 // import sub components
 import useMounted from 'hooks/useMounted';
-import { CheckCircleFill } from 'react-bootstrap-icons';
 
 
 const Certificate = () => {
@@ -43,19 +42,19 @@ const Certificate = () => {
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Certificate Name<span className="text-danger">*</span></Form.Label>
                                             <Col md={9} xs={12}>
-                                                <Form.Control type="email" placeholder="Please Enter Certificate Name" id="certificatename" required />
+                                                <Form.Control placeholder="Please Enter Certificate Name" id="certificatename" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Original Certificate<span className="text-danger">*</span></Form.Label>
                                             <Col md={9} xs={12}>
-                                                <Form.Control type="email" placeholder="1" id="originalcertificate" disabled readonly />
+                                                <Form.Control placeholder="1" id="originalcertificate" disabled readonly />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Xerox Certificate<span className="text-danger">*</span></Form.Label>
                                             <Col md={9} xs={12}>
-                                                <Form.Control type="email" placeholder="Please Enter Xerox Certificate" id="xeroxcertificate" required />
+                                                <Form.Control placeholder="Please Enter Xerox Certificate" id="xeroxcertificate" required />
                                             </Col>
                                         </Row>
 

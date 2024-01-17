@@ -33,21 +33,21 @@ const AcademicSession = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Short Name</Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Short Name</Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Control type="email" placeholder="Please Enter Short Name" id="shortname" required />
                                             </Col>
                                         </Row>
 
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Start Date</Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Start Date</Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Control type="email" placeholder="Please Enter Start Date" id="shortname" required />
                                             </Col>
                                         </Row>
 
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">End Date</Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label">End Date</Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Control type="email" placeholder="Please Enter End Date" id="shortname" required />
                                             </Col>
