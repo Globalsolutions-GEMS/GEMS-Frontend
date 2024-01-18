@@ -8,10 +8,39 @@ import { PageHeading } from 'widgets'
 
 // import sub components
 import useMounted from 'hooks/useMounted';
+import { useState } from 'react';
+import { creteCertifcate } from 'app/api/certificate';
 
 
 const Certificate = () => {
     const hasMounted = useMounted();
+
+    const [formData, setFormData] = useState({
+        certificateCode:'',
+        certificateName:'',
+        originalCertificate:'',
+        xeroxCertificate:'',
+        active:false,
+        document:false
+    });
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            const response = await creteCertifcate(formData);
+            console.log(response.data);
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    const handleInputChange = (event) => {
+        const { id, value, type, checked} = event.target;
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [id]: type === 'checkbox' ? checked : value,
+        }))
+    } 
 
     return (
         <Container fluid className="p-6">
@@ -32,27 +61,27 @@ const Certificate = () => {
                         <Card.Body>
                             <div>
                                 {hasMounted &&
-                                    <Form>
+                                    <Form  onSubmit={handleSubmit}>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Certificate Code<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Certificate Code<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Certificate Code" id="certificatecode" required />
+                                                <Form.Control type="text" placeholder="Please Enter Certificate Code" id="certificateCode" value={formData.certificateCode} onChange={handleInputChange} required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Certificate Name<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Certificate Name<span className="text-danger">*</span></Form.Label>
                                             <Col md={9} xs={12}>
-                                                <Form.Control placeholder="Please Enter Certificate Name" id="certificatename" required />
+                                                <Form.Control placeholder="Please Enter Certificate Name" id="certificateName" value={formData.certificateName} onChange={handleInputChange} required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Original Certificate<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Original Certificate<span className="text-danger">*</span></Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Control placeholder="1" id="originalcertificate" disabled readonly />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Xerox Certificate<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Xerox Certificate<span className="text-danger">*</span></Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Control placeholder="Please Enter Xerox Certificate" id="xeroxcertificate" required />
                                             </Col>
