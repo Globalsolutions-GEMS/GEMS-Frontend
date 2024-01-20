@@ -148,9 +148,9 @@ export const DashboardMenu = [
 						children: [
 							{ id: uuid(), link: '/', name: 'Other Fees' },
 							{ id: uuid(), link: '/', name: 'General Fine Collection' },
-							{ id: uuid(), link: '/', name: 'Other Fees Demand Updation' },
-							{ id: uuid(), link: '/', name: 'Student Other Demand Cancel' },
-							{ id: uuid(), link: '/', name: 'FeeHead Wise Bulk Other Demand Updation' },
+							{ id: uuid(), link: '/pages/academic/transaction/otherfees/otherfeesdemandupdation', name: 'Other Fees Demand Updation' },
+							{ id: uuid(), link: '/pages/academic/transaction/otherfees/studentotherdemandcancel', name: 'Student Other Demand Cancel' },
+							{ id: uuid(), link: '/pages/academic/transaction/otherfees/feeheadwisebulkotherdemandupdation', name: 'FeeHead Wise Bulk Other Demand Updation' },
 						]
 					},
 					{
