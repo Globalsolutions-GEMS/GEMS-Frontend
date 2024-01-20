@@ -24,6 +24,19 @@ const QuickMenu = () => {
 
     const hasMounted = useMounted();
 
+    // const today = new Date().toDateString();
+    let today = new Date();
+    let dd = today.getDate();
+    let mm = today.getMonth() + 1;
+    let yyyy = today.getFullYear();
+    if (dd < 10) {
+        dd = '0' + dd;
+    }
+    if (mm < 10) {
+        mm = '0' + mm;
+    }
+    today = dd + '/' + mm + '/' + yyyy;
+
     const isDesktop = useMediaQuery({
         query: '(min-width: 1224px)'
     })
@@ -110,7 +123,7 @@ const QuickMenu = () => {
                                 </div>
                                 <h5 className="mb-2 ms-3">Hello, Shweta M. Katore</h5>
                                 <h5 className="mb-2 ms-3">Session: 2023-2024</h5>
-                                <h5 className="mb-2 ms-3">Working Date: 20/01/2024</h5>
+                                <h5 className="mb-2 ms-3">Working Date: {today}</h5>
                                 <h5 className="mb-2 ms-3">Counter: <Badge bg="secondary">25</Badge></h5>
                                 <Link href="#" className="text-inherit fs-6" ><h5 className="mb-2 ms-3">View my profile</h5></Link>
                             </div>
