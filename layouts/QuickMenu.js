@@ -41,6 +41,8 @@ const QuickMenu = () => {
         query: '(min-width: 1224px)'
     })
 
+    const collegeName = "Sinhgad Academy of Engineering Kondhwa Bk, Pune";
+
     const Notifications = () => {
         return (
             <SimpleBar style={{ maxHeight: '300px' }}>
@@ -67,7 +69,7 @@ const QuickMenu = () => {
     const QuickMenuDesktop = () => {
         return (
             <ListGroup as="ul" bsPrefix='navbar-nav' className="navbar-right-wrap ms-auto d-flex nav-top-wrap">
-                <Form.Label className='mt-2' style={{ marginRight: '15px' }} >Sinhgad Academy of Engineering Kondhwa Bk, Pune</Form.Label>
+                <Form.Label className='mt-2' style={{ marginRight: '15px' }} >{collegeName}</Form.Label>
                 <Dropdown as="li" className="stopevent">
                     <Dropdown.Toggle as="a"
                         bsPrefix=' '

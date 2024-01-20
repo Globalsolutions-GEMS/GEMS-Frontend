@@ -302,7 +302,6 @@ const OutstandingFees = () => {
                                             <Row>
                                                 <Col>
                                                     <PageHeading heading="Payment" />
-
                                                     <Row className="mb-8">
                                                         <Col xl={12} lg={8} md={12} xs={12}>
                                                             <Card>
