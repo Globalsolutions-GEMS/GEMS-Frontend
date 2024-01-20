@@ -12,9 +12,54 @@ import { CheckCircleFill } from 'react-bootstrap-icons';
 import CasteCategory from '../castecategory/page';
 import SubCaste from '../subcaste/page';
 
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+
+function CustomTabPanel(props) {
+    const { children, value, index, ...other } = props;
+
+    return (
+        <div
+            role="tabpanel"
+            hidden={value !== index}
+            id={`simple-tabpanel-${index}`}
+            aria-labelledby={`simple-tab-${index}`}
+            {...other}
+        >
+            {value === index && (
+                <Box sx={{ p: 3 }}>
+                    <Typography>{children}</Typography>
+                </Box>
+            )}
+        </div>
+    );
+}
+
+CustomTabPanel.propTypes = {
+    children: PropTypes.node,
+    index: PropTypes.number.isRequired,
+    value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+    return {
+        id: `simple-tab-${index}`,
+        'aria-controls': `simple-tabpanel-${index}`,
+    };
+}
 
 const Caste = () => {
     const hasMounted = useMounted();
+
+    const [value, setValue] = React.useState(0);
+
+    const handleChange = (event, newValue) => {
+        setValue(newValue);
+    };
 
     return (
         <Container fluid className="p-6">
@@ -28,30 +73,21 @@ const Caste = () => {
                 <Breadcrumb.Item active>Caste</Breadcrumb.Item>
             </Breadcrumb>
 
+            <Box sx={{ width: '100%' }}>
+                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
+                        <Tab label="Caste Category" {...a11yProps(0)} ></Tab>
+                        <Tab label="Sub Caste" {...a11yProps(1)} />
+                    </Tabs>
+                </Box>
+                <CustomTabPanel value={value} index={0}>
+                    <CasteCategory/>
+                </CustomTabPanel>
+                <CustomTabPanel value={value} index={1}>
+                    <SubCaste/>
+                </CustomTabPanel>
+            </Box>
 
-            <Row className="mb-8">
-                <Col xl={12} lg={8} md={12} xs={12}>
-                    <Card>
-                        <Card.Body>
-                            <div>
-                                {hasMounted &&
-                                    <Nav fill variant="tabs" defaultActiveKey="/home">
-                                    <Nav.Item>
-                                      {/* <Nav.Link href="/home">Caste Category</Nav.Link> */}
-                                      <CasteCategory/>
-                                    </Nav.Item>
-                                    <Nav.Item>
-                                      {/* <Nav.Link eventKey="link-1">Sub Caste</Nav.Link> */}
-                                      <SubCaste/>
-                                    </Nav.Item>
-                                  </Nav>
-                                }
-                            </div>
-                        </Card.Body>
-                    </Card>
-
-                </Col>
-            </Row>
         </Container>
     )
 }

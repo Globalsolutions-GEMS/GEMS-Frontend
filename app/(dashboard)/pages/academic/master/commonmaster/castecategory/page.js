@@ -15,10 +15,8 @@ const CasteCategory = () => {
     const hasMounted = useMounted();
 
     return (
-        <Container fluid className="p-6">
+        <Container fluid >
 
-            {/* Page Heading */}
-            <PageHeading heading="Caste Category" />
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
                     <Card>

@@ -15,10 +15,8 @@ const SubCaste = () => {
     const hasMounted = useMounted();
 
     return (
-        <Container fluid className="p-6">
+        <Container fluid >
 
-            {/* Page Heading */}
-            <PageHeading heading="Sub Caste" />
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
                     <Card>

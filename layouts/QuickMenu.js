@@ -8,6 +8,7 @@ import {
     ListGroup,
     Form,
     Badge,
+    Button,
 } from 'react-bootstrap';
 
 // simple bar scrolling used for notification item scrolling
@@ -67,6 +68,14 @@ const QuickMenu = () => {
     }
 
     const QuickMenuDesktop = () => {
+
+        const buttonStyle = {
+            background: '#959595',  // Fallback color in case gradients are not supported
+            background: 'linear-gradient(to right, #959595 0%, #0D0D0D 46%, #010101 50%, #0A0A0A 53%, #4E4E4E 76%, #383838 87%, #1B1B1B 100%)',
+            color: 'white',  // Text color
+
+        };
+
         return (
             <ListGroup as="ul" bsPrefix='navbar-nav' className="navbar-right-wrap ms-auto d-flex nav-top-wrap">
                 <Form.Label className='mt-2' style={{ marginRight: '15px' }} >{collegeName}</Form.Label>
@@ -119,20 +128,22 @@ const QuickMenu = () => {
                     >
                         <Dropdown.Item as="div" className="px-4 pb-0 pt-2" bsPrefix=' '>
                             <div className="lh-1 ">
-                                <h4 className="mb-2">shwetakatore2@gmail.com</h4>
-                                <div className="avatar avatar-xxl avatar-online ms-9">
+                                <h4 className="mb-2 " style={{ whiteSpace: 'nowrap' }}>Hello, Shweta M. Katore</h4>
+
+                                <div className="avatar avatar-xxl avatar-online ms-7 mb-2">
                                     <Image alt="avatar" src='/images/avatar/avatar-4.jpg' className="rounded-circle" />
                                 </div>
-                                <h5 className="mb-2 ms-3">Hello, Shweta M. Katore</h5>
-                                <h5 className="mb-2 ms-3">Session: 2023-2024</h5>
-                                <h5 className="mb-2 ms-3">Working Date: {today}</h5>
-                                <h5 className="mb-2 ms-3">Counter: <Badge bg="secondary">25</Badge></h5>
-                                <Link href="#" className="text-inherit fs-6" ><h5 className="mb-2 ms-3">View my profile</h5></Link>
+                                <h5 className="mb-2 ms-1">shweta@gserp.gmail.com</h5>
+                                <h5 className="mb-2 ms-1">Session: 2023-2024</h5>
+                                <h5 className="mb-2 ms-1">Working Date: {today}</h5>
+                                <h5 className="mb-2 ms-1">Counter: <Badge bg="secondary">25</Badge></h5>
+                                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                                    <Link href="#" style={{ display: 'flex', alignItems: 'center', alignContent: 'center' }}>
+                                        <Button style={buttonStyle} >My Profile</Button>
+                                    </Link>
+                                </div>
                             </div>
                             <div className=" dropdown-divider mt-3 mb-2"></div>
-                        </Dropdown.Item>
-                        <Dropdown.Item eventKey="2">
-                            <i className="fe fe-user me-2"></i> Edit Profile
                         </Dropdown.Item>
                         <Dropdown.Item eventKey="3">
                             <i className="fe fe-activity me-2"></i> Activity Log
