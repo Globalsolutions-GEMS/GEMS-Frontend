@@ -159,11 +159,8 @@ export const DashboardMenu = [
 						title: 'Receipts',
 						children: [
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/admissioncancellation', name: 'Admission Cancellation' },
-							// { id: uuid(), link: '/', name: 'Admission Cancellation' },
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/cancelyearendstudent', name: 'Cancel Year End Student' },
-							// { id: uuid(), link: '/', name: 'Cancel Year End Student' },
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/receiptcancellationandreprint', name: 'Receipt Cancellation And Reprint' },
-							// { id: uuid(), link: '/', name: 'Receipt Cancellation And Reprint' },
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/adminreceiptcancellationandreprint', name: 'Admin Receipt Cancellation And Reprint' },
 							{ id: uuid(), link: '/', name: 'Admin Receipt Cancellation And Reprint' },
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/coursechange', name: 'Course Change' },
