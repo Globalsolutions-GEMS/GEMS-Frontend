@@ -24,6 +24,7 @@ import { DashboardMenu } from 'routes/DashboardRoutes';
 
 const NavbarVertical = (props) => {
 	const location = usePathname()
+	
 	const CustomToggle = ({ children, eventKey, icon }) => {
 		const { activeEventKey } = useContext(AccordionContext);
 		const decoratedOnClick = useAccordionButton(eventKey, () =>
@@ -106,7 +107,7 @@ const NavbarVertical = (props) => {
 
 				{/* Search Form */}
 				<Form className="d-flex align-items-center ms-2 me-2 mb-2">
-					<Form.Control type="search" placeholder="Search" />
+					<Form.Control type="search" placeholder="Search..." />
 				</Form>
 
 				{/* Dashboard Menu */}

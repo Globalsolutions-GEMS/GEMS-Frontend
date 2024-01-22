@@ -162,10 +162,9 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/cancelyearendstudent', name: 'Cancel Year End Student' },
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/receiptcancellationandreprint', name: 'Receipt Cancellation And Reprint' },
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/adminreceiptcancellationandreprint', name: 'Admin Receipt Cancellation And Reprint' },
-							{ id: uuid(), link: '/', name: 'Admin Receipt Cancellation And Reprint' },
-							{ id: uuid(), link: '/pages/academic/transaction/receipts/coursechange', name: 'Course Change' },
-							{ id: uuid(), link: '/pages/academic/transaction/receipts/feetypechange', name: 'Fee Type Change' },
-							{ id: uuid(), link: '/', name: 'Online Payment Requery' },
+							// { id: uuid(), link: '/pages/academic/transaction/receipts/coursechange', name: 'Course Change' },
+							// { id: uuid(), link: '/pages/academic/transaction/receipts/feetypechange', name: 'Fee Type Change' },
+							// { id: uuid(), link: '/pages/academic/transaction/receipts/onlinepaymentrequery', name: 'Online Payment Requery' },
 
 						]
 					},
@@ -174,7 +173,7 @@ export const DashboardMenu = [
 						link: '#',
 						title: 'Data Entry',
 						children: [
-							{ id: uuid(), link: '/', name: 'Student Information' },
+							// { id: uuid(), link: '/pages/academic/transaction/dataentry/studentinformation', name: 'Student Information' },
 							{ id: uuid(), link: '/', name: 'Student Subject Updation' },
 							{ id: uuid(), link: '/', name: 'Roll No Updation' },
 							{ id: uuid(), link: '/', name: 'Subject Groupwise Roll No' },
