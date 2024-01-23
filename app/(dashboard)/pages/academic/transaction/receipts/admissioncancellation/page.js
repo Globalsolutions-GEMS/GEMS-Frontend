@@ -88,7 +88,7 @@ const AdmissionCancellation = () => {
                                         <Row className='mb-3'>
                                             <Col></Col>
                                             <Col md={9} xs={12}>
-                                                <Form.Check className="col-sm-3 col-form-label form-label" type="checkbox" id="active">
+                                                <Form.Check className="col-sm-3 col-form-label form-label" type="switch" id="active">
                                                     <Form.Check.Input type="checkbox" />
                                                     <Form.Check.Label >Cancelled Admission</Form.Check.Label>
                                                 </Form.Check>
@@ -97,7 +97,7 @@ const AdmissionCancellation = () => {
                                         <Row className='mb-3'>
                                             <Col></Col>
                                             <Col md={9} xs={12}>
-                                                <Form.Check className="col-sm-3 col-form-label form-label" type="checkbox" id="active">
+                                                <Form.Check className="col-sm-3 col-form-label form-label" type="switch" id="active">
                                                     <Form.Check.Input type="checkbox" />
                                                     <Form.Check.Label >Clear All Receipts</Form.Check.Label>
                                                 </Form.Check>
