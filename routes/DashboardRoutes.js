@@ -162,9 +162,9 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/cancelyearendstudent', name: 'Cancel Year End Student' },
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/receiptcancellationandreprint', name: 'Receipt Cancellation And Reprint' },
 							{ id: uuid(), link: '/pages/academic/transaction/receipts/adminreceiptcancellationandreprint', name: 'Admin Receipt Cancellation And Reprint' },
-							// { id: uuid(), link: '/pages/academic/transaction/receipts/coursechange', name: 'Course Change' },
-							// { id: uuid(), link: '/pages/academic/transaction/receipts/feetypechange', name: 'Fee Type Change' },
-							// { id: uuid(), link: '/pages/academic/transaction/receipts/onlinepaymentrequery', name: 'Online Payment Requery' },
+							{ id: uuid(), link: '/pages/academic/transaction/receipts/coursechange', name: 'Course Change' },
+							{ id: uuid(), link: '/pages/academic/transaction/receipts/feetypechange', name: 'Fee Type Change' },
+							{ id: uuid(), link: '/pages/academic/transaction/receipts/onlinepaymentrequery', name: 'Online Payment Requery' },
 
 						]
 					},
