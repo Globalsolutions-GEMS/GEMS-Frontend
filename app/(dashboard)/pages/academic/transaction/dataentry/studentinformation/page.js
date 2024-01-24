@@ -29,6 +29,7 @@ import {
     MonetizationOn as MonetizationOnIcon,
     CheckCircle as CheckCircleIcon,
 } from '@mui/icons-material'; // Import icons from @mui/icons-material
+import AddressDetails from './addressdetails/page';
 
 const steps = [
     { label: 'Search Student', icon: <AccessTimeIcon /> },
@@ -95,6 +96,7 @@ const StudentInformation = () => {
                     {/* Render components based on the active step */}
                     {activeStep === 0 && <SearchStudent />}
                     {activeStep === 1 && <AcademicDetails />}
+                    {activeStep === 3 && <AddressDetails />}
                     {/* Add components for other steps similarly */}
                 </Box>
 
