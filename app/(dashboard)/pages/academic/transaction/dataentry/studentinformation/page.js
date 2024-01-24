@@ -1,68 +1,68 @@
-'use client'
-// import node module libraries
-import { Alert, Badge, Breadcrumb, Container, Nav } from 'react-bootstrap';
-import { Col, Row, Form, Card, Button } from 'react-bootstrap';
+'use client';
+// Import react-bootstrap components
+import { Alert, Badge, Breadcrumb, Container, Button } from 'react-bootstrap';
 
-// import widget as custom components
-import { PageHeading } from 'widgets'
+// Import widget as custom components
+import { PageHeading } from 'widgets';
 
-// import sub components
+// Import sub components
 import useMounted from 'hooks/useMounted';
 
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import { Box } from '@mui/material';
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
 import AcademicDetails from './academicdetails/page';
 import SearchStudent from './searchstudent/page';
 
-function CustomTabPanel(props) {
-    const { children, value, index, ...other } = props;
+import {
+    AccessTime as AccessTimeIcon,
+    School as SchoolIcon,
+    Person as PersonIcon,
+    LocationOn as LocationOnIcon,
+    PhotoCamera as PhotoCameraIcon,
+    Description as DescriptionIcon,
+    Assignment as AssignmentIcon,
+    Subject as SubjectIcon,
+    MonetizationOn as MonetizationOnIcon,
+    CheckCircle as CheckCircleIcon,
+} from '@mui/icons-material'; // Import icons from @mui/icons-material
 
-    return (
-        <div
-            role="tabpanel"
-            hidden={value !== index}
-            id={`simple-tabpanel-${index}`}
-            aria-labelledby={`simple-tab-${index}`}
-            {...other}
-        >
-            {value === index && (
-                <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
-                </Box>
-            )}
-        </div>
-    );
-}
+const steps = [
+    { label: 'Search Student', icon: <AccessTimeIcon /> },
+    { label: 'Academic Details', icon: <SchoolIcon /> },
+    { label: 'Personal Details', icon: <PersonIcon /> },
+    { label: 'Address Details', icon: <LocationOnIcon /> },
+    { label: 'Photo and Signature Details', icon: <PhotoCameraIcon /> },
+    { label: 'Document Details', icon: <DescriptionIcon /> },
+    { label: 'Examination Details', icon: <AssignmentIcon /> },
+    { label: 'Subject Details', icon: <SubjectIcon /> },
+    { label: 'Fees Details', icon: <MonetizationOnIcon /> },
+];
 
-CustomTabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
-};
 
-function a11yProps(index) {
-    return {
-        id: `simple-tab-${index}`,
-        'aria-controls': `simple-tabpanel-${index}`,
-    };
-}
 
 const StudentInformation = () => {
-    const hasMounted = useMounted();
+    const [activeStep, setActiveStep] = React.useState(0);
+    const [completedSteps, setCompletedSteps] = React.useState([]); // Track completed steps
 
-    const [value, setValue] = React.useState(0);
-
-    const handleChange = (event, newValue) => {
-        setValue(newValue);
+    const handleNext = () => {
+        setCompletedSteps([...completedSteps, activeStep]); // Mark current step as completed
+        setActiveStep((prevActiveStep) => prevActiveStep + 1);
     };
+
+    const handleBack = () => {
+        const updatedCompletedSteps = [...completedSteps];
+        updatedCompletedSteps.pop(); // Remove the last completed step
+        setCompletedSteps(updatedCompletedSteps);
+        setActiveStep((prevActiveStep) => prevActiveStep - 1);
+    };
+
 
     return (
         <Container fluid className="p-6">
-
             {/* Page Heading */}
             <PageHeading heading="Student Information" />
             <Breadcrumb>
@@ -73,50 +73,47 @@ const StudentInformation = () => {
             </Breadcrumb>
 
             <Box sx={{ width: '100%' }}>
-                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-                    <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
-                        <Tab label="Search Student" {...a11yProps(0)} />
-                        <Tab label="Academic Details" {...a11yProps(1)} />
-                        <Tab label="Personal Details" {...a11yProps(2)} />
-                        <Tab label="Address Details" {...a11yProps(3)} />
-                        <Tab label="Photo And Signature Details" {...a11yProps(4)} />
-                        <Tab label="Document Details" {...a11yProps(5)} />
-                        <Tab label="Examination Details" {...a11yProps(6)} />
-                        <Tab label="Subject Details" {...a11yProps(7)} />
-                        <Tab label="Fees Details" {...a11yProps(8)} />
-                    </Tabs>
+                <Stepper activeStep={activeStep} alternativeLabel>
+                    {steps.map((step, index) => (
+                        <Step key={index} completed={completedSteps.includes(index)}>
+                            {/* Apply completed style */}
+                            <StepLabel
+                                icon={
+                                    completedSteps.includes(index) ? (
+                                        <CheckCircleIcon style={{ color: 'green' }} /> // Display check mark for completed steps
+                                    ) : (
+                                        step.icon
+                                    )
+                                }
+                            >
+                                {step.label}
+                            </StepLabel>
+                        </Step>
+                    ))}
+                </Stepper>
+                <Box sx={{ p: 1 }}>
+                    {/* Render components based on the active step */}
+                    {activeStep === 0 && <SearchStudent />}
+                    {activeStep === 1 && <AcademicDetails />}
+                    {/* Add components for other steps similarly */}
                 </Box>
-                <CustomTabPanel value={value} index={0}>
-                    <SearchStudent/>
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={1}>
-                    <AcademicDetails/>
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={2}>
-                    Personal Details
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={3}>
-                    Address Details
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={4}>
-                    Photo And Signature Details
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={5}>
-                    Document Details
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={6}>
-                    Examination Details
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={7}>
-                    Subject Details
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={8}>
-                    Fees Details
-                </CustomTabPanel>
+
+                {/* <ButtonsGroup/> */}
+                <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                    <Button
+                        disabled={activeStep === 0}
+                        onClick={handleBack}
+                        sx={{ mr: 1 }}
+                    >
+                        Back
+                    </Button>
+                    <Button variant="contained" onClick={handleNext}>
+                        {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                    </Button>
+                </Box>
             </Box>
-
         </Container>
-    )
-}
+    );
+};
 
-export default StudentInformation
+export default StudentInformation;
