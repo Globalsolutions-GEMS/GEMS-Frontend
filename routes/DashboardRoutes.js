@@ -174,7 +174,7 @@ export const DashboardMenu = [
 						title: 'Data Entry',
 						children: [
 						 { id: uuid(), link: '/pages/academic/transaction/dataentry/studentinformation', name: 'Student Information' },
-							{ id: uuid(), link: '/', name: 'Student Subject Updation' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/studentsubjectupdation', name: 'Student Subject Updation' },
 							{ id: uuid(), link: '/', name: 'Roll No Updation' },
 							{ id: uuid(), link: '/', name: 'Subject Groupwise Roll No' },
 							{ id: uuid(), link: '/', name: 'Subject Groupwise Section' },

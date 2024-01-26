@@ -171,23 +171,12 @@ const AddressDetails = () => {
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
-                                    
-                                        </Row>
-                                        <Row >
-                                            <Col className="d-flex align-items-center justify-content-center">
-                                                <Button variant="primary" type="submit">
-                                                    Submit
-                                                </Button>
-                                                
-                                            </Col>
-                                            <Col></Col>
                                         </Row>
                                     </Form>
                                 }
                             </div>
                         </Card.Body>
                     </Card>
-
                 </Col>
             </Row>
         </Container>

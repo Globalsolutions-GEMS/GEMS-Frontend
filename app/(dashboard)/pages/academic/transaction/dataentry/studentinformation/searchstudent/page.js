@@ -58,8 +58,7 @@ const SearchStudent = () => {
                                         </Row>
                                         <Row >
                                             <Form.Label
-                                                className="col-sm-3 col-form-label form-label"
-
+                                                className="col-sm-2 col-form-label form-label"
                                             >
                                                 Search By
                                             </Form.Label>

@@ -53,15 +53,6 @@ const AcademicDetails = () => {
                                             </Col>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Batch</Form.Label>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Admission Type</Form.Label>
-
-                                        </Row>
-                                        <Row >
-                                            <Col className="d-flex align-items-center justify-content-center">
-                                                <Button variant="primary" type="submit">
-                                                    Submit
-                                                </Button>
-                                                
-                                            </Col>
                                         </Row>
                                     </Form>
                                 }

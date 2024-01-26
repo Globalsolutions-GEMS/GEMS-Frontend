@@ -1,6 +1,6 @@
 'use client';
 // Import react-bootstrap components
-import { Alert, Badge, Breadcrumb, Container, Button } from 'react-bootstrap';
+import { Alert, Badge, Breadcrumb, Container, Button, Row, Col } from 'react-bootstrap';
 
 // Import widget as custom components
 import { PageHeading } from 'widgets';
@@ -30,9 +30,10 @@ import {
     CheckCircle as CheckCircleIcon,
 } from '@mui/icons-material'; // Import icons from @mui/icons-material
 import AddressDetails from './addressdetails/page';
+import PersonalDetails from './personaldetails/page';
 
 const steps = [
-    { label: 'Search Student', icon: <AccessTimeIcon /> },
+    // { label: 'Search Student', icon: <AccessTimeIcon /> },
     { label: 'Academic Details', icon: <SchoolIcon /> },
     { label: 'Personal Details', icon: <PersonIcon /> },
     { label: 'Address Details', icon: <LocationOnIcon /> },
@@ -63,16 +64,33 @@ const StudentInformation = () => {
 
 
     return (
-        <Container fluid className="p-6">
+        <Container fluid className="p-3">
             {/* Page Heading */}
             <PageHeading heading="Student Information" />
-            <Breadcrumb>
+            <Breadcrumb className='md-3'>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
                 <Breadcrumb.Item active>Student Information</Breadcrumb.Item>
             </Breadcrumb>
+            <Row className="align-items-end">
+                <Col xs={12} className="d-flex align-items-end justify-content-end">
+                    <Button
+                        disabled={activeStep === 0}
+                        onClick={handleBack}
+                        style={{ marginRight: "20px" }}
+                    >
+                        Back
+                    </Button>
+                    <Button onClick={handleNext}>
+                        {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
+                    </Button>
+                </Col>
+            </Row>
 
+            <div className='m-3'>
+                <SearchStudent />
+            </div>
             <Box sx={{ width: '100%' }}>
                 <Stepper activeStep={activeStep} alternativeLabel>
                     {steps.map((step, index) => (
@@ -93,26 +111,15 @@ const StudentInformation = () => {
                     ))}
                 </Stepper>
                 <Box sx={{ p: 1 }}>
-                    {/* Render components based on the active step */}
-                    {activeStep === 0 && <SearchStudent />}
-                    {activeStep === 1 && <AcademicDetails />}
-                    {activeStep === 3 && <AddressDetails />}
-                    {/* Add components for other steps similarly */}
+
+                    {activeStep === 0 && <AcademicDetails />}
+                    {activeStep === 1 && <PersonalDetails/> }
+                    {activeStep === 2 && <AddressDetails />}
+
+                    
+
                 </Box>
 
-                {/* <ButtonsGroup/> */}
-                <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-                    <Button
-                        disabled={activeStep === 0}
-                        onClick={handleBack}
-                        sx={{ mr: 1 }}
-                    >
-                        Back
-                    </Button>
-                    <Button variant="contained" onClick={handleNext}>
-                        {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-                    </Button>
-                </Box>
             </Box>
         </Container>
     );
