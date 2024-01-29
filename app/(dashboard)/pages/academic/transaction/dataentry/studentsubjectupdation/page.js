@@ -70,7 +70,7 @@ const StudentSubjectUpdation = () => {
                                         </Row>
 
                                         <Row >
-                                            <Col className="d-flex align-items-end justify-content-end mb-3">
+                                            <Col className="d-flex align-items-center justify-content-center mb-3">
                                                 <Button variant="primary" type="submit">
                                                     Submit & Replace
                                                 </Button>
@@ -81,7 +81,7 @@ const StudentSubjectUpdation = () => {
                                             <Col></Col>
                                         </Row>
                                         <Row >
-                                            <Col className="d-flex align-items-end justify-content-end mb-3">
+                                            <Col className="d-flex align-items-center justify-content-center mb-3">
                                                 <Button variant="primary" type="" style={{ marginLeft: "10px" }} >
                                                     Remove Opt.Sub.
                                                 </Button>
@@ -92,7 +92,7 @@ const StudentSubjectUpdation = () => {
                                             <Col></Col>
                                         </Row>
                                         <Row >
-                                            <Col className="d-flex align-items-end justify-content-end mb-3">
+                                            <Col className="d-flex align-items-center justify-content-center mb-3">
                                                 <Button variant="secondary" type="" style={{ marginLeft: "10px" }}>
                                                     Cancel
                                                 </Button>
