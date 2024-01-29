@@ -31,6 +31,11 @@ import {
 } from '@mui/icons-material'; // Import icons from @mui/icons-material
 import AddressDetails from './addressdetails/page';
 import PersonalDetails from './personaldetails/page';
+import PhotoAndSignatureDetails from './photoandsigndetails/page';
+import DocumentDetails from './documentdetails/page';
+import ExaminationDetails from './examinationdetails/page';
+import SubjectDetails from './subjectdetails/page';
+import FeesDetails from './feesdetails/page';
 
 const steps = [
     // { label: 'Search Student', icon: <AccessTimeIcon /> },
@@ -115,9 +120,11 @@ const StudentInformation = () => {
                     {activeStep === 0 && <AcademicDetails />}
                     {activeStep === 1 && <PersonalDetails/> }
                     {activeStep === 2 && <AddressDetails />}
-
-                    
-
+                    {activeStep === 3 && <PhotoAndSignatureDetails />}
+                    {activeStep === 4 && <DocumentDetails />}
+                    {activeStep === 5 && <ExaminationDetails />}
+                    {activeStep === 6 && <SubjectDetails />}
+                    {activeStep === 7 && <FeesDetails />}
                 </Box>
 
             </Box>
