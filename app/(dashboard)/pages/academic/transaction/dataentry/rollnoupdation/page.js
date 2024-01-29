@@ -85,37 +85,56 @@ const RollNoUpdation = () => {
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
                                         </Row>
-
-                                        <Row >
-                                            <Col className="d-flex align-items-end justify-content-end mb-3">
-                                                <Button variant="primary" type="submit">
-                                                    Submit & Replace
-                                                </Button>
-                                                <Button variant="primary" type="" style={{ marginLeft: "10px" }} >
-                                                    Update
-                                                </Button>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Prefix</Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Control type="text" placeholder="Please Enter Prefix" id="course" required />
                                             </Col>
-                                            <Col></Col>
+                                        </Row>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Start Range<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Control type="text" placeholder="Please Enter Start Range" id="course" required />
+                                            </Col>
+                                        </Row>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Order By</Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Select Course" id="course" required />
+                                            </Col>
                                         </Row>
                                         <Row >
-                                            <Col className="d-flex align-items-end justify-content-end mb-3">
-                                                <Button variant="primary" type="" style={{ marginLeft: "10px" }} >
-                                                    Remove Opt.Sub.
+                                            <Col className="d-flex align-items-center justify-content-center mb-3">
+                                                <Button variant="primary" type="submit">
+                                                    Show
                                                 </Button>
-                                                <Button variant="secondary" type="" style={{ marginLeft: "10px" }}>
+                                                <Button variant="primary" type="" style={{ marginLeft: "10px" }} >
+                                                    Submit
+                                                </Button>
+                                                <Button variant="primary" type="" style={{ marginLeft: "10px" }} >
                                                     Report
                                                 </Button>
-                                            </Col>
-                                            <Col></Col>
-                                        </Row>
-                                        <Row >
-                                            <Col className="d-flex align-items-end justify-content-end mb-3">
-                                                <Button variant="secondary" type="" style={{ marginLeft: "10px" }}>
+                                                <Button variant="secondary" type="" style={{ marginLeft: "10px" }} >
                                                     Cancel
                                                 </Button>
                                             </Col>
                                             <Col></Col>
                                         </Row>
+                                        <Row >
+                                            <Col className="d-flex align-items-center justify-content-center mb-3">
+                                                <Button variant="primary" type="" style={{ marginLeft: "10px" }} >
+                                                    Export to Excel
+                                                </Button>
+                                                <Button variant="secondary" type="" style={{ marginLeft: "10px" }}>
+                                                    Lock
+                                                </Button>
+                                                <Button variant="secondary" type="" style={{ marginLeft: "10px" }}>
+                                                    Unlock
+                                                </Button>
+                                            </Col>
+                                            <Col></Col>
+                                        </Row>
+                                        
                                     </Form>
                                 }
                             </div>

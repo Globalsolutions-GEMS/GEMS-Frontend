@@ -67,6 +67,10 @@ const StudentInformation = () => {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
 
+    const handleStepClick = (stepIndex) => {
+        setActiveStep(stepIndex);
+    };
+
 
     return (
         <Container fluid className="p-3">
@@ -99,7 +103,7 @@ const StudentInformation = () => {
             <Box sx={{ width: '100%' }}>
                 <Stepper activeStep={activeStep} alternativeLabel>
                     {steps.map((step, index) => (
-                        <Step key={index} completed={completedSteps.includes(index)}>
+                        <Step key={index} completed={completedSteps.includes(index)} onClick={() => handleStepClick(index)}>
                             {/* Apply completed style */}
                             <StepLabel
                                 icon={
