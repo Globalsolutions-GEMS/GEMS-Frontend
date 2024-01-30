@@ -1,9 +1,10 @@
-'use client';
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Container, Row, Col, Form, Card, Button } from 'react-bootstrap';
 import { PageHeading } from 'widgets';
 import useMounted from 'hooks/useMounted';
 import { uploadImages } from 'app/api/photoandsign';
+import { Cropper } from 'react-advanced-cropper'; // Correct import statement
+import 'react-advanced-cropper/dist/style.css'
 
 const MAX_IMAGE_SIZE_KB = 200; // Maximum image size in kilobytes
 
@@ -11,6 +12,8 @@ const PhotoAndSignatureDetails = () => {
     const hasMounted = useMounted();
     const [photo, setPhoto] = useState(null);
     const [sign, setSign] = useState(null);
+    const photoCropperRef = useRef(null);
+    const signCropperRef = useRef(null);
 
     const handlePhotoChange = (e) => {
         const file = e.target.files[0];
@@ -44,12 +47,28 @@ const PhotoAndSignatureDetails = () => {
         }
     };
 
+    const flipImage = (horizontal, vertical, ref) => {
+        if (ref.current) {
+            ref.current.flip(horizontal, vertical);
+        }
+    };
+
+    const rotateImage = (angle, ref) => {
+        if (ref.current) {
+            ref.current.rotate(angle);
+        }
+    };
+
     const handleUpload = async () => {
         try {
             // Check if both photo and signature are selected
             if (photo && sign) {
+                // Use cropper refs to get cropped images
+                const croppedPhoto = photoCropperRef.current.getCroppedImage();
+                const croppedSign = signCropperRef.current.getCroppedImage();
+
                 // Make upload request using the Axios function
-                await uploadImages(photo, sign);
+                await uploadImages(croppedPhoto, croppedSign);
 
                 // Optionally, you can reset the form after successful upload
                 setPhoto(null);
@@ -64,8 +83,6 @@ const PhotoAndSignatureDetails = () => {
             // Add error handling as needed
         }
     };
-
-
 
     return (
         <Container fluid>
@@ -88,10 +105,16 @@ const PhotoAndSignatureDetails = () => {
                                                                         <Form.Label>Upload Photo</Form.Label>
                                                                         <Form.Control type="file" onChange={handlePhotoChange} />
                                                                         {photo && (
-                                                                            <img
+                                                                            <Cropper
+                                                                                ref={photoCropperRef}
+                                                                                image={photo}
+                                                                                width={200}
+                                                                                height={200}
+                                                                                cropRatio={1}
+                                                                                maxZoom={10}
                                                                                 src={URL.createObjectURL(photo)}
-                                                                                alt="Photo Preview"
-                                                                                style={{ maxWidth: '100%', marginTop: '10px' }}
+                                                                                className={'cropper'}
+                                                                                style={{ width: '300px', height: '200px' }}
                                                                             />
                                                                         )}
                                                                     </Form.Group>
@@ -112,10 +135,16 @@ const PhotoAndSignatureDetails = () => {
                                                                         <Form.Label>Upload Signature</Form.Label>
                                                                         <Form.Control type="file" onChange={handleSignatureChange} />
                                                                         {sign && (
-                                                                            <img
+                                                                            <Cropper
+                                                                                ref={signCropperRef}
+                                                                                image={sign}
+                                                                                width={200}
+                                                                                height={200}
+                                                                                cropRatio={1}
+                                                                                maxZoom={10}
                                                                                 src={URL.createObjectURL(sign)}
-                                                                                alt="Signature Preview"
-                                                                                style={{ maxWidth: '100%', marginTop: '10px' }}
+                                                                                className={'cropper'}
+                                                                                style={{ width: '300px', height: '200px' }}
                                                                             />
                                                                         )}
                                                                     </Form.Group>

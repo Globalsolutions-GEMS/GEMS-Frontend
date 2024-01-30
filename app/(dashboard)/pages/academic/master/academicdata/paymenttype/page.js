@@ -220,9 +220,6 @@ const PaymentType = () => {
                     <Pagination.Next onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(paymentData.length / itemsPerPage)} />
                 </Pagination>
             </>
-            {/* {showSuccessAlert && (
-                <Alert key='success' variant='success'>Payment Updated Successfully</Alert>
-            )} */}
         </Container>
     )
 }
