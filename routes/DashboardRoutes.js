@@ -179,10 +179,10 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/', name: 'Subject Groupwise Roll No' },
 							{ id: uuid(), link: '/', name: 'Subject Groupwise Section' },
 							{ id: uuid(), link: '/', name: 'Section Allocation(YE/PROADM)' },
-							{ id: uuid(), link: '/', name: 'Bulk Updation' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/bulkupdation', name: 'Bulk Updation' },
 							{ id: uuid(), link: '/', name: 'Selected Field Report' },
 							{ id: uuid(), link: '/', name: 'Student Document Receipt' },
-							{ id: uuid(), link: '/', name: 'Outstanding Fees Remiander' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/outstandingfeesremainder', name: 'Outstanding Fees Remiander' },
 							{ id: uuid(), link: '/', name: 'Scholarship Entry' },
 							{ id: uuid(), link: '/', name: 'Bulk Email' },
 							

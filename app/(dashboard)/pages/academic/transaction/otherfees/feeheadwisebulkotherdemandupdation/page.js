@@ -18,7 +18,7 @@ const FeeHeadWiseBulkOtherFeeDemandUpdation = () => {
             <PageHeading heading="Fee Head Wise Bulk Other Fee Demand Updation" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Other Fees</Breadcrumb.Item>
                 <Breadcrumb.Item active>Fee Head Wise Bulk Other Fee Demand Updation</Breadcrumb.Item>
             </Breadcrumb>
