@@ -1,3 +1,4 @@
+'use client'
 import React, { useState, useRef } from 'react';
 import { Container, Row, Col, Form, Card, Button } from 'react-bootstrap';
 import { PageHeading } from 'widgets';
@@ -47,17 +48,17 @@ const PhotoAndSignatureDetails = () => {
         }
     };
 
-    const flipImage = (horizontal, vertical, ref) => {
-        if (ref.current) {
-            ref.current.flip(horizontal, vertical);
-        }
-    };
+    // const flipImage = (horizontal, vertical, ref) => {
+    //     if (ref.current) {
+    //         ref.current.flip(horizontal, vertical);
+    //     }
+    // };
 
-    const rotateImage = (angle, ref) => {
-        if (ref.current) {
-            ref.current.rotate(angle);
-        }
-    };
+    // const rotateImage = (angle, ref) => {
+    //     if (ref.current) {
+    //         ref.current.rotate(angle);
+    //     }
+    // };
 
     const handleUpload = async () => {
         try {
