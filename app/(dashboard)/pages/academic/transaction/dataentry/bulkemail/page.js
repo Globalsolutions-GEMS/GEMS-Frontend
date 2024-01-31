@@ -3,6 +3,7 @@
 import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 import React, { useState, useRef } from 'react';
+import { Cropper } from "react-advanced-cropper";
 
 // import widget as custom components
 import { PageHeading } from "widgets";
