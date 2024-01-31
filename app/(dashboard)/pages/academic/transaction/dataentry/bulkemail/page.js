@@ -13,23 +13,23 @@ import useMounted from "hooks/useMounted";
 const BulkEmail = () => {
   const hasMounted = useMounted();
   const [photo, setPhoto] = useState(null);
-  
-  
+
+
   const handlePhotoChange = (e) => {
     const file = e.target.files[0];
     if (file) {
-        const fileSizeKB = file.size / 1024; // Convert bytes to kilobytes
-        if (fileSizeKB <= MAX_IMAGE_SIZE_KB) {
-            setPhoto(file);
-        } else {
-            // Reset photo state and display error message
-            setPhoto(null);
-            alert('Photo size exceeds 200kb limit');
-        }
-    } else {
+      const fileSizeKB = file.size / 1024; // Convert bytes to kilobytes
+      if (fileSizeKB <= MAX_IMAGE_SIZE_KB) {
+        setPhoto(file);
+      } else {
+        // Reset photo state and display error message
         setPhoto(null);
+        alert('Photo size exceeds 200kb limit');
+      }
+    } else {
+      setPhoto(null);
     }
-};
+  };
 
   return (
     <Container fluid className="p-6">
@@ -211,12 +211,12 @@ const BulkEmail = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-4 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Message<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Control
                           type="text"
                           placeholder="Student ID Number"
@@ -225,23 +225,30 @@ const BulkEmail = () => {
                         />
                       </Col>
                     </Row>
-
-                    <Form.Label>Attachment</Form.Label>
-                    <Form.Control type="file" onChange={handlePhotoChange} />
-                    {photo && (
-                      <Cropper
-                        ref={photoCropperRef}
-                        image={photo}
-                        width={200}
-                        height={200}
-                        cropRatio={1}
-                        maxZoom={10}
-                        src={URL.createObjectURL(photo)}
-                        className={"cropper"}
-                        style={{ width: "300px", height: "200px" }}
-                      />
-                    )}
-
+                    <Row className="mb-3">
+                      <Form.Label
+                        className="col-sm-2 col-form-label form-label"
+                        htmlFor="fullName"
+                      >
+                        Attachment
+                      </Form.Label>
+                      <Col sm={4} className="mb-3 mb-lg-0">
+                      <Form.Control type="file" onChange={handlePhotoChange} />
+                      {photo && (
+                        <Cropper
+                          ref={photoCropperRef}
+                          image={photo}
+                          width={200}
+                          height={200}
+                          cropRatio={1}
+                          maxZoom={10}
+                          src={URL.createObjectURL(photo)}
+                          className={"cropper"}
+                          style={{ width: "300px", height: "200px" }}
+                        />
+                      )}
+                      </Col>
+                    </Row>
                     <Row>
                       <Col className="d-flex align-items-center justify-content-center mb-3">
                         <Button variant="primary" type="submit">
@@ -256,8 +263,8 @@ const BulkEmail = () => {
                         </Button>
                       </Col>
                     </Row>
-                   
-                   
+
+
                   </Form>
                 )}
               </div>

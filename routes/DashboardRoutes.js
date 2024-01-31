@@ -132,7 +132,7 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/transaction/collectfees/receiptreconcillation', name: 'Receipt Reconcilliation' },
 							{ id: uuid(), link: '/pages/academic/transaction/collectfees/outstandingfees', name: 'Outstanding Fees' },
 							{ id: uuid(), link: '/pages/academic/transaction/collectfees/feesconcession', name: 'Fees Concession' },
-							{ id: uuid(), link: '/', name: 'Fees Refund' },
+							{ id: uuid(), link: '/pages/academic/transaction/collectfees/feesrefund', name: 'Fees Refund' },
 							{ id: uuid(), link: '/pages/academic/transaction/collectfees/scholarshipentry', name: 'Scholarship Entry' },
 							{ id: uuid(), link: '/pages/academic/transaction/collectfees/demandupdation', name: 'Demand Updation' },
 							{ id: uuid(), link: '/pages/academic/transaction/collectfees/bulkotherfeesdemand', name: 'Bulk Other Fees Demand' },

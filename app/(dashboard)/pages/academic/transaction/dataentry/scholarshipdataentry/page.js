@@ -77,27 +77,24 @@ const ScholarshipDataEntry = () => {
                                                 <Button variant="primary" type="" style={{ marginLeft: "10px" }} >
                                                     Cancel
                                                 </Button>
+                                                <Button variant="secondary" type="" style={{ marginLeft: "10px" }} >
+                                                    Report
+                                                </Button>
                                             </Col>
                                             <Col></Col>
                                         </Row>
                                         <Row >
-                                            <Col className="d-flex align-items-center justify-content-center mb-3">
-                                                <Button variant="primary" type="" style={{ marginLeft: "10px" }} >
-                                                    Report
-                                                </Button>
+                                            <Col className="d-flex align-items-center justify-content-center mb-3"> 
                                                 <Button variant="secondary" type="" style={{ marginLeft: "10px" }}>
                                                     Export To Excel
                                                 </Button>
-                                            </Col>
-                                            <Col></Col>
-                                        </Row>
-                                        <Row >
-                                            <Col className="d-flex align-items-center justify-content-center mb-3">
                                                 <Button variant="secondary" type="" style={{ marginLeft: "10px" }}>
                                                     Statistics Format Report
                                                 </Button>
                                             </Col>
                                             <Col></Col>
+                                        </Row>
+                                        <Row >
                                         </Row>
                                     </Form>
                                 }
