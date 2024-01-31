@@ -183,8 +183,8 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/selectedfieldreport', name: 'Selected Field Report' },
 							{ id: uuid(), link: '/', name: 'Student Document Receipt' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/outstandingfeesremainder', name: 'Outstanding Fees Remiander' },
-							{ id: uuid(), link: '/', name: 'Scholarship Entry' },
-							{ id: uuid(), link: '/', name: 'Bulk Email' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/scholarshipdataentry', name: 'Scholarship Data Entry' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/bulkemail', name: 'Bulk Email' },
 							
 						]
 					},
