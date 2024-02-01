@@ -94,7 +94,7 @@ const RailwayConcessionApproval = () => {
                         />
                       </Col>
                     </Row>
-                    <Row>
+                    <Row className="mb-3">
                       <Col className="d-flex align-items-center justify-content-center mb-3">
                         <Button variant="primary" type="submit">
                           Export To Excel
@@ -107,6 +107,10 @@ const RailwayConcessionApproval = () => {
                           Cancel
                         </Button>
                       </Col>
+                      <Col></Col>
+                    </Row>
+                    <Row>
+
                     </Row>
                   </Form>
                 )}

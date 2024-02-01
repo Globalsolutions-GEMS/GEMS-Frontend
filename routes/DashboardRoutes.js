@@ -187,6 +187,7 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/bulkemail', name: 'Bulk Email' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/scholarshipdetailsentry', name: 'Scholarship Details Entry' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/railwayconcessionapproval', name: 'Railway Concession Approval' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/studentdocumentreceipt', name: 'Student Document Details' },
 						]
 					},
 				]
