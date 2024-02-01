@@ -185,7 +185,8 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/outstandingfeesremainder', name: 'Outstanding Fees Remiander' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/scholarshipdataentry', name: 'Scholarship Data Entry' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/bulkemail', name: 'Bulk Email' },
-							
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/scholarshipdetailsentry', name: 'Scholarship Details Entry' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/railwayconcessionapproval', name: 'Railway Concession Approval' },
 						]
 					},
 				]
