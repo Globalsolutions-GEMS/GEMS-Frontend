@@ -191,9 +191,43 @@ export const DashboardMenu = [
 						]
 					},
 				]
+			},
+			{
+				id: uuid(),
+				link: '#',
+				title: 'Fees Reports',
+				children: [
+					{
+						id: uuid(),
+						link: '#',
+						title: 'Fees Report',
+						children: [
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/dcrreport', name: 'DCR Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/demandreport', name: 'Demand Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/studentledger', name: 'Student Ledger' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/bankreport', name: 'Bank Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/receiptcancellationreport', name: 'Receipt Cancellation Report' },
+							
+						]
+					},
+					{
+						id: uuid(),
+						link: '#',
+						title: 'Online Payment Report',
+						children: [
+							{ id: uuid(), link: '/pages/academic/', name: '' },
+							{ id: uuid(), link: '/pages/academic/', name: '' },
+							{ id: uuid(), link: '/pages/academic/', name: '' },
+							{ id: uuid(), link: '/pages/academic/', name: '' },
+							{ id: uuid(), link: '/pages/academic/', name: '' },
+							
+						]
+				
+					}]		
+				
 			}
 		]
-	},
+	}
 ];
 
 export default DashboardMenu;
