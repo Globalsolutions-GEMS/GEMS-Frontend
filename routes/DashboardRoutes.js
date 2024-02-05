@@ -173,7 +173,7 @@ export const DashboardMenu = [
 						link: '#',
 						title: 'Data Entry',
 						children: [
-						 { id: uuid(), link: '/pages/academic/transaction/dataentry/studentinformation', name: 'Student Information' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/studentinformation', name: 'Student Information' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/studentsubjectupdation', name: 'Student Subject Updation' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/rollnoupdation', name: 'Roll No Updation' },
 							{ id: uuid(), link: '', name: 'Subject Groupwise Roll No' },
@@ -207,24 +207,14 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/studentledger', name: 'Student Ledger' },
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/bankreport', name: 'Bank Report' },
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/receiptcancellationreport', name: 'Receipt Cancellation Report' },
-							
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/userwisecollectionreport', name: 'Userwise Collection Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/outstandingfeesreport', name: 'Outstanding Fees Report' },
+
 						]
 					},
-					{
-						id: uuid(),
-						link: '#',
-						title: 'Online Payment Report',
-						children: [
-							{ id: uuid(), link: '/pages/academic/', name: '' },
-							{ id: uuid(), link: '/pages/academic/', name: '' },
-							{ id: uuid(), link: '/pages/academic/', name: '' },
-							{ id: uuid(), link: '/pages/academic/', name: '' },
-							{ id: uuid(), link: '/pages/academic/', name: '' },
-							
-						]
-				
-					}]		
-				
+					
+				]
+
 			}
 		]
 	}
