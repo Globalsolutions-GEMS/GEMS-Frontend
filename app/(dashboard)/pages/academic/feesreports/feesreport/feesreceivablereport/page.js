@@ -19,7 +19,7 @@ const FeesReceivableReport = () => {
             {/* Page Heading */}
             <PageHeading heading="Fees Receivable Report" />
             <Breadcrumb>
-            <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Fees Reports</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Fees Report</Breadcrumb.Item>
                 <Breadcrumb.Item active>Fees Receivable Report</Breadcrumb.Item>
@@ -58,23 +58,25 @@ const FeesReceivableReport = () => {
                                             >
                                                 Report Format
                                             </Form.Label>
-                                           
+
                                             <Col sm={2}>
                                                 <Form.Check
                                                     label="Student Type"
                                                     type="radio"
+                                                    name='report'
                                                 />
                                             </Col>
                                             <Col sm={2}>
                                                 <Form.Check
                                                     label="Payment Type"
                                                     type="radio"
+                                                    name='report'
                                                 />
                                             </Col>
-                                            
+
                                         </Row>
-                                        
-                                        
+
+
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >From Date</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
@@ -86,9 +88,9 @@ const FeesReceivableReport = () => {
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Control type="date" placeholder="Please Enter To Date" id="course" required />
                                             </Col>
-                                           
+
                                         </Row>
-                                        
+
                                         <Row className="mb-3">
                                             <Col className="d-flex align-items-center justify-content-center">
                                                 <Button variant="primary" type="submit">
@@ -108,7 +110,7 @@ const FeesReceivableReport = () => {
                                                 >
                                                     Cancel
                                                 </Button>
-                                               
+
                                             </Col>
                                             <Col></Col>
                                         </Row>

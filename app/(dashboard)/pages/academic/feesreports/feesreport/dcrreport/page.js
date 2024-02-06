@@ -33,7 +33,7 @@ const DCRReport = () => {
                             <div>
                                 {hasMounted &&
                                     <Form>
-                                        <Row className='mb-3'>
+                                        <Row className='mb-3' sm={6}>
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Report Format<span className="text-danger">*</span></Form.Label>
                                             <Col sm={2}>
                                                 <Form.Check
@@ -48,6 +48,7 @@ const DCRReport = () => {
                                                 />
                                             </Col>
                                         </Row>
+                                        
                                     </Form>
                                 }
                             </div>

@@ -77,12 +77,14 @@ const FeesWriteOffReport = () => {
                                                 <Form.Check
                                                     label="With Cancelled"
                                                     type="radio"
+                                                    name='report'
                                                 />
                                             </Col>
                                             <Col sm={2}>
                                                 <Form.Check
                                                     label="Without Cancelled"
                                                     type="radio"
+                                                    name='report'
                                                 />
                                             </Col>
                                             
