@@ -48,8 +48,8 @@ export const DashboardMenu = [
 						title: 'Common Master',
 						children: [
 							{ id: uuid(), link: '/pages/academic/master/commonmaster/caste', name: 'Caste' },
-							{ id: uuid(), link: '/pages/academic/master/commonmaster/castecategory', name: 'Caste Category' },
-							{ id: uuid(), link: '/pages/academic/master/commonmaster/subcaste', name: 'Sub Caste' },
+							// { id: uuid(), link: '/pages/academic/master/commonmaster/castecategory', name: 'Caste Category' },
+							// { id: uuid(), link: '/pages/academic/master/commonmaster/subcaste', name: 'Sub Caste' },
 							{ id: uuid(), link: '/pages/academic/master/commonmaster/title', name: 'Title' },
 							{ id: uuid(), link: '/pages/academic/master/commonmaster/gender', name: 'Gender' },
 							{ id: uuid(), link: '/pages/academic/master/commonmaster/religion', name: 'Religion' },
