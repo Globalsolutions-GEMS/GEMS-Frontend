@@ -213,7 +213,11 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/feesrefundreport', name: 'Fees Refund Report' },
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/feeswriteoffreport', name: 'Fees WriteOff Report' },
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/feesreceivablereport', name: 'Fees Receivable Report' },
-							
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/adjustmentreceiptreport', name: 'Adjustment Receipt Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/outstandingsummaryreport', name: 'Outstanding Summary Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/coursewisedcrreport', name: 'Course Wise DCR Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/challanreconciliationreport', name: 'Challan Reconciliation Report' },
+													
 						]
 					},
 					
