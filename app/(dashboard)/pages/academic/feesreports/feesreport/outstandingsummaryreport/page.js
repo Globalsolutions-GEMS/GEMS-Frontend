@@ -40,13 +40,7 @@ const OutstandingSummaryReport = () => {
                                             </Col>
                                             <Col></Col>
                                         </Row>
-                                        <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Batch</Form.Label>
-                                            <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter Student ID No." id="session" required />
-                                            </Col>
-                                            <Col></Col>
-                                        </Row>
+                                        
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Date</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
