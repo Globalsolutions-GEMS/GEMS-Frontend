@@ -1,4 +1,5 @@
 "use client";
+import 'bootstrap-icons/font/bootstrap-icons.css'
 // import node module libraries
 import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
@@ -31,7 +32,7 @@ const PaymentGatewayTransactionsReport = () => {
                 {hasMounted && (
                   <Form>
                     <Row className="mb-3">
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Search Criteria<span className="text-danger">*</span>
                       </Form.Label>
                       <Col>
@@ -41,13 +42,30 @@ const PaymentGatewayTransactionsReport = () => {
                         <Form.Check label="Student Id" type="radio" />
                       </Col>
                       <Col>
-                        <Form.Check label="STransaction Id" type="radio" />
+                        <Form.Check label="Transaction Id" type="radio" />
                       </Col>
-                      
+
                     </Row>
-                    <Row>
+                    <Row className="mb-3">
+                      <Col></Col>
+                      <Col className="mb-3 mb-lg-0">
+                        <div className="input-group">
+                          <span className="input-group-text"><i className="bi bi-search"></i></span>
+                          <input
+                            type="search"
+                            className="form-control"
+                            placeholder="Please Enter Minimum 3 letters of Student Name"
+                            id="session"
+                            required
+                          />
+                        </div>
+                      </Col>
+                    </Row>
+
+                    <Row className="mb-3">
+
                       <Form.Check
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-3 col-form-label form-label ms-3"
                         type="checkbox"
                         id="active"
                       >
@@ -69,7 +87,7 @@ const PaymentGatewayTransactionsReport = () => {
                           Cancel
                         </Button>
                       </Col>
-                      <Col></Col>
+
                     </Row>
                   </Form>
                 )}
