@@ -78,12 +78,14 @@ const DemandReport = () => {
                                                 <Form.Check
                                                     label="With Canceled"
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>
                                             <Col sm={2}>
                                                 <Form.Check
                                                     label="Without Canceled"
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>
                                             
