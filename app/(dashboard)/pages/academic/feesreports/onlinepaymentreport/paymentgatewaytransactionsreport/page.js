@@ -1,7 +1,7 @@
 "use client";
 import 'bootstrap-icons/font/bootstrap-icons.css'
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
+import { Breadcrumb, Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -63,7 +63,6 @@ const PaymentGatewayTransactionsReport = () => {
                     </Row>
 
                     <Row className="mb-3">
-
                       <Form.Check
                         className="m-3 col-sm-3 col-form-label form-label ms-3"
                         type="checkbox"
