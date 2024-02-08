@@ -76,24 +76,28 @@ const OutstandingFees = () => {
                                                 <Form.Check
                                                     label="Student Id."
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>
                                             <Col>
                                                 <Form.Check
                                                     label="Name"
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>
                                             <Col>
                                                 <Form.Check
                                                     label="Roll No"
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>
                                             <Col>
                                                 <Form.Check
                                                     label="User Field"
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>  
                                         </Row>
