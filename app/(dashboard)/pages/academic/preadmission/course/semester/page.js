@@ -18,7 +18,7 @@ const Semester = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Year" />
+            <PageHeading heading="Semester" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>

@@ -217,10 +217,29 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/outstandingsummaryreport', name: 'Outstanding Summary Report' },
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/coursewisedcrreport', name: 'Course Wise DCR Report' },
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/challanreconciliationreport', name: 'Challan Reconciliation Report' },
+							// { id: uuid(), link: '/pages/academic/feesreports/feesreport/coursewiseinstallmentoutstandingreport', name: 'CourseWise Installment Outstanding Report' },
+							// { id: uuid(), link: '/pages/academic/feesreports/feesreport/feesreconciliationreport', name: 'Fees Reconciliation Report' },
+
+
+
 													
 						]
 					},
-					
+					{
+						id: uuid(),
+						link: '#',
+						title: 'Online Payment Report',
+						children: [
+							// { id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/paymentgatewaytransactionsreport', name: 'Payment Gateway Transactions Report' },
+							// { id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settlementdcrreport', name: 'Settlement DCR Report' },
+							// { id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settlementdatewisedcr', name: 'Settlement DateWise DCR' },
+
+				
+							
+
+													
+						]
+					}
 				]
 
 			}
