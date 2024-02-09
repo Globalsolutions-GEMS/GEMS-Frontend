@@ -65,7 +65,7 @@ const PaymentGatewayTransactionsReport = () => {
                     <Row className="mb-3">
 
                       <Form.Check
-                        className="col-sm-3 col-form-label form-label ms-3"
+                        className="m-3 col-sm-3 col-form-label form-label ms-3"
                         type="checkbox"
                         id="active"
                       >

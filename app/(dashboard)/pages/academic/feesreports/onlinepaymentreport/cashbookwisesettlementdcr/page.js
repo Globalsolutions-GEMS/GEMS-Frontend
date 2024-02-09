@@ -9,7 +9,7 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const SettlementDCRReport = () => {
+const CashbookWiseSettlementDCR = () => {
   const hasMounted = useMounted();
 
   return (
@@ -20,7 +20,7 @@ const SettlementDCRReport = () => {
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Fees Reports</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Online Payment Report</Breadcrumb.Item>
-        <Breadcrumb.Item active>Settlement DCR Report</Breadcrumb.Item>
+        <Breadcrumb.Item active>CashbookWise Settlement DCR</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -30,23 +30,7 @@ const SettlementDCRReport = () => {
               <div>
                 {hasMounted && (
                   <Form>
-                    <Row className="mb-3">
-                      <Form.Label className="col-sm-3 col-form-label form-label">
-                        Report Format<span className="text-danger">*</span>
-                      </Form.Label>
-                      <Col>
-                        <Form.Check label="Date Wise" type="radio" />
-                      </Col>
-                      <Col>
-                        <Form.Check label="FeeHead Wise" type="radio" />
-                      </Col>
-                      <Col>
-                        <Form.Check label="StudentWise" type="radio" />
-                      </Col>
-                      <Col>
-                        <Form.Check label="AccountNoWise" type="radio" />
-                      </Col>
-                    </Row>
+                   
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Session<span className="text-danger">*</span>
@@ -64,7 +48,7 @@ const SettlementDCRReport = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Receipt Type
+                        Receipt Book<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -76,38 +60,11 @@ const SettlementDCRReport = () => {
                       </Col>
                       <Col></Col>
                     </Row>
-                    <Row className="mb-3">
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Basic Course
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
-                          type="text"
-                          placeholder="Please Enter "
-                          id="session"
-                          required
-                        />
-                      </Col>
-                      <Col></Col>
-                    </Row>
-                    <Row className="mb-3">
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Course
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
-                          type="text"
-                          placeholder="Please Enter "
-                          id="session"
-                          required
-                        />
-                      </Col>
-                      <Col></Col>
-                    </Row>
+                   
 
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        From Date
+                        From Date<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Control
@@ -121,7 +78,7 @@ const SettlementDCRReport = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        To Date
+                        To Date<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Control
@@ -133,6 +90,7 @@ const SettlementDCRReport = () => {
                       </Col>
                       <Col></Col>
                     </Row>
+                   
                     <Row>
                       <Form.Check
                         className="m-3 col-sm-3 col-form-label form-label"
@@ -145,10 +103,7 @@ const SettlementDCRReport = () => {
                     </Row>
                     <Row className="mb-3">
                       <Col className="d-flex align-items-center justify-content-center">
-                        <Button variant="primary" type="submit">
-                          Report
-                        </Button>
-
+                       
                         <Button
                           variant="secondary"
                           type=""
@@ -170,4 +125,4 @@ const SettlementDCRReport = () => {
   );
 };
 
-export default SettlementDCRReport;
+export default CashbookWiseSettlementDCR;

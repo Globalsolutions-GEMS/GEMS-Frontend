@@ -133,7 +133,7 @@ const SettlementDateWiseDCR = () => {
                     </Row>
                     <Row>
                       <Form.Check
-                        className="col-sm-3 col-form-label form-label"
+                        className="m-3 col-sm-3 col-form-label form-label"
                         type="checkbox"
                         id="active"
                       >

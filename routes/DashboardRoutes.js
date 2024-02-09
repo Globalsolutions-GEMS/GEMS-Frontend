@@ -219,6 +219,11 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/challanreconciliationreport', name: 'Challan Reconciliation Report' },
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/coursewiseinstallmentoutstandingreport', name: 'CourseWise Installment Outstanding Report' },
 							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/feesreconciliationreport', name: 'Fees Reconciliation Report' },
+							// { id: uuid(), link: '/pages/academic/feesreports/feesreport/duereport', name: 'Due Report' },
+							// { id: uuid(), link: '/pages/academic/feesreports/feesreport/bulkreceiptreprint', name: 'Bulk Receipt Reprint' },
+
+							
+
 
 
 
@@ -233,6 +238,9 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/paymentgatewaytransactionsreport', name: 'Payment Gateway Transactions Report' },
 							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settlementdcrreport', name: 'Settlement DCR Report' },
 							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settlementdatewisedcr', name: 'Settlement DateWise DCR' },
+							// { id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/cashbookwisesettlementdcr', name: 'CashbookWise Settlement DCR' },
+							// { id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settledunsettledreceipt', name: 'Settled Unsettled Receipt' },
+
 
 				
 							
