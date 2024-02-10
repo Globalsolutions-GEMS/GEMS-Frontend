@@ -237,7 +237,39 @@ export const DashboardMenu = [
 					}
 				]
 
-			}
+			},
+			{
+				id: uuid(),
+				link: '#',
+				title: 'Student Reports',
+				children: [
+					{
+						id: uuid(),
+						link: '#',
+						title: 'Admission',
+						children: [
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/dcrreport', name: 'SYTY Admission Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/demandreport', name: 'Provisional Admission Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/studentledger', name: 'Student Admission Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/feesreport/bankreport', name: 'Coursewise Student Admission Report' },
+			
+						]
+					},
+					{
+						id: uuid(),
+						link: '#',
+						title: 'MIS',
+						children: [
+							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/paymentgatewaytransactionsreport', name: 'Payment Gateway Transactions Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settlementdcrreport', name: 'Settlement DCR Report' },
+							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settlementdatewisedcr', name: 'Settlement DateWise DCR' },
+							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/cashbookwisesettlementdcr', name: 'CashbookWise Settlement DCR' },
+							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settledunsettledreceipt', name: 'Settled Unsettled Receipt' },							
+						]
+					}
+				]
+
+			}o
 		]
 	}
 ];
