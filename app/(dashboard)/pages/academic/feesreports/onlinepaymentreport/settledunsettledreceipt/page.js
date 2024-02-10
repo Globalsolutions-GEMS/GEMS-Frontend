@@ -1,6 +1,6 @@
 "use client";
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
+import { Breadcrumb, Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components

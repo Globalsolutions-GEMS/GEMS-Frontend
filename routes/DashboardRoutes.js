@@ -268,8 +268,7 @@ export const DashboardMenu = [
 						]
 					}
 				]
-
-			}o
+			}
 		]
 	}
 ];

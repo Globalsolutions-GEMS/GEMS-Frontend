@@ -1,6 +1,6 @@
 'use client'
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from 'react-bootstrap';
+import { Breadcrumb, Container } from 'react-bootstrap';
 import { Col, Row, Form, Card, Button } from 'react-bootstrap';
 
 // import widget as custom components
@@ -8,7 +8,6 @@ import { PageHeading } from 'widgets'
 
 // import sub components
 import useMounted from 'hooks/useMounted';
-import { CheckCircleFill } from 'react-bootstrap-icons';
 
 
 const MotherTongue = () => {
@@ -38,9 +37,6 @@ const MotherTongue = () => {
                                                 <Form.Control type="text" placeholder="Please Enter Mother Tongue" id="mothertongue" required />
                                             </Col>
                                         </Row>
-                                       
-                                        
-
                                         <Row className='mb-3'>
                                             <Form.Check.Label className="col-sm-3 col-form-label form-label" >Active</Form.Check.Label>
                                             <Col md={9} xs={12}>
@@ -50,9 +46,7 @@ const MotherTongue = () => {
                                                 </Form.Check>
                                             </Col>
                                         </Row>
-                                      
                                         <Row className="align-items-center">
-
                                             <Col md={{ offset: 4, span: 8 }} xs={12} className="mt-4">
                                                 <Button variant="primary" type="submit" >
                                                     Submit

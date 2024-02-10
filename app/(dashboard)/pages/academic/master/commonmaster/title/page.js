@@ -47,7 +47,7 @@ const Title = () => {
                                                 </Form.Check>
                                             </Col>
                                         </Row>
-                                        <Row className="mb-3">
+                                        {/* <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label">Title<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
                                                 <Form.Select value={selectedTitle} onChange={(e) => setSelectedTitle(e.target.value)}>
@@ -57,7 +57,7 @@ const Title = () => {
                                                     ))}
                                                 </Form.Select>
                                             </Col>
-                                        </Row>
+                                        </Row> */}
                                         <Row className="align-items-center">
                                             <Col md={{ offset: 4, span: 8 }} xs={12} className="mt-4">
                                                 <Button variant="primary" type="submit">
