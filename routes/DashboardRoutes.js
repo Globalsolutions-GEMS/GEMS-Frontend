@@ -250,8 +250,16 @@ export const DashboardMenu = [
 						children: [
 							{ id: uuid(), link: '/pages/academic/studentreport/admission/sytyapplicationreport', name: 'SYTY Application Report' },
 							{ id: uuid(), link: '/pages/academic/studentreport/admission/provisionaladmissionreport', name: 'Provisional Admission Report' },
-						//	{ id: uuid(), link: '/pages/academic/studentreport/admission/studentadmissionreport', name: 'Student Admission Report' },
-						//	{ id: uuid(), link: '/pages/academic/studentreport/admission/coursewisestudentadmissionreport', name: 'Coursewise Student Admission Report' },
+							//{ id: uuid(), link: '/pages/academic/studentreport/admission/studentadmissionreport', name: 'Student Admission Report' },
+							//{ id: uuid(), link: '/pages/academic/studentreport/admission/coursewisestrengthreport', name: 'Coursewise Strength Report' },
+							//{ id: uuid(), link: '/pages/academic/studentreport/admission/admissionpositionreport', name: 'Admission Position Report' },
+							//{ id: uuid(), link: '/pages/academic/studentreport/admission/studentdetailsexporttoexcel', name: 'Student Details Export To Excel' },
+							//{ id: uuid(), link: '/pages/academic/studentreport/admission/courseandfeetypechangereport', name: 'Course And Fee Type Change Report' },
+							//extra//{ id: uuid(), link: '/pages/academic/studentreport/admission/coursewisestudentadmissionreport', name: 'Coursewise Student Admission Report' },
+
+
+
+
 						]
 					},
 					{
