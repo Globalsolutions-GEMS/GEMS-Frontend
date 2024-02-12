@@ -48,7 +48,6 @@ const StudentAdmission = () => {
         remark: '',
     })
 
-    const [editingRowIndex, setEditingRowIndex] = useState(null);
     const [editingDetails, setEditingDetails] = useState(null);
     const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
@@ -180,6 +179,7 @@ const StudentAdmission = () => {
                     <Card.Body>
                         <Col xl={12} lg={8} md={12} xs={12}>
                             Note : <span className="text-danger">* Marked Is Mandatory !</span>
+                            {/* All fields marked with a <span className="text-danger">RED</span> asterisk(<span className="text-danger">*</span>) are required in order to proceed. */}
                             <div>
                                 {hasMounted &&
                                     <Form onSubmit={handleSubmit}>
@@ -346,6 +346,7 @@ const StudentAdmission = () => {
                                                 <Button variant="primary" type="submit">
                                                     Submit
                                                 </Button>
+                                                <ToastContainer style={{ marginTop: '40px' }} />
                                                 <Button variant="primary" type="" style={{ marginLeft: "10px" }}>
                                                     Save and Pay
                                                 </Button>
