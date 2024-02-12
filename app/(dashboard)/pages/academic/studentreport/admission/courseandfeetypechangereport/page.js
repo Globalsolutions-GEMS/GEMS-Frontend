@@ -84,6 +84,32 @@ const CourseAndFeeTypeChangeReport = () => {
                         <Form.Check label="Fee Type Change" type="radio" name="name" />
                       </Col>
                     </Row>
+                    <Row>
+                      <Form.Check
+                        className="m-3 col-sm-3 col-form-label form-label"
+                        type="checkbox"
+                        id="active"
+                      >
+                        <Form.Check.Input type="checkbox" />
+                        <Form.Check.Label>Export To Excel</Form.Check.Label>
+                      </Form.Check>
+                    </Row>
+                    <Row className="mb-3">
+                      <Col className="d-flex align-items-center justify-content-center">
+                        <Button variant="primary" type="submit">
+                          Report
+                        </Button>
+
+                        <Button
+                          variant="secondary"
+                          type=""
+                          style={{ marginLeft: "10px" }}
+                        >
+                          Cancel
+                        </Button>
+                      </Col>
+                      <Col></Col>
+                    </Row>
                   </Form>
                 )}
               </div>
