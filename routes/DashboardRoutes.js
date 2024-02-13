@@ -48,6 +48,7 @@ export const DashboardMenu = [
 						title: 'Common Master',
 						children: [
 							{ id: uuid(), link: '/pages/academic/master/commonmaster/caste', name: 'Caste' },
+							{ id: uuid(), link: '/pages/academic/master/commonmaster/bankdetails', name: 'Bank Details' },
 							// { id: uuid(), link: '/pages/academic/master/commonmaster/castecategory', name: 'Caste Category' },
 							// { id: uuid(), link: '/pages/academic/master/commonmaster/subcaste', name: 'Sub Caste' },
 							{ id: uuid(), link: '/pages/academic/master/commonmaster/title', name: 'Title' },
@@ -255,11 +256,9 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/studentreport/admission/admissionpositionreport', name: 'Admission Position Report' },
 							{ id: uuid(), link: '/pages/academic/studentreport/admission/studentdetailsexporttoexcel', name: 'Student Details Export To Excel' },
 							{ id: uuid(), link: '/pages/academic/studentreport/admission/courseandfeetypechangereport', name: 'Course And Fee Type Change Report' },
+							{ id: uuid(), link: '/pages/academic/studentreport/admission/studentattendancereport', name: 'Student Attendance Report' },
 							//extra//{ id: uuid(), link: '/pages/academic/studentreport/admission/coursewisestudentadmissionreport', name: 'Coursewise Student Admission Report' },
-
-
-
-
+							{ id: uuid(), link: '/pages/academic/studentreport/admission/studentrollnumberreport', name: 'Student Roll Number Report' },
 						]
 					},
 					{

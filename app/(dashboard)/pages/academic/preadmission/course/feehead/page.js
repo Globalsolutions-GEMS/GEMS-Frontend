@@ -246,6 +246,7 @@ const FeeHead = () => {
                                                         
                                                             <Form.Check.Input
                                                                 type="checkbox"
+                                                                id='excessFee'
                                                                 value={formData.excessFee}
                                                                 onChange={handleInputChange}
                                                                 disabled={hasExcessFee()} 
