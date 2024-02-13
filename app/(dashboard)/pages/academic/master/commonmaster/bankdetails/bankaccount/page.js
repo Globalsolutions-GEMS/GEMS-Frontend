@@ -30,7 +30,7 @@ const BankAccount = () => {
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Account No.<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Description" id="description" required />
+                                                <Form.Control type="text" placeholder="Please Enter Account No." id="description" required />
                                             </Col>
                                         </Row>
                                      

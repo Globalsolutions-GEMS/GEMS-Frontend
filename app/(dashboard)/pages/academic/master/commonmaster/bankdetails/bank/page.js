@@ -24,19 +24,19 @@ const Bank = () => {
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Bank Code<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Caste Category" id="castecategory" required />
+                                                <Form.Control type="text" placeholder="Please Enter Bank Code" id="castecategory" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Bank Name<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Description" id="description" required />
+                                                <Form.Control type="text" placeholder="Please Enter Bank Name" id="description" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Bank Address</Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Code" id="description" />
+                                                <Form.Control type="text" placeholder="Please Enter Bank Address" id="description" />
                                             </Col>
                                         </Row>
                                         
