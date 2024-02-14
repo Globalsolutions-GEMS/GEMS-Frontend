@@ -266,11 +266,13 @@ export const DashboardMenu = [
 						link: '#',
 						title: 'MIS',
 						children: [
-							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/paymentgatewaytransactionsreport', name: 'Payment Gateway Transactions Report' },
-							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settlementdcrreport', name: 'Settlement DCR Report' },
-							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settlementdatewisedcr', name: 'Settlement DateWise DCR' },
-							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/cashbookwisesettlementdcr', name: 'CashbookWise Settlement DCR' },
-							{ id: uuid(), link: '/pages/academic/feesreports/onlinepaymentreport/settledunsettledreceipt', name: 'Settled Unsettled Receipt' },							
+							// { id: uuid(), link: '/pages/academic/studentreport/MIS/studentmis', name: 'Student MIS' },
+							// { id: uuid(), link: '/pages/academic/studentreport/MIS/cashbookwisemisreport', name: 'Cash BookWise MIS Report' },
+							// { id: uuid(), link: '/pages/academic/studentreport/MIS/studentmiscastewise', name: 'Student MIS Caste Wise' },
+							// { id: uuid(), link: '/pages/academic/studentreport/MIS/subjectwisereport', name: 'Subject Wise Report' },
+							// { id: uuid(), link: '/pages/academic/studentreport/MIS/subjectsectionwisemisreport', name: 'Subject SectionWise MIS Report' },
+							
+			
 						]
 					}
 				]

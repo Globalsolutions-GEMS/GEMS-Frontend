@@ -68,31 +68,37 @@ const StudentRollNumberReport = () => {
                                                 <Row className="mb-3">
                                                     <Form.Label className="col-sm-4 col-form-label form-label" >Subject</Form.Label>
                                                     <Col sm={8} className="mb-3 mb-lg-0">
-                                                        <Form.Control type="text" />
+                                                        <Form.Select id='session' required >
+                                                        </Form.Select>
                                                     </Col>
                                                 </Row>
                                                 <Row className="mb-3">
                                                     <Form.Label className="col-sm-4 col-form-label form-label" >Report Format Type</Form.Label>
                                                     <Col sm={8} className="mb-3 mb-lg-0">
-                                                        <Form.Control type="text" />
+                                                        <Form.Select id='session' required >
+                                                        </Form.Select>
                                                     </Col>
                                                 </Row>
                                                 <Row className="mb-3">
                                                     <Form.Label className="col-sm-4 col-form-label form-label" >Order By</Form.Label>
                                                     <Col sm={8} className="mb-3 mb-lg-0">
-                                                        <Form.Control type="text" />
+                                                        <Form.Select id='session' required >
+                                                        </Form.Select>
                                                     </Col>
                                                 </Row>
-                                                
+                                                <Row className='mb-3'>
+                                                <Form.Check className="ms-3 col-sm-3 col-form-label form-label" type="checkbox" id="active">
+                                                    <Form.Check.Input type="checkbox" />
+                                                    <Form.Check.Label >Export to Excel</Form.Check.Label>
+                                                </Form.Check> 
+                                        </Row>
                                                 <Row className="mb-3">
                                                     <Col className="d-flex align-items-center justify-content-center">
                                                         <ToastContainer style={{ marginTop: '40px' }} />
                                                         <Button variant="primary" type="submit">
                                                             Report
                                                         </Button>
-                                                        <Button variant="primary" style={{ marginLeft: "10px" }}>
-                                                            Export To Excel
-                                                        </Button>
+                                                       
                                                         <Button variant="secondary" type="" style={{ marginLeft: "10px" }}>
                                                             Cancel
                                                         </Button>
