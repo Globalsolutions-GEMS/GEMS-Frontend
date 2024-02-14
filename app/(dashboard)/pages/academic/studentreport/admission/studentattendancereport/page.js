@@ -38,24 +38,22 @@ const StudentAttendanceReport = () => {
                     <Row>
                       <Col>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Session<span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select
                               id="session    "
                               required
                             ></Form.Select>
                           </Col>
-                        </Row>
-                        <Row className="mb-3">
                           <Form.Label
-                            className="col-sm-4 col-form-label form-label"
+                            className="col-sm-2 col-form-label form-label"
                             htmlFor="email"
                           >
                             Basic Course<span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select
                               type="text"
                               id="headDescription"
@@ -64,83 +62,75 @@ const StudentAttendanceReport = () => {
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Course/Year/Standard
                             <span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select type="text" required />
                           </Col>
-                        </Row>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Section
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select type="text" />
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Admission From Date
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Control type="date" />
                           </Col>
-                        </Row>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Admission To Date
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Control type="date" />
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Medium
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select type="text" />
                           </Col>
-                        </Row>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Subject
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select type="text" />
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Month<span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select type="text" required />
                           </Col>
-                        </Row>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Report Format<span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select type="text" required />
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Name Type<span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={3} className="mb-3 mb-lg-0">
                             <Form.Check
                               label="FName +MName+LName"
                               name="nameType"
                               type="radio"
                             />
                           </Col>
-                          <Form.Label className="col-sm-4 col-form-label form-label"></Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
+                          <Col sm={3} className="mb-3 mb-lg-0">
                             <Form.Check
                               label="LName+FName+MName"
                               name="nameType"
@@ -149,42 +139,42 @@ const StudentAttendanceReport = () => {
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Sort By<span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Check
                               label="First Name"
                               name="sortName"
                               type="radio"
                             />
                           </Col>
-                          <Form.Label className="col-sm-4 col-form-label form-label"></Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Check
                               label="Last Name"
                               name="sortName"
                               type="radio"
                             />
                           </Col>
-                          <Form.Label className="col-sm-4 col-form-label form-label"></Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Check
                               label="Roll No"
                               name="sortName"
                               type="radio"
                             />
                           </Col>
-                          <Form.Label className="col-sm-4 col-form-label form-label"></Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Check
                               label="Section"
                               name="sortName"
                               type="radio"
                             />
                           </Col>
-                          <Form.Label className="col-sm-4 col-form-label form-label"></Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Check
                               label="Admission Date"
                               name="sortName"
@@ -225,30 +215,30 @@ const StudentAttendanceReport = () => {
                           </Form.Check>
                         </Row>
                         <Row className="mb-3">
-                                            <Col className="d-flex align-items-center justify-content-center">
-                                                <Button variant="primary" type="submit">
-                                                    Report
-                                                </Button>
-                                               
-                                                <Button
-                                                    variant="secondary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
-                                                    Cancel
-                                                </Button>
-                                               
-                                            </Col>
-                                        </Row>
+                          <Col className="d-flex align-items-center justify-content-center">
+                            <Button variant="primary" type="submit">
+                              Report
+                            </Button>
+
+                            <Button
+                              variant="secondary"
+                              type=""
+                              style={{ marginLeft: "10px" }}
+                            >
+                              Cancel
+                            </Button>
+
+                          </Col>
+                        </Row>
                       </Col>
-                      <Col>
+                      {/* <Col>
                         <Table striped bordered hover>
                           <thead>
                             <tr></tr>
                           </thead>
                           <tbody></tbody>
                         </Table>
-                      </Col>
+                      </Col> */}
                     </Row>
                   </Form>
                 )}

@@ -63,7 +63,7 @@ const BankDetails = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Caste" />
+            <PageHeading heading="Bank Details" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Master</Breadcrumb.Item>

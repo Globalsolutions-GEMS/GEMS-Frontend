@@ -108,18 +108,18 @@ const StudentMISCasteWise = () => {
                       </Col>
                     </Row>
                     <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                              From Date
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Control type="date" />
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
                              To Date
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Control type="date" />
                           </Col>
                         </Row>
