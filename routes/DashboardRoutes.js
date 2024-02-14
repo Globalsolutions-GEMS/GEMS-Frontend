@@ -259,6 +259,8 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/studentreport/admission/studentattendancereport', name: 'Student Attendance Report' },
 							//extra//{ id: uuid(), link: '/pages/academic/studentreport/admission/coursewisestudentadmissionreport', name: 'Coursewise Student Admission Report' },
 							{ id: uuid(), link: '/pages/academic/studentreport/admission/studentrollnumberreport', name: 'Student Roll Number Report' },
+							{ id: uuid(), link: '/pages/academic/studentreport/admission/smssendreport', name: 'SMS Send Report' },
+
 						]
 					},
 					{
