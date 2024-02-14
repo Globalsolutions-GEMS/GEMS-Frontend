@@ -1,18 +1,149 @@
 'use client'
+import { useEffect, useState } from 'react';
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from 'react-bootstrap';
-import { Col, Row, Form, Card, Button } from 'react-bootstrap';
+import { Breadcrumb, Container, Col, Row, Form, Card, Button } from 'react-bootstrap';
 
 // import widget as custom components
 import { PageHeading } from 'widgets'
 
 // import sub components
 import useMounted from 'hooks/useMounted';
-import { CheckCircleFill } from 'react-bootstrap-icons';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'react-toastify/dist/ReactToastify.css';
+
+import { getAllFaculty, getAllDegree, getAllCashbook, createBasicCourse, getAllBasicCourse } from '../../../../../../api/basiccourse'
 
 const BasicCourse = () => {
     const hasMounted = useMounted();
+
+    const [basicCourseData, setBasicCourseData] = useState([]);
+    const [itemsPerPage] = useState(5);
+    const [formData, setFormData] = useState({
+        faculty: '',
+        degree: '',
+        cashbook: '',
+        courseLevel: '',
+        basicCourse: '',
+        shortName: '',
+        serialNumber: '',
+        active: false
+    });
+    const [editingRowIndex, setEditingRowIndex] = useState(null);
+    const [editingBasicCourse, setEditingBasicCourse] = useState(null);
+    const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+
+    const [faculty, setFaculty] = useState([]);
+    const [selectedFaculty, setSelectedFaculty] = useState('');
+    const [degree, setDegree] = useState([]);
+    const [selectedDegree, setSelectedDegree] = useState('');
+    const [cashbook, setCashbook] = useState([]);
+    const [selectedCashbook, setSelectedCashbok] = useState('');
+
+    const success = () => toast.success("Data Submitted Successfully!!!");
+    const update = () => toast.success("Data Updated Successfully!!!");
+    const errors = () => toast.error("Ooops!!! Somthing went Wrong")
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        try {
+            if (editingBasicCourse) {
+                // await updateBasicCourse(editingBasicCourse.id,formData);
+                // setEditingBasicCourse(null);
+                update()
+            } else {
+                await createBasicCourse(formData);
+                success()
+            }
+            refreshBasicCourse();
+            setFormData({
+                faculty: '',
+                degree: '',
+                cashbook: '',
+                courseLevel: '',
+                basicCourse: '',
+                shortName: '',
+                serialNumber: '',
+                active: false
+            })
+            setShowSuccessAlert(true);
+        } catch (error) {
+            console.log(error);
+            errors()
+        }
+    }
+
+    const handleInputChange = (event) => {
+        const { id, type, checked, value } = event.target;
+    
+        const newValue = type === 'checkbox' ? checked : value;
+    
+        setFormData(prevFormData => ({
+            ...prevFormData,
+            [id]: newValue === 'on' ? true : newValue, // Convert 'on' to true, otherwise use the value directly
+        }));
+    };
+    
+
+    const refreshBasicCourse = async () => {
+        try {
+            const response = await getAllBasicCourse();
+            setBasicCourseData(response.data);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+        refreshBasicCourse();
+    }, [])
+
+    const editRow = (index) => {
+
+    }
+
+    useEffect(() => {
+        // Fetch titles data from the API when the component mounts
+        if (hasMounted) {
+            getAllFaculty()
+                .then(response => {
+                    const data = response.data; // Access data from the response
+                    setFaculty(data);
+                })
+                .catch(error => console.error('Error fetching Faculty:', error));
+        }
+    }, [hasMounted]);
+
+    useEffect(() => {
+        // Fetch titles data from the API when the component mounts
+        if (hasMounted) {
+            getAllDegree()
+                .then(response => {
+                    const data = response.data; // Access data from the response
+                    setDegree(data);
+                })
+                .catch(error => console.error('Error fetching Degree:', error));
+        }
+    }, [hasMounted]);
+
+    useEffect(() => {
+        // Fetch titles data from the API when the component mounts
+        if (hasMounted) {
+            getAllCashbook()
+                .then(response => {
+                    const data = response.data; // Access data from the response
+                    setCashbook(data);
+                })
+                .catch(error => console.error('Error fetching Cashbook:', error));
+        }
+    }, [hasMounted]);
+
+    const courseLevels = [
+        { value: "UNDER GRADUATE", label: "Undergraduate" },
+        { value: "POST GRADUATE", label: "Postgraduate" },
+        { value: "DIPLOMA", label: "Diploma" }
+    ];
 
     return (
         <Container fluid className="p-6">
@@ -26,61 +157,85 @@ const BasicCourse = () => {
                 <Breadcrumb.Item active>Basic Course</Breadcrumb.Item>
             </Breadcrumb>
 
-
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
                     <Card>
                         <Card.Body>
                             <div>
                                 {hasMounted &&
-                                    <Form>
+                                    <Form onSubmit={handleSubmit}>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Faculty<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter Receipt Book Code" id="certificatecode" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Faculty<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select id='faculty' value={formData.faculty} onChange={handleInputChange} required >
+                                                    <option value="" disabled>Please Select a Faculty</option>
+                                                    {faculty.map(faculty => (
+                                                        <option key={faculty.id} value={faculty.id}>{faculty.facultyStream}</option>
+                                                    ))}
+                                                </Form.Select>
                                             </Col>
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Degree<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="email" placeholder="Please Enter Receipt Book Name" id="certificatename" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Degree<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select id='degree' value={formData.degree} onChange={handleInputChange} required >
+                                                    <option value="" disabled>Please Select a Degree</option>
+                                                    {degree.map(degree => (
+                                                        <option key={degree.id} value={degree.id}>{degree.degreeDiplomaName}</option>
+                                                    ))}
+                                                </Form.Select>
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Reciept Book<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter Cash Receipt No." id="certificatecode" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Reciept Book<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select id='cashbook' value={formData.cashbook} onChange={handleInputChange} required >
+                                                    <option value="" disabled>Please Select a Cashbook</option>
+                                                    {cashbook.map(cashbook => (
+                                                        <option key={cashbook.id} value={cashbook.id}>{cashbook.receiptBookName}</option>
+                                                    ))}
+                                                </Form.Select>
                                             </Col>
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Course Level</Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="email" placeholder="Please Enter Bank Rececipt No." id="certificatename" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course Level</Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select id="courseLevel" value={formData.courseLevel} onChange={handleInputChange} required>
+                                                    <option value="" disabled>Please Select a Course Level</option>
+                                                    {courseLevels.map(courseLevel => (
+                                                        <option key={courseLevel.value} value={courseLevel.value}>{courseLevel.label}</option>
+                                                    ))}
+                                                </Form.Select>
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Basic Course<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Basic Course" id="certificatecode" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Basic Course<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Control type="text" placeholder="Please Enter Basic Course" id="basicCourse" value={formData.basicCourse} onChange={handleInputChange} required />
                                             </Col>
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Short Name<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Control type="email" placeholder="Please Enter Short Name" id="certificatename" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Short Name<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Control type="text" placeholder="Please Enter Short Name" id="shortName" value={formData.shortName} onChange={handleInputChange} required />
                                             </Col>
                                         </Row>
 
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Serial No.<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter Serial No." id="certificatecode" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Serial No.<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Control type="text" placeholder="Please Enter Serial No." id="serialNumber" value={formData.serialNumber} onChange={handleInputChange} required />
                                             </Col>
                                         </Row>
-                                       
+
                                         <Row className='mb-3'>
                                             <Form.Check.Label className="col-sm-3 col-form-label form-label" >Active</Form.Check.Label>
                                             <Col md={9} xs={12}>
-                                                <Form.Check className="col-sm-3 col-form-label form-label" type="checkbox" id="active">
-                                                    <Form.Check.Input type="checkbox" />
-                                                    <Form.Check.Label >Check If Active</Form.Check.Label>
-                                                </Form.Check>
+                                                <Form.Check
+                                                    className="col-sm-3 col-form-label form-label"
+                                                    type="checkbox"
+                                                    id="active"
+                                                    checked={formData.active}
+                                                    onChange={handleInputChange}
+                                                />
+                                                <Form.Check.Label >Check If Active</Form.Check.Label>
                                             </Col>
                                         </Row>
+
 
                                         <Row className="align-items-center">
                                             <Col md={{ offset: 4, span: 8 }} xs={12} className="mt-4">
