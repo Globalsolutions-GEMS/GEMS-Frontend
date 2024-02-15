@@ -14,18 +14,20 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-const SMSSendReport = () => {
+const StudentEligibilityReport = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="SMS Send Report" />
+      <PageHeading heading="Student Eligibility Report" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Student Report</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Admission</Breadcrumb.Item>
-        <Breadcrumb.Item active>SMS Send Report</Breadcrumb.Item>
+        <Breadcrumb.Item active>
+        Student Eligibility Report
+        </Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -39,7 +41,7 @@ const SMSSendReport = () => {
                       <Col>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Course/Year/Standard
+                            Session<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Select
@@ -48,64 +50,44 @@ const SMSSendReport = () => {
                             ></Form.Select>
                           </Col>
                         </Row>
-
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            From Date
+                            Branch/Basic Course<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Control type="date" />
+                            <Form.Select
+                              id="session    "
+                              required
+                            ></Form.Select>
                           </Col>
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            To Date
+                            Course/Year<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Control type="date" />
+                            <Form.Select
+                              id="session    "
+                              required
+                            ></Form.Select>
                           </Col>
                         </Row>
+                       
+                       
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
-                            Format
-                          </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Select type="text" />
-                          </Col>
-                        </Row>
-                        <Row>
-                          <Form.Label className="col-sm-4 col-form-label form-label">
-                            Report Format
-                          </Form.Label>
-                          <Col sm={2}>
-                            <Form.Check
-                              label="Details"
-                              type="radio"
-                              name="radio"
-                            />
-                          </Col>
-                          <Col sm={2}>
-                            <Form.Check
-                              label="Summary"
-                              type="radio"
-                              name="radio"
-                            />
-                          </Col>
-                          <Col sm={4}>
-                            <Form.Check
-                              label="User Wise"
-                              type="radio"
-                              name="radio"
-                            />
-                          </Col>
+                          <Form.Check
+                            className="ms-3 col-sm-3 col-form-label form-label"
+                            type="checkbox"
+                            id="active"
+                          >
+                            <Form.Check.Input type="checkbox" />
+                            <Form.Check.Label>Export to Excel</Form.Check.Label>
+                          </Form.Check>
                         </Row>
 
                         <Row className="mb-3">
                           <Col className="d-flex align-items-center justify-content-center">
-                            <Button variant="primary" type="submit">
-                              Report
-                            </Button>
-
+                           
                             <Button
                               variant="secondary"
                               type=""
@@ -136,4 +118,4 @@ const SMSSendReport = () => {
   );
 };
 
-export default SMSSendReport;
+export default StudentEligibilityReport;

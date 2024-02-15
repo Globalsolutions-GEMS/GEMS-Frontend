@@ -260,6 +260,16 @@ export const DashboardMenu = [
 							//extra//{ id: uuid(), link: '/pages/academic/studentreport/admission/coursewisestudentadmissionreport', name: 'Coursewise Student Admission Report' },
 							{ id: uuid(), link: '/pages/academic/studentreport/admission/studentrollnumberreport', name: 'Student Roll Number Report' },
 							{ id: uuid(), link: '/pages/academic/studentreport/admission/smssendreport', name: 'SMS Send Report' },
+							// { id: uuid(), link: '/pages/academic/studentreport/admission/lateraladmissionreport', name: 'Lateral admission Report' },
+							// { id: uuid(), link: '/pages/academic/studentreport/admission/photosignreport', name: 'Photo Sign Report' },
+							// { id: uuid(), link: '/pages/academic/studentreport/admission/studentapplycertificatereport', name: 'Student Apply Certificate Report' },
+							// { id: uuid(), link: '/pages/academic/studentreport/admission/studentadmissioncancellationrequestreport', name: 'Student Admission Cancellation Request Report' },
+							// { id: uuid(), link: '/pages/academic/studentreport/admission/studenteligibilityreport', name: 'Student Eligibility Report' },
+
+
+
+
+
 							
 
 
