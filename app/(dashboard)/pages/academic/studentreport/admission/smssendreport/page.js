@@ -76,7 +76,7 @@ const SMSSendReport = () => {
                           </Col>
                         </Row>
                        <Row>
-                       <Form.Label className="col-sm-2 col-form-label form-label">
+                       <Form.Label className="col-sm-4 col-form-label form-label">
                         Report Format
                       </Form.Label>
                       <Col sm={2}>
@@ -93,7 +93,7 @@ const SMSSendReport = () => {
                           name="radio"
                         />
                       </Col>
-                      <Col sm={2}>
+                      <Col sm={4}>
                         <Form.Check
                           label="User Wise"
                           type="radio"

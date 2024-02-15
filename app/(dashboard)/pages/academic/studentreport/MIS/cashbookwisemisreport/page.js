@@ -111,6 +111,7 @@ const CashBookWiseMISReport = () => {
                       </Col>
                     </Row>
                    <Row  className="mb-3">
+                    <Col sm={6}></Col>
                    <Form.Label className="col-sm-2 col-form-label form-label">
                         Report Type
                       </Form.Label>

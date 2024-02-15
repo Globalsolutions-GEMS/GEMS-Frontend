@@ -32,6 +32,7 @@ export const DashboardMenu = [
 						link: '#',
 						title: 'Academic Data',
 						children: [
+							{ id: uuid(), link: '/pages/academic/master/commonmaster/bankdetails', name: 'Bank Details' },
 							{ id: uuid(), link: '/pages/academic/master/academicdata/academicsession', name: 'Academic Session' },
 							{ id: uuid(), link: '/pages/academic/master/academicdata/paymenttype', name: 'Payment Type' },
 							{ id: uuid(), link: '/pages/academic/master/academicdata/studenttype', name: 'Student Type' },
@@ -48,7 +49,6 @@ export const DashboardMenu = [
 						title: 'Common Master',
 						children: [
 							{ id: uuid(), link: '/pages/academic/master/commonmaster/caste', name: 'Caste' },
-							{ id: uuid(), link: '/pages/academic/master/commonmaster/bankdetails', name: 'Bank Details' },
 							// { id: uuid(), link: '/pages/academic/master/commonmaster/castecategory', name: 'Caste Category' },
 							// { id: uuid(), link: '/pages/academic/master/commonmaster/subcaste', name: 'Sub Caste' },
 							{ id: uuid(), link: '/pages/academic/master/commonmaster/title', name: 'Title' },
@@ -270,13 +270,11 @@ export const DashboardMenu = [
 						link: '#',
 						title: 'MIS',
 						children: [
-							// { id: uuid(), link: '/pages/academic/studentreport/MIS/studentmis', name: 'Student MIS' },
-							// { id: uuid(), link: '/pages/academic/studentreport/MIS/cashbookwisemisreport', name: 'Cash BookWise MIS Report' },
-							// { id: uuid(), link: '/pages/academic/studentreport/MIS/studentmiscastewise', name: 'Student MIS Caste Wise' },
-							// { id: uuid(), link: '/pages/academic/studentreport/MIS/subjectwisereport', name: 'Subject Wise Report' },
-							// { id: uuid(), link: '/pages/academic/studentreport/MIS/subjectsectionwisemisreport', name: 'Subject SectionWise MIS Report' },
-							
-			
+							{ id: uuid(), link: '/pages/academic/studentreport/MIS/studentmis', name: 'Student MIS' },
+							{ id: uuid(), link: '/pages/academic/studentreport/MIS/cashbookwisemisreport', name: 'Cash BookWise MIS Report' },
+							{ id: uuid(), link: '/pages/academic/studentreport/MIS/studentmiscastewise', name: 'Student MIS Caste Wise' },
+							{ id: uuid(), link: '/pages/academic/studentreport/MIS/subjectwisereport', name: 'Subject Wise Report' },
+							{ id: uuid(), link: '/pages/academic/studentreport/MIS/subjectsectionwisemisreport', name: 'Subject SectionWise MIS Report' },
 						]
 					}
 				]
