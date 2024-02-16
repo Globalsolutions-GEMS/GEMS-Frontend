@@ -89,6 +89,8 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/preadmission/course/copycashbookrights', name: 'Copy Cashbook Rights' },
 							{ id: uuid(), link: '/pages/academic/preadmission/course/coursecertificate', name: 'Course Certificate' },
 							{ id: uuid(), link: '/pages/academic/preadmission/course/usermapping', name: 'User Mapping' },
+							{ id: uuid(), link: '/pages/academic/preadmission/course/prnnumberconfig', name: 'PRN Number Config' },
+
 						]
 					},
 					{
@@ -177,18 +179,24 @@ export const DashboardMenu = [
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/studentinformation', name: 'Student Information' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/studentsubjectupdation', name: 'Student Subject Updation' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/rollnoupdation', name: 'Roll No Updation' },
-							{ id: uuid(), link: '', name: 'Subject Groupwise Roll No' },
-							{ id: uuid(), link: '/', name: 'Subject Groupwise Section' },
-							{ id: uuid(), link: '/', name: 'Section Allocation(YE/PROADM)' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/bulkupdation', name: 'Bulk Updation' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/selectedfieldreport', name: 'Selected Field Report' },
-							{ id: uuid(), link: '/', name: 'Student Document Receipt' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/outstandingfeesremainder', name: 'Outstanding Fees Remiander' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/scholarshipdataentry', name: 'Scholarship Data Entry' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/bulkemail', name: 'Bulk Email' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/scholarshipdetailsentry', name: 'Scholarship Details Entry' },
 							{ id: uuid(), link: '/pages/academic/transaction/dataentry/railwayconcessionapproval', name: 'Railway Concession Approval' },
-							{ id: uuid(), link: '/pages/academic/transaction/dataentry/studentdocumentreceipt', name: 'Student Document Details' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/studentdocumentdetails', name: 'Student Document Details' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/studentdocumentreceipt', name: 'Student Document Receipt' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/prnallotment', name: 'PRN Allotment' },
+							{ id: uuid(), link: '/pages/academic/transaction/dataentry/subjectgroupwisesection', name: 'Subject Groupwise Section' },
+							// { id: uuid(), link: '/pages/academic/transaction/dataentry/sectionallocation', name: 'Section Allocation(YE/PROADM)' },
+							// { id: uuid(), link: '', name: 'Subject Groupwise Roll No' },
+
+
+
+
+
 						]
 					},
 				]
