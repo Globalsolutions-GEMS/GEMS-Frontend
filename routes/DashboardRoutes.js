@@ -816,7 +816,11 @@ export const DashboardMenu = [
                 link: "/pages/nep/master/masters/subjectcategory",
                 name: "Subject Category",
               },
-
+              {
+                id: uuid(),
+                link: "/pages/nep/master/masters/discipline",
+                name: "Discipline",
+              },
             ],
           },
         ],
