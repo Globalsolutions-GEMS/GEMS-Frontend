@@ -117,6 +117,7 @@ const OutstandingFeesRemainder = () => {
                                                 <Form.Check
                                                     label="All Students"
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>
                                             <Col sm={3}></Col >
@@ -124,6 +125,7 @@ const OutstandingFeesRemainder = () => {
                                                 <Form.Check
                                                     label="Admitted Students"
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>
                                             <Col sm={3}></Col >
@@ -131,6 +133,7 @@ const OutstandingFeesRemainder = () => {
                                                 <Form.Check
                                                     label="Provisionally Admitted"
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>
                                         </Row>
@@ -148,6 +151,7 @@ const OutstandingFeesRemainder = () => {
                                                 <Form.Check
                                                     label="Student Mobile No."
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>
                                             <Col sm={3}></Col >
@@ -155,6 +159,7 @@ const OutstandingFeesRemainder = () => {
                                                 <Form.Check
                                                     label="Parent Mobile No."
                                                     type="radio"
+                                                    name="radio"
                                                 />
                                             </Col>
                                         </Row>

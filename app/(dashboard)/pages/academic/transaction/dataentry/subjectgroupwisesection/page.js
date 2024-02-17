@@ -74,14 +74,13 @@ const SubjectGroupWiseSection = () => {
                       </Col>
                       <Col></Col>
                     </Row>
-                    <Row className="mb-3">
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                       
+                    <Row className="mb-3 ">
+                    <Form.Label className="col-sm-2 col-form-label form-label">
                       </Form.Label>
-                      <Col>
+                      <Col sm={2}>
                         <Form.Check label="Subject" type="radio" name="radio" />
                       </Col>
-                      <Col>
+                      <Col sm={2}>
                         <Form.Check label="Subject Group" type="radio"name="radio" />
                       </Col>
                      
@@ -104,7 +103,7 @@ const SubjectGroupWiseSection = () => {
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Subject
                       </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
+                      <Col sm={2} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
@@ -119,9 +118,9 @@ const SubjectGroupWiseSection = () => {
                         Roll No From
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
+                        <Form.Control
                           type="text"
-                          placeholder="Please Enter "
+                          placeholder="Please Enter Roll No From"
                           id="session"
                           required
                         />
@@ -133,9 +132,9 @@ const SubjectGroupWiseSection = () => {
                         Roll No To
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
+                        <Form.Control
                           type="text"
-                          placeholder="Please Enter "
+                          placeholder="Please Enter Roll No To"
                           id="session"
                           required
                         />

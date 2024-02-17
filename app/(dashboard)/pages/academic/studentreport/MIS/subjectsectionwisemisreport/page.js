@@ -88,10 +88,6 @@ const SubjectSectionWiseMISReport = () => {
                       </Col>
                       <Col></Col>
                     </Row>
-
-                   
-                   
-                   
                     <Row>
                       <Form.Check
                         className="m-3 col-sm-3 col-form-label form-label"
@@ -99,7 +95,7 @@ const SubjectSectionWiseMISReport = () => {
                         id="active"
                       >
                         <Form.Check.Input type="checkbox" />
-                        <Form.Check.Label>Export To Excel</Form.Check.Label>
+                        <Form.Check.Label sm={4}>Export To Excel</Form.Check.Label>
                       </Form.Check>
                     </Row>
                     <Row className="mb-3">

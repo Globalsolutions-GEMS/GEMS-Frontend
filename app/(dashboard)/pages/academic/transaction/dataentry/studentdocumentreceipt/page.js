@@ -41,20 +41,27 @@ const StudentDocumentReceipt = () => {
                           required
                         />
                       </Col>
-                      
+
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Search Criteria<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col>
-                        <Form.Check label="Student Id" type="radio" name="radio" />
+                      <Col sm>
+                        <Form.Check
+                          label="Student Id"
+                          type="radio"
+                          name="radio"
+                        />
                       </Col>
                       <Col>
-                        <Form.Check label="Name" type="radio"name="radio" />
+                        <Form.Check label="Name" type="radio" name="radio" />
                       </Col>
                       <Col>
-                        <Form.Check label="User Defined Field" type="radio"name="radio" />
+                        <Form.Check
+                          label="User Defined Field"
+                          type="radio"
+                          name="radio"
+                        />
                       </Col>
-
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
@@ -79,41 +86,38 @@ const StudentDocumentReceipt = () => {
                           required
                         />
                       </Col>
-                      </Row>
-                      <Row className="mb-3">
-                          <Form.Label className="col-sm-2 col-form-label form-label">
-                            Course<span className="text-danger">*</span>
-                          </Form.Label>
-                          <Col sm={4} className="mb-3 mb-lg-0">
-                            <Form.Select
-                              id="session    "
-                              required
-                            ></Form.Select>
-                          </Col>
-                        </Row>
-                        <Row className="mb-3">
-                                            <Col className="d-flex align-items-center justify-content-center">
-                                                <Button variant="primary" type="submit">
-                                                    Submit
-                                                </Button>
-                                               
-                                                <Button
-                                                    variant="secondary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
-                                                    Cancel
-                                                </Button>
-                                                <Button
-                                                    variant="secondary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
-                                                    Report
-                                                </Button>
-                                            </Col>
-                                            <Col></Col>
-                                        </Row>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Course<span className="text-danger">*</span>
+                      </Form.Label>
+                      <Col sm={4} className="mb-3 mb-lg-0">
+                        <Form.Select id="session    " required></Form.Select>
+                      </Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Col className="d-flex align-items-center justify-content-center">
+                        <Button variant="primary" type="submit">
+                          Submit
+                        </Button>
+
+                        <Button
+                          variant="secondary"
+                          type=""
+                          style={{ marginLeft: "10px" }}
+                        >
+                          Cancel
+                        </Button>
+                        <Button
+                          variant="secondary"
+                          type=""
+                          style={{ marginLeft: "10px" }}
+                        >
+                          Report
+                        </Button>
+                      </Col>
+                      
+                    </Row>
                   </Form>
                 )}
               </div>
