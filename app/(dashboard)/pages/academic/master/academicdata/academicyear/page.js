@@ -8,7 +8,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const AcademicSession = () => {
+const AcademicYear = () => {
     const hasMounted = useMounted();
     const [academicsessionData, setAcademicSessionData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -117,12 +117,12 @@ const AcademicSession = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Academic Session" />
+            <PageHeading heading="Academic Year" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Academic Data</Breadcrumb.Item>
-                <Breadcrumb.Item active>Academic Session</Breadcrumb.Item>
+                <Breadcrumb.Item active>Academic Year</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
@@ -147,14 +147,14 @@ const AcademicSession = () => {
                                         </Row>
 
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" >Start Date</Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Date Selection</Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Control type="date"  placeholder="Please Enter Start Date" id="startDate" value={formData.startDate} onChange={handleInputChange} required />
                                             </Col>
                                         </Row>
 
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" >End Date</Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Date Selection</Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Control type="date" placeholder="Please Enter End Date" id="endDate" value={formData.endDate} onChange={handleInputChange} required />
                                             </Col>
@@ -248,4 +248,4 @@ const AcademicSession = () => {
     )
 }
 
-export default AcademicSession
+export default AcademicYear

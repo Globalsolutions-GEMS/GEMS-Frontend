@@ -11,19 +11,19 @@ import useMounted from 'hooks/useMounted';
 import { CheckCircleFill } from 'react-bootstrap-icons';
 
 
-const Section = () => {
+const Division = () => {
     const hasMounted = useMounted();
 
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Section" />
+            <PageHeading heading="Division" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Academic Data</Breadcrumb.Item>
-                <Breadcrumb.Item active>Section</Breadcrumb.Item>
+                <Breadcrumb.Item active>Division</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -76,4 +76,4 @@ const Section = () => {
     )
 }
 
-export default Section
+export default Division

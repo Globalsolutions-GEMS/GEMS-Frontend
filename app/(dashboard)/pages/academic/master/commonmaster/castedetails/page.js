@@ -52,7 +52,7 @@ function a11yProps(index) {
     };
 }
 
-const Caste = () => {
+const CasteDetails = () => {
     const hasMounted = useMounted();
 
     const [value, setValue] = React.useState(0);
@@ -65,12 +65,12 @@ const Caste = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Caste" />
+            <PageHeading heading="Caste Details" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Common Master</Breadcrumb.Item>
-                <Breadcrumb.Item active>Caste</Breadcrumb.Item>
+                <Breadcrumb.Item active>Caste Details</Breadcrumb.Item>
             </Breadcrumb>
 
             <Box sx={{ width: '100%' }}>
@@ -92,4 +92,4 @@ const Caste = () => {
     )
 }
 
-export default Caste
+export default CasteDetails

@@ -39,19 +39,19 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/master/academicdata/academicsession",
-                name: "Academic Session",
+                link: "/pages/academic/master/academicdata/academicyear",
+                name: "Academic Year",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/master/academicdata/paymenttype",
-                name: "Payment Type",
+                link: "/pages/academic/master/academicdata/feecategory",
+                name: "Fee Category",
               },
-              {
-                id: uuid(),
-                link: "/pages/academic/master/academicdata/studenttype",
-                name: "Student Type",
-              },
+              // {
+              //   id: uuid(),
+              //   link: "/pages/academic/master/academicdata/studenttype",
+              //   name: "Student Type",
+              // },
               {
                 id: uuid(),
                 link: "/pages/academic/master/academicdata/concession",
@@ -64,8 +64,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/master/academicdata/section",
-                name: "Section",
+                link: "/pages/academic/master/academicdata/division",
+                name: "Division",
               },
               {
                 id: uuid(),
@@ -86,8 +86,8 @@ export const DashboardMenu = [
             children: [
               {
                 id: uuid(),
-                link: "/pages/academic/master/commonmaster/caste",
-                name: "Caste",
+                link: "/pages/academic/master/commonmaster/castedetails",
+                name: "Caste Details",
               },
               // { id: uuid(), link: '/pages/academic/master/commonmaster/castecategory', name: 'Caste Category' },
               // { id: uuid(), link: '/pages/academic/master/commonmaster/subcaste', name: 'Sub Caste' },
