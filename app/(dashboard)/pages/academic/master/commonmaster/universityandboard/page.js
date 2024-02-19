@@ -56,16 +56,20 @@ const UniversityAndBoard = () => {
                                             </Col>
                                         </Row>
 
-                                        <Row className='mb-3'>
-                                            <Form.Check.Label className="col-sm-3 col-form-label form-label" >Active</Form.Check.Label>
-                                            <Col md={9} xs={12}>
-                                                <Form.Check className="col-sm-3 col-form-label form-label" type="checkbox" id="active">
-                                                    <Form.Check.Input type="checkbox" />
-                                                    <Form.Check.Label >Check If Active</Form.Check.Label>
-                                                </Form.Check>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-3 col-form-label form-label">
+                                                Active
+                                            </Form.Label>
+                                            <Col style={{ marginBottom: '20px' }}>
+                                                <Form.Check
+                                                    type="switch"
+                                                    id="checkIfActive"
+                                                    label="Check If Active"
+                                                    defaultChecked
+                                                />
                                             </Col>
                                         </Row>
-                                      
+
                                         <Row className="align-items-center">
 
                                             <Col md={{ offset: 4, span: 8 }} xs={12} className="mt-4">
