@@ -182,8 +182,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/course/cashbook",
-                name: "Cashbook",
+                link: "/pages/academic/preadmission/course/receiptbook",
+                name: "Receipt Book",
               },
               {
                 id: uuid(),
@@ -217,8 +217,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/course/usermapping",
-                name: "User Mapping",
+                link: "/pages/academic/preadmission/course/useraccess",
+                name: "User Access",
               },
               {
                 id: uuid(),
@@ -254,8 +254,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/fees/standardfee",
-                name: "Standard Fee",
+                link: "/pages/academic/preadmission/fees/feestructure",
+                name: "Fee Structure",
               },
               {
                 id: uuid(),
@@ -276,13 +276,13 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/otherfeesdefination/installmentfees",
-                name: "Installment Fees",
+                link: "/pages/academic/preadmission/otherfeesdefination/courseinstallment",
+                name: "Course Installment",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/otherfeesdefination/studentwiseinstallmentfees",
-                name: "Studentwise Installment Fees",
+                link: "/pages/academic/preadmission/otherfeesdefination/studentinstallment",
+                name: "Student Installment",
               },
               {
                 id: uuid(),
@@ -291,8 +291,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/otherfeesdefination/studentwiseinstallmentclear",
-                name: "Studentwise Installment Clear",
+                link: "/pages/academic/preadmission/otherfeesdefination/erasestudentinstallment",
+                name: "Erase Student Installment",
               },
             ],
           },

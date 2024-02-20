@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Cashbook = () => {
+const ReceiptBook = () => {
     const hasMounted = useMounted();
     const [cashbookData, setCashBookData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
@@ -134,12 +134,12 @@ const Cashbook = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Cashbook" />
+            <PageHeading heading="Receipt Book" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Course</Breadcrumb.Item>
-                <Breadcrumb.Item active>Cashbook</Breadcrumb.Item>
+                <Breadcrumb.Item active>Receipt Book</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -285,7 +285,7 @@ const Cashbook = () => {
     )
 }
 
-export default Cashbook
+export default ReceiptBook
 
 
 

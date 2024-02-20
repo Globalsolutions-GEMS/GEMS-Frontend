@@ -11,19 +11,19 @@ import useMounted from 'hooks/useMounted';
 import { CheckCircleFill } from 'react-bootstrap-icons';
 
 
-const StudentwiseInstallmentFees = () => {
+const StudentInstallment = () => {
     const hasMounted = useMounted();
 
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Studentwise Installment Fees" />
+            <PageHeading heading="Student Installment" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Other Fees Definition</Breadcrumb.Item>
-                <Breadcrumb.Item active>Studentwise Installment Fees</Breadcrumb.Item>
+                <Breadcrumb.Item active>Student Installment</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -37,10 +37,18 @@ const StudentwiseInstallmentFees = () => {
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Session<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                                <Form.Select type="text" placeholder="Please Enter Session" id="session" required />
                                             </Col>
 
                                         </Row>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Programme<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={3} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter Programme" id="programme" required />
+                                            </Col>
+
+                                        </Row>
+              
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Course<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
@@ -48,19 +56,14 @@ const StudentwiseInstallmentFees = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Fee Type<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Fee Category<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Select Fee Type" id="feetype" required />
+                                                <Form.Select type="text" placeholder="Please Select Fee Category" id="feetype" required />
                                             </Col>
 
                                         </Row>
 
-                                        <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Student Type<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Select Student Type" id="studenttype" required />
-                                            </Col>
-                                        </Row>
+                                        
 
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Fee Head<span className="text-danger">*</span></Form.Label>
@@ -140,4 +143,4 @@ const StudentwiseInstallmentFees = () => {
     )
 }
 
-export default StudentwiseInstallmentFees
+export default StudentInstallment

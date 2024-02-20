@@ -18,7 +18,7 @@ const CertificateFee = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Cashbook" />
+            <PageHeading heading="Certificate Fee" />
             <Breadcrumb>
             <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
@@ -55,7 +55,7 @@ const CertificateFee = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Basic Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Programme<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter Document Receipt No." id="certificatecode" required />
                                             </Col>

@@ -148,14 +148,14 @@ const AcademicYear = () => {
                                             </Row>
 
                                             <Row className="mb-3">
-                                                <Form.Label className="col-sm-3 col-form-label form-label" >Date Selection</Form.Label>
+                                                <Form.Label className="col-sm-3 col-form-label form-label" >Start Date</Form.Label>
                                                 <Col md={9} xs={12}>
                                                     <Form.Control type="date" placeholder="Please Enter Start Date" id="startDate" value={formData.startDate} onChange={handleInputChange} required />
                                                 </Col>
                                             </Row>
 
                                             <Row className="mb-3">
-                                                <Form.Label className="col-sm-3 col-form-label form-label" >Date Selection</Form.Label>
+                                                <Form.Label className="col-sm-3 col-form-label form-label" >End Date</Form.Label>
                                                 <Col md={9} xs={12}>
                                                     <Form.Control type="date" placeholder="Please Enter End Date" id="endDate" value={formData.endDate} onChange={handleInputChange} required />
                                                 </Col>

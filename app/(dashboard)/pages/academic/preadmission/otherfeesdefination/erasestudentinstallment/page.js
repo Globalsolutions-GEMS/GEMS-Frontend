@@ -10,18 +10,18 @@ import { PageHeading } from "widgets";
 import useMounted from "hooks/useMounted";
 import { CheckCircleFill } from "react-bootstrap-icons";
 
-const StudentwiseInstallmentClear = () => {
+const EraseStudentInstallment = () => {
     const hasMounted = useMounted();
 
     return (
         <Container fluid className="p-6">
             {/* Page Heading */}
-            <PageHeading heading="Studentwise Installment Clear" />
+            <PageHeading heading="Erase Student Installment" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Other Fees Definition</Breadcrumb.Item>
-                <Breadcrumb.Item active>Studentwise Installment Clear</Breadcrumb.Item>
+                <Breadcrumb.Item active>Erase Student Installment</Breadcrumb.Item>
             </Breadcrumb>
 
             <Row className="mb-8">
@@ -52,12 +52,12 @@ const StudentwiseInstallmentClear = () => {
                                                 className="col-sm-3 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Basic Course<span className="text-danger">*</span>
+                                                Programme<span className="text-danger">*</span>
                                             </Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select
                                                     type="text"
-                                                    placeholder="Please Select"
+                                                    placeholder="Please Select Programme"
                                                     id="session"
                                                     required
                                                 />
@@ -171,4 +171,4 @@ const StudentwiseInstallmentClear = () => {
     );
 };
 
-export default StudentwiseInstallmentClear;
+export default EraseStudentInstallment;

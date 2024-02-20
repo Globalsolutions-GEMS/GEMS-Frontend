@@ -140,7 +140,7 @@ const FeeCategory = () => {
                   <Form onSubmit={handleSubmit}>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-3 col-form-label form-label">
-                        Payment Type
+                        Fee Category
                       </Form.Label>
                       <Col sm={9} className="mb-3 mb-lg-0">
                         <Form.Control
@@ -233,7 +233,7 @@ const FeeCategory = () => {
           <thead>
             <tr>
               <th>
-                <b>Payment Type</b>
+                <b>Fee Category</b>
               </th>
               <th>
                 <b>Description</b>
