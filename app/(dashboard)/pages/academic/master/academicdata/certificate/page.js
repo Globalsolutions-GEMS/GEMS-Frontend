@@ -133,7 +133,7 @@ const Certificate = () => {
                       <Form.Label className="col-sm-3 col-form-label form-label">
                         Active
                       </Form.Label>
-                      <Col style={{ marginBottom: '20px' }}>
+                      <Col className='mt-2'>
                         <Form.Check
                           type="switch"
                           id="checkIfActive"
@@ -142,7 +142,6 @@ const Certificate = () => {
                         />
                       </Col>
                     </Row>
-
                     <Row className="align-items-center">
                       <Col md={{ offset: 4, span: 8 }} xs={12} className="mt-4">
                         <Button variant="primary" type="submit">

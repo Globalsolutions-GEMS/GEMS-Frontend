@@ -148,7 +148,7 @@ export const DashboardMenu = [
           {
             id: uuid(),
             link: "#",
-            title: "Course",
+            title: "Course Configuration",
             children: [
               {
                 id: uuid(),
@@ -230,7 +230,7 @@ export const DashboardMenu = [
           {
             id: uuid(),
             link: "#",
-            title: "Fees",
+            title: "Fees Configuration",
             children: [
               {
                 id: uuid(),

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Card, Button, Table, Pagination, Breadcrumb, } from 'react-bootstrap';
 import { PageHeading } from 'widgets';
-import { createCashBook,getCashBook,updateCashBook } from 'app/api/cashbook';
+import { createCashBook, getCashBook, updateCashBook } from 'app/api/cashbook';
 import useMounted from 'hooks/useMounted';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { ToastContainer, toast } from 'react-toastify';
@@ -27,7 +27,7 @@ const ReceiptBook = () => {
         checkIfActive: false
     });
     const [editingRowIndex, setEditingRowIndex] = useState(null);
-    const [editingCashBook, setEditingCashBook] = useState(null); 
+    const [editingCashBook, setEditingCashBook] = useState(null);
     const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
     const success = () => toast.success("Data Submitted Successfully!!!");
@@ -38,15 +38,15 @@ const ReceiptBook = () => {
         event.preventDefault();
         try {
             if (editingCashBook) {
-                await updateCashBook(editingCashBook.id, formData); 
-                setEditingCashBook(null); 
+                await updateCashBook(editingCashBook.id, formData);
+                setEditingCashBook(null);
                 update()
             } else {
-                await createCashBook(formData); 
+                await createCashBook(formData);
                 success()
             }
             refreshCashBook();
-            setFormData({ 
+            setFormData({
                 receiptBookCode: '',
                 receiptBookName: '',
                 cashReceiptNo: '',
@@ -91,7 +91,7 @@ const ReceiptBook = () => {
 
     const editRow = (index) => {
         const editedCashBook = cashbookData[index];
-    
+
         setFormData({
             receiptBookCode: editedCashBook.receiptBookCode,
             receiptBookName: editedCashBook.receiptBookName,
@@ -102,7 +102,7 @@ const ReceiptBook = () => {
             receiptBookType: editedCashBook.receiptBookType,
             srNo: editedCashBook.srNo,
             checkIfGstApplicable: editedCashBook.checkIfGstApplicable,
-            checkIfActive:editedFaculty.checkIfActive,
+            checkIfActive: editedFaculty.checkIfActive,
         });
         setFormData(editedCashBook);
         setEditingCashBook(editedCashBook);
@@ -111,24 +111,24 @@ const ReceiptBook = () => {
 
     const handleCancel = () => {
         setFormData({
-        receiptBookCode: '',
-        receiptBookName: '',
-        cashReceiptNo: '',
-        bankReceiptNo: '',
-        documentReceiptNo: '',
-        hsnsacNo: '',
-        receiptBookType: '',
-        srNo: '',
-        checkIfGstApplicable: false,
-        checkIfActive: false
+            receiptBookCode: '',
+            receiptBookName: '',
+            cashReceiptNo: '',
+            bankReceiptNo: '',
+            documentReceiptNo: '',
+            hsnsacNo: '',
+            receiptBookType: '',
+            srNo: '',
+            checkIfGstApplicable: false,
+            checkIfActive: false
         });
         setEditingCashBook(null);
     };
-    
-        const indexOfLastItem = currentPage * itemsPerPage;
-        const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-        const currentItems = cashbookData.slice(indexOfFirstItem, indexOfLastItem);
-        const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = cashbookData.slice(indexOfFirstItem, indexOfLastItem);
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
         <Container fluid className="p-6">
@@ -150,7 +150,7 @@ const ReceiptBook = () => {
                             <div>
                                 {hasMounted &&
                                     <Form
-                                    onSubmit={handleSubmit}
+                                        onSubmit={handleSubmit}
                                     >
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Receipt Book Code<span className="text-danger">*</span></Form.Label>
@@ -202,26 +202,33 @@ const ReceiptBook = () => {
                                                 <Form.Control type="text" placeholder="Please Enter Sr. No." id="srNo" value={formData.srNo} onChange={handleInputChange} required />
                                             </Col>
                                         </Row>
-                                        <Row className='mb-3'>
-                                            <Form.Check.Label className=" col-form-label form-label" >GST Applicable</Form.Check.Label>
-                                            <Col sm={6}>
-                                                <Form.Check className=" col-form-label form-label" type="checkbox" id="checkIfGstApplicable" value={formData.checkIfGstApplicable} onChange={handleInputChange}>
-                                                    <Form.Check.Input type="checkbox" id="checkIfGstApplicable" checked={formData.checkIfGstApplicable} onChange={handleInputChange} />
-                                                    <Form.Check.Label >Check If GST Applicable</Form.Check.Label>
-                                                </Form.Check>
+
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label">
+                                                GST Applicable
+                                            </Form.Label>
+                                            <Col className='mt-2 col-sm-4'>
+                                                <Form.Check
+                                                    type="checkbox"
+                                                    id="checkIfActive"
+                                                    label="Check If GST Applicable"
+                                                />
                                             </Col>
-                                            <Form.Check.Label className=" col-form-label form-label" >Active</Form.Check.Label>
-                                            <Col sm={6}>
-                                                <Form.Check className=" col-form-label form-label" type="checkbox" id="checkIfActive" value={formData.checkIfActive} onChange={handleInputChange}>
-                                                    <Form.Check.Input type="checkbox" id="checkIfActive" checked={formData.checkIfActive} onChange={handleInputChange} />
-                                                    <Form.Check.Label >Check If Active</Form.Check.Label>
-                                                </Form.Check>
+                                            <Form.Label className="col-sm-2 col-form-label form-label">
+                                                Active
+                                            </Form.Label>
+                                            <Col className='mt-2 col-sm-4'>
+                                                <Form.Check
+                                                    type="switch"
+                                                    id="checkIfActive"
+                                                    label="Check If Active"
+                                                    defaultChecked
+                                                />
                                             </Col>
                                         </Row>
-
                                         <Row className="align-items-center">
-                                        <Col className="mt-4 d-flex align-items-center justify-content-center">
-                                            <Button variant="primary" type="submit">
+                                            <Col className="mt-4 d-flex align-items-center justify-content-center">
+                                                <Button variant="primary" type="submit">
                                                     {editingCashBook ? "Update" : "Submit"}
                                                 </Button>
                                                 <ToastContainer style={{ marginTop: '40px' }} />
@@ -242,11 +249,11 @@ const ReceiptBook = () => {
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                        <th><b>ReceiptBook Code</b></th>
-                        <th><b>ReceiptBook Name</b></th>
-                       
-                        <th><b>Receipt Book Type</b></th>
-                        <th><b>Gst Applicable</b></th>
+                            <th><b>ReceiptBook Code</b></th>
+                            <th><b>ReceiptBook Name</b></th>
+
+                            <th><b>Receipt Book Type</b></th>
+                            <th><b>Gst Applicable</b></th>
                             <th><b>Active</b></th>
                             <th className="col-2"><b>Action</b></th>
                         </tr>
@@ -256,7 +263,7 @@ const ReceiptBook = () => {
                             <tr key={cashbook.id}>
                                 <td>{cashbook.receiptBookCode}</td>
                                 <td>{cashbook.receiptBookName}</td>
-                                
+
                                 <td>{cashbook.receiptBookType}</td>
                                 <td>{cashbook.checkIfGstApplicable ? 'Applicable' : 'Not Applicable'}</td>
                                 <td>{cashbook.checkIfActive ? 'Active' : 'Deactive'}</td>

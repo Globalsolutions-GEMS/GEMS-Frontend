@@ -195,8 +195,8 @@ const FeeCategory = () => {
                       <Form.Label className="col-sm-3 col-form-label form-label">
                         Active
                       </Form.Label>
-                      <Col style={{ marginBottom: '20px' }}>
-                        <Form.Check 
+                      <Col className='mt-2'>
+                        <Form.Check
                           type="switch"
                           id="checkIfActive"
                           label="Check If Active"
