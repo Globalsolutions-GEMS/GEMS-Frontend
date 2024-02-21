@@ -10,6 +10,12 @@ const Title = () => {
     return (
         <Container fluid className="p-6">
             <PageHeading heading="Title" />
+            <Breadcrumb>
+                <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Common Master</Breadcrumb.Item>
+                <Breadcrumb.Item active>Title</Breadcrumb.Item>
+            </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
                     <Card>

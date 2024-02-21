@@ -100,8 +100,8 @@ const CourseCreation = () => {
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Fees</Breadcrumb.Item>
-                <Breadcrumb.Item active>Course Creation</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Fees Configuration</Breadcrumb.Item>
+                <Breadcrumb.Item active>Course Division</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -115,10 +115,10 @@ const CourseCreation = () => {
                                         <Row>
                                             <Col>
                                                 <Row className="mb-3">
-                                                    <Form.Label className="col-sm-3 col-form-label form-label" >Basic Course<span className="text-danger">*</span></Form.Label>
+                                                    <Form.Label className="col-sm-3 col-form-label form-label" >Programme<span className="text-danger">*</span></Form.Label>
                                                     <Col sm={9} className="mb-3 mb-lg-0">
                                                         <Form.Select id='basicCourse' value={formData.basicCourse} onChange={handleInputChange}  >
-                                                            <option value="" disabled>Please Select a Basic Course</option>
+                                                            <option value="" disabled>Please Select a Programme</option>
                                                             {basicCourse.map(basicCourse => (
                                                                 <option key={basicCourse.id} value={basicCourse.id}>{basicCourse.basicCourse}</option>
                                                             ))}
@@ -128,7 +128,7 @@ const CourseCreation = () => {
                                                 <Row className="mb-3">
                                                     <Form.Label className="col-sm-3 col-form-label form-label" >Duration<span className="text-danger">*</span></Form.Label>
                                                     <Col sm={9} className="mb-3 mb-lg-0">
-                                                        <Form.Control type="text" placeholder="Please Enter Duration" id="duration" value={formData.duration} onChange={handleInputChange}  />
+                                                        <Form.Control type="text" placeholder="Please Enter Duration" id="duration" value={formData.duration} onChange={handleInputChange} />
                                                     </Col>
                                                 </Row>
                                                 <Row className="mb-3">
@@ -153,13 +153,17 @@ const CourseCreation = () => {
                                                         </Form.Select>
                                                     </Col>
                                                 </Row>
-                                                <Row className='mb-3'>
-                                                    <Form.Check.Label className="col-sm-3 col-form-label form-label" >Active</Form.Check.Label>
-                                                    <Col md={9} xs={12}>
-                                                        <Form.Check className="col-form-label form-label" type="checkbox" id="checkIfActive" value={formData.checkIfActive} onChange={handleInputChange}>
-                                                            <Form.Check.Input type="checkbox" id="checkIfActive" value={formData.checkIfActive} onChange={handleInputChange}/>
-                                                            <Form.Check.Label >Check If Active</Form.Check.Label>
-                                                        </Form.Check>
+                                                <Row className="mb-3">
+                                                    <Form.Label className="col-sm-3 col-form-label form-label">
+                                                        Active
+                                                    </Form.Label>
+                                                    <Col className='mt-2'>
+                                                        <Form.Check
+                                                            type="switch"
+                                                            id="checkIfActive"
+                                                            label="Check If Active"
+                                                            defaultChecked
+                                                        />
                                                     </Col>
                                                 </Row>
 

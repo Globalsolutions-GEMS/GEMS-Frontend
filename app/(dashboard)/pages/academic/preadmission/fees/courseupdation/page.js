@@ -21,7 +21,7 @@ const CourseUpdation = () => {
             <Breadcrumb>
             <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Fees</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Fees Configuration</Breadcrumb.Item>
                 <Breadcrumb.Item active>Course Updation</Breadcrumb.Item>
             </Breadcrumb>
 
@@ -34,9 +34,9 @@ const CourseUpdation = () => {
                                 {hasMounted &&
                                     <Form>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Basic Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Programme<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter Receipt Book Code" id="certificatecode" required />
+                                                <Form.Select type="text" placeholder="Please Enter Programme" id="certificatecode" required />
                                             </Col>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                             <Button variant="secondary" type="" style={{ marginLeft: '10px' }}>

@@ -149,12 +149,12 @@ const BasicCourse = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Basic Course" />
+            <PageHeading heading="Programme" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Fees</Breadcrumb.Item>
-                <Breadcrumb.Item active>Basic Course</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Fees Configuration</Breadcrumb.Item>
+                <Breadcrumb.Item active>Programme</Breadcrumb.Item>
             </Breadcrumb>
 
             <Row className="mb-8">
@@ -205,9 +205,9 @@ const BasicCourse = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Basic Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Basic Course" id="basicCourse" value={formData.basicCourse} onChange={handleInputChange} required />
+                                                <Form.Control type="text" placeholder="Please Enter Programme" id="basicCourse" value={formData.basicCourse} onChange={handleInputChange} required />
                                             </Col>
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Short Name<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
@@ -222,17 +222,17 @@ const BasicCourse = () => {
                                             </Col>
                                         </Row>
 
-                                        <Row className='mb-3'>
-                                            <Form.Check.Label className="col-sm-3 col-form-label form-label" >Active</Form.Check.Label>
-                                            <Col md={9} xs={12}>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label">
+                                                Active
+                                            </Form.Label>
+                                            <Col className='mt-2'>
                                                 <Form.Check
-                                                    className="col-sm-3 col-form-label form-label"
-                                                    type="checkbox"
-                                                    id="active"
-                                                    checked={formData.active}
-                                                    onChange={handleInputChange}
+                                                    type="switch"
+                                                    id="checkIfActive"
+                                                    label="Check If Active"
+                                                    defaultChecked
                                                 />
-                                                <Form.Check.Label >Check If Active</Form.Check.Label>
                                             </Col>
                                         </Row>
 

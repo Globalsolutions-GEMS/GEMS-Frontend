@@ -48,7 +48,7 @@ const UniversityAndBoard = () => {
 
                                         <Row className='mb-3'>
                                             <Form.Check.Label className="col-sm-3 col-form-label form-label" >Home University</Form.Check.Label>
-                                            <Col md={9} xs={12}>
+                                            <Col md={9} xs={12} className='mt-2'>
                                                 <Form.Check className="col-sm-3 col-form-label form-label" type="checkbox" id="homeuniversity">
                                                     <Form.Check.Input type="checkbox" />
                                                     <Form.Check.Label >Check If Home University</Form.Check.Label>

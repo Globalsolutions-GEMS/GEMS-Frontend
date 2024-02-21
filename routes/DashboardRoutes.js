@@ -30,7 +30,7 @@ export const DashboardMenu = [
           {
             id: uuid(),
             link: "#",
-            title: "Academic Data",
+            title: "Academic Master",
             children: [
               {
                 id: uuid(),
@@ -235,7 +235,7 @@ export const DashboardMenu = [
               {
                 id: uuid(),
                 link: "/pages/academic/preadmission/fees/basiccourse",
-                name: "Basic Course",
+                name: "Programme",
               },
               {
                 id: uuid(),
@@ -250,7 +250,7 @@ export const DashboardMenu = [
               {
                 id: uuid(),
                 link: "/pages/academic/preadmission/fees/coursesection",
-                name: "Course Section",
+                name: "Course Division",
               },
               {
                 id: uuid(),
@@ -306,7 +306,7 @@ export const DashboardMenu = [
           {
             id: uuid(),
             link: "#",
-            title: "Collect Fees",
+            title: "Admission Fees",
             children: [
               {
                 id: uuid(),
@@ -356,7 +356,7 @@ export const DashboardMenu = [
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/collectfees/bulkadmfeesdemandupdation",
-                name: "Bulk Adm Fees Demand Updation",
+                name: "Change Fees - Bulk",
               }, //Student Type
               {
                 id: uuid(),

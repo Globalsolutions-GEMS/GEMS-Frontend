@@ -22,12 +22,12 @@ const BulkAdmissionFeeDemandUpdation = () => {
     return (
         <Container fluid className="p-6">
             {/* Page Heading */}
-            <PageHeading heading="Bulk Admission Fee Demand Updation" />
+            <PageHeading heading="Change Fees - Bulk" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Collect Fees</Breadcrumb.Item>
-                <Breadcrumb.Item active>Bulk Admission Fee Demand Updation</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Admission Fees</Breadcrumb.Item>
+                <Breadcrumb.Item active>Change Fees - Bulk</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
@@ -47,7 +47,7 @@ const BulkAdmissionFeeDemandUpdation = () => {
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select
                                                     type="text"
-                                                    placeholder="Enter Subject"
+                                                    placeholder="Enter Course"
                                                     id="session"
                                                     required
                                                 />
@@ -56,7 +56,7 @@ const BulkAdmissionFeeDemandUpdation = () => {
                                                 className="col-sm-3 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                {isSubjectGroup ? "Subject Group" : "Subject"}
+                                                {isSubjectGroup ? "Course Group" : "Course"}
                                             </Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select

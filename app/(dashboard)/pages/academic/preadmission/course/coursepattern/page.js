@@ -144,7 +144,17 @@ const handleCancel = () => {
                                             <Form.Label className="col-sm-3 col-form-label form-label" >No. Of Semester<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
                                                 {/* <Form.Select type="text" placeholder="Please Select" id="noOfSemester" value={formData.noOfSemester} onChange={handleInputChange} required /> */}
-                                                <Form.Control type="text" placeholder="Please Enter" id="noOfSemester" value={formData.noOfSemester} onChange={handleInputChange} required />
+                                                <Form.Select type="text" placeholder="Please Enter" id="noOfSemester" value={formData.noOfSemester} onChange={handleInputChange} required >
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                    <option>6</option>
+                                                    <option>7</option>
+                                                    <option>8</option>
+                                                </Form.Select>
+                                                
                                             </Col>
                                         </Row>
 

@@ -121,7 +121,7 @@ const AcademicYear = () => {
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Academic Data</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Academic Master</Breadcrumb.Item>
                 <Breadcrumb.Item active>Academic Year</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">

@@ -101,12 +101,12 @@ const Faculty = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Faculty" />
+            <PageHeading heading="Stream" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Course</Breadcrumb.Item>
-                <Breadcrumb.Item active>Faculty</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Course Configuration</Breadcrumb.Item>
+                <Breadcrumb.Item active>Stream</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -121,9 +121,9 @@ const Faculty = () => {
                                     >
                                         
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Faculty / Stream<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Stream<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Faculty / Stream Name" id="facultyStream" value={formData.facultyStream} onChange={handleInputChange} required />
+                                                <Form.Control type="text" placeholder="Please Enter Stream Name" id="facultyStream" value={formData.facultyStream} onChange={handleInputChange} required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
@@ -164,7 +164,7 @@ const Faculty = () => {
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                        <th><b>Stream / Faculty</b></th>
+                        <th><b>Stream</b></th>
                             <th><b>Active</b></th>
                             <th className="col-2"><b>Action</b></th>
                         </tr>

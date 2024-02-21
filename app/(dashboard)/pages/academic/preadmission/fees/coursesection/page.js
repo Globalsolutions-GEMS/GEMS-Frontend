@@ -17,12 +17,12 @@ const CourseSection = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Course Section" />
+            <PageHeading heading="Course Division" />
             <Breadcrumb>
             <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Fees</Breadcrumb.Item>
-                <Breadcrumb.Item active>Course Section</Breadcrumb.Item>
+                <Breadcrumb.Item active>Course Division</Breadcrumb.Item>
             </Breadcrumb>
 
 

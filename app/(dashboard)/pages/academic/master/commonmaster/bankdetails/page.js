@@ -67,7 +67,7 @@ const BankDetails = () => {
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Common Master</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Academic Master</Breadcrumb.Item>
                 <Breadcrumb.Item active>Bank Details</Breadcrumb.Item>
             </Breadcrumb>
 
