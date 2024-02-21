@@ -18,8 +18,8 @@ const SelectedFieldReport = () => {
       <PageHeading heading="Selected Field Report" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
         <Breadcrumb.Item active>Selected Field Report</Breadcrumb.Item>
       </Breadcrumb>
       <Row className="mb-8">
@@ -74,12 +74,12 @@ const SelectedFieldReport = () => {
                           required
                         />
                       </Col>
-                      
+
                       <Col sm={3} >
-                        
+
                       </Col>
                     </Row>
-                    
+
                     <Row className="align-items-center">
                       <Col
                         xs={12}
@@ -109,23 +109,23 @@ const SelectedFieldReport = () => {
                       </Col>
                     </Row>
                     <Form.Label
-                        className="col-sm-12 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Fields
-                      </Form.Label>
-                      <Form.Label
-                        className="col-sm-12 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Order By
-                      </Form.Label>
-                      <Form.Label
-                        className="col-sm-12 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Condition
-                      </Form.Label>
+                      className="col-sm-12 col-form-label form-label"
+                      htmlFor="fullName"
+                    >
+                      Fields
+                    </Form.Label>
+                    <Form.Label
+                      className="col-sm-12 col-form-label form-label"
+                      htmlFor="fullName"
+                    >
+                      Order By
+                    </Form.Label>
+                    <Form.Label
+                      className="col-sm-12 col-form-label form-label"
+                      htmlFor="fullName"
+                    >
+                      Condition
+                    </Form.Label>
                   </Form>
                 )}
               </div>

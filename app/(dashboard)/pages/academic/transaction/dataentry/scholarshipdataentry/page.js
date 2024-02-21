@@ -17,12 +17,12 @@ const ScholarshipDataEntry = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Scholarship Entry" />
+            <PageHeading heading="Sanctioned Scholarship Entry" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
-                <Breadcrumb.Item active>Scholarship Data Entry</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
+                <Breadcrumb.Item active>Sanctioned Scholarship Entry</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -66,9 +66,33 @@ const ScholarshipDataEntry = () => {
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
-
                                         </Row>
+                                        <Row className='mb-3'>
+                                            <Form.Label
+                                                className="col-sm-2 col-form-label form-label"
 
+                                            >Export To Excel</Form.Label>
+                                            <Form.Check
+                                                className="col-sm-3 col-form-label form-label"
+                                                type="checkbox"
+                                                id="active"
+                                            >
+                                                <Form.Check.Input type="checkbox" />
+                                            </Form.Check>
+                                        </Row>
+                                        <Row className='mb-3'>
+                                            <Form.Label
+                                                className="col-sm-2 col-form-label form-label"
+
+                                            >Statistics Format Report</Form.Label>
+                                            <Form.Check
+                                                className="col-sm-3 col-form-label form-label"
+                                                type="checkbox"
+                                                id="active"
+                                            >
+                                                <Form.Check.Input type="checkbox" />
+                                            </Form.Check>
+                                        </Row>
                                         <Row >
                                             <Col className="d-flex align-items-center justify-content-center mb-3">
                                                 <Button variant="primary" type="submit">
@@ -83,19 +107,7 @@ const ScholarshipDataEntry = () => {
                                             </Col>
                                             <Col></Col>
                                         </Row>
-                                        <Row >
-                                            <Col className="d-flex align-items-center justify-content-center mb-3"> 
-                                                <Button variant="secondary" type="" style={{ marginLeft: "10px" }}>
-                                                    Export To Excel
-                                                </Button>
-                                                <Button variant="secondary" type="" style={{ marginLeft: "10px" }}>
-                                                    Statistics Format Report
-                                                </Button>
-                                            </Col>
-                                            <Col></Col>
-                                        </Row>
-                                        <Row >
-                                        </Row>
+                                        
                                     </Form>
                                 }
                             </div>

@@ -26,7 +26,7 @@ const OutstandingFeesRemainder = () => {
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
                 <Breadcrumb.Item active>Outstanding Fees Remainder</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
@@ -90,13 +90,12 @@ const OutstandingFeesRemainder = () => {
                                         <Row className="mb-3">
                                             <Form.Label
                                                 className="col-sm-3 col-form-label form-label"
-                                                htmlFor="fullName"
                                             >
                                                 Last Date<span className="text-danger">*</span>
                                             </Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select
-                                                    type="text"
+                                                <Form.Control
+                                                    type="date"
                                                     placeholder="Please Enter U"
                                                     id="session"
                                                     required
@@ -105,66 +104,63 @@ const OutstandingFeesRemainder = () => {
                                         </Row>
 
                                         <Row className="mb-3">
-                                            <Row>
-                                            <Form.Label
-                                                className="col-sm-12 col-form-label form-label"
-                                            >
-                                                Category Type<span className="text-danger">*</span>
-                                            </Form.Label>
-                                            </Row>
-                                            <Col sm={3}></Col >
-                                            <Col sm={9}>
-                                                <Form.Check
-                                                    label="All Students"
-                                                    type="radio"
-                                                    name="radio"
-                                                />
+                                            <Col sm={3}>
+                                                <Form.Label
+                                                    className="col-sm-12 col-form-label form-label"
+                                                >
+                                                    Category Type<span className="text-danger">*</span>
+                                                </Form.Label>
                                             </Col>
-                                            <Col sm={3}></Col >
-                                            <Col sm={9}>
-                                                <Form.Check
-                                                    label="Admitted Students"
-                                                    type="radio"
-                                                    name="radio"
-                                                />
-                                            </Col>
-                                            <Col sm={3}></Col >
-                                            <Col>
-                                                <Form.Check
-                                                    label="Provisionally Admitted"
-                                                    type="radio"
-                                                    name="radio"
-                                                />
+                                            <Col className="mt-2">
+                                                <Col sm={9}>
+                                                    <Form.Check
+                                                        label="All Students"
+                                                        type="radio"
+                                                        name="radio"
+                                                    />
+                                                </Col>
+                                                <Col sm={9}>
+                                                    <Form.Check
+                                                        label="Admitted Students"
+                                                        type="radio"
+                                                        name="radio"
+                                                    />
+                                                </Col>
+                                                <Col>
+                                                    <Form.Check
+                                                        label="Provisionally Admitted"
+                                                        type="radio"
+                                                        name="radio"
+                                                    />
+                                                </Col>
                                             </Col>
                                         </Row>
 
                                         <Row className="mb-3">
-                                            <Row>
-                                            <Form.Label
-                                                className="col-sm-12 col-form-label form-label"
-                                            >
-                                                Mobile No. Type<span className="text-danger">*</span>
-                                            </Form.Label>
-                                            </Row>
-                                            <Col sm={3}></Col >
-                                            <Col sm={9}>
-                                                <Form.Check
-                                                    label="Student Mobile No."
-                                                    type="radio"
-                                                    name="radio"
-                                                />
+                                            <Col sm={3}>
+                                                <Form.Label
+                                                    className="col-sm-12 col-form-label form-label"
+                                                >
+                                                    SMS Send On<span className="text-danger">*</span>
+                                                </Form.Label>
                                             </Col>
-                                            <Col sm={3}></Col >
-                                            <Col sm={9}>
-                                                <Form.Check
-                                                    label="Parent Mobile No."
-                                                    type="radio"
-                                                    name="radio"
-                                                />
+                                            <Col className="mt-2">
+                                                <Col sm={9}>
+                                                    <Form.Check
+                                                        label="Student Mobile No."
+                                                        type="radio"
+                                                        name="radio"
+                                                    />
+                                                </Col>
+                                                <Col sm={9}>
+                                                    <Form.Check
+                                                        label="Parent Mobile No."
+                                                        type="radio"
+                                                        name="radio"
+                                                    />
+                                                </Col>
                                             </Col>
                                         </Row>
-
-
                                         <Row className="align-items-center">
                                             <Col xs={6} className="d-flex align-items-center justify-content-center">
 

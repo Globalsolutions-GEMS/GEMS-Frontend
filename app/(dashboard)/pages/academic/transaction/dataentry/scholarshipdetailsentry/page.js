@@ -17,12 +17,12 @@ const ScholarshipDetailsEntry = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Scholarship Details Entry" />
+            <PageHeading heading="Scholarship Application Entry" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
-                <Breadcrumb.Item active>Scholarship Details Entry</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
+                <Breadcrumb.Item active>Scholarship Application Entry</Breadcrumb.Item>
             </Breadcrumb>
 
 

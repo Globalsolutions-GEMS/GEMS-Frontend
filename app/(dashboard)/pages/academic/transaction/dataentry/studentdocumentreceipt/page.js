@@ -18,8 +18,8 @@ const StudentDocumentReceipt = () => {
       <PageHeading heading="Student Document Receipt" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
         <Breadcrumb.Item active>Student Document Receipt</Breadcrumb.Item>
       </Breadcrumb>
       <Row className="mb-8">
@@ -116,7 +116,7 @@ const StudentDocumentReceipt = () => {
                           Report
                         </Button>
                       </Col>
-                      
+
                     </Row>
                   </Form>
                 )}

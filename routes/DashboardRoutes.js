@@ -410,17 +410,17 @@ export const DashboardMenu = [
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/receipts/admissioncancellation",
-                name: "Admission Cancellation",
+                name: "Cancel Admission",
               },
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/receipts/cancelyearendstudent",
-                name: "Cancel Year End Student",
+                name: "Cancel Promotion",
               },
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/receipts/receiptcancellationandreprint",
-                name: "Receipt Cancellation And Reprint",
+                name: "Receipt Cancel and Reprint",
               },
               {
                 id: uuid(),
@@ -435,7 +435,7 @@ export const DashboardMenu = [
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/receipts/feetypechange",
-                name: "Fee Type Change",
+                name: "Change Fee Category",
               },
               {
                 id: uuid(),
@@ -447,7 +447,7 @@ export const DashboardMenu = [
           {
             id: uuid(),
             link: "#",
-            title: "Data Entry",
+            title: "Administrative Work",
             children: [
               {
                 id: uuid(),
@@ -457,17 +457,17 @@ export const DashboardMenu = [
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/dataentry/studentsubjectupdation",
-                name: "Student Subject Updation",
+                name: "Student Subject",
               },
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/dataentry/rollnoupdation",
-                name: "Roll No Updation",
+                name: "Roll No Allotment",
               },
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/dataentry/bulkupdation",
-                name: "Bulk Updation",
+                name: "Student Data Update -Bulk",
               },
               {
                 id: uuid(),
@@ -482,17 +482,17 @@ export const DashboardMenu = [
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/dataentry/scholarshipdataentry",
-                name: "Scholarship Data Entry",
+                name: "Sanctioned Scholarship Entry",
               },
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/dataentry/bulkemail",
-                name: "Bulk Email",
+                name: "Send Email - Bulk",
               },
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/dataentry/scholarshipdetailsentry",
-                name: "Scholarship Details Entry",
+                name: "Scholarship Application Entry",
               },
               {
                 id: uuid(),

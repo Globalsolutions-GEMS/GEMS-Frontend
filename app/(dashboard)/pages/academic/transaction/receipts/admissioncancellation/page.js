@@ -18,12 +18,12 @@ const AdmissionCancellation = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Admission Cancellation" />
+            <PageHeading heading="Cancel Admission" />
             <Breadcrumb>
-            <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
-                <Breadcrumb.Item active>Admission Cancellation</Breadcrumb.Item>
+                <Breadcrumb.Item active>Cancel Admission</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -35,74 +35,73 @@ const AdmissionCancellation = () => {
                                 {hasMounted &&
                                     <Form>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Session<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Session<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
-                                        
+
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Basic Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Basic Course<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
-                                           
+
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
-                                           
+
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Search By<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Select Course" id="course" required />
+                                            <Form.Label
+                                                className="col-sm-2 col-form-label form-label"
+                                                htmlFor="fullName"
+                                            >
+                                                Search By<span className="text-danger">*</span>
+                                            </Form.Label>
+
+                                            <Col sm={2}>
+                                                <Form.Check
+                                                    label="Student Id."
+                                                    type="radio"
+                                                    name="search"
+                                                />
                                             </Col>
-                                           
+                                            <Col sm={2}>
+                                                <Form.Check
+                                                    label="Roll No"
+                                                    type="radio"
+                                                    name="search"
+                                                />
+                                            </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Enter Input<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Enter Input<span className="text-danger">*</span></Form.Label>
                                             <Col sm={2} className="mb-3 mb-lg-0">
                                                 <Form.Control type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
                                             <Col sm={2}>
-                                            <Button variant="primary" type="submit" >
+                                                <Button variant="primary" type="submit" >
                                                     Show Balance
-                                            </Button>
+                                                </Button>
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Reason</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Reason</Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text"id="course" required />
+                                                <Form.Control type="text" id="course" required />
                                             </Col>
-                                           
-                                        </Row>
-                                        <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Admission Date</Form.Label><br/>
-                                        <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Fee Type</Form.Label><br/>
-                                        <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Student Type</Form.Label><br/>
-                                        <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Status</Form.Label>
 
-                                        <Row className='mb-3'>
-                                            <Col></Col>
-                                            <Col md={9} xs={12}>
-                                                <Form.Check className="col-sm-3 col-form-label form-label" type="switch" id="active">
-                                                    <Form.Check.Input type="checkbox" />
-                                                    <Form.Check.Label >Cancelled Admission</Form.Check.Label>
-                                                </Form.Check>
-                                            </Col>
                                         </Row>
-                                        <Row className='mb-3'>
-                                            <Col></Col>
-                                            <Col md={9} xs={12}>
-                                                <Form.Check className="col-sm-3 col-form-label form-label" type="switch" id="active">
-                                                    <Form.Check.Input type="checkbox" />
-                                                    <Form.Check.Label >Clear All Receipts</Form.Check.Label>
-                                                </Form.Check>
-                                            </Col>
-                                        </Row>
+                                        <Form.Label className="col-sm-2 col-form-label form-label" >Admission Date</Form.Label><br />
+                                        <Form.Label className="col-sm-2 col-form-label form-label" >Fee Type</Form.Label><br />
+                                        <Form.Label className="col-sm-2 col-form-label form-label" >Student Type</Form.Label><br />
+                                        <Form.Label className="col-sm-2 col-form-label form-label" >Status</Form.Label>
+
+
 
                                         <Row >
                                             <Col className="d-flex align-items-center justify-content-center">

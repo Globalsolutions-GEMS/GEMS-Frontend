@@ -17,12 +17,12 @@ const FeeTypeChange = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Fee Type Change" />
+            <PageHeading heading="Change Fee Category" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
-                <Breadcrumb.Item active>Fee Type Change</Breadcrumb.Item>
+                <Breadcrumb.Item active>Change Fee Category</Breadcrumb.Item>
             </Breadcrumb>
 
 

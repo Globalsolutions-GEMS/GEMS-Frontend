@@ -42,7 +42,7 @@ const SearchStudent = () => {
                                                 className="col-sm-2 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Basic Course<span className="text-danger">*</span>
+                                                Programme<span className="text-danger">*</span>
                                             </Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select
@@ -54,34 +54,31 @@ const SearchStudent = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            
-                                        </Row>
-                                        <Row >
                                             <Form.Label
                                                 className="col-sm-2 col-form-label form-label"
                                             >
-                                                Search By
+                                                Search Criteria
                                             </Form.Label>
                                            
-                                            <Col >
+                                            <Col className="mt-2">
                                                 <Form.Check
                                                     label="Student Id."
                                                     type="radio"
                                                 />
                                             </Col>
-                                            <Col>
+                                            <Col className="mt-2">
                                                 <Form.Check
                                                     label="Name"
                                                     type="radio"
                                                 />
                                             </Col>
-                                            <Col>
+                                            <Col className="mt-2">
                                                 <Form.Check
                                                     label="Roll No."
                                                     type="radio"
                                                 />
                                             </Col>
-                                            <Col>
+                                            <Col className="mt-2">
                                                 <Form.Check
                                                     label="User Defined"
                                                     type="radio"

@@ -17,12 +17,12 @@ const CourseChange = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Course Change" />
+            <PageHeading heading="Change Course" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
-                <Breadcrumb.Item active>Course Change</Breadcrumb.Item>
+                <Breadcrumb.Item active>Change Course</Breadcrumb.Item>
             </Breadcrumb>
 
 

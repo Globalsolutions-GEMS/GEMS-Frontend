@@ -22,7 +22,7 @@ const StudentDocumentReceipt = () => {
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
                 <Breadcrumb.Item active>Student Document Details</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
@@ -66,18 +66,21 @@ const StudentDocumentReceipt = () => {
                                                                             <Form.Check
                                                                                 label="Student Id."
                                                                                 type="radio"
+                                                                                name="search"
                                                                             />
                                                                         </Col>
                                                                         <Col>
                                                                             <Form.Check
                                                                                 label="Name"
                                                                                 type="radio"
+                                                                                name="search"
                                                                             />
                                                                         </Col>
                                                                         <Col>
                                                                             <Form.Check
                                                                                 label="Roll No"
                                                                                 type="radio"
+                                                                                name="search"
                                                                             />
                                                                         </Col>
 

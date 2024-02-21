@@ -19,11 +19,11 @@ const PRNAllotment = () => {
             {/* Page Heading */}
             <PageHeading heading="PRN Number Allocation" />
             <Breadcrumb>
-        <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
-        <Breadcrumb.Item active>PRN Allotment</Breadcrumb.Item>
-      </Breadcrumb>
+                <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
+                <Breadcrumb.Item active>PRN Allotment</Breadcrumb.Item>
+            </Breadcrumb>
 
 
             <Row className="mb-8">
@@ -57,9 +57,9 @@ const PRNAllotment = () => {
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
                                         </Row>
-                                       
-                                        
-                                        
+
+
+
                                         <Row className="mb-3">
                                             <Col className="d-flex align-items-center justify-content-center">
                                                 <Button variant="primary" type="submit">

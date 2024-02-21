@@ -18,8 +18,8 @@ const SubjectGroupWiseSection = () => {
       <PageHeading heading="Subjectwise Section Updation" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
         <Breadcrumb.Item active>Subject Groupwise Section</Breadcrumb.Item>
       </Breadcrumb>
 
@@ -30,7 +30,7 @@ const SubjectGroupWiseSection = () => {
               <div>
                 {hasMounted && (
                   <Form>
-                    
+
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Session<span className="text-danger">*</span>
@@ -48,7 +48,7 @@ const SubjectGroupWiseSection = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                      Basic Course/Branch<span className="text-danger">*</span>
+                        Basic Course/Branch<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -75,15 +75,15 @@ const SubjectGroupWiseSection = () => {
                       <Col></Col>
                     </Row>
                     <Row className="mb-3 ">
-                    <Form.Label className="col-sm-2 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                       </Form.Label>
                       <Col sm={2}>
                         <Form.Check label="Subject" type="radio" name="radio" />
                       </Col>
                       <Col sm={2}>
-                        <Form.Check label="Subject Group" type="radio"name="radio" />
+                        <Form.Check label="Subject Group" type="radio" name="radio" />
                       </Col>
-                     
+
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
@@ -156,7 +156,7 @@ const SubjectGroupWiseSection = () => {
                       </Col>
                       <Col></Col>
                     </Row>
-                    
+
                     <Row className="mb-3">
                       <Col className="d-flex align-items-center justify-content-center">
                         <Button variant="primary" type="submit">
@@ -184,8 +184,8 @@ const SubjectGroupWiseSection = () => {
                         >
                           Cancel
                         </Button>
-                        
-                        
+
+
 
                       </Col>
                       <Col></Col>

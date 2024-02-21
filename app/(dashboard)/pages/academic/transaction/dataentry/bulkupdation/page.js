@@ -1,6 +1,6 @@
 "use client";
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
+import { Breadcrumb, Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -15,12 +15,12 @@ const BulkUpdation = () => {
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Bulk Updation" />
+      <PageHeading heading="Student Data Update -Bulk" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
-        <Breadcrumb.Item active>Bulk Updation</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
+        <Breadcrumb.Item active>Student Data Update -Bulk</Breadcrumb.Item>
       </Breadcrumb>
       <Row className="mb-8">
         <Col xl={12} lg={8} md={12} xs={12}>
@@ -31,12 +31,12 @@ const BulkUpdation = () => {
                   <Form>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
+                        className="col-sm-2 col-form-label form-label"
+
                       >
                         Session<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
@@ -45,12 +45,12 @@ const BulkUpdation = () => {
                         />
                       </Col>
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
+                        className="col-sm-2 col-form-label form-label"
+
                       >
                         Fields<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
@@ -61,12 +61,12 @@ const BulkUpdation = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
+                        className="col-sm-2 col-form-label form-label"
+
                       >
-                        Basic Course<span className="text-danger">*</span>
+                        Programme<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
@@ -75,12 +75,12 @@ const BulkUpdation = () => {
                         />
                       </Col>
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
+                        className="col-sm-2 col-form-label form-label"
+
                       >
                         Medium
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
@@ -91,12 +91,12 @@ const BulkUpdation = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
+                        className="col-sm-2 col-form-label form-label"
+
                       >
                         Course<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Enter First Name"
@@ -105,12 +105,12 @@ const BulkUpdation = () => {
                         />
                       </Col>
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
+                        className="col-sm-2 col-form-label form-label"
+
                       >
                         Section
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
@@ -121,12 +121,12 @@ const BulkUpdation = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
+                        className="col-sm-2 col-form-label form-label"
+
                       >
                         Admission Status<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
@@ -135,12 +135,12 @@ const BulkUpdation = () => {
                         />
                       </Col>
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
+                        className="col-sm-2 col-form-label form-label"
+
                       >
                         Gender
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
@@ -152,12 +152,12 @@ const BulkUpdation = () => {
 
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
+                        className="col-sm-2 col-form-label form-label"
+
                       >
                         Order By<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
@@ -165,14 +165,16 @@ const BulkUpdation = () => {
                           required
                         />
                       </Col>
+                      <Form.Label
+                        className="col-sm-2 col-form-label form-label"
 
+                      >Apply To All</Form.Label>
                       <Form.Check
                         className="col-sm-3 col-form-label form-label"
                         type="checkbox"
                         id="active"
                       >
                         <Form.Check.Input type="checkbox" />
-                        <Form.Check.Label>Apply To All</Form.Check.Label>
                       </Form.Check>
                     </Row>
 

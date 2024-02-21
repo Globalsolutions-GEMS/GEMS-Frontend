@@ -75,14 +75,14 @@ const StudentInformation = () => {
     return (
         <Container fluid className="p-3">
             {/* Page Heading */}
-            <PageHeading heading="Student Information" />
+            <PageHeading heading="Student Details" />
             <Breadcrumb className='md-3'>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
-                <Breadcrumb.Item active>Student Information</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
+                <Breadcrumb.Item active>Student Details</Breadcrumb.Item>
             </Breadcrumb>
-            <Row className="align-items-end">
+            {/* <Row className="align-items-end">
                 <Col xs={12} className="d-flex align-items-end justify-content-end">
                     <Button
                         disabled={activeStep === 0}
@@ -95,7 +95,7 @@ const StudentInformation = () => {
                         {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                     </Button>
                 </Col>
-            </Row>
+            </Row> */}
 
             <div className='m-3'>
                 <SearchStudent />

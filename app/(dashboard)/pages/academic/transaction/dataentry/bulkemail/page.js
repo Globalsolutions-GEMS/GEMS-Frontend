@@ -35,12 +35,12 @@ const BulkEmail = () => {
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Bulk Email" />
+      <PageHeading heading="Send Email - Bulk" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
-        <Breadcrumb.Item active>Bulk Email</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
+        <Breadcrumb.Item active>Send Email - Bulk</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -51,20 +51,32 @@ const BulkEmail = () => {
                 {hasMounted && (
                   <Form>
                     <Row className="mb-3">
-                      <Row>
-                        <Form.Label className="col-sm-12 col-form-label form-label">
+                      <Col sm={2}>
+                        <Form.Label
+                          className="col-sm-12 col-form-label form-label"
+                        >
                           Category Type<span className="text-danger">*</span>
                         </Form.Label>
-                      </Row>
-                      <Col sm={3}></Col>
-                      <Col sm={9}>
-                        <Form.Check label="Personal Email Id" type="radio" />
                       </Col>
-                      <Col sm={3}></Col>
-                      <Col sm={9}>
-                        <Form.Check label="Father Email Id" type="radio" />
+                      <Col className="mt-2">
+                        <Col sm={9}>
+                          <Form.Check
+                            label="Personal Email ID."
+                            type="radio"
+                            name="radio"
+                          />
+                        </Col>
+                        <Col sm={9}>
+                          <Form.Check
+                            label="Father Email ID."
+                            type="radio"
+                            name="radio"
+                          />
+                        </Col>
+
                       </Col>
                     </Row>
+
 
                     <Row className="mb-3">
                       <Form.Label
@@ -219,8 +231,8 @@ const BulkEmail = () => {
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Control
-                          type="text"
-                          placeholder="Student ID Number"
+                          as="textarea"
+                          placeholder=""
                           id="course"
                           required
                         />
@@ -234,20 +246,20 @@ const BulkEmail = () => {
                         Attachment
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
-                      <Form.Control type="file" onChange={handlePhotoChange} />
-                      {photo && (
-                        <Cropper
-                          ref={photoCropperRef}
-                          image={photo}
-                          width={200}
-                          height={200}
-                          cropRatio={1}
-                          maxZoom={10}
-                          src={URL.createObjectURL(photo)}
-                          className={"cropper"}
-                          style={{ width: "300px", height: "200px" }}
-                        />
-                      )}
+                        <Form.Control type="file" onChange={handlePhotoChange} />
+                        {photo && (
+                          <Cropper
+                            ref={photoCropperRef}
+                            image={photo}
+                            width={200}
+                            height={200}
+                            cropRatio={1}
+                            maxZoom={10}
+                            src={URL.createObjectURL(photo)}
+                            className={"cropper"}
+                            style={{ width: "300px", height: "200px" }}
+                          />
+                        )}
                       </Col>
                     </Row>
                     <Row>

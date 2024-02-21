@@ -17,12 +17,12 @@ const ReceiptCancellationAndReprint = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Receipt Cancellation And Reprint" />
+            <PageHeading heading="Receipt Cancel and Reprint" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
-                <Breadcrumb.Item active>Receipt Cancellation And Reprint</Breadcrumb.Item>
+                <Breadcrumb.Item active>Receipt Cancel and Reprint</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -74,7 +74,7 @@ const ReceiptCancellationAndReprint = () => {
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Reason</Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Reason" id="course" required />
+                                                <Form.Control as='textarea' placeholder="Please Enter Reason" id="course" required />
                                             </Col>
                                         </Row>
                                         <Row className='mb-3'>

@@ -19,7 +19,7 @@ const RailwayConcessionApproval = () => {
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Data Entry</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
         <Breadcrumb.Item active>Railway Concession Approval</Breadcrumb.Item>
       </Breadcrumb>
 
@@ -33,7 +33,7 @@ const RailwayConcessionApproval = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
+                        
                       >
                         Session<span className="text-danger">*</span>
                       </Form.Label>
@@ -49,13 +49,13 @@ const RailwayConcessionApproval = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
+                        
                       >
                         Apply From Date
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Control
-                          type="text"
+                          type="date"
                           placeholder="Please Enter Apply From Date"
                           id="course"
                           required
@@ -65,13 +65,13 @@ const RailwayConcessionApproval = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
+                        
                       >
                         Apply To Date
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Control
-                          type="text"
+                          type="date"
                           placeholder="Please Enter Apply To Date"
                           id="course"
                           required
@@ -81,7 +81,7 @@ const RailwayConcessionApproval = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
+                        
                       >
                         Status
                       </Form.Label>
