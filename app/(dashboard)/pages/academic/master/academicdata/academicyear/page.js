@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Card, Button, Table, Pagination, Breadcrumb, Alert } from 'react-bootstrap';
 import { PageHeading } from 'widgets';
-import { createAcademicSession, getAcademicSession, updateAcademicSession } from 'app/api/academicsession';
+import { createAcademicSession, getAcademicSession, updateAcademicSession } from 'app/api/academicyear';
 import useMounted from 'hooks/useMounted';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { ToastContainer, toast } from 'react-toastify';

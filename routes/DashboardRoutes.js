@@ -310,62 +310,62 @@ export const DashboardMenu = [
             children: [
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/studentadmission",
+                link: "/pages/academic/transaction/admissionfees/studentadmission",
                 name: "Student Admission",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/feescollection",
+                link: "/pages/academic/transaction/admissionfees/feescollection",
                 name: "Fees Collection",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/receiptreconcillation",
+                link: "/pages/academic/transaction/admissionfees/receiptreconcillation",
                 name: "Receipt Reconcilliation",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/outstandingfees",
+                link: "/pages/academic/transaction/admissionfees/outstandingfees",
                 name: "Outstanding Fees",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/feesconcession",
+                link: "/pages/academic/transaction/admissionfees/feesconcession",
                 name: "Fees Concession",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/feesrefund",
+                link: "/pages/academic/transaction/admissionfees/feesrefund",
                 name: "Fees Refund",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/scholarshipentry",
+                link: "/pages/academic/transaction/admissionfees/scholarshipentry",
                 name: "Scholarship Entry",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/demandupdation",
+                link: "/pages/academic/transaction/admissionfees/demandupdation",
                 name: "Demand Updation",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/bulkotherfeesdemand",
+                link: "/pages/academic/transaction/admissionfees/bulkotherfeesdemand",
                 name: "Bulk Other Fees Demand",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/bulkadmfeesdemandupdation",
+                link: "/pages/academic/transaction/admissionfees/bulkadmfeesdemandupdation",
                 name: "Change Fees - Bulk",
               }, //Student Type
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/yearendregisteredstudentdemand",
+                link: "/pages/academic/transaction/admissionfees/yearendregisteredstudentdemand",
                 name: "Year End & Registered Stud Demand",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/collectfees/studentdirectadmissionye",
+                link: "/pages/academic/transaction/admissionfees/studentdirectadmissionye",
                 name: "Student Direct Admission YE",
               },
             ],

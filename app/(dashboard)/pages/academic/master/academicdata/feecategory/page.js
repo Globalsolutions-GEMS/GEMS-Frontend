@@ -13,7 +13,7 @@ import {
   Alert,
 } from "react-bootstrap";
 import { PageHeading } from "widgets";
-import { cretePayment, getPayments, updatePayment } from "app/api/paymenttype"; // Import updatePayment
+import { cretePayment, getPayments, updatePayment } from "app/api/feecategory"; // Import updatePayment
 import useMounted from "hooks/useMounted";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { ToastContainer, toast } from "react-toastify";

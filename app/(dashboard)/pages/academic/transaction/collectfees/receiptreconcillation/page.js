@@ -20,7 +20,7 @@ const ReceiptReconcillation = () => {
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Collect Fees</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Admission Fees</Breadcrumb.Item>
                 <Breadcrumb.Item active>Receipt Reconcillation</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
@@ -125,11 +125,11 @@ const ReceiptReconcillation = () => {
                                                 className="col-sm-3 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Branch/Basic Course
+                                                Prpgramme
                                             </Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select
-                                                    type="text"
+                                                    type="date"
                                                     placeholder="Please Enter Middle Name"
                                                     id="session"
                                                     required
@@ -143,7 +143,7 @@ const ReceiptReconcillation = () => {
                                             </Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select
-                                                    type="text"
+                                                    type="date"
                                                     placeholder="Please Enter Unicode Father's Name"
                                                     id="session"
                                                     required
