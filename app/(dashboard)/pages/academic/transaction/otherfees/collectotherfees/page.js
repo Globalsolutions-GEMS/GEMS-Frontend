@@ -20,7 +20,7 @@ const CollectOtherFees = () => {
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Other Fees</Breadcrumb.Item>
-        <Breadcrumb.Item active>Other Fees</Breadcrumb.Item>
+        <Breadcrumb.Item active>Collect Other Fees</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -40,22 +40,22 @@ const CollectOtherFees = () => {
                                 <Form>
                                   <Col>
                                     <Row className="mb-3">
-                                      <Form.Label className="col-sm-3 col-form-label form-label">
+                                      <Form.Label className="col-sm-2 col-form-label form-label">
                                         Receipt Book
                                         <span className="text-danger">*</span>
                                       </Form.Label>
-                                      <Col sm={3} className="mb-3 mb-lg-0">
+                                      <Col sm={4} className="mb-3 mb-lg-0">
                                         <Form.Select
                                           type="text"
                                           id="session"
                                           required
                                         />
                                       </Col>
-                                      <Form.Label className="col-sm-3 col-form-label form-label">
+                                      <Form.Label className="col-sm-2 col-form-label form-label">
                                         Programme
                                         <span className="text-danger">*</span>
                                       </Form.Label>
-                                      <Col sm={3} className="mb-3 mb-lg-0">
+                                      <Col sm={4} className="mb-3 mb-lg-0">
                                         <Form.Select
                                           type="text"
                                           id="session"
@@ -64,11 +64,11 @@ const CollectOtherFees = () => {
                                       </Col>
                                     </Row>
                                     <Row className="mb-3">
-                                      <Form.Label className="col-sm-3 col-form-label form-label">
+                                      <Form.Label className="col-sm-2 col-form-label form-label">
                                         Course
                                         <span className="text-danger">*</span>
                                       </Form.Label>
-                                      <Col sm={3} className="mb-3 mb-lg-0">
+                                      <Col sm={4} className="mb-3 mb-lg-0">
                                         <Form.Select
                                           type="text"
                                           id="session"
@@ -77,7 +77,7 @@ const CollectOtherFees = () => {
                                       </Col>
                                     </Row>
                                     <Row className="mb-3">
-                                      <Form.Label className="col-sm-3 col-form-label form-label">
+                                      <Form.Label className="col-sm-2 col-form-label form-label">
                                         Search By
                                       </Form.Label>
                                       <Col>
@@ -105,12 +105,12 @@ const CollectOtherFees = () => {
                                   </Col>
                                   <Row className="mb-3">
                                     <Form.Label
-                                      className="col-sm-3 col-form-label form-label"
+                                      className="col-sm-2 col-form-label form-label"
                                       htmlFor="fullName"
                                     >
                                       Enter Input
                                     </Form.Label>
-                                    <Col sm={3} className="mb-3 mb-lg-0">
+                                    <Col sm={4} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
                                         placeholder="Please Enter Student ID. No"
@@ -119,15 +119,15 @@ const CollectOtherFees = () => {
                                       />
                                     </Col>
 
-                                    <Form.Label className="col-sm-3 col-form-label form-label">
+                                    <Form.Label className="col-sm-2 col-form-label form-label">
                                       Admission Status
                                     </Form.Label>
                                   </Row>
                                   <Row className="mb-3">
-                                    <Form.Label className="col-sm-3 col-form-label form-label">
+                                    <Form.Label className="col-sm-2 col-form-label form-label">
                                       Session
                                     </Form.Label>
-                                    <Col sm={3} className="mb-3 mb-lg-0">
+                                    <Col sm={4} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
                                         id="session"
@@ -136,13 +136,13 @@ const CollectOtherFees = () => {
                                       />
                                     </Col>
                                     <Form.Label
-                                      className="col-sm-3 col-form-label form-label"
+                                      className="col-sm-2 col-form-label form-label"
                                       htmlFor="fullName"
                                     >
                                       Title
                                       <span className="text-danger">*</span>
                                     </Form.Label>
-                                    <Col sm={3} className="mb-3 mb-lg-0">
+                                    <Col sm={4} className="mb-3 mb-lg-0">
                                       <Form.Select
                                         type="text"
                                         id="session"
@@ -151,21 +151,21 @@ const CollectOtherFees = () => {
                                     </Col>
                                   </Row>
                                   <Row className="mb-3">
-                                    <Form.Label className="col-sm-3 col-form-label form-label">
+                                    <Form.Label className="col-sm-2 col-form-label form-label">
                                       Last Name/Surname
                                       <span className="text-danger">*</span>
                                     </Form.Label>
-                                    <Col sm={3} className="mb-3 mb-lg-0">
+                                    <Col sm={4} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
                                         id="session"
                                         required
                                       />
                                     </Col>
-                                    <Form.Label className="col-sm-3 col-form-label form-label">
+                                    <Form.Label className="col-sm-2 col-form-label form-label">
                                       First Name
                                     </Form.Label>
-                                    <Col sm={3} className="mb-3 mb-lg-0">
+                                    <Col sm={4} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
                                         id="session"
@@ -174,20 +174,20 @@ const CollectOtherFees = () => {
                                     </Col>
                                   </Row>
                                   <Row className="mb-3">
-                                    <Form.Label className="col-sm-3 col-form-label form-label">
+                                    <Form.Label className="col-sm-2 col-form-label form-label">
                                       Middle Name
                                     </Form.Label>
-                                    <Col sm={3} className="mb-3 mb-lg-0">
+                                    <Col sm={4} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
                                         id="session"
                                         required
                                       />
                                     </Col>
-                                    <Form.Label className="col-sm-3 col-form-label form-label">
+                                    <Form.Label className="col-sm-2 col-form-label form-label">
                                       Total Amount
                                     </Form.Label>
-                                    <Col sm={3} className="mb-3 mb-lg-0">
+                                    <Col sm={4} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
                                         disabled
@@ -197,20 +197,20 @@ const CollectOtherFees = () => {
                                     </Col>
                                   </Row>
                                   <Row className="mb-3">
-                                    <Form.Label className="col-sm-3 col-form-label form-label">
+                                    <Form.Label className="col-sm-2 col-form-label form-label">
                                       Payment Remark
                                     </Form.Label>
-                                    <Col sm={3} className="mb-3 mb-lg-0">
+                                    <Col sm={4} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
                                         id="session"
                                         required
                                       />
                                     </Col>
-                                    <Form.Label className="col-sm-3 col-form-label form-label">
+                                    <Form.Label className="col-sm-2 col-form-label form-label">
                                       Student Remark
                                     </Form.Label>
-                                    <Col sm={3} className="mb-3 mb-lg-0">
+                                    <Col sm={4} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
                                         disabled
@@ -237,7 +237,7 @@ const CollectOtherFees = () => {
                       <Row>
                         <Col>
                           <PageHeading heading="Payment Information" />
-                          <Row className="mb-8">
+                          <Row className="mb-5">
                             <Col xl={12} lg={8} md={12} xs={12}>
                               <Card>
                                 <Card.Body>
@@ -246,32 +246,33 @@ const CollectOtherFees = () => {
                                       <Form>
                                         <Row className="mb-3">
                                           <Form.Label
-                                            className="col-sm-3 col-form-label form-label"
+                                            className="col-sm-2 col-form-label form-label"
                                             htmlFor="fullName"
                                           >
                                             Payment Mode
                                           </Form.Label>
-                                          <Col sm={3} className="mb-3 mb-lg-0">
+                                          <Col sm={4} className="mb-3 mb-lg-0">
                                             <Form.Select
                                               type="text"
                                               id="Course/Standard"
                                             />
                                           </Col>
                                         </Row>
-                                        <Row>
+                                        <Row className="mb-3">
                                           <Form.Label
                                             className="col-sm-2 col-form-label form-label"
                                             htmlFor="fullName"
                                           >
                                             Amount
                                           </Form.Label>
-                                          <Col sm={3} className="mb-3 mb-lg-0">
+                                          <Col sm={4} className="mb-3 mb-lg-0">
                                             <Form.Control
                                               type="text"
                                               id="Course/Standard"
                                             />
                                           </Col>
-                                          <Row>
+                                        </Row>
+                                        <Row>
                                             <Col>
                                               <Button
                                                 variant="primary"
@@ -281,7 +282,6 @@ const CollectOtherFees = () => {
                                               </Button>
                                             </Col>
                                           </Row>
-                                        </Row>
                                       </Form>
                                     )}
                                   </div>

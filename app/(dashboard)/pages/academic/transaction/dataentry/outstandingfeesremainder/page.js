@@ -59,7 +59,7 @@ const OutstandingFeesRemainder = () => {
                                                 className="col-sm-3 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Basic Course/Branch<span className="text-danger">*</span>
+                                                Programme<span className="text-danger">*</span>
                                             </Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select
@@ -76,7 +76,7 @@ const OutstandingFeesRemainder = () => {
                                                 className="col-sm-3 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Course/Year<span className="text-danger">*</span>
+                                                Course<span className="text-danger">*</span>
                                             </Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select

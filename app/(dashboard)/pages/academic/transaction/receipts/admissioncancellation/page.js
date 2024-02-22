@@ -63,14 +63,14 @@ const AdmissionCancellation = () => {
                                                 Search By<span className="text-danger">*</span>
                                             </Form.Label>
 
-                                            <Col sm={2}>
+                                            <Col sm={2} className='mt-2'>
                                                 <Form.Check
                                                     label="Student Id."
                                                     type="radio"
                                                     name="search"
                                                 />
                                             </Col>
-                                            <Col sm={2}>
+                                            <Col sm={2} className='mt-2'>
                                                 <Form.Check
                                                     label="Roll No"
                                                     type="radio"

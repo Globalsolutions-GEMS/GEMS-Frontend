@@ -67,7 +67,7 @@ const FeesRefund = () => {
                                                 className="col-sm-4 col-form-label form-label"
                                                 htmlFor="fullName"
                                               >
-                                                Course/Year
+                                                Course
                                                 <span className="text-danger">
                                                   *
                                                 </span>
@@ -107,25 +107,25 @@ const FeesRefund = () => {
                                                   *
                                                 </span>
                                               </Form.Label>
-                                              <Col>
+                                              <Col className="mt-2">
                                                 <Form.Check
                                                   label="Student Id."
                                                   type="radio"
                                                 />
                                               </Col>
-                                              <Col>
+                                              <Col className="mt-2">
                                                 <Form.Check
                                                   label="Name"
                                                   type="radio"
                                                 />
                                               </Col>
-                                              <Col>
+                                              <Col className="mt-2">
                                                 <Form.Check
                                                   label="Roll No"
                                                   type="radio"
                                                 />
                                               </Col>
-                                              <Col>
+                                              <Col className="mt-2" >
                                                 <Form.Check
                                                   label="User Field"
                                                   type="radio"
@@ -285,7 +285,6 @@ const FeesRefund = () => {
                                               >
                                                 <Form.Control
                                                   type="text"
-                                                  placeholder="Please Select Course"
                                                   id="course"
                                                   required
                                                   disabled
@@ -305,7 +304,6 @@ const FeesRefund = () => {
                                               >
                                                 <Form.Control
                                                   type="text"
-                                                  placeholder="Please Select Course"
                                                   id="course"
                                                   required
                                                   disabled
@@ -328,7 +326,7 @@ const FeesRefund = () => {
                                                 className="mb-3 mb-lg-0"
                                               >
                                                 <Form.Control
-                                                  type="text"
+                                                  type="date"
                                                   placeholder="Please Select Course"
                                                   id="course"
                                                   required
@@ -351,7 +349,7 @@ const FeesRefund = () => {
                                               >
                                                 <Form.Control
                                                   type="text"
-                                                  placeholder="Please Select Course"
+                                                  placeholder="Please Enter Remark"
                                                   id="course"
                                                   required
                                                 />

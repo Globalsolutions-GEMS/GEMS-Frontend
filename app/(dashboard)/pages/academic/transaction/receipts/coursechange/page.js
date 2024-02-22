@@ -17,12 +17,12 @@ const CourseChange = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Change Course" />
+            <PageHeading heading="Course Change" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
-                <Breadcrumb.Item active>Change Course</Breadcrumb.Item>
+                <Breadcrumb.Item active>Course Change</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -38,13 +38,13 @@ const CourseChange = () => {
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">New Basic Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">New Programme<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Basic Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Programme<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
@@ -58,16 +58,12 @@ const CourseChange = () => {
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">New Fee Type<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">New Fee Category<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">New Student Type<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
-                                            </Col>
                                             <Container fluid className="p-3">
                                                 <Row>
                                                     <Col>

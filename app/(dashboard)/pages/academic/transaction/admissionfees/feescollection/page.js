@@ -193,6 +193,7 @@ const FeesCollection = () => {
                                         disabled
                                         id="session"
                                         required
+                                        
                                       />
                                     </Col>
                                   </Row>
@@ -201,17 +202,26 @@ const FeesCollection = () => {
                                       Payment Remark
                                     </Form.Label>
                                     <Col sm={3} className="mb-3 mb-lg-0">
-                                      <Form.Select
+                                      <Form.Control
                                         type="text"
-                                        disabled
                                         id="session"
                                         required
                                       />
                                     </Col>
                                   </Row>
                                 </Form>
+
                               )}
+                              <Link />
+                              <a href=""> Click here for fees Concession </a>
+
+                              <Link />
+                              <a href=""> Click here for exam fees collection(subject fee) </a>
+
+                              <Link />
+                              <a href=""> Click here for get fees details</a>
                             </div>
+
                           </Card.Body>
                         </Card>
                       </Col>
@@ -246,7 +256,10 @@ const FeesCollection = () => {
                                         required
                                       />
                                     </Col>
-                                    <Form.Label
+                                    
+                                  </Row>
+                                  <Row className="mb-3">
+                                  <Form.Label
                                       className="col-sm-3 col-form-label form-label"
                                       htmlFor="fullName"
                                     >
@@ -261,12 +274,12 @@ const FeesCollection = () => {
                                         required
                                       />
                                     </Col>
-                                  </Row>
-
+                                    </Row>
                                   <Col className="d-flex align-items-center justify-content-center">
                                     <Button variant="primary" type="submit">
                                       Add
                                     </Button>
+                                    <Col></Col>
                                   </Col>
                                 </Form>
                               )}
@@ -297,14 +310,7 @@ const FeesCollection = () => {
                   Adjust
                 </Button>
               </Col>
-              <Link />
-              <a href=""> Click here for fees Concession</a>
-              <br />
-              <Link />
-              <a href=""> Click here for exam fees collection(subject fee)</a>
-              <br />
-              <Link />
-              <a href=""> Click here for get fees details</a>
+
             </Card.Body>
           </Card>
         </Col>

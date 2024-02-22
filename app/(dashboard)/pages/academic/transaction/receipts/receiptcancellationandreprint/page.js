@@ -49,13 +49,13 @@ const ReceiptCancellationAndReprint = () => {
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">From Date</Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter From Date" id="session" required />
+                                                <Form.Control type="date" placeholder="Please Enter From Date" id="session" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">To Date</Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter To Date" id="course" required />
+                                                <Form.Control type="date" placeholder="Please Enter To Date" id="course" required />
                                             </Col>
                                            
                                         </Row>

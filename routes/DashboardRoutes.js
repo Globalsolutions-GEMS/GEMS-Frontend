@@ -320,7 +320,7 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/admissionfees/receiptreconcillation",
+                link: "/pages/academic/transaction/admissionfees/receiptreconcilation",
                 name: "Receipt Reconcilliation",
               },
               {
@@ -360,7 +360,7 @@ export const DashboardMenu = [
               }, //Student Type
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/admissionfees/yearendregisteredstudentdemand",
+                link: "/pages/academic/transaction/admissionfees/createfeesregisteredpromoted",
                 name: "Year End & Registered Stud Demand",
               },
               {
@@ -392,7 +392,7 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/otherfees/cancelotherfeesbulk",
+                link: "/pages/academic/transaction/otherfees/changeotherfeesbulk",
                 name: "Cancel Other Fees - Bulk",
               },
               {
@@ -452,7 +452,7 @@ export const DashboardMenu = [
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/dataentry/studentinformation",
-                name: "Student Information",
+                name: "Student Details",
               },
               {
                 id: uuid(),

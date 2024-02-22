@@ -33,51 +33,51 @@ const OutstandingFees = () => {
                                 {hasMounted && (
                                     <Form>
                                         <Row className="mb-3">
-                                                    <Form.Label className="col-sm-2 col-form-label form-label" >Programme<span className="text-danger">*</span></Form.Label>
-                                                    <Col sm={4} className="mb-3 mb-lg-0">
-                                                        <Form.Select type="text" placeholder="Please Enter " id="mothertongue" />
-                                                    </Col>
-                                                    <Form.Label className="col-sm-2 col-form-label form-label" >Course/Year<span className="text-danger">*</span></Form.Label>
-                                                    <Col sm={4} className="mb-3 mb-lg-0">
-                                                        <Form.Select type="text" placeholder="Please Enter " id="mothertongue" />
-                                                    </Col>
-                                                </Row>
-                                        <Row >
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="mothertongue" />
+                                            </Col>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="mothertongue" />
+                                            </Col>
+                                        </Row>
+                                        <Row className="mb-3">
                                             <Form.Label
                                                 className="col-sm-3 col-form-label form-label"
 
                                             >
                                                 Search Crieteria<span className="text-danger">*</span>
                                             </Form.Label>
-                                           
-                                            <Col >
+
+                                            <Col className="mt-2">
                                                 <Form.Check
                                                     label="Student Id."
                                                     type="radio"
                                                     name="radio"
                                                 />
                                             </Col>
-                                            <Col>
+                                            <Col className="mt-2">
                                                 <Form.Check
                                                     label="Name"
                                                     type="radio"
                                                     name="radio"
                                                 />
                                             </Col>
-                                            <Col>
+                                            <Col className="mt-2">
                                                 <Form.Check
                                                     label="Roll No"
                                                     type="radio"
                                                     name="radio"
                                                 />
                                             </Col>
-                                            <Col>
+                                            <Col className="mt-2">
                                                 <Form.Check
                                                     label="User Field"
                                                     type="radio"
                                                     name="radio"
                                                 />
-                                            </Col>  
+                                            </Col>
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label
@@ -202,7 +202,6 @@ const OutstandingFees = () => {
                                                 <Form.Control
                                                     type="text"
                                                     id="Course/Standard"
-                                                    disabled
                                                 />
                                             </Col>
                                         </Row>
@@ -218,17 +217,13 @@ const OutstandingFees = () => {
                                                 <Form.Control
                                                     type="text"
                                                     id="Course/Standard"
-                                                    
+
                                                 />
                                             </Col>
                                         </Row>
-
-                                       
-
-                                       
-                                        <Link /><a href=""> Click here for fees Concession</a><br />
-                                            <Link /><a href=""> Click here for get fees details</a><br />
-                                            <Link /><a href=""> Click here for get Installments Details</a>
+                                        <Link /><a href=""> Click here for fees Concession </a>
+                                        <Link /><a href=""> Click here for get fees details </a>
+                                        <Link /><a href=""> Click here for get Installments Details </a>
                                         <Container fluid className="p-3">
                                             <Row>
                                                 <Col>
@@ -288,28 +283,28 @@ const OutstandingFees = () => {
                                                                                 </Row>
 
                                                                                 <Row >
-                                            <Col className="d-flex align-items-center justify-content-center">
-                                                <Button variant="primary" type="submit">
-                                                    Submit
-                                                </Button>
-                                                <Button
-                                                    variant="secondary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
-                                                    Cancel
-                                                </Button>
-                                                <Button
-                                                    variant="primary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
-                                                    Adjust
-                                                </Button>
-                                            </Col>
-                                            <Col></Col>
-                                        </Row>
-                                       
+                                                                                    <Col className="d-flex align-items-center justify-content-center">
+                                                                                        <Button variant="primary" type="submit">
+                                                                                            Submit
+                                                                                        </Button>
+                                                                                        <Button
+                                                                                            variant="secondary"
+                                                                                            type=""
+                                                                                            style={{ marginLeft: "10px" }}
+                                                                                        >
+                                                                                            Cancel
+                                                                                        </Button>
+                                                                                        <Button
+                                                                                            variant="primary"
+                                                                                            type=""
+                                                                                            style={{ marginLeft: "10px" }}
+                                                                                        >
+                                                                                            Adjust
+                                                                                        </Button>
+                                                                                    </Col>
+                                                                                    <Col></Col>
+                                                                                </Row>
+
 
                                                                             </Form>
                                                                         )}

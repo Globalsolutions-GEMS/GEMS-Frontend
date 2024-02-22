@@ -33,12 +33,12 @@ const ChangeOtherFeesStudent = () => {
                   <Form>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Session<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
@@ -50,13 +50,13 @@ const ChangeOtherFeesStudent = () => {
 
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Receipt Book
                         <span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select "
@@ -68,15 +68,15 @@ const ChangeOtherFeesStudent = () => {
 
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Programme<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
-                          placeholder="Please Select Basic Course"
+                          placeholder="Please Select Programme"
                           id="basiccourse"
                           required
                         />
@@ -85,13 +85,13 @@ const ChangeOtherFeesStudent = () => {
 
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Course/Year/Standard
+                        Course
                         <span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
@@ -101,7 +101,7 @@ const ChangeOtherFeesStudent = () => {
                       </Col>
                     </Row>
 
-                    
+
                     <Container fluid className="p-3">
                       <Row>
                         <Col>
@@ -116,27 +116,39 @@ const ChangeOtherFeesStudent = () => {
                                       <Form>
                                         <Row className="mb-3">
                                           <Row className="mb-3">
-                                            <Form.Label
-                                              className="col-sm-4 col-form-label form-label"
-                                              htmlFor="fullName"
-                                            >
-                                              Search By
-                                              <span className="text-danger">
-                                                *
-                                              </span>
-                                            </Form.Label>
-                                            <Col className="mb-3 mb-lg-0">
-                                              <Form.Select
-                                                type="text"
-                                                placeholder="Please Select Course"
-                                                id="course"
-                                                required
-                                              />
-                                            </Col>
+                                            <Row className="mb-3">
+                                              <Form.Label
+                                                className="col-sm-3 col-form-label form-label"
+                                              >
+                                                Search By
+                                              </Form.Label>
+                                              <Col  className="mt-2">
+                                                <Form.Check
+                                                  label="Student Id."
+                                                  type="radio"
+                                                  name="search"
+                                                />
+                                              </Col>
+                                              <Col className="mt-2">
+                                                <Form.Check
+                                                  label="Name"
+                                                  type="radio"
+                                                  name="search"
+                                                />
+                                              </Col>
+                                              <Col className="mt-2">
+                                                <Form.Check
+                                                  label="Roll No"
+                                                  type="radio"
+                                                  name="search"
+                                                />
+                                              </Col>
+                                              
+                                            </Row>
                                           </Row>
                                           <Row className="mb-3">
                                             <Form.Label
-                                              className="col-sm-4 col-form-label form-label"
+                                              className="col-sm-3 col-form-label form-label"
                                               htmlFor="fullName"
                                             >
                                               Enter Input
