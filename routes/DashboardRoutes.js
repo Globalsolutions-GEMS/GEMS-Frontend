@@ -340,22 +340,22 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/admissionfees/scholarshipentry",
-                name: "Scholarship Entry",
+                link: "/pages/academic/transaction/admissionfees/receivedscholarshipentry",
+                name: "Received Scholarship Entry",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/admissionfees/demandupdation",
-                name: "Demand Updation",
+                link: "/pages/academic/transaction/admissionfees/changefeesstudent",
+                name: "Change Fees- Student",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/admissionfees/bulkotherfeesdemand",
-                name: "Bulk Other Fees Demand",
+                link: "/pages/academic/transaction/admissionfees/createotherfeesbulk",
+                name: "Create Other Fees - Bulk",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/admissionfees/bulkadmfeesdemandupdation",
+                link: "/pages/academic/transaction/admissionfees/changefeesbulk",
                 name: "Change Fees - Bulk",
               }, //Student Type
               {
@@ -377,8 +377,8 @@ export const DashboardMenu = [
             children: [
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/otherfees/otherfees",
-                name: "Other Fees",
+                link: "/pages/academic/transaction/otherfees/collectotherfees",
+                name: "Collect Other Fees",
               },
               {
                 id: uuid(),
@@ -387,18 +387,18 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/otherfees/otherfeesdemandupdation",
-                name: "Other Fees Demand Updation",
+                link: "/pages/academic/transaction/otherfees/changeotherfeesstudent",
+                name: "Change Other Fees -Student",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/otherfees/studentotherdemandcancel",
-                name: "Student Other Demand Cancel",
+                link: "/pages/academic/transaction/otherfees/cancelotherfeesbulk",
+                name: "Cancel Other Fees - Bulk",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/otherfees/feeheadwisebulkotherdemandupdation",
-                name: "FeeHead Wise Bulk Other Demand Updation",
+                link: "/pages/academic/transaction/otherfees/feeheadwisechangeotherfeesbulk",
+                name: "Fee Head Wise Change Other Fees - Bulk",
               },
             ],
           },
