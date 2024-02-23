@@ -21,7 +21,7 @@ const FeeStructure = () => {
             <Breadcrumb>
             <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Fees</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Fees Configuration</Breadcrumb.Item>
                 <Breadcrumb.Item active>Fee Structure</Breadcrumb.Item>
             </Breadcrumb>
 
@@ -47,7 +47,7 @@ const FeeStructure = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Course/Standard<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Course<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter Degree/Diploma Short Name" id="degreediploma" required />
                                             </Col>
@@ -59,13 +59,17 @@ const FeeStructure = () => {
                                             </Col>
                                         </Row>
                                        
-                                        <Row className='mb-3'>
-                                            <Form.Check.Label className="col-sm-3 col-form-label form-label" >Active</Form.Check.Label>
-                                            <Col md={9} xs={12}>
-                                                <Form.Check className="col-sm-3 col-form-label form-label" type="checkbox" id="active">
-                                                    <Form.Check.Input type="checkbox" />
-                                                    <Form.Check.Label >Check If Active</Form.Check.Label>
-                                                </Form.Check>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-3 col-form-label form-label">
+                                                Active
+                                            </Form.Label>
+                                            <Col className='mt-2'>
+                                                <Form.Check
+                                                    type="switch"
+                                                    id="checkIfActive"
+                                                    label="Check If Active"
+                                                    defaultChecked
+                                                />
                                             </Col>
                                         </Row>
                                         

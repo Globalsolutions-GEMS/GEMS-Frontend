@@ -34,7 +34,8 @@ const Discipline = () => {
                       <Col>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                          Discipline Name<span className="text-danger">*</span>
+                            Discipline Name
+                            <span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Control
@@ -47,7 +48,8 @@ const Discipline = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                          Discipline Code<span className="text-danger">*</span>
+                            Discipline Code
+                            <span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Control
@@ -62,14 +64,14 @@ const Discipline = () => {
                           <Form.Label className="col-sm-4 col-form-label form-label">
                             Active
                           </Form.Label>
-                          <Form.Check
-                            className="col-sm-8 col-form-label form-label"
-                            type="checkbox"
-                            id="active"
-                          >
-                            <Form.Check.Input type="checkbox" />
-                            <Form.Check.Label>Check If Active</Form.Check.Label>
-                          </Form.Check>
+                          <Col className="mt-2">
+                            <Form.Check
+                              type="switch"
+                              id="checkIfActive"
+                              label="Check If Active"
+                              defaultChecked
+                            />
+                          </Col>
                         </Row>
                         <Row className="mb-3">
                           <Col className="d-flex align-items-center justify-content-center">
@@ -95,11 +97,21 @@ const Discipline = () => {
                         <Table striped border hower>
                           <thead>
                             <tr>
-                              <th><b>No.</b></th>
-                              <th><b>Discipline Name</b></th>
-                              <th><b>Discipline Code</b></th>
-                              <th><b>Status</b></th>
-                              <th><b>Active</b></th>
+                              <th>
+                                <b>No.</b>
+                              </th>
+                              <th>
+                                <b>Discipline Name</b>
+                              </th>
+                              <th>
+                                <b>Discipline Code</b>
+                              </th>
+                              <th>
+                                <b>Status</b>
+                              </th>
+                              <th>
+                                <b>Active</b>
+                              </th>
                             </tr>
                           </thead>
                         </Table>

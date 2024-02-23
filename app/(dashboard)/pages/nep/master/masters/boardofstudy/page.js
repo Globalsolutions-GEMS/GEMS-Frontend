@@ -46,18 +46,18 @@ const BoardOfStudy = () => {
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
-                            Active
-                          </Form.Label>
-                          <Form.Check
-                            className="col-sm-8 col-form-label form-label"
-                            type="checkbox"
-                            id="active"
-                          >
-                            <Form.Check.Input type="checkbox" />
-                            <Form.Check.Label>Check If Active</Form.Check.Label>
-                          </Form.Check>
-                        </Row>
+                                            <Form.Label className="col-sm-4 col-form-label form-label">
+                                                Active
+                                            </Form.Label>
+                                            <Col className='mt-2'>
+                                                <Form.Check
+                                                    type="switch"
+                                                    id="checkIfActive"
+                                                    label="Check If Active"
+                                                    defaultChecked
+                                                />
+                                            </Col>
+                                        </Row>
                         <Row className="mb-3">
                           <Col className="d-flex align-items-center justify-content-center">
                             <Button
