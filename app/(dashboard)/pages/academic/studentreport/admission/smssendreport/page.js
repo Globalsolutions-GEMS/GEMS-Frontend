@@ -84,25 +84,25 @@ const SMSSendReport = () => {
                             <Form.Select type="text" />
                           </Col>
                         </Row>
-                        <Row>
+                        <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
                             Report Format
                           </Form.Label>
-                          <Col sm={2}>
+                          <Col sm={2} className="mt-2">
                             <Form.Check
                               label="Details"
                               type="radio"
                               name="radio"
                             />
                           </Col>
-                          <Col sm={2}>
+                          <Col sm={2} className="mt-2">
                             <Form.Check
                               label="Summary"
                               type="radio"
                               name="radio"
                             />
                           </Col>
-                          <Col sm={4}>
+                          <Col sm={4} className="mt-2">
                             <Form.Check
                               label="User Wise"
                               type="radio"

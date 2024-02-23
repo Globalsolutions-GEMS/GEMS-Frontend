@@ -67,32 +67,19 @@ const ScholarshipDataEntry = () => {
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
                                         </Row>
-                                        <Row className='mb-3'>
-                                            <Form.Label
-                                                className="col-sm-2 col-form-label form-label"
-
-                                            >Export To Excel</Form.Label>
+                                        <Row className='mb-3 ms-1'>
                                             <Form.Check
-                                                className="col-sm-3 col-form-label form-label"
-                                                type="checkbox"
-                                                id="active"
-                                            >
-                                                <Form.Check.Input type="checkbox" />
-                                            </Form.Check>
+                                                label="Export To Excel"
+                                                type="radio"
+                                                name="search"
+                                            />
                                         </Row>
-                                        <Row className='mb-3'>
-                                            <Form.Label
-                                                className="col-sm-2 col-form-label form-label"
-
-                                            >Statistics Format Report</Form.Label>
-                                            
+                                        <Row className='mb-3 ms-1'>
                                             <Form.Check
-                                                className="col-sm-3 col-form-label form-label"
-                                                type="checkbox"
-                                                id="active"
-                                            >
-                                                <Form.Check.Input type="checkbox" />
-                                            </Form.Check>
+                                                label="Statistics Format Report"
+                                                type="radio"
+                                                name="search"
+                                            />
                                         </Row>
                                         <Row >
                                             <Col className="d-flex align-items-center justify-content-center mb-3">
@@ -108,7 +95,7 @@ const ScholarshipDataEntry = () => {
                                             </Col>
                                             <Col></Col>
                                         </Row>
-                                        
+
                                     </Form>
                                 }
                             </div>

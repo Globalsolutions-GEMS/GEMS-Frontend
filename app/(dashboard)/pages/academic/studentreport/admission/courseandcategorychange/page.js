@@ -71,19 +71,22 @@ const CourseAndFeeCategoryChange = () => {
                       </Col>
                       <Col></Col>
                     </Row>
-                    <Row className="mb-3">
+                    <Row >
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Report By
                       </Form.Label>
-                      <Col>
+                      <Col className="mt-2">
                         <Form.Check
                           label="Course/Year Change"
                           type="radio"
                           name="name"
                         />
                       </Col>
-                      </Row>
-                      <Row className="mb-3">
+                    </Row>
+                    <Row className="mb-3">
+                    <Form.Label className="col-sm-2 col-form-label form-label">
+                      
+                      </Form.Label>
                       <Col>
                         <Form.Check
                           label="Fee Category Change"
@@ -92,7 +95,7 @@ const CourseAndFeeCategoryChange = () => {
                         />
                       </Col>
                     </Row>
-                    
+
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Export To Excel

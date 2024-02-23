@@ -122,7 +122,7 @@ const BlankAttendanceSheet = () => {
                           <Form.Label className="col-sm-2 col-form-label form-label">
                             Name Type<span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={3} className="mb-3 mb-lg-0">
+                          <Col sm={3} className="mb-3 mb-lg-0 mt-2">
                             <Form.Check
                               label="FName +MName+LName"
                               name="nameType"
@@ -130,7 +130,7 @@ const BlankAttendanceSheet = () => {
                             />
                           </Col>
                           <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
-                          <Col sm={3} className="mb-3 mb-lg-0">
+                          <Col sm={3} className="mb-3 mb-lg-0 mt-2">
                             <Form.Check
                               label="LName+FName+MName"
                               name="nameType"
@@ -174,7 +174,7 @@ const BlankAttendanceSheet = () => {
                             />
                           </Col>
                           <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
-                          <Col sm={4} className="mb-3 mb-lg-0">
+                          <Col sm={4} className="mb-3 mt-3 mb-lg-0">
                             <Form.Check
                               label="Admission Date"
                               name="sortName"
@@ -182,37 +182,29 @@ const BlankAttendanceSheet = () => {
                             />
                           </Col>
                         </Row>
-                        <Row className="mb-3">
+                        <Row className="mb-3 ms-1">
+                          
                           <Form.Check
-                            className="ms-3 col-sm-3 col-form-label form-label"
-                            type="checkbox"
-                            id="active"
-                          >
-                            <Form.Check.Input type="checkbox" />
-                            <Form.Check.Label>Excel Export</Form.Check.Label>
-                          </Form.Check>
+                            label="Excel Export"
+                            type="radio"
+                            name="name"
+                          />
                         </Row>
-                        <Row className="mb-3">
+                        <Row className="mb-3 ms-1">
                           <Form.Check
-                            className="ms-3 col-sm-3 col-form-label form-label"
-                            type="checkbox"
-                            id="active"
-                          >
-                            <Form.Check.Input type="checkbox" />
-                            <Form.Check.Label>
-                              Excel Export Subject Wise
-                            </Form.Check.Label>
-                          </Form.Check>
+                            label="Excel Export Subject Wise"
+                            type="radio"
+                            name="name"
+                          />
+                          
                         </Row>
-                        <Row className="mb-3">
+                        <Row className="mb-3 ms-1">
                           <Form.Check
-                            className="ms-3 col-sm-3 col-form-label form-label"
-                            type="checkbox"
-                            id="active"
-                          >
-                            <Form.Check.Input type="checkbox" />
-                            <Form.Check.Label>Sign Report</Form.Check.Label>
-                          </Form.Check>
+                            label="Sign Report"
+                            type="radio"
+                            name="name"
+                          />
+                          
                         </Row>
                         <Row className="mb-3">
                           <Col className="d-flex align-items-center justify-content-center">

@@ -41,14 +41,14 @@ const ScholarshipDetailsEntry = () => {
 
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Basic Course/Branch<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Programme<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
 
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Course/Year</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Course</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
