@@ -9,20 +9,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const CourseAndFeeTypeChangeReport = () => {
+const CourseAndFeeCategoryChange = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Course Change & Fee Type Change Report" />
+      <PageHeading heading="Course & Fee Category Change" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Student Report</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Admission</Breadcrumb.Item>
-        <Breadcrumb.Item active>
-          Course And Fee Type Change Report
-        </Breadcrumb.Item>
+        <Breadcrumb.Item active>Course & Fee Category Change</Breadcrumb.Item>
       </Breadcrumb>
       <Row className="mb-8">
         <Col xl={12} lg={8} md={12} xs={12}>
@@ -50,7 +48,7 @@ const CourseAndFeeTypeChangeReport = () => {
                         From Date<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
+                        <Form.Control
                           type="date"
                           placeholder="Please Enter "
                           id="mothertongue"
@@ -64,7 +62,7 @@ const CourseAndFeeTypeChangeReport = () => {
                         To Date<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
+                        <Form.Control
                           type="date"
                           placeholder="Please Enter "
                           id="mothertongue"
@@ -74,26 +72,41 @@ const CourseAndFeeTypeChangeReport = () => {
                       <Col></Col>
                     </Row>
                     <Row className="mb-3">
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Report By
                       </Form.Label>
                       <Col>
-                        <Form.Check label="Course/Year Change" type="radio" name="name"/>
+                        <Form.Check
+                          label="Course/Year Change"
+                          type="radio"
+                          name="name"
+                        />
                       </Col>
+                      </Row>
+                      <Row className="mb-3">
                       <Col>
-                        <Form.Check label="Fee Type Change" type="radio" name="name" />
+                        <Form.Check
+                          label="Fee Category Change"
+                          type="radio"
+                          name="name"
+                        />
                       </Col>
                     </Row>
-                    <Row>
-                      <Form.Check
-                        className="m-3 col-sm-3 col-form-label form-label"
-                        type="checkbox"
-                        id="active"
-                      >
-                        <Form.Check.Input type="checkbox" />
-                        <Form.Check.Label>Export To Excel</Form.Check.Label>
-                      </Form.Check>
+                    
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Export To Excel
+                      </Form.Label>
+                      <Col sm={4} className="mb-3 mt-2 mb-lg-0">
+                        <Form.Check
+                          type="checkbox"
+                          placeholder="Please Select Course"
+                          id="course"
+                          required
+                        />
+                      </Col>
                     </Row>
+
                     <Row className="mb-3">
                       <Col className="d-flex align-items-center justify-content-center">
                         <Button variant="primary" type="submit">
@@ -121,4 +134,4 @@ const CourseAndFeeTypeChangeReport = () => {
   );
 };
 
-export default CourseAndFeeTypeChangeReport;
+export default CourseAndFeeCategoryChange;

@@ -101,7 +101,6 @@ const ChangeOtherFeesStudent = () => {
                       </Col>
                     </Row>
 
-
                     <Container fluid className="p-3">
                       <Row>
                         <Col>
@@ -117,12 +116,10 @@ const ChangeOtherFeesStudent = () => {
                                         <Row className="mb-3">
                                           <Row className="mb-3">
                                             <Row className="mb-3">
-                                              <Form.Label
-                                                className="col-sm-3 col-form-label form-label"
-                                              >
+                                              <Form.Label className="col-sm-3 col-form-label form-label">
                                                 Search By
                                               </Form.Label>
-                                              <Col  className="mt-2">
+                                              <Col className="mt-2">
                                                 <Form.Check
                                                   label="Student Id."
                                                   type="radio"
@@ -143,7 +140,6 @@ const ChangeOtherFeesStudent = () => {
                                                   name="search"
                                                 />
                                               </Col>
-                                              
                                             </Row>
                                           </Row>
                                           <Row className="mb-3">
@@ -178,8 +174,11 @@ const ChangeOtherFeesStudent = () => {
                       </Row>
                     </Container>
 
-                    <Row >
-                      <Col sm={6} className="d-flex align-items-center justify-content-center">
+                    <Row>
+                      <Col
+                        sm={6}
+                        className="d-flex align-items-center justify-content-center"
+                      >
                         <Button variant="primary" type="submit">
                           Submit
                         </Button>

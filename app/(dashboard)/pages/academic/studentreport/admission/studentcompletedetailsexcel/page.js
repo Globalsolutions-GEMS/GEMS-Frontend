@@ -10,19 +10,19 @@ import { PageHeading } from 'widgets'
 import useMounted from 'hooks/useMounted';
 
 
-const StudentDetailsExportToExcel = () => {
+const StudentCompleteDetailsExcel = () => {
     const hasMounted = useMounted();
 
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Student Details Export" />
+            <PageHeading heading="Student Complete Details - Excel" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Student Report</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Admission</Breadcrumb.Item>
-                <Breadcrumb.Item active>Student Details Export To Excel</Breadcrumb.Item>
+                <Breadcrumb.Item active>Student Complete Details - Excel</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
@@ -42,16 +42,21 @@ const StudentDetailsExportToExcel = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course/Year/Standard<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Order By<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
                                         </Row>
-                                       
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Order By<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
+                                            </Col>
+                                            </Row>
                                         <Row className='mb-3'>
                                                 <Form.Check className="ms-3 col-sm-3 col-form-label form-label" type="checkbox" id="active">
                                                     <Form.Check.Input type="checkbox" />
@@ -83,6 +88,14 @@ const StudentDetailsExportToExcel = () => {
                                                 >
                                                     Show
                                                 </Button>
+
+                                                <Button
+                                                    variant="secondary"
+                                                    type=""
+                                                    style={{ marginLeft: "10px" }}
+                                                >
+                                                    Report
+                                                </Button>
                                                
                                             </Col>
                                         </Row>
@@ -98,6 +111,6 @@ const StudentDetailsExportToExcel = () => {
     )
 }
 
-export default StudentDetailsExportToExcel
+export default StudentCompleteDetailsExcel
 
 

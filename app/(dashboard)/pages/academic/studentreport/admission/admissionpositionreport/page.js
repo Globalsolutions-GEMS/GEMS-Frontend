@@ -36,9 +36,9 @@ const AdmissionPositionReport = () => {
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Form Date</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >From Date</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="date" placeholder="Please Enter " id="mothertongue" required />
+                                                <Form.Control type="date" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
@@ -48,11 +48,11 @@ const AdmissionPositionReport = () => {
                                             </Col>
                                             <Form.Label className="col-sm-2 col-form-label form-label" >To Date</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="date" placeholder="Please Enter " id="mothertongue" required />
+                                                <Form.Control type="date" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Basic Course</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
@@ -81,14 +81,14 @@ const AdmissionPositionReport = () => {
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Report Format</Form.Label>
                                             <Col sm={2}>
                                                 <Form.Check
-                                                    label="Foramat 1"
+                                                    label="Format 1"
                                                     type="radio"
                                                     name="name"
                                                 />
                                             </Col>
                                             <Col sm={2}>
                                                 <Form.Check
-                                                    label="Foramat 2"
+                                                    label="Format 2"
                                                     type="radio"
                                                     name="name"
                                                 />
@@ -108,12 +108,13 @@ const AdmissionPositionReport = () => {
                                             </Col>
                                             <Col></Col>
                                         </Row>
-                                        <Row className='mb-3'>
-                                                <Form.Check className="ms-3 col-sm-3 col-form-label form-label" type="checkbox" id="active">
-                                                    <Form.Check.Input type="checkbox" />
-                                                    <Form.Check.Label >Export to Excel</Form.Check.Label>
-                                                </Form.Check> 
-                                        </Row>
+                                       
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Export To Excel</Form.Label>
+                                            <Col sm={4} className="mb-3 mt-2 mb-lg-0">
+                                                <Form.Check type="checkbox" placeholder="Please Select Course" id="course" required />
+                                            </Col>
+                                        </Row >
                                         <Row className="mb-3">
                                             <Col className="d-flex align-items-center justify-content-center">
                                                 <Button variant="primary" type="submit">

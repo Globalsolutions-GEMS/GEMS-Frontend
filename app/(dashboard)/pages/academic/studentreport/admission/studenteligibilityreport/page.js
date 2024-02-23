@@ -52,7 +52,7 @@ const StudentEligibilityReport = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Branch/Basic Course<span className="text-danger">*</span>
+                            Programme<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Select
@@ -63,7 +63,7 @@ const StudentEligibilityReport = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Course/Year<span className="text-danger">*</span>
+                            Course<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Select
@@ -73,18 +73,12 @@ const StudentEligibilityReport = () => {
                           </Col>
                         </Row>
                        
-                       
                         <Row className="mb-3">
-                          <Form.Check
-                            className="ms-3 col-sm-3 col-form-label form-label"
-                            type="checkbox"
-                            id="active"
-                          >
-                            <Form.Check.Input type="checkbox" />
-                            <Form.Check.Label>Export to Excel</Form.Check.Label>
-                          </Form.Check>
-                        </Row>
-
+                                            <Form.Label className="col-sm-4 col-form-label form-label" >Export To Excel</Form.Label>
+                                            <Col sm={4} className="mb-3 mt-2 mb-lg-0">
+                                                <Form.Check type="checkbox" placeholder="Please Select Course" id="course" required />
+                                            </Col>
+                                        </Row >
                         <Row className="mb-3">
                           <Col className="d-flex align-items-center justify-content-center">
                            

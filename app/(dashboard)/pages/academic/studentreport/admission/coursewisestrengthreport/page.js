@@ -15,7 +15,7 @@ const CourseWiseStrengthReport = () => {
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Strength Report" />
+      <PageHeading heading="CourseWise Strength Report" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Student Reports</Breadcrumb.Item>
@@ -47,7 +47,7 @@ const CourseWiseStrengthReport = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Branch/Basic Course
+                        Programme
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -61,7 +61,7 @@ const CourseWiseStrengthReport = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Course/Year
+                        Course
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select

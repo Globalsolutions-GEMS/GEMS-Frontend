@@ -678,8 +678,8 @@ export const DashboardMenu = [
             children: [
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/admission/sytyapplicationreport",
-                name: "SYTY Application Report",
+                link: "/pages/academic/studentreport/admission/promotedapplicationreport",
+                name: "Promoted Application Report",
               },
               {
                 id: uuid(),
@@ -688,8 +688,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/admission/studentadmissionreport",
-                name: "Student Admission Report",
+                link: "/pages/academic/studentreport/admission/admissionreport",
+                name: "Admission Report",
               },
               {
                 id: uuid(),
@@ -703,24 +703,24 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/admission/studentdetailsexporttoexcel",
-                name: "Student Details Export To Excel",
+                link: "/pages/academic/studentreport/admission/studentcompletedetailsexcel",
+                name: "Student Complete Details - Excel",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/admission/courseandfeetypechangereport",
-                name: "Course And Fee Type Change Report",
+                link: "/pages/academic/studentreport/admission/courseandcategorychange",
+                name: "Course & Fee Category Change",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/admission/studentattendancereport",
-                name: "Student Attendance Report",
+                link: "/pages/academic/studentreport/admission/blankattendancesheet",
+                name: "Blank Attendance Sheet",
               },
               //extra//{ id: uuid(), link: '/pages/academic/studentreport/admission/coursewisestudentadmissionreport', name: 'Coursewise Student Admission Report' },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/admission/studentrollnumberreport",
-                name: "Student Roll Number Report",
+                link: "/pages/academic/studentreport/admission/rollcallreport",
+                name: "Roll Call Report",
               },
               {
                 id: uuid(),
@@ -762,7 +762,7 @@ export const DashboardMenu = [
               {
                 id: uuid(),
                 link: "/pages/academic/studentreport/MIS/studentmis",
-                name: "Student MIS",
+                name: "Student MIS Report",
               },
               {
                 id: uuid(),

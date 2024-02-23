@@ -10,19 +10,19 @@ import { PageHeading } from 'widgets'
 import useMounted from 'hooks/useMounted';
 
 
-const SYTYApplicationReport = () => {
+const PromotedApplicationReport = () => {
     const hasMounted = useMounted();
 
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="SYTY Application Report" />
+            <PageHeading heading="Promoted Application Report" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Student Report</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Admission</Breadcrumb.Item>
-                <Breadcrumb.Item active>SYTY Application Report</Breadcrumb.Item>
+                <Breadcrumb.Item active>Promoted Application Report</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
@@ -64,6 +64,6 @@ const SYTYApplicationReport = () => {
     )
 }
 
-export default SYTYApplicationReport
+export default PromotedApplicationReport
 
 

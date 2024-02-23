@@ -20,7 +20,7 @@ const PRNAllotment = () => {
             <PageHeading heading="PRN Number Allocation" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
                 <Breadcrumb.Item active>PRN Allotment</Breadcrumb.Item>
             </Breadcrumb>

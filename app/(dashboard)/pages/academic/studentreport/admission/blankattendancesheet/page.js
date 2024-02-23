@@ -14,18 +14,18 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-const StudentAttendanceReport = () => {
+const BlankAttendanceSheet = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Student Attendance Report" />
+      <PageHeading heading="Blank Attendance Sheet" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Student Report</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Admission</Breadcrumb.Item>
-        <Breadcrumb.Item active>Student Attendance Report</Breadcrumb.Item>
+        <Breadcrumb.Item active>Blank Attendance Sheet</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -51,7 +51,7 @@ const StudentAttendanceReport = () => {
                             className="col-sm-2 col-form-label form-label"
                             htmlFor="email"
                           >
-                            Basic Course<span className="text-danger">*</span>
+                            Programme<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select
@@ -63,7 +63,7 @@ const StudentAttendanceReport = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-2 col-form-label form-label">
-                            Course/Year/Standard
+                            Course
                             <span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={4} className="mb-3 mb-lg-0">
@@ -78,13 +78,13 @@ const StudentAttendanceReport = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-2 col-form-label form-label">
-                            Admission From Date
+                            Admission From
                           </Form.Label>
                           <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Control type="date" />
                           </Col>
                           <Form.Label className="col-sm-2 col-form-label form-label">
-                            Admission To Date
+                            Admission To
                           </Form.Label>
                           <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Control type="date" />
@@ -251,4 +251,4 @@ const StudentAttendanceReport = () => {
   );
 };
 
-export default StudentAttendanceReport;
+export default BlankAttendanceSheet;
