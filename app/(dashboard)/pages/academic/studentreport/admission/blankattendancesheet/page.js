@@ -43,10 +43,18 @@ const BlankAttendanceSheet = () => {
                           </Form.Label>
                           <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select
-                              id="session    "
+                              id="session"
                               required
                             ></Form.Select>
                           </Col>
+                          <Form.Label className="col-sm-2 col-form-label form-label">
+                            Admission From
+                          </Form.Label>
+                          <Col sm={4} className="mb-3 mb-lg-0">
+                            <Form.Control type="date" />
+                          </Col>
+                        </Row>
+                        <Row className="mb-3">
                           <Form.Label
                             className="col-sm-2 col-form-label form-label"
                             htmlFor="email"
@@ -60,6 +68,13 @@ const BlankAttendanceSheet = () => {
                               required
                             />
                           </Col>
+                          <Form.Label className="col-sm-2 col-form-label form-label">
+                            Admission To
+                          </Form.Label>
+                          <Col sm={4} className="mb-3 mb-lg-0">
+                            <Form.Control type="date" />
+                          </Col>
+
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-2 col-form-label form-label">
@@ -70,24 +85,10 @@ const BlankAttendanceSheet = () => {
                             <Form.Select type="text" required />
                           </Col>
                           <Form.Label className="col-sm-2 col-form-label form-label">
-                            Section
+                            Subject
                           </Form.Label>
                           <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select type="text" />
-                          </Col>
-                        </Row>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-2 col-form-label form-label">
-                            Admission From
-                          </Form.Label>
-                          <Col sm={4} className="mb-3 mb-lg-0">
-                            <Form.Control type="date" />
-                          </Col>
-                          <Form.Label className="col-sm-2 col-form-label form-label">
-                            Admission To
-                          </Form.Label>
-                          <Col sm={4} className="mb-3 mb-lg-0">
-                            <Form.Control type="date" />
                           </Col>
                         </Row>
                         <Row className="mb-3">
@@ -98,19 +99,20 @@ const BlankAttendanceSheet = () => {
                             <Form.Select type="text" />
                           </Col>
                           <Form.Label className="col-sm-2 col-form-label form-label">
-                            Subject
-                          </Form.Label>
-                          <Col sm={4} className="mb-3 mb-lg-0">
-                            <Form.Select type="text" />
-                          </Col>
-                        </Row>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-2 col-form-label form-label">
                             Month<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={4} className="mb-3 mb-lg-0">
                             <Form.Select type="text" required />
                           </Col>
+                        </Row>
+                        <Row className="mb-3">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
+                            Division
+                          </Form.Label>
+                          <Col sm={4} className="mb-3 mb-lg-0">
+                            <Form.Select type="text" />
+                          </Col>
+                          
                           <Form.Label className="col-sm-2 col-form-label form-label">
                             Report Format<span className="text-danger">*</span>
                           </Form.Label>
@@ -183,7 +185,15 @@ const BlankAttendanceSheet = () => {
                           </Col>
                         </Row>
                         <Row className="mb-3 ms-1">
-                          
+
+                          <Form.Check
+                            label="PDF Report"
+                            type="radio"
+                            name="name"
+                          />
+                        </Row>
+                        <Row className="mb-3 ms-1">
+
                           <Form.Check
                             label="Excel Export"
                             type="radio"
@@ -196,7 +206,7 @@ const BlankAttendanceSheet = () => {
                             type="radio"
                             name="name"
                           />
-                          
+
                         </Row>
                         <Row className="mb-3 ms-1">
                           <Form.Check
@@ -204,7 +214,7 @@ const BlankAttendanceSheet = () => {
                             type="radio"
                             name="name"
                           />
-                          
+
                         </Row>
                         <Row className="mb-3">
                           <Col className="d-flex align-items-center justify-content-center">

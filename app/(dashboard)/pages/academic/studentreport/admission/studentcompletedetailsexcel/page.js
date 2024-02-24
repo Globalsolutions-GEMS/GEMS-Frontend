@@ -59,6 +59,13 @@ const StudentCompleteDetailsExcel = () => {
                                         </Row>
                                         <Row className='mb-3 ms-1'>
                                             <Form.Check
+                                                label="PDF Report"
+                                                type="radio"
+                                                name="name"
+                                            />
+                                        </Row>
+                                        <Row className='mb-3 ms-1'>
+                                            <Form.Check
                                                 label="Export to Excel"
                                                 type="radio"
                                                 name="name"
@@ -84,13 +91,7 @@ const StudentCompleteDetailsExcel = () => {
                                                 <Button variant="primary" type="submit">
                                                     Cancel
                                                 </Button>
-                                                <Button
-                                                    variant="secondary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
-                                                    Report
-                                                </Button>
+                                                
                                                 <Button
                                                     variant="secondary"
                                                     type=""

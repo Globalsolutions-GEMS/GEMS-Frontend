@@ -20,12 +20,12 @@ const SMSSendReport = () => {
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="SMS Send Report" />
+      <PageHeading heading="Sent SMS Report" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Student Report</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Admission</Breadcrumb.Item>
-        <Breadcrumb.Item active>SMS Send Report</Breadcrumb.Item>
+        <Breadcrumb.Item active>Sent SMS Report</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
