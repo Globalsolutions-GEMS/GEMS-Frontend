@@ -34,13 +34,19 @@ const FeesRefundReport = () => {
                                 {hasMounted &&
                                     <Form>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Cashbbok<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Receipt Book<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course/Year</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme</Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                            </Col>
+                                        </Row>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
@@ -65,7 +71,19 @@ const FeesRefundReport = () => {
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
                                         </Row>
-                                        
+                                        <Row className="mb-3">
+                          <Form.Label className="col-sm-2 col-form-label form-label">
+                            Export To Excel
+                          </Form.Label>
+                          <Form.Check
+                            className="col-sm-8 col-form-label form-label"
+                            type="checkbox"
+                            id="active"
+                          >
+                            <Form.Check.Input type="checkbox" />
+                           
+                          </Form.Check>
+                        </Row>
                                         <Row className="mb-3">
                                             <Col className="d-flex align-items-center justify-content-center">
                                                 <Button variant="primary" type="submit">
@@ -76,15 +94,9 @@ const FeesRefundReport = () => {
                                                     type=""
                                                     style={{ marginLeft: "10px" }}
                                                 >
-                                                    Export To Excel
+                                                   Cancel
                                                 </Button>
-                                                <Button
-                                                    variant="secondary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
-                                                    Cancel
-                                                </Button>
+                                              
                                                
                                             </Col>
                                             <Col></Col>

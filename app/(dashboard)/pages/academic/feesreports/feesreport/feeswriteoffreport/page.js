@@ -17,12 +17,12 @@ const FeesWriteOffReport = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Fees WriteOff Report" />
+            <PageHeading heading="Fees Concession Report" />
             <Breadcrumb>
             <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Fees Reports</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Fees Report</Breadcrumb.Item>
-                <Breadcrumb.Item active>Fees WriteOff Report</Breadcrumb.Item>
+                <Breadcrumb.Item active>Fees Concession Report</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -40,17 +40,24 @@ const FeesWriteOffReport = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course/Year/Standard</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Receipt Book</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Receipt</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
                                         </Row>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course</Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                            </Col>
+                                        </Row>
+                                       
                                        
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >From Date</Form.Label>
@@ -73,14 +80,14 @@ const FeesWriteOffReport = () => {
                                                 Report Format
                                             </Form.Label>
                                            
-                                            <Col sm={2}>
+                                            <Col sm={2} className="mt-2">
                                                 <Form.Check
                                                     label="With Cancelled"
                                                     type="radio"
                                                     name='report'
                                                 />
                                             </Col>
-                                            <Col sm={2}>
+                                            <Col sm={2} className="mt-2">
                                                 <Form.Check
                                                     label="Without Cancelled"
                                                     type="radio"

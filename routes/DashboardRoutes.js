@@ -580,7 +580,7 @@ export const DashboardMenu = [
               {
                 id: uuid(),
                 link: "/pages/academic/feesreports/feesreport/feeswriteoffreport",
-                name: "Fees WriteOff Report",
+                name: "Fees Concession Report",
               },
               {
                 id: uuid(),

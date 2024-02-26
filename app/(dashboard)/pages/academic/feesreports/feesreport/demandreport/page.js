@@ -40,6 +40,13 @@ const DemandReport = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Programme<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Select Course" id="course" required />
+                                            </Col>
+                                           
+                                        </Row>
+                                        <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Course<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
@@ -74,14 +81,14 @@ const DemandReport = () => {
                                                 Student Status
                                             </Form.Label>
                                            
-                                            <Col sm={2}>
+                                            <Col sm={2} className="mt-2">
                                                 <Form.Check
                                                     label="With Canceled"
                                                     type="radio"
                                                     name="radio"
                                                 />
                                             </Col>
-                                            <Col sm={2}>
+                                            <Col sm={2} className="mt-2">
                                                 <Form.Check
                                                     label="Without Canceled"
                                                     type="radio"
