@@ -532,11 +532,11 @@ export const DashboardMenu = [
             link: "#",
             title: "Fees Report",
             children: [
-              {
-                id: uuid(),
-                link: "/pages/academic/feesreports/feesreport/dcrreport",
-                name: "DCR Report",
-              },
+              // {
+              //   id: uuid(),
+              //   link: "/pages/academic/feesreports/feesreport/dcrreport",
+              //   name: "DCR Report",
+              // },
               {
                 id: uuid(),
                 link: "/pages/academic/feesreports/feesreport/demandreport",
