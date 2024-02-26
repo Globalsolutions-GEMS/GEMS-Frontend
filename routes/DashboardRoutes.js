@@ -783,8 +783,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/MIS/subjectsectionwisemisreport",
-                name: "Subject SectionWise MIS Report",
+                link: "/pages/academic/studentreport/MIS/subjectdivisionreport",
+                name: "Subject & Division Report",
               },
             ],
           },

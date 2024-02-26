@@ -59,6 +59,20 @@ const CourseWiseStrengthReport = () => {
                       </Col>
                       <Col></Col>
                     </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Session
+                      </Form.Label>
+                      <Col sm={4} className="mb-3 mb-lg-0">
+                        <Form.Select
+                          type="text"
+                          placeholder="Please Enter "
+                          id="session"
+                          required
+                        />
+                      </Col>
+                      <Col></Col>
+                    </Row>
 
                     <Row className="mb-3">
                       <Col className="d-flex align-items-center justify-content-center">

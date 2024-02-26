@@ -42,7 +42,7 @@ const SubjectWiseReport = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Receipt Book Name<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Receipt Book<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
@@ -52,27 +52,34 @@ const SubjectWiseReport = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Subject</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Medium<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Subject<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Order By</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Medium</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
                                         </Row>
-                                       
-                                       
+                                       <Row className="mb-3"> 
+                                       <Form.Label className="col-sm-2 col-form-label form-label" >Order By<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
+                                            </Col>
+                                       </Row>
+                                       <Row>
+                                        
+                                       </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Export To Excel</Form.Label>
                                             <Col sm={4} className="mb-3 mt-2 mb-lg-0">

@@ -9,18 +9,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const SubjectSectionWiseMISReport = () => {
+const SubjectDivisionReport = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Subject Section Wise Report" />
+      <PageHeading heading="Subject & Division Report" />
       <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Student Report</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">MIS</Breadcrumb.Item>
-                <Breadcrumb.Item active>Subject SectionWise MIS Report</Breadcrumb.Item>
+                <Breadcrumb.Item active>Subject & Division Report</Breadcrumb.Item>
             </Breadcrumb>
 
       <Row className="mb-8">
@@ -48,7 +48,7 @@ const SubjectSectionWiseMISReport = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Receipt Book Name<span className="text-danger">*</span>
+                        Receipt Book<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -135,4 +135,4 @@ const SubjectSectionWiseMISReport = () => {
   );
 };
 
-export default SubjectSectionWiseMISReport;
+export default SubjectDivisionReport;
