@@ -470,11 +470,7 @@ export const DashboardMenu = [
                 link: "/pages/academic/transaction/dataentry/bulkupdation",
                 name: "Student Data Update -Bulk",
               },
-              {
-                id: uuid(),
-                link: "/pages/academic/transaction/dataentry/selectedfieldreport",
-                name: "Selected Field Report",
-              },
+              
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/dataentry/outstandingfeesremainder",
@@ -681,6 +677,11 @@ export const DashboardMenu = [
                 id: uuid(),
                 link: "/pages/academic/studentreport/admission/promotedapplicationreport",
                 name: "Promoted Application Report",
+              },
+              {
+                id: uuid(),
+                link: "/pages/academic/studentreport/admission/customizedstudentreportexcel",
+                name: "Customized Student Report - Excel",
               },
               {
                 id: uuid(),
