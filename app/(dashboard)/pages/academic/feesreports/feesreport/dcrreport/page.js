@@ -44,7 +44,7 @@ const DCRReport = () => {
                     <Row>
                       <Col>
                         <Row>
-                          <Col>
+                          <Col sm={3}>
                             <Form.Label className="col-form-label form-label">
                               Report Format
                               <span className="text-danger">*</span>
@@ -66,7 +66,7 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row>
-                          <Col></Col>
+                          <Col sm={3}></Col>
                           <Col>
                             <Form.Check
                               label="Summary"
@@ -83,7 +83,7 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row>
-                          <Col></Col>
+                          <Col sm={3}></Col>
                           <Col className="mt-2">
                             <Form.Check
                               label="Date Wise Summary"
@@ -100,7 +100,7 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row>
-                          <Col></Col>
+                          <Col sm={3}></Col>
                           <Col className="mt-2">
                             <Form.Check
                               label="Date Wise"
@@ -117,7 +117,7 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row>
-                          <Col></Col>
+                          <Col sm={3}></Col>
                           <Col className="mt-2">
                             <Form.Check
                               label="Summary Tran. Course Wise"
@@ -134,7 +134,7 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row>
-                          <Col></Col>
+                          <Col sm={3}></Col>
                           <Col className="mt-2">
                             <Form.Check
                               label="DCR Details Demand Wise"
@@ -151,7 +151,7 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row>
-                          <Col></Col>
+                          <Col sm={3}></Col>
                           <Col className="mt-2">
                             <Form.Check
                               label="DCR with Scholarship"
@@ -168,7 +168,7 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row>
-                          <Col></Col>
+                          <Col sm={3}></Col>
                           <Col className="mt-2">
                             <Form.Check
                               label="Consolidated Summary Tran. Course Wise"
@@ -179,13 +179,13 @@ const DCRReport = () => {
                           <Col className="mt-2"></Col>
                         </Row>
                         <Row className="mb-3 mt-3">
-                          <Col sm={4}>
+                          <Col sm={3}>
                             <Form.Label className="col-form-label form-label">
                               Session
                               <span className="text-danger">*</span>
                             </Form.Label>
                           </Col>
-                          <Col sm={8}>
+                          <Col sm={9}>
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
@@ -195,13 +195,13 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row className="mb-3 mt-3">
-                          <Col sm={4}>
+                          <Col sm={3}>
                             <Form.Label className="col-form-label form-label">
                               Receipt Type
                               <span className="text-danger">*</span>
                             </Form.Label>
                           </Col>
-                          <Col sm={8}>
+                          <Col sm={9}>
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
@@ -211,13 +211,13 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row className="mb-3 mt-3">
-                          <Col sm={4}>
+                          <Col sm={3}>
                             <Form.Label className="col-form-label form-label">
                               Receipt Book Name
                               <span className="text-danger">*</span>
                             </Form.Label>
                           </Col>
-                          <Col sm={8}>
+                          <Col sm={9}>
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
@@ -227,12 +227,12 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row className="mb-3 mt-3">
-                          <Col sm={4}>
+                          <Col sm={3}>
                             <Form.Label className="col-form-label form-label">
                               Counter Type
                             </Form.Label>
                           </Col>
-                          <Col sm={8}>
+                          <Col sm={9}>
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
@@ -242,18 +242,34 @@ const DCRReport = () => {
                           </Col>
                         </Row>
                         <Row className="mb-3 mt-3">
-                          <Col sm={4}>
+                          <Col sm={3}>
                             <Form.Label className="col-form-label form-label">
                               Transaction Type
                             </Form.Label>
                           </Col>
-                          <Col sm={8}>
+                          <Col sm={9}>
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
                               id="session"
                               required
                             />
+                          </Col>
+                        </Row>
+                        <Row className="mb-3 mt-3">
+                          <Col sm={3}>
+                            <Form.Label className="col-form-label form-label">
+                              Export To Excel
+                            </Form.Label>
+                          </Col>
+                          <Col sm={9}>
+                            <Form.Check
+                              className="col-form-label form-label"
+                              type="checkbox"
+                              id="active"
+                            >
+                              <Form.Check.Input type="checkbox" />
+                            </Form.Check>
                           </Col>
                         </Row>
                       </Col>
@@ -382,10 +398,10 @@ const DCRReport = () => {
                             />
                           </Col>
                         </Row>
-                          <Row className="mb-3 mt-3">
+                        <Row className="mb-3 mt-3">
                           <Col sm={3}>
                             <Form.Label className="col-form-label form-label">
-                            Format Type
+                              Format Type
                               <span className="text-danger">*</span>
                             </Form.Label>
                           </Col>
@@ -400,19 +416,7 @@ const DCRReport = () => {
                         </Row>
                       </Col>
                     </Row>
-                    
-                    <Row className="mb-3">
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Export To Excel
-                      </Form.Label>
-                      <Form.Check
-                        className="col-sm-8 col-form-label form-label"
-                        type="checkbox"
-                        id="active"
-                      >
-                        <Form.Check.Input type="checkbox" />
-                      </Form.Check>
-                    </Row>
+
                     <Row className="mb-3">
                       <Col className="d-flex align-items-center justify-content-center">
                         <Button variant="primary" type="submit">
@@ -435,8 +439,6 @@ const DCRReport = () => {
                         </Button>
                       </Col>
                     </Row>
-
-
                   </Form>
                 )}
               </div>
