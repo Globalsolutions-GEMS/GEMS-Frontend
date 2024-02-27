@@ -129,8 +129,9 @@ const AdmissionCancellationReport = () => {
                         className="col-sm-8 col-form-label form-label"
                         type="checkbox"
                         id="active"
+                        checked
                       >
-                        <Form.Check.Input type="checkbox" />
+                        <Form.Check.Input type="checkbox" checked/>
                       </Form.Check>
                     </Row>
                     <Row className="mb-3">

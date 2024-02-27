@@ -913,8 +913,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/MIS/studentmiscastewise",
-                name: "Student MIS Caste Wise",
+                link: "/pages/academic/studentreport/MIS/castewisemisreport",
+                name: "Caste Wise MIS Report",
                 icon: "file-text",
               },
               {

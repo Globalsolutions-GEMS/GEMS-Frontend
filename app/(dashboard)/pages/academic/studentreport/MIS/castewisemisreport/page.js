@@ -9,18 +9,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const StudentMISCasteWise = () => {
+const CasteWiseMISReport = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Student MIS Caste Wise" />
+      <PageHeading heading="Caste Wise MIS Report" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Student Report</Breadcrumb.Item>
         <Breadcrumb.Item href="#">MIS</Breadcrumb.Item>
-        <Breadcrumb.Item active>Student MIS Caste Wise</Breadcrumb.Item>
+        <Breadcrumb.Item active>Caste Wise MIS Report</Breadcrumb.Item>
       </Breadcrumb>
       <Row className="mb-8">
         <Col xl={12} lg={8} md={12} xs={12}>
@@ -55,7 +55,7 @@ const StudentMISCasteWise = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Course
+                        Programme
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -80,7 +80,7 @@ const StudentMISCasteWise = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Section
+                        Course
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -93,20 +93,34 @@ const StudentMISCasteWise = () => {
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Report Type<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={2}>
+                      <Col sm={2} className="mt-2">
                         <Form.Check
                           label="With Canceled"
                           type="radio"
                           name="radio"
                         />
                       </Col>
-                      <Col sm={2}>
+                      <Col sm={2} className="mt-2">
                         <Form.Check
                           label="Without Canceled"
                           type="radio"
                           name="radio"
                         />
                       </Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Section
+                      </Form.Label>
+                      <Col sm={4} className="mb-3 mb-lg-0">
+                        <Form.Select
+                          type="text"
+                          placeholder="Please Enter "
+                          id="mothertongue"
+                          required
+                        />
+                      </Col>
+                      
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
@@ -163,4 +177,4 @@ const StudentMISCasteWise = () => {
   );
 };
 
-export default StudentMISCasteWise;
+export default CasteWiseMISReport;

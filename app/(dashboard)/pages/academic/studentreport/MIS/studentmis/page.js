@@ -42,7 +42,7 @@ const StudentMIS = () => {
                         />
                       </Col>
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Medium
+                        MIS Type
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -67,6 +67,26 @@ const StudentMIS = () => {
                         />
                       </Col>
                       <Form.Label className="col-sm-2 col-form-label form-label">
+                        Report Type<span className="text-danger">*</span>
+                      </Form.Label>
+                      <Col sm={2} className="mt-2">
+                        <Form.Check
+                          label="With Canceled"
+                          type="radio"
+                          name="radio"
+                        />
+                      </Col>
+                      <Col sm={2} className="mt-2">
+                        <Form.Check
+                          label="Without Canceled"
+                          type="radio"
+                          name="radio"
+                        />
+                      </Col>
+                    </Row>
+
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Course<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
@@ -77,10 +97,17 @@ const StudentMIS = () => {
                           required
                         />
                       </Col>
-                    </Row>
-                    <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        MIS Type
+                        From Date
+                      </Form.Label>
+                      <Col sm={4} className="mb-3 mb-lg-0">
+                        <Form.Control type="date" />
+                      </Col>
+                    </Row>
+
+                    <Row className="mb-3">
+                    <Form.Label className="col-sm-2 col-form-label form-label">
+                        Medium
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -90,33 +117,6 @@ const StudentMIS = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Report Type<span className="text-danger">*</span>
-                      </Form.Label>
-                      <Col sm={2}>
-                        <Form.Check
-                          label="With Canceled"
-                          type="radio"
-                          name="radio"
-                        />
-                      </Col>
-                      <Col sm={2}>
-                        <Form.Check
-                          label="Without Canceled"
-                          type="radio"
-                          name="radio"
-                        />
-                      </Col>
-                    </Row>
-                    <Row className="mb-3">
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        From Date
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Control type="date" />
-                      </Col>
-                    </Row>
-                    <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         To Date
                       </Form.Label>
