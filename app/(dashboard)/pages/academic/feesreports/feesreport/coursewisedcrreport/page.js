@@ -41,7 +41,15 @@ const CourseWiseDCRReport = () => {
                                             <Col></Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Basic Course</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Receipt Book<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                            </Col>
+                                            <Col></Col>
+                                        </Row>
+                                        
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
@@ -49,13 +57,6 @@ const CourseWiseDCRReport = () => {
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Course</Form.Label>
-                                            <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
-                                            </Col>
-                                            <Col></Col>
-                                        </Row>
-                                        <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Cashbook<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>

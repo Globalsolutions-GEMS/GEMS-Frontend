@@ -1,6 +1,6 @@
 "use client";
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
+import { Alert, Badge,  Breadcrumb,  Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -9,18 +9,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const DueReport = () => {
+const ReceiptReprintBulk = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Due Report" />
+      <PageHeading heading="Receipt Reprint-Bulk" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Fees Reports</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Fees Report</Breadcrumb.Item>
-        <Breadcrumb.Item active>Due Report</Breadcrumb.Item>
+        <Breadcrumb.Item active>Receipt Reprint-Bulk</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -32,7 +32,7 @@ const DueReport = () => {
                   <Form>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Receipt Book
+                        Session<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -45,7 +45,20 @@ const DueReport = () => {
 
                       <Col></Col>
                     </Row>
-
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Receipt Book
+                      </Form.Label>
+                      <Col sm={4} className="mb-3 mb-lg-0">
+                        <Form.Select
+                          type="text"
+                          placeholder="Please Enter "
+                          id="session"
+                          required
+                        />
+                      </Col>
+                      <Col></Col>
+                    </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Programme
@@ -58,7 +71,6 @@ const DueReport = () => {
                           required
                         />
                       </Col>
-
                       <Col></Col>
                     </Row>
                     <Row className="mb-3">
@@ -73,12 +85,11 @@ const DueReport = () => {
                           required
                         />
                       </Col>
-
                       <Col></Col>
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Admission Status
+                        Counter
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -88,13 +99,54 @@ const DueReport = () => {
                           required
                         />
                       </Col>
-
+                      <Col></Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Receipt Type
+                      </Form.Label>
+                      <Col sm={4} className="mb-3 mb-lg-0">
+                        <Form.Select
+                          type="text"
+                          placeholder="Please Enter "
+                          id="session"
+                          required
+                        />
+                      </Col>
+                      <Col></Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Receipt Status
+                      </Form.Label>
+                      <Col sm={4} className="mb-3 mb-lg-0">
+                        <Form.Select
+                          type="text"
+                          placeholder="Please Enter "
+                          id="session"
+                          required
+                        />
+                      </Col>
                       <Col></Col>
                     </Row>
 
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Till Date<span className="text-danger">*</span>
+                        From Date<span className="text-danger">*</span>
+                      </Form.Label>
+                      <Col sm={4} className="mb-3 mb-lg-0">
+                        <Form.Control
+                          type="date"
+                          placeholder="Please Enter "
+                          id="session"
+                          required
+                        />
+                      </Col>
+                      <Col></Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        To Date<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Control
@@ -107,19 +159,6 @@ const DueReport = () => {
                       <Col></Col>
                     </Row>
 
-                    <Row className="mb-3">
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Export To Excel
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mt-2 mb-lg-0">
-                        <Form.Check
-                          type="checkbox"
-                          placeholder="Please Select Course"
-                          id="course"
-                          required
-                        />
-                      </Col>
-                    </Row>
                     <Row className="mb-3">
                       <Col className="d-flex align-items-center justify-content-center">
                         <Button variant="primary" type="submit">
@@ -147,4 +186,4 @@ const DueReport = () => {
   );
 };
 
-export default DueReport;
+export default ReceiptReprintBulk;

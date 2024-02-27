@@ -50,30 +50,36 @@ const OutstandingSummaryReport = () => {
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Outstanding Type</Form.Label>
-                                            <Col sm={2} className="mb-3 mb-lg-0">
+                                            <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="date" placeholder="Please Enter " id="session" required />
                                             </Col>
                                             <Col></Col>
                                         </Row>
                                         <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Export To Excel
+                      </Form.Label>
+                      <Form.Check
+                        className="col-sm-8 col-form-label form-label"
+                        type="checkbox"
+                        id="active"
+                      >
+                        <Form.Check.Input type="checkbox" />
+                      </Form.Check>
+                    </Row>
+                                        <Row className="mb-3">
                                             <Col className="d-flex align-items-center justify-content-center">
                                                 <Button variant="primary" type="submit">
-                                                    Export To Excel
+                                                    Report
                                                 </Button>
                                                 <Button
                                                     variant="primary"
                                                     type=""
                                                     style={{ marginLeft: "10px" }}
                                                 >
-                                                    Report
-                                                </Button>
-                                                <Button
-                                                    variant="secondary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
                                                     Cancel
                                                 </Button>
+                                               
 
                                             </Col>
                                         </Row>

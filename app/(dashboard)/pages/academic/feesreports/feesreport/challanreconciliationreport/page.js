@@ -44,7 +44,7 @@ const ChallanReconciliationReport = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                        <Form.Label className="col-sm-2 col-form-label form-label" >CashBooks</Form.Label>
+                                        <Form.Label className="col-sm-2 col-form-label form-label" >Receipt Book</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter Student ID No." id="session" required />
                                             </Col>
@@ -55,19 +55,25 @@ const ChallanReconciliationReport = () => {
                                         </Row>
                                        
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Branch/Basic Course</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
                                             <Col></Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course/Year</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="date" placeholder="Please Enter " id="session" required />
                                             </Col>
                                             <Col></Col>
                                         </Row>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Export To Excel</Form.Label>
+                                            <Col sm={4} className="mb-3 mt-2 mb-lg-0">
+                                                <Form.Check type="checkbox" placeholder="Please Select Course" id="course" required />
+                                            </Col>
+                                        </Row >
                                         <Row className="mb-3">
                                             <Col className="d-flex align-items-center justify-content-center">
                                                 <Button variant="primary" type="submit">
@@ -78,15 +84,9 @@ const ChallanReconciliationReport = () => {
                                                     type=""
                                                     style={{ marginLeft: "10px" }}
                                                 >
-                                                    Export To Excel
-                                                </Button>
-                                                <Button
-                                                    variant="secondary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
                                                     Cancel
                                                 </Button>
+                                                
 
                                             </Col>
                                         </Row>

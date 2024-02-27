@@ -18,7 +18,7 @@ const ProvisionalStudentDemandCancellation = () => {
             <PageHeading heading="Provisional Student Demand Cancellation   " />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Admission Fees</Breadcrumb.Item>
                 <Breadcrumb.Item active>Provisional Student Demand Cancellation</Breadcrumb.Item>
             </Breadcrumb>

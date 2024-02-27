@@ -682,7 +682,7 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/feesreports/feesreport/feeswriteoffreport",
+                link: "/pages/academic/feesreports/feesreport/feesconcessionreport",
                 name: "Fees Concession Report",
                 icon: "file-text",
               },
@@ -694,8 +694,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/feesreports/feesreport/adjustmentreceiptreport",
-                name: "Adjustment Receipt Report",
+                link: "/pages/academic/feesreports/feesreport/adjustedreceiptreport",
+                name: "Adjusted Receipt Report",
                 icon: "file-text",
               },
               {
@@ -718,8 +718,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/feesreports/feesreport/coursewiseinstallmentoutstandingreport",
-                name: "CourseWise Installment Outstanding Report",
+                link: "/pages/academic/feesreports/feesreport/installmentoutstandingreport",
+                name: "Installment Outstanding Report",
                 icon: "file-text",
               },
               {
@@ -736,8 +736,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/feesreports/feesreport/bulkreceiptreprint",
-                name: "Bulk Receipt Reprint",
+                link: "/pages/academic/feesreports/feesreport/receiptreprintbulk",
+                name: "Receipt Reprint-Bulk",
                 icon: "file-text",
               },
             ],

@@ -11,7 +11,7 @@ import useMounted from 'hooks/useMounted';
 import { CheckCircleFill } from 'react-bootstrap-icons';
 
 
-const AdmissionCancellation = () => {
+const CancelAdmission = () => {
     const hasMounted = useMounted();
 
     return (
@@ -21,7 +21,7 @@ const AdmissionCancellation = () => {
             <PageHeading heading="Cancel Admission" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
                 <Breadcrumb.Item active>Cancel Admission</Breadcrumb.Item>
             </Breadcrumb>
@@ -42,7 +42,7 @@ const AdmissionCancellation = () => {
 
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Basic Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
@@ -130,4 +130,4 @@ const AdmissionCancellation = () => {
     )
 }
 
-export default AdmissionCancellation
+export default CancelAdmission
