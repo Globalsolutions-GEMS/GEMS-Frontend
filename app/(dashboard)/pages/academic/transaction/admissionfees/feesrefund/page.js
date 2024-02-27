@@ -187,7 +187,7 @@ const FeesRefund = () => {
                                                       className="col-sm-4 col-form-label form-label"
                                                       htmlFor="fullName"
                                                     >
-                                                      Course / Year
+                                                      Course
                                                     </Form.Label>
                                                   </Row>
                                                   <Row>
@@ -195,7 +195,7 @@ const FeesRefund = () => {
                                                       className="col-sm-4 col-form-label form-label"
                                                       htmlFor="fullName"
                                                     >
-                                                      Fee Type
+                                                      Fee Category
                                                     </Form.Label>
                                                   </Row>
                                                   {/* <Row>

@@ -33,9 +33,14 @@ const CourseSection = () => {
                             <div>
                                 {hasMounted &&
                                     <Form>
-                                        
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Course/Year/Standard<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Programme<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={9} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter Degree/Diploma Short Name" id="degreediploma" required />
+                                            </Col>
+                                        </Row>  
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Course<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter Degree/Diploma Short Name" id="degreediploma" required />
                                             </Col>

@@ -21,7 +21,7 @@ const StudentDocumentReceipt = () => {
             <PageHeading heading="Student Document Details" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
                 <Breadcrumb.Item active>Student Document Details</Breadcrumb.Item>
             </Breadcrumb>
@@ -90,7 +90,7 @@ const StudentDocumentReceipt = () => {
                                                                             className="col-sm-2 col-form-label form-label"
                                                                             htmlFor="fullName"
                                                                         >
-                                                                            Basic Course<span className="text-danger">*</span>
+                                                                            Programme<span className="text-danger">*</span>
                                                                         </Form.Label>
                                                                         <Col sm={4} className="mb-3 mb-lg-0">
                                                                             <Form.Select
@@ -120,7 +120,7 @@ const StudentDocumentReceipt = () => {
                                                                             className="col-sm-2 col-form-label form-label"
                                                                             htmlFor="fullName"
                                                                         >
-                                                                            Course/Year/Standard<span className="text-danger">*</span>
+                                                                            Course<span className="text-danger">*</span>
                                                                         </Form.Label>
                                                                         <Col sm={4} className="mb-3 mb-lg-0">
                                                                             <Form.Select

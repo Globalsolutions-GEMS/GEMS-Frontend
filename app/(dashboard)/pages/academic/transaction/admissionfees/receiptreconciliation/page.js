@@ -1,6 +1,6 @@
 "use client";
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
+import { Alert, Badge,    Breadcrumb,    Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -10,7 +10,7 @@ import { PageHeading } from "widgets";
 import useMounted from "hooks/useMounted";
 import { CheckCircleFill } from "react-bootstrap-icons";
 
-const ReceiptReconcilation = () => {
+const ReceiptReconciliation = () => {
     const hasMounted = useMounted();
 
     return (
@@ -219,4 +219,4 @@ const ReceiptReconcilation = () => {
     );
 };
 
-export default ReceiptReconcilation;
+export default ReceiptReconciliation;

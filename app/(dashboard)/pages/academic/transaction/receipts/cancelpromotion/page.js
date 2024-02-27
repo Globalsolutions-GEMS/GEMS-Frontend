@@ -10,19 +10,19 @@ import { PageHeading } from 'widgets'
 import useMounted from 'hooks/useMounted';
 
 
-const PRNAllotment = () => {
+const CancelPromotion = () => {
     const hasMounted = useMounted();
 
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="PRN Number Allocation" />
+            <PageHeading heading="Cancel Promotion" />
             <Breadcrumb>
-                <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
+            <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
-                <Breadcrumb.Item active>PRN Allotment</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
+                <Breadcrumb.Item active>Cancel Promotion</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -35,42 +35,37 @@ const PRNAllotment = () => {
                                     <Form>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Session<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                            <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
+                                        
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Basic Course/Branch<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Receipt Book<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={3} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
+                                           
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course/Year<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={3} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
+                                           
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Order By</Form.Label>
-                                            <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={3} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Select Course" id="course" required />
                                             </Col>
+                                           
                                         </Row>
-
-
-
-                                        <Row className="mb-3">
+                                        
+                                        <Row >
                                             <Col className="d-flex align-items-center justify-content-center">
                                                 <Button variant="primary" type="submit">
-                                                    Generate
-                                                </Button>
-                                                <Button
-                                                    variant="primary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
-                                                    Confirm
+                                                    Submit
                                                 </Button>
                                                 <Button
                                                     variant="secondary"
@@ -78,13 +73,6 @@ const PRNAllotment = () => {
                                                     style={{ marginLeft: "10px" }}
                                                 >
                                                     Cancel
-                                                </Button>
-                                                <Button
-                                                    variant="secondary"
-                                                    type=""
-                                                    style={{ marginLeft: "10px" }}
-                                                >
-                                                    Report
                                                 </Button>
                                             </Col>
                                             <Col></Col>
@@ -101,4 +89,4 @@ const PRNAllotment = () => {
     )
 }
 
-export default PRNAllotment
+export default CancelPromotion

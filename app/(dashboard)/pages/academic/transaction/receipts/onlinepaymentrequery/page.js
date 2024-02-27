@@ -20,7 +20,7 @@ const OnlinePaymentRequery = () => {
             <PageHeading heading="Online Payment Requery" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
                 <Breadcrumb.Item active>Online Payment Requery Details</Breadcrumb.Item>
             </Breadcrumb>
@@ -38,6 +38,13 @@ const OnlinePaymentRequery = () => {
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Control type="text" placeholder="Please Enter Requery Date" id="session" required />
                                             </Col>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Programme<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                            </Col>
+                                        </Row>
+                                        <Row className="mb-3">
+                                            
                                             <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Course<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />

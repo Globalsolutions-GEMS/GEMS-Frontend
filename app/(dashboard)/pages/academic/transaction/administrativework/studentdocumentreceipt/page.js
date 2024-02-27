@@ -18,7 +18,7 @@ const StudentDocumentReceipt = () => {
       <PageHeading heading="Student Document Receipt" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
         <Breadcrumb.Item active>Student Document Receipt</Breadcrumb.Item>
       </Breadcrumb>
@@ -65,7 +65,7 @@ const StudentDocumentReceipt = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Basic Course<span className="text-danger">*</span>
+                        Programme<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select

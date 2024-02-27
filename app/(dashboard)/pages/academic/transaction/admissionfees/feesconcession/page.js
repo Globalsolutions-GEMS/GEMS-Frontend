@@ -50,7 +50,7 @@ const FeesConcession = () => {
                                                 className="col-sm-3 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Course/Year/Standard<span className="text-danger">*</span>
+                                                Course<span className="text-danger">*</span>
                                             </Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select

@@ -69,7 +69,7 @@ const ChangeFeesStudent = () => {
                         className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Course/Year/Standard
+                        Course
                         <span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={3} className="mb-3 mb-lg-0">

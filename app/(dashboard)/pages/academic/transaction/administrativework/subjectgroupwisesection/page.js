@@ -48,7 +48,7 @@ const SubjectGroupWiseSection = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Basic Course/Branch<span className="text-danger">*</span>
+                       Programme<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -62,7 +62,7 @@ const SubjectGroupWiseSection = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Course/Year<span className="text-danger">*</span>
+                        Course<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select

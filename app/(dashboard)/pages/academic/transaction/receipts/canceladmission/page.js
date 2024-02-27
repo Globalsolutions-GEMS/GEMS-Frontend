@@ -97,8 +97,8 @@ const CancelAdmission = () => {
 
                                         </Row>
                                         <Form.Label className="col-sm-2 col-form-label form-label" >Admission Date</Form.Label><br />
-                                        <Form.Label className="col-sm-2 col-form-label form-label" >Fee Type</Form.Label><br />
-                                        <Form.Label className="col-sm-2 col-form-label form-label" >Student Type</Form.Label><br />
+                                        <Form.Label className="col-sm-2 col-form-label form-label" >Fee Category</Form.Label><br />
+                                    
                                         <Form.Label className="col-sm-2 col-form-label form-label" >Status</Form.Label>
 
 

@@ -10,19 +10,19 @@ import { PageHeading } from 'widgets'
 import useMounted from 'hooks/useMounted';
 
 
-const CancelYearEndStudent = () => {
+const PRNAllotment = () => {
     const hasMounted = useMounted();
 
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Cancel Promotion" />
+            <PageHeading heading="PRN Number Allocation" />
             <Breadcrumb>
-            <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
-                <Breadcrumb.Item active>Cancel Promotion</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
+                <Breadcrumb.Item active>PRN Allotment</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -35,30 +35,42 @@ const CancelYearEndStudent = () => {
                                     <Form>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Session<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
+                                            <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
-                                        
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Receipt Book<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Select Course" id="course" required />
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
-                                           
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Course<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Select Course" id="course" required />
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
                                             </Col>
-                                           
                                         </Row>
-                                        
-                                        <Row >
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Order By</Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                            </Col>
+                                        </Row>
+
+
+
+                                        <Row className="mb-3">
                                             <Col className="d-flex align-items-center justify-content-center">
                                                 <Button variant="primary" type="submit">
-                                                    Submit
+                                                    Generate
+                                                </Button>
+                                                <Button
+                                                    variant="primary"
+                                                    type=""
+                                                    style={{ marginLeft: "10px" }}
+                                                >
+                                                    Confirm
                                                 </Button>
                                                 <Button
                                                     variant="secondary"
@@ -66,6 +78,13 @@ const CancelYearEndStudent = () => {
                                                     style={{ marginLeft: "10px" }}
                                                 >
                                                     Cancel
+                                                </Button>
+                                                <Button
+                                                    variant="secondary"
+                                                    type=""
+                                                    style={{ marginLeft: "10px" }}
+                                                >
+                                                    Report
                                                 </Button>
                                             </Col>
                                             <Col></Col>
@@ -82,4 +101,4 @@ const CancelYearEndStudent = () => {
     )
 }
 
-export default CancelYearEndStudent
+export default PRNAllotment
