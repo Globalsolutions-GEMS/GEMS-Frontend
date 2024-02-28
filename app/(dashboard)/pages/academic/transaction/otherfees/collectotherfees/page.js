@@ -5,6 +5,11 @@ import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
 import { PageHeading } from "widgets";
+import InputGroup from "react-bootstrap/InputGroup";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 
 // import sub components
 import useMounted from "hooks/useMounted";
@@ -80,22 +85,22 @@ const CollectOtherFees = () => {
                                       <Form.Label className="col-sm-2 col-form-label form-label">
                                         Search By
                                       </Form.Label>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check
                                           label="Student Id."
                                           type="radio"
                                         />
                                       </Col>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check label="Name" type="radio" />
                                       </Col>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check
                                           label="Roll No"
                                           type="radio"
                                         />
                                       </Col>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check
                                           label="User Field"
                                           type="radio"
@@ -104,19 +109,20 @@ const CollectOtherFees = () => {
                                     </Row>
                                   </Col>
                                   <Row className="mb-3">
-                                    <Form.Label
-                                      className="col-sm-2 col-form-label form-label"
-                                      htmlFor="fullName"
-                                    >
-                                      Enter Input
-                                    </Form.Label>
-                                    <Col sm={4} className="mb-3 mb-lg-0">
-                                      <Form.Control
-                                        type="text"
-                                        placeholder="Please Enter Student ID. No"
-                                        id="session"
-                                        required
-                                      />
+                                    <Col sm={6}>
+                                      <InputGroup className="mb-3">
+                                        <Form.Control
+                                          placeholder="Input group append..."
+                                          aria-label="Input group append..."
+                                          aria-describedby="basic-addon2"
+                                        />
+                                        <Button
+                                          variant="outline-secondary"
+                                          id="button-addon2"
+                                        >
+                                          <FontAwesomeIcon icon={faSearch} />
+                                        </Button>
+                                      </InputGroup>
                                     </Col>
 
                                     <Form.Label className="col-sm-2 col-form-label form-label">

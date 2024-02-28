@@ -54,23 +54,7 @@ const CreateOtherFeesBulk = () => {
                       </Col>
                     </Row>
                     <Row className="mb-3">
-                      <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Receipt Book<span className="text-danger">*</span>
-                      </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
-                        <Form.Select
-                          type="text"
-                          placeholder="Please Select"
-                          id="session"
-                          required
-                        />
-                      </Col>
-                    </Row>
-                    <Row className="mb-3">
-                      <Form.Label
+                    <Form.Label
                         className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
@@ -84,6 +68,23 @@ const CreateOtherFeesBulk = () => {
                           required
                         />
                       </Col>
+                    </Row>
+                    <Row className="mb-3">
+                    <Form.Label
+                        className="col-sm-3 col-form-label form-label"
+                        htmlFor="fullName"
+                      >
+                        Receipt Book<span className="text-danger">*</span>
+                      </Form.Label>
+                      <Col sm={3} className="mb-3 mb-lg-0">
+                        <Form.Select
+                          type="text"
+                          placeholder="Please Select"
+                          id="session"
+                          required
+                        />
+                      </Col>
+                      
                     </Row>
                     <Row className="mb-3">
                       <Form.Label

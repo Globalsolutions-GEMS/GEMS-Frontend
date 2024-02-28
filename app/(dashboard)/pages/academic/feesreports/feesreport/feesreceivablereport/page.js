@@ -69,7 +69,7 @@ const FeesReceivableReport = () => {
                         />
                       </Col>
                     </Row>
-                    <Row className="mt-2">
+                    <Row className="mt-2 mb-2">
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Report Format
                       </Form.Label>

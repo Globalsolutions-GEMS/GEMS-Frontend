@@ -38,10 +38,10 @@ const SentSMSReport = () => {
                     <Row>
                       <Col>
                       <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-3 col-form-label form-label">
                             Programme
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={9} className="mb-3 mb-lg-0">
                             <Form.Select
                               id="session    "
                               required
@@ -49,10 +49,10 @@ const SentSMSReport = () => {
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-3 col-form-label form-label">
                             Course
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={9} className="mb-3 mb-lg-0">
                             <Form.Select
                               id="session    "
                               required
@@ -61,34 +61,34 @@ const SentSMSReport = () => {
                         </Row>
 
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-3 col-form-label form-label">
                             From Date
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={9} className="mb-3 mb-lg-0">
                             <Form.Control type="date" />
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-3 col-form-label form-label">
                             To Date
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={9} className="mb-3 mb-lg-0">
                             <Form.Control type="date" />
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-3 col-form-label form-label">
                             Format
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
+                          <Col sm={9} className="mb-3 mb-lg-0">
                             <Form.Select type="text" />
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
+                          <Form.Label className="col-sm-3 col-form-label form-label">
                             Report Format
                           </Form.Label>
-                          <Col sm={2} className="mt-2">
+                          <Col sm={3} className="mt-2">
                             <Form.Check
                               label="Details"
                               type="radio"
