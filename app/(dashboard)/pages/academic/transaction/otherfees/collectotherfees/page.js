@@ -18,7 +18,7 @@ const CollectOtherFees = () => {
       <PageHeading heading="Collect Other Fees" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Other Fees</Breadcrumb.Item>
         <Breadcrumb.Item active>Collect Other Fees</Breadcrumb.Item>
       </Breadcrumb>
@@ -273,15 +273,15 @@ const CollectOtherFees = () => {
                                           </Col>
                                         </Row>
                                         <Row>
-                                            <Col>
-                                              <Button
-                                                variant="primary"
-                                                type="submit"
-                                              >
-                                                Add
-                                              </Button>
-                                            </Col>
-                                          </Row>
+                                          <Col>
+                                            <Button
+                                              variant="primary"
+                                              type="submit"
+                                            >
+                                              Add
+                                            </Button>
+                                          </Col>
+                                        </Row>
                                       </Form>
                                     )}
                                   </div>

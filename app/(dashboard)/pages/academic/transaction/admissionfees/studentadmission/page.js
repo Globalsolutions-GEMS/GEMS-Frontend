@@ -7,8 +7,8 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import InputGroup from "react-bootstrap/InputGroup";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 // import widget as custom components
 import { PageHeading } from "widgets";
@@ -197,39 +197,6 @@ const StudentAdmission = () => {
                   <Form onSubmit={handleSubmit}>
                     <Card className="mb-3">
                       <Card.Body>
-                        <PageHeading heading="Search Student" />
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-2 col-form-label form-label">
-                            Search Criteria
-                            <span className="text-danger">*</span>
-                          </Form.Label>
-                          <Col sm={4} className="mb-3 mb-lg-0">
-                            <Form.Select
-                              type="text"
-                              placeholder="Please Enter "
-                              id="mothertongue"
-                            />
-                          </Col>
-                          <Col>
-                            <InputGroup className="mb-3">
-                              <Form.Control
-                                placeholder="Input group append..."
-                                aria-label="Input group append..."
-                                aria-describedby="basic-addon2"
-                              />
-                              <Button
-                                variant="outline-secondary"
-                                id="button-addon2"
-                              >
-                                <FontAwesomeIcon icon={faSearch} />
-                              </Button>
-                            </InputGroup>
-                          </Col>
-                        </Row>
-                      </Card.Body>
-                    </Card>
-                    <Card className="mb-3">
-                      <Card.Body>
                         <PageHeading heading="Course Details" />
                         <Row className="mb-3">
                           <Form.Label className="col-sm-2 col-form-label form-label">
@@ -275,12 +242,38 @@ const StudentAdmission = () => {
                             />
                           </Col>
                         </Row>
+                      </Card.Body>
+                    </Card>
+
+                    <Card className="mb-3">
+                      <Card.Body>
+                        <PageHeading heading="Search Student" />
                         <Row className="mb-3">
-                          <Col></Col>
-                          <Col className="d-flex align-items-center justify-content-center">
-                            <Button variant="primary" type="">
-                              Search Student
-                            </Button>
+                          <Form.Label className="col-sm-2 col-form-label form-label">
+                            Search Criteria
+                            <span className="text-danger">*</span>
+                          </Form.Label>
+                          <Col sm={4} className="mb-3 mb-lg-0">
+                            <Form.Select
+                              type="text"
+                              placeholder="Please Enter "
+                              id="mothertongue"
+                            />
+                          </Col>
+                          <Col>
+                            <InputGroup className="mb-3">
+                              <Form.Control
+                                placeholder="Input group append..."
+                                aria-label="Input group append..."
+                                aria-describedby="basic-addon2"
+                              />
+                              <Button
+                                variant="outline-secondary"
+                                id="button-addon2"
+                              >
+                                <FontAwesomeIcon icon={faSearch} />
+                              </Button>
+                            </InputGroup>
                           </Col>
                         </Row>
                       </Card.Body>

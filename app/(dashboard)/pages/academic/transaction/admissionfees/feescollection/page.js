@@ -63,7 +63,7 @@ const FeesCollection = () => {
                                       <Col className="mt-2">
                                         <Form.Check
                                           label="User Field"
-                                            type="radio"
+                                          type="radio"
                                         />
                                       </Col>
                                     </Row>
@@ -73,14 +73,22 @@ const FeesCollection = () => {
                                       Search Student
                                       <span className="text-danger">*</span>
                                     </Form.Label>
-                                    <Col sm={3} className="mb-3 mb-lg-0">
-                                      <Form.Control
-                                        type="text"
-                          
-                                        id="session"
-                                        required
-                                      />
-                                    </Col>
+                                    
+                                      <Col sm={8}>
+                                        <div className="input-group">
+                                          <span className="input-group-text">
+                                            <i className="bi bi-search"></i>
+                                          </span>
+                                          <input
+                                            type="search"
+                                            className="form-control"
+                                            placeholder="Please Enter Minimum 3 letters of Student Name"
+                                            id="session"
+                                            required
+                                          />
+                                        </div>
+                                      </Col>
+                                    
                                   </Row>
                                   <Row className="mb-3">
                                     <Form.Label className="col-sm-3 col-form-label form-label">
@@ -193,7 +201,6 @@ const FeesCollection = () => {
                                         disabled
                                         id="session"
                                         required
-                                        
                                       />
                                     </Col>
                                   </Row>
@@ -210,18 +217,19 @@ const FeesCollection = () => {
                                     </Col>
                                   </Row>
                                 </Form>
-
                               )}
                               <Link />
                               <a href=""> Click here for fees Concession </a>
 
                               <Link />
-                              <a href=""> Click here for exam fees collection(subject fee) </a>
+                              <a href="">
+                                {" "}
+                                Click here for exam fees collection(subject fee){" "}
+                              </a>
 
                               <Link />
                               <a href=""> Click here for get fees details</a>
                             </div>
-
                           </Card.Body>
                         </Card>
                       </Col>
@@ -256,10 +264,9 @@ const FeesCollection = () => {
                                         required
                                       />
                                     </Col>
-                                    
                                   </Row>
                                   <Row className="mb-3">
-                                  <Form.Label
+                                    <Form.Label
                                       className="col-sm-3 col-form-label form-label"
                                       htmlFor="fullName"
                                     >
@@ -274,7 +281,7 @@ const FeesCollection = () => {
                                         required
                                       />
                                     </Col>
-                                    </Row>
+                                  </Row>
                                   <Col className="d-flex align-items-center justify-content-center">
                                     <Button variant="primary" type="submit">
                                       Add
@@ -310,7 +317,6 @@ const FeesCollection = () => {
                   Adjust
                 </Button>
               </Col>
-
             </Card.Body>
           </Card>
         </Col>
