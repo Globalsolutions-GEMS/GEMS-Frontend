@@ -124,15 +124,14 @@ const BlankAttendanceSheet = () => {
                           <Form.Label className="col-sm-2 col-form-label form-label">
                             Name Type<span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={3} className="mb-3 mb-lg-0 mt-2">
+                          <Col sm={4} className="mb-3 mb-lg-0 mt-2">
                             <Form.Check
                               label="FName +MName+LName"
                               name="nameType"
                               type="radio"
                             />
                           </Col>
-                          <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
-                          <Col sm={3} className="mb-3 mb-lg-0 mt-2">
+                          <Col sm={5} className="mb-3 mb-lg-0 mt-2">
                             <Form.Check
                               label="LName+FName+MName"
                               name="nameType"
@@ -151,8 +150,7 @@ const BlankAttendanceSheet = () => {
                               type="radio"
                             />
                           </Col>
-                          <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
-                          <Col sm={4} className="mb-3 mb-lg-0">
+                          <Col sm={5} className="mb-3 mb-lg-0">
                             <Form.Check
                               label="Last Name"
                               name="sortName"
@@ -167,8 +165,7 @@ const BlankAttendanceSheet = () => {
                               type="radio"
                             />
                           </Col>
-                          <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
-                          <Col sm={4} className="mb-3 mb-lg-0">
+                          <Col sm={5} className="mb-3 mb-lg-0">
                             <Form.Check
                               label="Section"
                               name="sortName"
