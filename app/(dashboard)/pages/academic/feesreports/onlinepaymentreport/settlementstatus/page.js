@@ -1,6 +1,6 @@
 "use client";
 // import node module libraries
-import { Breadcrumb, Container } from "react-bootstrap";
+import {  Breadcrumb, Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -9,18 +9,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const SettledUnsettledReceipt = () => {
+const SettlementStatus = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Settlement Statistic" />
+      <PageHeading heading="Settlement Status" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Fees Reports</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Online Payment Report</Breadcrumb.Item>
-        <Breadcrumb.Item active>Settled Unsettled Receipt</Breadcrumb.Item>
+        <Breadcrumb.Item active>Settlement Status</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -129,4 +129,4 @@ const SettledUnsettledReceipt = () => {
   );
 };
 
-export default SettledUnsettledReceipt;
+export default SettlementStatus;

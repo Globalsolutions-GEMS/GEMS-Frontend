@@ -1,5 +1,5 @@
 "use client";
-import 'bootstrap-icons/font/bootstrap-icons.css'
+import "bootstrap-icons/font/bootstrap-icons.css";
 // import node module libraries
 import { Breadcrumb, Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
@@ -10,18 +10,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const PaymentGatewayTransactionsReport = () => {
+const PGTransactionReport = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Payment Gateway Transactions Report" />
+      <PageHeading heading="PG Transaction Report" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Fees Reports</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Online Payment Report</Breadcrumb.Item>
-        <Breadcrumb.Item active>Payment Gateway Transactions Report</Breadcrumb.Item>
+        <Breadcrumb.Item active>PG Transaction Report</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -31,26 +31,41 @@ const PaymentGatewayTransactionsReport = () => {
               <div>
                 {hasMounted && (
                   <Form>
-                    <Row className="mb-3">
+                    <Row>
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Search Criteria<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col>
-                        <Form.Check label="Name" type="radio" />
+                      <Col className="mt-2">
+                        <Form.Check label="Name" type="radio" name="name" />
                       </Col>
+                    </Row>
+                    <Row className="mb-2">
+                      <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
                       <Col>
-                        <Form.Check label="Student Id" type="radio" />
+                        <Form.Check
+                          label="Student Id"
+                          type="radio"
+                          name="name"
+                        />
                       </Col>
+                      </Row>
+                      <Row className="mb-2">
+                      <Form.Label className="col-sm-2 col-form-label form-label"></Form.Label>
                       <Col>
-                        <Form.Check label="Transaction Id" type="radio" />
+                        <Form.Check
+                          label="Transaction Id"
+                          type="radio"
+                          name="name"
+                        />
                       </Col>
-
                     </Row>
                     <Row className="mb-3">
                       <Col></Col>
                       <Col className="mb-3 mb-lg-0">
                         <div className="input-group">
-                          <span className="input-group-text"><i className="bi bi-search"></i></span>
+                          <span className="input-group-text">
+                            <i className="bi bi-search"></i>
+                          </span>
                           <input
                             type="search"
                             className="form-control"
@@ -89,7 +104,6 @@ const PaymentGatewayTransactionsReport = () => {
                           Cancel
                         </Button>
                       </Col>
-
                     </Row>
                   </Form>
                 )}
@@ -102,4 +116,4 @@ const PaymentGatewayTransactionsReport = () => {
   );
 };
 
-export default PaymentGatewayTransactionsReport;
+export default PGTransactionReport;

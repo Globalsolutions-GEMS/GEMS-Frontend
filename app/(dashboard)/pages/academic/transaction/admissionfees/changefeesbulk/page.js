@@ -25,7 +25,7 @@ const ChangeFeesBulk = () => {
             <PageHeading heading="Change Fees - Bulk" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Admission Fees</Breadcrumb.Item>
                 <Breadcrumb.Item active>Change Fees - Bulk</Breadcrumb.Item>
             </Breadcrumb>
@@ -146,7 +146,7 @@ const ChangeFeesBulk = () => {
                                             <Col></Col>
                                             <Col>
                                                 <Form.Check
-                                                    label="Subject"
+                                                    label="Subject Type"
                                                     type="radio"
                                                     value="Subject"
                                                     onChange={handleRadioChange}

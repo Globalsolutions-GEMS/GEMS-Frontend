@@ -16,12 +16,12 @@ const ReceiptReconciliation = () => {
     return (
         <Container fluid className="p-6">
             {/* Page Heading */}
-            <PageHeading heading="Receipt Reconcilation" />
+            <PageHeading heading="Receipt Reconciliation" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Admission Fees</Breadcrumb.Item>
-                <Breadcrumb.Item active>Receipt Reconcilation</Breadcrumb.Item>
+                <Breadcrumb.Item active>Receipt Reconciliation</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
@@ -139,7 +139,7 @@ const ReceiptReconciliation = () => {
                                                 className="col-sm-2 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Reconcilation Date
+                                                Reconcilation Date<span className="text-danger">*</span>
                                             </Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Control
@@ -172,9 +172,9 @@ const ReceiptReconciliation = () => {
                                                 User
                                             </Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Control
+                                                <Form.Select
                                                     type="text"
-                                                    placeholder="Please Enter Unicode Father's Name"
+                                                    placeholder="Enter Mother's Name"
                                                     id="session"
                                                     required
                                                 />

@@ -66,7 +66,7 @@ const CustomizedStudentReportExcel = () => {
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        CashBook<span className="text-danger">*</span>
+                        Receipt Book<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select

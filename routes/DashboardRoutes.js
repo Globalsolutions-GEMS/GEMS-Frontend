@@ -429,10 +429,16 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/admissionfees/studentdirectadmissionye",
-                name: "Student Direct Admission YE",
+                link: "/pages/academic/transaction/admissionfees/studentdirectadmission",
+                name: "Student Direct Admission",
                 icon: "file-text",
               },
+              {
+                id: uuid(),
+                link: "/pages/academic/transaction/admissionfees/canceladmissionapproval",
+                name: "Cancel Admission Approval",
+                icon: "file-text",
+              }
             ],
           },
           {
@@ -604,8 +610,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/administrativework/subjectgroupwisesection",
-                name: "Subject Groupwise Section",
+                link: "/pages/academic/transaction/administrativework/divisionallotment",
+                name: "Division Allotment",
                 icon: "file-text",
               },
               // { id: uuid(), link: '/pages/academic/transaction/administrativework/sectionallocation', name: 'Section Allocation(YE/PROADM)' },
@@ -750,8 +756,8 @@ export const DashboardMenu = [
             children: [
               {
                 id: uuid(),
-                link: "/pages/academic/feesreports/onlinepaymentreport/paymentgatewaytransactionsreport",
-                name: "Payment Gateway Transactions Report",
+                link: "/pages/academic/feesreports/onlinepaymentreport/pgtransactionreport",
+                name: "PG Transaction Report",
                 icon: "file-text",
               },
               {
@@ -768,14 +774,14 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/feesreports/onlinepaymentreport/cashbookwisesettlementdcr",
-                name: "CashbookWise Settlement DCR",
+                link: "/pages/academic/feesreports/onlinepaymentreport/settlementreportcashbook",
+                name: "Settlement Report-Cashbook",
                 icon: "file-text",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/feesreports/onlinepaymentreport/settledunsettledreceipt",
-                name: "Settled Unsettled Receipt",
+                link: "/pages/academic/feesreports/onlinepaymentreport/settlementstatus",
+                name: "Settlement Status",
                 icon: "file-text",
               },
             ],
@@ -857,8 +863,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/admission/smssendreport",
-                name: "SMS Send Report",
+                link: "/pages/academic/studentreport/admission/sentsmsreport",
+                name: "Sent SMS Report",
                 icon: "file-text",
               },
               {

@@ -45,38 +45,38 @@ const FeesCollection = () => {
                                         Search Crieteria
                                         <span className="text-danger">*</span>
                                       </Form.Label>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check
                                           label="Student Id."
                                           type="radio"
                                         />
                                       </Col>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check label="Name" type="radio" />
                                       </Col>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check
                                           label="Roll No"
                                           type="radio"
                                         />
                                       </Col>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check
                                           label="User Field"
-                                          type="radio"
+                                            type="radio"
                                         />
                                       </Col>
                                     </Row>
                                   </Col>
                                   <Row className="mb-3">
                                     <Form.Label className="col-sm-3 col-form-label form-label">
-                                      Student
+                                      Search Student
                                       <span className="text-danger">*</span>
                                     </Form.Label>
                                     <Col sm={3} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
-                                        disabled
+                          
                                         id="session"
                                         required
                                       />

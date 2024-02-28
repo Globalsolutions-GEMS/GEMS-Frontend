@@ -77,7 +77,7 @@ const CourseAndFeeCategoryChange = () => {
                       </Form.Label>
                       <Col className="mt-2">
                         <Form.Check
-                          label="Course/Year Change"
+                          label="Course Change"
                           type="radio"
                           name="name"
                         />

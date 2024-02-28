@@ -31,19 +31,19 @@ const SettlementDCRReport = () => {
                 {hasMounted && (
                   <Form>
                     <Row className="mb-3">
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Report Format<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col>
+                      <Col className="mt-2">
                         <Form.Check label="Date Wise" type="radio" />
                       </Col>
-                      <Col>
+                      <Col className="mt-2">
                         <Form.Check label="FeeHead Wise" type="radio" />
                       </Col>
-                      <Col>
+                      <Col className="mt-2">
                         <Form.Check label="StudentWise" type="radio" />
                       </Col>
-                      <Col>
+                      <Col className="mt-2">
                         <Form.Check label="AccountNoWise" type="radio" />
                       </Col>
                     </Row>

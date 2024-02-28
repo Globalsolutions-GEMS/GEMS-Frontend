@@ -1,7 +1,7 @@
 "use client";
 // import node module libraries
 import React, { useState, useEffect } from "react";
-import { Breadcrumb, Container, Table } from "react-bootstrap";
+import {  Breadcrumb, Container, Table } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -14,7 +14,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-const SMSSendReport = () => {
+const SentSMSReport = () => {
   const hasMounted = useMounted();
 
   return (
@@ -95,14 +95,14 @@ const SMSSendReport = () => {
                               name="radio"
                             />
                           </Col>
-                          <Col sm={2} className="mt-2">
+                          <Col sm={3} className="mt-2">
                             <Form.Check
                               label="Summary"
                               type="radio"
                               name="radio"
                             />
                           </Col>
-                          <Col sm={4} className="mt-2">
+                          <Col sm={3} className="mt-2">
                             <Form.Check
                               label="User Wise"
                               type="radio"
@@ -147,4 +147,4 @@ const SMSSendReport = () => {
   );
 };
 
-export default SMSSendReport;
+export default SentSMSReport;

@@ -54,18 +54,18 @@ const ReceivedScholarshipEntry = () => {
                       </Col>
                     </Row>
 
-                    <Row>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Search Crieteria<span className="text-danger">*</span>
                       </Form.Label>
 
-                      <Col>
+                      <Col className="mt-2">
                         <Form.Check label="Student Id." type="radio" />
                       </Col>
-                      <Col>
+                      <Col className="mt-2">
                         <Form.Check label="Name" type="radio" />
                       </Col>
-                      <Col>
+                      <Col className="mt-2">
                         <Form.Check label="User Field" type="radio" />
                       </Col>
                     </Row>
@@ -77,11 +77,7 @@ const ReceivedScholarshipEntry = () => {
                         Search Text<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={3} className="mb-3 mb-lg-0">
-                        <Form.Control
-                          type="text"
-                          id="certificatecode"
-                          disabled
-                        />
+                        <Form.Control type="text" id="certificatecode" />
                       </Col>
                     </Row>
 
@@ -178,42 +174,6 @@ const ReceivedScholarshipEntry = () => {
                           id="Course/Standard"
                           disabled
                         />
-                      </Col>
-                    </Row>
-
-                    <Row className="mb-3">
-                      <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Payment Remark
-                      </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
-                        <Form.Control type="text" id="Course/Standard" />
-                      </Col>
-                    </Row>
-
-                    <Row className="mb-3">
-                      <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Payment Option
-                      </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
-                        <Form.Select type="text" id="Course/Standard" />
-                      </Col>
-                    </Row>
-
-                    <Row className="mb-3">
-                      <Form.Label
-                        className="col-sm-3 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Payment ID
-                      </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
-                        <Form.Control type="text" id="Course/Standard" />
                       </Col>
                     </Row>
 

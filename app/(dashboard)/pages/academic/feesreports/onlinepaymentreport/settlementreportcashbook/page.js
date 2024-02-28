@@ -1,6 +1,6 @@
 "use client";
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
+import { Alert, Badge,  Breadcrumb,  Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -9,18 +9,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const CashbookWiseSettlementDCR = () => {
+const SettlementReportCashbook = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Settlement Report" />
+      <PageHeading heading="Settlement Report-Cashbook" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Fees Reports</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Online Payment Report</Breadcrumb.Item>
-        <Breadcrumb.Item active>CashbookWise Settlement DCR</Breadcrumb.Item>
+        <Breadcrumb.Item active>Settlement Report-Cashbook</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -112,6 +112,13 @@ const CashbookWiseSettlementDCR = () => {
                           type=""
                           style={{ marginLeft: "10px" }}
                         >
+                          Report
+                        </Button>
+                        <Button
+                          variant="secondary"
+                          type=""
+                          style={{ marginLeft: "10px" }}
+                        >
                           Cancel
                         </Button>
                       </Col>
@@ -128,4 +135,4 @@ const CashbookWiseSettlementDCR = () => {
   );
 };
 
-export default CashbookWiseSettlementDCR;
+export default SettlementReportCashbook;

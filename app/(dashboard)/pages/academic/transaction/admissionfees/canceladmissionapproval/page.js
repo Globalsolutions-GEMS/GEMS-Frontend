@@ -9,18 +9,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const ProvisionalStudentDemandCancellation = () => {
+const CancelAdmissionApproval = () => {
     const hasMounted = useMounted();
 
     return (
         <Container fluid className="p-6">
             {/* Page Heading */}
-            <PageHeading heading="Provisional Student Demand Cancellation   " />
+            <PageHeading heading="Cancel Admission Approval" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Admission Fees</Breadcrumb.Item>
-                <Breadcrumb.Item active>Provisional Student Demand Cancellation</Breadcrumb.Item>
+                <Breadcrumb.Item active>Cancel Admission Approval</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
@@ -64,7 +64,7 @@ const ProvisionalStudentDemandCancellation = () => {
                                                 className="col-sm-3 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Basic Course<span className="text-danger">*</span>
+                                                Programme<span className="text-danger">*</span>
                                             </Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select
@@ -127,4 +127,4 @@ const ProvisionalStudentDemandCancellation = () => {
     );
 };
 
-export default ProvisionalStudentDemandCancellation;
+export default CancelAdmissionApproval;

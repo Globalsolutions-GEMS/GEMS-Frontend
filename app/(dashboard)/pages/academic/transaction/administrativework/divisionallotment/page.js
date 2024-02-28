@@ -1,6 +1,6 @@
 "use client";
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
+import { Alert, Badge,  Breadcrumb,  Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -9,18 +9,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const SubjectGroupWiseSection = () => {
+const DivisionAllotment = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Subjectwise Section Updation" />
+      <PageHeading heading="Division Allotment" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Administrative Work</Breadcrumb.Item>
-        <Breadcrumb.Item active>Subject Groupwise Section</Breadcrumb.Item>
+        <Breadcrumb.Item active>Division Allotment</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -103,7 +103,7 @@ const SubjectGroupWiseSection = () => {
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Subject
                       </Form.Label>
-                      <Col sm={2} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
@@ -201,4 +201,4 @@ const SubjectGroupWiseSection = () => {
   );
 };
 
-export default SubjectGroupWiseSection;
+export default DivisionAllotment;

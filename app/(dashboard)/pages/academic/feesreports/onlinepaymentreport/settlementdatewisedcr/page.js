@@ -62,7 +62,7 @@ const SettlementDateWiseDCR = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Basic Course
+                        Programme
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
