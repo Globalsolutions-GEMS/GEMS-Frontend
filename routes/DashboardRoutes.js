@@ -291,7 +291,7 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/fees/coursesection",
+                link: "/pages/academic/preadmission/fees/coursedivision",
                 name: "Course Division",
                 icon: "file-text",
               },

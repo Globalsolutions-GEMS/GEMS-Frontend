@@ -112,7 +112,7 @@ const CourseCreation = () => {
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Fees Configuration</Breadcrumb.Item>
-        <Breadcrumb.Item active>Course Division</Breadcrumb.Item>
+        <Breadcrumb.Item active>Course Creation</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">

@@ -1,6 +1,6 @@
 'use client'
 // import node module libraries
-import { Breadcrumb, Container } from 'react-bootstrap';
+import {  Breadcrumb, Container } from 'react-bootstrap';
 import { Col, Row, Form, Card, Button } from 'react-bootstrap';
 
 // import widget as custom components
@@ -10,7 +10,7 @@ import { PageHeading } from 'widgets'
 import useMounted from 'hooks/useMounted';
 
 
-const CourseSection = () => {
+const CourseDivision = () => {
     const hasMounted = useMounted();
 
     return (
@@ -50,7 +50,7 @@ const CourseSection = () => {
 
                                             <Col md={{ offset: 4, span: 8 }} xs={12} className="mt-4">
                                                 <Button variant="primary" type="submit" >
-                                                    Add New Record
+                                                    Add New Division
                                                 </Button>
                                                 <Button variant="secondary" type="" style={{ marginLeft: '10px' }}>
                                                     Cancel
@@ -69,4 +69,4 @@ const CourseSection = () => {
     )
 }
 
-export default CourseSection
+export default CourseDivision
