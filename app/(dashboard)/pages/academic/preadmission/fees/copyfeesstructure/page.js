@@ -1,23 +1,23 @@
 'use client'
 // import node module libraries
-import { Breadcrumb, Button, Card, Col, Container, Form, Row } from 'react-bootstrap';
+import {  Breadcrumb, Button, Card, Col, Container, Form, Row } from 'react-bootstrap';
 
 // import widget as custom components
 import { PageHeading } from 'widgets'
 import useMounted from 'hooks/useMounted';
 
-const CopyStandardFees = () => {
+const CopyFeesStructure = () => {
     const hasMounted = useMounted();
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Copy Standard Fees" />
+            <PageHeading heading="Copy Fees Structure" />
             <Breadcrumb>
             <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Fees</Breadcrumb.Item>
-                <Breadcrumb.Item active>Copy Standard Fees</Breadcrumb.Item>
+                <Breadcrumb.Item active>Copy Fees Structure</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
@@ -62,4 +62,4 @@ const CopyStandardFees = () => {
     )
 }
 
-export default CopyStandardFees
+export default CopyFeesStructure

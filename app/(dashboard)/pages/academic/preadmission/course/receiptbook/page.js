@@ -190,9 +190,9 @@ const ReceiptBook = () => {
 
                                                 <Form.Select type="text" placeholder="Please Enter Receipt Book Name" id="receiptBookType" value={formData.receiptBookType} onChange={handleInputChange} required>
                                                     <option value="">Select a Receipt Book Type</option>
-                                                    <option value="Book 1">Book 1</option>
-                                                    <option value="Book 2">Book 2</option>
-                                                    <option value="Book 3">Book 3</option>
+                                                    <option value="Book 1">Admission</option>
+                                                    <option value="Book 2">Examination</option>
+                                                    <option value="Book 3">Other</option>
                                                     {/* Add more option value if we need to add the data manually */}
                                                 </Form.Select>
 

@@ -38,7 +38,10 @@ const FeeHeadAccountMapping = () => {
 
                                             <Col md={{ offset: 4, span: 8 }} xs={12} className="mt-4">
                                                 <Button variant="primary" type="submit" >
-                                                    Add New Record
+                                                    Submit
+                                                </Button>
+                                                <Button variant="secondary" type="" style={{ marginLeft: '10px' }}>
+                                                    Report
                                                 </Button>
                                                 <Button variant="secondary" type="" style={{ marginLeft: '10px' }}>
                                                     Cancel

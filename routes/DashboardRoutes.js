@@ -303,8 +303,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/fees/copystandardfee",
-                name: "Copy Standard Fee",
+                link: "/pages/academic/preadmission/fees/copyfeesstructure",
+                name: "Copy Fees Structure",
                 icon: "file-text",
               },
             ],

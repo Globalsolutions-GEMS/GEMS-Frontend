@@ -68,7 +68,7 @@ const GeneralFineCollection = () => {
                                       <Form.Label className="col-sm-3 col-form-label form-label">
                                         Search By
                                       </Form.Label>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check
                                           label="Student Id."
                                           type="radio"
@@ -77,7 +77,7 @@ const GeneralFineCollection = () => {
                                       <Col>
                                         <Form.Check label="Name" type="radio" />
                                       </Col>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check
                                           label="Roll No"
                                           type="radio"
