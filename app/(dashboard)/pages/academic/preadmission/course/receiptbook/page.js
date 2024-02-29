@@ -102,7 +102,7 @@ const ReceiptBook = () => {
             receiptBookType: editedCashBook.receiptBookType,
             srNo: editedCashBook.srNo,
             checkIfGstApplicable: editedCashBook.checkIfGstApplicable,
-            checkIfActive: editedFaculty.checkIfActive,
+            checkIfActive: editedCashBook.checkIfActive,
         });
         setFormData(editedCashBook);
         setEditingCashBook(editedCashBook);
