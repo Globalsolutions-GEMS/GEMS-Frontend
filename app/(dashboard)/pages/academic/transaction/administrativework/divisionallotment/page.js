@@ -74,17 +74,6 @@ const DivisionAllotment = () => {
                       </Col>
                       <Col></Col>
                     </Row>
-                    <Row className="mb-3 ">
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                      </Form.Label>
-                      <Col sm={2}>
-                        <Form.Check label="Subject" type="radio" name="radio" />
-                      </Col>
-                      <Col sm={2}>
-                        <Form.Check label="Subject Group" type="radio" name="radio" />
-                      </Col>
-
-                    </Row>
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Medium
@@ -99,6 +88,18 @@ const DivisionAllotment = () => {
                       </Col>
                       <Col></Col>
                     </Row>
+                    <Row className="mb-3 ">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                      </Form.Label>
+                      <Col sm={2}>
+                        <Form.Check label="Subject" type="radio" name="radio" />
+                      </Col>
+                      <Col sm={2}>
+                        <Form.Check label="Subject Group" type="radio" name="radio" />
+                      </Col>
+
+                    </Row>
+                   
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Subject

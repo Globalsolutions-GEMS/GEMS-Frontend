@@ -161,7 +161,7 @@ const Section = () => {
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                            <th><b>Section Name</b></th>
+                            <th><b>Division Name</b></th>
                             <th><b>Active</b></th>
                             <th className="col-2"><b>Action</b></th>
                         </tr>
