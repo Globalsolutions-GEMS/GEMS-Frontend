@@ -61,7 +61,7 @@ const ReceiptCancelAndReprint = () => {
       <PageHeading heading="Receipt Cancel and Reprint" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
         <Breadcrumb.Item active>Receipt Cancel and Reprint</Breadcrumb.Item>
       </Breadcrumb>

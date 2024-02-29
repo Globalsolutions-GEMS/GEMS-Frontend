@@ -62,7 +62,7 @@ const PhotoSignReport = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Basic Course<span className="text-danger">*</span>
+                            Programme<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Select type="text" required />
@@ -70,7 +70,7 @@ const PhotoSignReport = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Course/Year/Standard
+                            Course
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Select type="text" />

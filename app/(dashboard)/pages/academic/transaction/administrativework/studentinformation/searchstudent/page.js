@@ -103,7 +103,7 @@ const SearchStudent = () => {
                                                 className="col-sm-2 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Course/Year/Standard
+                                                Course
                                             </Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select

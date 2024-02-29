@@ -57,14 +57,14 @@ const AdmissionPositionReport = () => {
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Student Status</Form.Label>
-                                            <Col sm={2}>
+                                            <Col sm={2} className="mt-2">
                                                 <Form.Check
                                                     label="Admission"
                                                     type="radio"
                                                     name="name"
                                                 />
                                             </Col>
-                                            <Col sm={2}>
+                                            <Col sm={2} className="mt-2">
                                                 <Form.Check
                                                     label="Provisional Admission"
                                                     type="radio"
@@ -79,14 +79,14 @@ const AdmissionPositionReport = () => {
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Report Format</Form.Label>
-                                            <Col sm={2}>
+                                            <Col sm={2} className="mt-2">
                                                 <Form.Check
                                                     label="Format 1"
                                                     type="radio"
                                                     name="name"
                                                 />
                                             </Col>
-                                            <Col sm={2}>
+                                            <Col sm={2} className="mt-2">
                                                 <Form.Check
                                                     label="Format 2"
                                                     type="radio"

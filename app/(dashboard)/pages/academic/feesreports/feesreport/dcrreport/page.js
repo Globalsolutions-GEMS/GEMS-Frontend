@@ -15,7 +15,7 @@ const DCRReport = () => {
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Demand Report " />
+      <PageHeading heading="DCR Report " />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Fees Reports</Breadcrumb.Item>

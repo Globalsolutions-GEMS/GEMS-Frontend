@@ -163,7 +163,7 @@ const BulkEmail = () => {
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Fee Type
+                        Fee Category
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select

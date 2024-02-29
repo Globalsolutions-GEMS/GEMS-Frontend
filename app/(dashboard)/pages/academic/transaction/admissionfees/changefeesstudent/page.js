@@ -9,6 +9,11 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 import { CheckCircleFill } from "react-bootstrap-icons";
+import InputGroup from "react-bootstrap/InputGroup";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
+
 
 const ChangeFeesStudent = () => {
   const hasMounted = useMounted();
@@ -19,7 +24,7 @@ const ChangeFeesStudent = () => {
       <PageHeading heading="Change Fees - Student" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transactionn</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Admission Fees</Breadcrumb.Item>
         <Breadcrumb.Item active>Change Fees - Student</Breadcrumb.Item>
       </Breadcrumb>
@@ -124,13 +129,25 @@ const ChangeFeesStudent = () => {
                                                 *
                                               </span>
                                             </Form.Label>
-                                            <Col className="mb-3 mb-lg-0">
-                                              <Form.Control
-                                                type="text"
-                                                placeholder="Student ID Number"
-                                                id="course"
-                                                required
-                                              />
+                                            <Col
+                                              sm={8}
+                                              className="mb-3 mb-lg-0"
+                                            >
+                                              <InputGroup>
+                                                <Form.Control
+                                                  placeholder="Input group append..."
+                                                  aria-label="Input group append..."
+                                                  aria-describedby="basic-addon2"
+                                                />
+                                                <Button
+                                                  variant="outline-secondary"
+                                                  id="button-addon2"
+                                                >
+                                                  <FontAwesomeIcon
+                                                    icon={faSearch}
+                                                  />
+                                                </Button>
+                                              </InputGroup>
                                             </Col>
                                           </Row>
                                         </Row>
