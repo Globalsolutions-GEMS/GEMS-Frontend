@@ -9,18 +9,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const DCRReport = () => {
+const DailyCollectionReport = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="DCR Report " />
+      <PageHeading heading="Daily Collection Report " />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Fees Reports</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Fees Report</Breadcrumb.Item>
-        <Breadcrumb.Item active>DCR Report</Breadcrumb.Item>
+        <Breadcrumb.Item active>Daily Collection Report</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -357,7 +357,7 @@ const DCRReport = () => {
                               Feeheads
                             </Form.Label>
                           </Col>
-                          <Col sm={4}>
+                          <Col sm={8}>
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
@@ -450,4 +450,4 @@ const DCRReport = () => {
   );
 };
 
-export default DCRReport;
+export default DailyCollectionReport;

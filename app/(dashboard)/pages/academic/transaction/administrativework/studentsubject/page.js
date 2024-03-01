@@ -10,7 +10,7 @@ import { PageHeading } from 'widgets'
 import useMounted from 'hooks/useMounted';
 
 
-const StudentSubjectUpdation = () => {
+const StudentSubject = () => {
     const hasMounted = useMounted();
 
     return (
@@ -111,4 +111,4 @@ const StudentSubjectUpdation = () => {
     )
 }
 
-export default StudentSubjectUpdation
+export default StudentSubject

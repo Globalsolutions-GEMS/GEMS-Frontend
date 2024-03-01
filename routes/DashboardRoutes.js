@@ -193,8 +193,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/course/faculty",
-                name: "Faculty",
+                link: "/pages/academic/preadmission/course/stream",
+                name: "Stream",
                 icon: "file-text",
               },
               {
@@ -409,12 +409,7 @@ export const DashboardMenu = [
                 name: "Change Fees- Student",
                 icon: "file-text",
               },
-              {
-                id: uuid(),
-                link: "/pages/academic/transaction/admissionfees/createotherfeesbulk",
-                name: "Create Other Fees - Bulk",
-                icon: "file-text",
-              },
+              
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/admissionfees/changefeesbulk",
@@ -451,6 +446,12 @@ export const DashboardMenu = [
                 id: uuid(),
                 link: "/pages/academic/transaction/otherfees/collectotherfees",
                 name: "Collect Other Fees",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/academic/transaction/otherfees/createotherfeesbulk",
+                name: "Create Other Fees - Bulk",
                 icon: "file-text",
               },
               {
@@ -505,19 +506,19 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/receipts/adminreceiptcancellationandreprint",
-                name: "Admin Receipt Cancellation And Reprint",
+                link: "/pages/academic/transaction/receipts/adminreceiptcancellation",
+                name: "Admin Receipt Cancellation",
                 icon: "file-text",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/receipts/coursechange",
-                name: "Course Change",
+                link: "/pages/academic/transaction/receipts/changecourse",
+                name: "Change Course",
                 icon: "file-text",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/receipts/feetypechange",
+                link: "/pages/academic/transaction/receipts/changefeecategory",
                 name: "Change Fee Category",
                 icon: "file-text",
               },
@@ -543,7 +544,7 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/transaction/administrativework/studentsubjectupdation",
+                link: "/pages/academic/transaction/administrativework/studentsubject",
                 name: "Student Subject",
                 icon: "file-text",
               },
@@ -634,8 +635,8 @@ export const DashboardMenu = [
             children: [
               {
                 id: uuid(),
-                link: "/pages/academic/feesreports/feesreport/dcrreport",
-                name: "DCR Report",
+                link: "/pages/academic/feesreports/feesreport/dailycollectionreport",
+                name: "Daily Collection Report",
                 icon: "file-text",
               },
               {

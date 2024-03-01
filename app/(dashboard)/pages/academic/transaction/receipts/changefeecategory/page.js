@@ -12,20 +12,18 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-
-
-const CourseChange = () => {
+const ChangeFeeCategory = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Course Change" />
+      <PageHeading heading="Change Fee Category" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
-        <Breadcrumb.Item active>Course Change</Breadcrumb.Item>
+        <Breadcrumb.Item active>Change Fee Category</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -54,7 +52,7 @@ const CourseChange = () => {
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        New Programme<span className="text-danger">*</span>
+                        Course<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -84,7 +82,7 @@ const CourseChange = () => {
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        New Course<span className="text-danger">*</span>
+                        New Fee Type<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -95,36 +93,7 @@ const CourseChange = () => {
                         />
                       </Col>
                     </Row>
-                    <Row className="mb-3">
-                      <Form.Label
-                        className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Course<span className="text-danger">*</span>
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
-                          type="text"
-                          placeholder="Please Select Course"
-                          id="course"
-                          required
-                        />
-                      </Col>
-                      <Form.Label
-                        className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        New Fee Category<span className="text-danger">*</span>
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
-                          type="text"
-                          placeholder="Please Enter "
-                          id="session"
-                          required
-                        />
-                      </Col>
-                    </Row>
+
                     <Row className="mb-3">
                       <Container fluid className="p-3">
                         <Row>
@@ -140,17 +109,45 @@ const CourseChange = () => {
                                         <Form>
                                           <Row className="mb-3">
                                           <Row className="mb-3">
+                                            
+                                            <Col sm={4}>
+                                              <Form.Label
+                                                className=" col-form-label form-label"
+                                                htmlFor="fullName"
+                                              >
+                                                Search By
+                                                <span className="text-danger">
+                                                  *
+                                                </span>
+                                              </Form.Label>
+                                            </Col>
+                                            <Col sm={4} className="mt-2">
+                                              <Form.Check // prettier-ignore
+                                                type="radio"
+                                                label="Student ID"
+                                                name="search"
+                                              />
+                                            </Col>
+                                            <Col sm={4} className="mt-2">
+                                              <Form.Check
+                                                type="radio"
+                                                label="Student Name"
+                                                name="search"
+                                              />
+                                            </Col>
+                                          </Row>
+                                          <Row className="mb-3">
                                             <Form.Label
                                               className="col-sm-4 col-form-label form-label"
                                               htmlFor="fullName"
                                             >
-                                              Search By
+                                              Enter Input
                                               <span className="text-danger">
                                                 *
                                               </span>
                                             </Form.Label>
                                             <Col
-                                              sm={8}
+                                              sm={7}
                                               className="mb-3 mb-lg-0"
                                             >
                                               <InputGroup>
@@ -170,25 +167,6 @@ const CourseChange = () => {
                                               </InputGroup>
                                             </Col>
                                           </Row>
-                                            <Row className="mb-3">
-                                              <Form.Label
-                                                className="col-sm-4 col-form-label form-label"
-                                                htmlFor="fullName"
-                                              >
-                                                Enter Input
-                                                <span className="text-danger">
-                                                  *
-                                                </span>
-                                              </Form.Label>
-                                              <Col className="mb-3 mb-lg-0">
-                                                <Form.Control
-                                                  type="text"
-                                                  placeholder="Student ID Number"
-                                                  id="course"
-                                                  required
-                                                />
-                                              </Col>
-                                            </Row>
                                           </Row>
                                         </Form>
                                       )}
@@ -227,4 +205,4 @@ const CourseChange = () => {
   );
 };
 
-export default CourseChange;
+export default ChangeFeeCategory;

@@ -18,7 +18,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-const Faculty = () => {
+const Stream = () => {
   const hasMounted = useMounted();
   const [facultyData, setFacultyData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -234,4 +234,4 @@ const Faculty = () => {
   );
 };
 
-export default Faculty;
+export default Stream;

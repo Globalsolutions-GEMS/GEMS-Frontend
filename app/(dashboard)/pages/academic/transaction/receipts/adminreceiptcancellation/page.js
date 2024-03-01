@@ -12,19 +12,19 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const AdminReceiptCancellationAndReprint = () => {
+const AdminReceiptCancellation = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Admin Receipt Cancellation And Reprint" />
+      <PageHeading heading="Admin Receipt Cancellation" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
         <Breadcrumb.Item active>
-          Admin Receipt Cancellation And Reprint
+          Admin Receipt Cancellation
         </Breadcrumb.Item>
       </Breadcrumb>
 
@@ -162,19 +162,7 @@ const AdminReceiptCancellationAndReprint = () => {
                         />
                       </Col>
                     </Row>
-                    <Row className="mb-3">
-                      <Col></Col>
-                      <Col md={9} xs={12}>
-                        <Form.Check
-                          className="col-sm-3 col-form-label form-label"
-                          type="switch"
-                          id="active"
-                        >
-                          <Form.Check.Input type="checkbox" />
-                          <Form.Check.Label>Print Original</Form.Check.Label>
-                        </Form.Check>
-                      </Col>
-                    </Row>
+                   
 
                     <Row>
                       <Col className="d-flex align-items-center justify-content-center">
@@ -186,15 +174,9 @@ const AdminReceiptCancellationAndReprint = () => {
                           type=""
                           style={{ marginLeft: "10px" }}
                         >
-                          Receipt Reprint
-                        </Button>
-                        <Button
-                          variant="secondary"
-                          type=""
-                          style={{ marginLeft: "10px" }}
-                        >
                           Cancel
                         </Button>
+                       
                       </Col>
                       <Col></Col>
                     </Row>
@@ -209,4 +191,4 @@ const AdminReceiptCancellationAndReprint = () => {
   );
 };
 
-export default AdminReceiptCancellationAndReprint;
+export default AdminReceiptCancellation;

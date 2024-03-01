@@ -83,29 +83,35 @@ const RailwayConcessionApproval = () => {
                         className="col-sm-2 col-form-label form-label"
                         
                       >
-                        Status
+                        Status<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Control
+                        <Form.Select
                           type="text"
-                          placeholder="Student ID Number"
-                          id="course"
+                          placeholder="Select Session "
+                          id="session"
                           required
                         />
                       </Col>
                     </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Export To Excel
+                      </Form.Label>
+                      <Form.Check
+                        className="col-sm-8 col-form-label form-label"
+                        type="checkbox"
+                        id="active"
+                      >
+                        <Form.Check.Input type="checkbox" />
+                      </Form.Check>
+                    </Row>
                     <Row >
                       <Col className="d-flex align-items-center justify-content-center mb-3">
                         <Button variant="primary" type="submit">
-                          Export To Excel
-                        </Button>
-                        <Button
-                          variant="primary"
-                          type=""
-                          style={{ marginLeft: "10px" }}
-                        >
                           Cancel
                         </Button>
+                       
                       </Col>
                       <Col></Col>
                     </Row>

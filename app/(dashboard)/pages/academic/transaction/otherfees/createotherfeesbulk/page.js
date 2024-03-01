@@ -1,6 +1,6 @@
 "use client";
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
+import { Alert, Badge,  Breadcrumb,  Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -26,7 +26,7 @@ const CreateOtherFeesBulk = () => {
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Admission Fees</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Other Fees</Breadcrumb.Item>
         <Breadcrumb.Item active>Create Other Fees - Bulk</Breadcrumb.Item>
       </Breadcrumb>
       <Row className="mb-8">
