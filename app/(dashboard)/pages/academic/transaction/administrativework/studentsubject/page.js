@@ -32,12 +32,12 @@ const StudentSubjectUpdation = () => {
                   <Form>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-2 col-form-label form-label"
+                        className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Session<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
+                      <Col sm={9} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
@@ -48,12 +48,12 @@ const StudentSubjectUpdation = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-2 col-form-label form-label"
+                        className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Programme<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
+                      <Col sm={9} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
@@ -64,12 +64,12 @@ const StudentSubjectUpdation = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-2 col-form-label form-label"
+                        className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Course<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
+                      <Col sm={9} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
@@ -80,12 +80,12 @@ const StudentSubjectUpdation = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-2 col-form-label form-label"
+                        className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Medium<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
+                      <Col sm={9} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
@@ -96,12 +96,12 @@ const StudentSubjectUpdation = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-2 col-form-label form-label"
+                        className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Section
                       </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
+                      <Col sm={9} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
@@ -110,9 +110,9 @@ const StudentSubjectUpdation = () => {
                         />
                       </Col>
                     </Row>
-                    <Row className="mb-2">
+                    <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-2 col-form-label form-label"
+                        className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Order By<span className="text-danger">*</span>
@@ -168,7 +168,6 @@ const StudentSubjectUpdation = () => {
                           Cancel
                         </Button>
                       </Col>
-                      <Col></Col>
                     </Row>
                   </Form>
                 )}
