@@ -77,7 +77,7 @@ const GeneralFineCollection = () => {
                                           type="radio"
                                         />
                                       </Col>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check label="Name" type="radio" />
                                       </Col>
                                       <Col className="mt-2">
@@ -86,7 +86,7 @@ const GeneralFineCollection = () => {
                                           type="radio"
                                         />
                                       </Col>
-                                      <Col>
+                                      <Col className="mt-2">
                                         <Form.Check
                                           label="User Field"
                                           type="radio"
