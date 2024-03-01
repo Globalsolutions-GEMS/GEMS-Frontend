@@ -235,8 +235,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/courseconfiguration/cashbookrights",
-                name: "Cashbook Rights",
+                link: "/pages/academic/preadmission/courseconfiguration/receiptbookaccess",
+                name: "Receipt Book Access",
                 icon: "file-text",
               },
               {

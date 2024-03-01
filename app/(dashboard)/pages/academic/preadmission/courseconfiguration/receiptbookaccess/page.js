@@ -6,7 +6,7 @@ import { Breadcrumb, Button, Card, Col, Container, Form, Row } from 'react-boots
 import { PageHeading } from 'widgets'
 import useMounted from 'hooks/useMounted';
 
-const CashbookRights = () => {
+const ReceiptBookAccess = () => {
     const hasMounted = useMounted();
     return (
         <Container fluid className="p-6">
@@ -17,7 +17,7 @@ const CashbookRights = () => {
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Course Configuration</Breadcrumb.Item>
-                <Breadcrumb.Item active>Cashbook Rights</Breadcrumb.Item>
+                <Breadcrumb.Item active>Receipt Book Access</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
@@ -62,4 +62,4 @@ const CashbookRights = () => {
     )
 }
 
-export default CashbookRights
+export default ReceiptBookAccess
