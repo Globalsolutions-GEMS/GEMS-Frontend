@@ -111,7 +111,7 @@ const StudentSubjectUpdation = () => {
                       </Col>
                     </Row>
                     <Row className="mb-2">
-                    <Form.Label
+                      <Form.Label
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
@@ -125,7 +125,6 @@ const StudentSubjectUpdation = () => {
                         />
                       </Col>
                       <Col sm={2} className="mt-2">
-                       
                         <Form.Check
                           type="radio"
                           label="Roll Number"
@@ -133,8 +132,7 @@ const StudentSubjectUpdation = () => {
                         />
                       </Col>
                     </Row>
-                    
-                    
+
                     <Row className="mb-3">
                       <Col className="d-flex align-items-left justify-content-left mb-3">
                         <Button variant="primary" type="submit">
@@ -154,7 +152,7 @@ const StudentSubjectUpdation = () => {
                         >
                           Remove Opt.Sub.
                         </Button>
-                        
+
                         <Button
                           variant="secondary"
                           type=""
