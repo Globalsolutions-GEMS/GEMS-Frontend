@@ -914,8 +914,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/MIS/cashbookwisemisreport",
-                name: "Cash BookWise MIS Report",
+                link: "/pages/academic/studentreport/MIS/receiptbookmis",
+                name: "Receipt Book MIS",
                 icon: "file-text",
               },
               {

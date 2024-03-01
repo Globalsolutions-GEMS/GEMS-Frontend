@@ -36,7 +36,7 @@ const SubjectWiseReport = () => {
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Report By</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Medium</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
@@ -56,23 +56,23 @@ const SubjectWiseReport = () => {
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Course</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Report By<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Subject<span className="text-danger">*</span></Form.Label>
+                                        <Form.Label className="col-sm-2 col-form-label form-label" >Course</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Medium</Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Order By<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
                                         </Row>
                                        <Row className="mb-3"> 
-                                       <Form.Label className="col-sm-2 col-form-label form-label" >Order By<span className="text-danger">*</span></Form.Label>
+                                       <Form.Label className="col-sm-2 col-form-label form-label" >Subject<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
