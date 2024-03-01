@@ -2,25 +2,24 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Card, Button, Table, Pagination, Breadcrumb, Alert } from 'react-bootstrap';
 import { PageHeading } from 'widgets';
-import { createFeePattern , getFeePattern , updateFeePattern } from 'app/api/feepattern';
+import { createDegree , getDegree , updateDegree } from 'app/api/degree';
 import useMounted from 'hooks/useMounted';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-
-const FeePattern = () => {
+const Degree = () => {
     const hasMounted = useMounted();
-    const [feepatternData, setFeePatternData] = useState([]);
+    const [degreeData, setDegreeData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage] = useState(5);
     const [formData, setFormData] = useState({
-        feePattern: '',
-        feePatternName: '',
-        noOfSemester: ''
+        degreeDiploma: '',
+        degreeDiplomaName: '',
+        checkIfActive: false
     });
     const [editingRowIndex, setEditingRowIndex] = useState(null);
-    const [editingFeePattern, setEditingFeePattern] = useState(null); 
+    const [editingDegree, setEditingDegree] = useState(null); 
     const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
     const success = () => toast.success("Data Submitted Successfully!!!");
@@ -30,19 +29,19 @@ const FeePattern = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            if (editingFeePattern) {
-                await updateFeePattern(editingFeePattern.id, formData); 
-                setEditingFeePattern(null); 
+            if (editingDegree) {
+                await updateDegree(editingDegree.id, formData); 
+                setEditingDegree(null); 
                 update()
             } else {
-                await createFeePattern(formData); 
+                await createDegree(formData); 
                 success()
             }
-            refreshFeePattern();
+            refreshDegree();
             setFormData({ 
-                feePattern: '',
-                feePatternName: '',
-                noOfSemester: ''
+                degreeDiploma: '',
+                degreeDiplomaName: '',
+                checkIfActive: false
             });
             setShowSuccessAlert(true);
         } catch (error) {
@@ -57,59 +56,60 @@ const FeePattern = () => {
         setFormData(prevFormData => ({
             ...prevFormData,
             [id]: type === 'checkbox' ? checked : event.target.value,
+            checkIfActive: id === 'checkIfActive' ? checked : prevFormData.checkIfActive
         }));
     };
 
-    const refreshFeePattern = async () => {
+    const refreshDegree = async () => {
         try {
-            const response = await getFeePattern();
-            setFeePatternData(response.data);
+            const response = await getDegree();
+            setDegreeData(response.data);
         } catch (error) {
             console.log(error);
         }
     };
 
     useEffect(() => {
-        refreshFeePattern();
+        refreshDegree();
     }, []);
 
     const editRow = (index) => {
-        const editedFeePattern = feepatternData[index];
+        const editedDegree = degreeData[index];
     
         setFormData({
-            feePattern: editedFeePattern.feePattern,
-            feePatternName: editedFeePattern.feePatternName,
-            noOfSemester: editedFeePattern.noOfSemester,
+            degreeDiploma:editedDegree.degreeDiploma,
+            degreeDiplomaName:editedDegree.degreeDiplomaName,
+            checkIfActive:editedDegree.checkIfActive,
         });
-        setFormData(editedFeePattern);
-        setEditingFeePattern(editedFeePattern);
+        setFormData(editedDegree);
+        setEditingDegree(editedDegree);
         setEditingRowIndex(index);
     };
 
     const handleCancel = () => {
         setFormData({
-        feePattern: '',
-        feePatternName: '',
-        noOfSemester: ''
+            degreeDiploma: '',
+            degreeDiplomaName: '',
+            checkIfActive: false
         });
-        setEditingFeePattern(null);
+        setEditingDegree(null);
     };
     
         const indexOfLastItem = currentPage * itemsPerPage;
         const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-        const currentItems = feepatternData.slice(indexOfFirstItem, indexOfLastItem);
+        const currentItems = degreeData.slice(indexOfFirstItem, indexOfLastItem);
         const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Fee Pattern" />
+            <PageHeading heading="Degree" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Course</Breadcrumb.Item>
-                <Breadcrumb.Item active>Fee Pattern</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Course Configuration</Breadcrumb.Item>
+                <Breadcrumb.Item active>Degree</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -124,35 +124,36 @@ const FeePattern = () => {
                                     >
                                         
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" >Fee Pattern<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Degree/Diploma<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Fee Pattern" id="feePattern" value={formData.feePattern} onChange={handleInputChange} required />
+                                                <Form.Control type="text" placeholder="Please Enter Degree/Diploma Short Name" id="degreeDiploma" value={formData.degreeDiploma} onChange={handleInputChange} required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" >Fee Pattern Name<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Degree/Diploma Name<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Fee Pattern Name" id="feePatternName" value={formData.feePatternName} onChange={handleInputChange} required />
+                                                <Form.Control type="text" placeholder="Please Enter Degree/Diploma Full Name" id="degreeDiplomaName" value={formData.degreeDiplomaName} onChange={handleInputChange} required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" >No. Of Semester<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Select" id="noOfSemester" value={formData.noOfSemester} onChange={handleInputChange} required >
-                                                <option value="Please Select">Please Select </option>
-                                                <option value="1"> 1</option>
-                                                <option value="2"> 2</option>
-                                                
-                                                </Form.Select>
+                                            <Form.Label className="col-sm-3 col-form-label form-label">
+                                                Active
+                                            </Form.Label>
+                                            <Col className='mt-2'>
+                                                <Form.Check
+                                                    type="switch"
+                                                    id="checkIfActive"
+                                                    label="Check If Active"
+                                                    defaultChecked
+                                                />
                                             </Col>
                                         </Row>
-                                        
                                         
                                         <Row className="align-items-center">
 
                                         <Col className="mt-4 d-flex align-items-center justify-content-center">
                                             <Button variant="primary" type="submit">
-                                                    {editingFeePattern ? "Update" : "Submit"}
+                                                    {editingDegree ? "Update" : "Submit"}
                                                 </Button>
                                                 <ToastContainer style={{ marginTop: '40px' }} />
                                                 <Button variant="secondary" type="reset" style={{ marginLeft: '10px' }} onClick={handleCancel} >
@@ -172,18 +173,18 @@ const FeePattern = () => {
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                        <th><b>Fee Pattern</b></th>
-                            <th><b>Fee Pattern Name</b></th>
-                            <th><b>No. Of Semester</b></th>
+                        <th><b>Degree / Diploma</b></th>
+                        <th><b>Degree / Diploma Name</b></th>
+                            <th><b>Active</b></th>
                             <th className="col-2"><b>Action</b></th>
                         </tr>
                     </thead>
                     <tbody>
-                        {currentItems.map((feePattern, index) => (
-                            <tr key={feePattern.id}>
-                                <td>{feePattern.feePattern}</td>
-                                <td>{feePattern.feePatternName}</td>
-                                <td>{feePattern.noOfSemester}</td>
+                        {currentItems.map((degree, index) => (
+                            <tr key={degree.id}>
+                                <td>{degree.degreeDiploma}</td>
+                                <td>{degree.degreeDiplomaName}</td>
+                                <td>{degree.checkIfActive ? 'Active' : 'Deactive'}</td>
                                 <td className="d-flex justify-content-center align-items-center">
                                     <Button variant='secondary' onClick={() => editRow(index)} >
                                         <i className="bi bi-pencil-fill me-2" /> Edit
@@ -196,12 +197,12 @@ const FeePattern = () => {
 
                 <Pagination className="justify-content-end">
                     <Pagination.Prev onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1} />
-                    {[...Array(Math.ceil(feepatternData.length / itemsPerPage))].map((_, index) => (
+                    {[...Array(Math.ceil(degreeData.length / itemsPerPage))].map((_, index) => (
                         <Pagination.Item key={index} active={index + 1 === currentPage} onClick={() => paginate(index + 1)}>
                             {index + 1}
                         </Pagination.Item>
                     ))}
-                    <Pagination.Next onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(feepatternData.length / itemsPerPage)} />
+                    <Pagination.Next onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(degreeData.length / itemsPerPage)} />
                 </Pagination>
 
             </>
@@ -209,4 +210,4 @@ const FeePattern = () => {
     )
 }
 
-export default FeePattern
+export default Degree

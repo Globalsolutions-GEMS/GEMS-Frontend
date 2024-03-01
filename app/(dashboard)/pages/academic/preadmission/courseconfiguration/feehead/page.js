@@ -175,7 +175,7 @@ const FeeHead = () => {
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Course</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Course Configuration</Breadcrumb.Item>
         <Breadcrumb.Item active>Fee Head</Breadcrumb.Item>
       </Breadcrumb>
 

@@ -16,7 +16,7 @@ const CourseCertificate = () => {
             <Breadcrumb>
             <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Course</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Course Configuration</Breadcrumb.Item>
                 <Breadcrumb.Item active>Course Certificate</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">

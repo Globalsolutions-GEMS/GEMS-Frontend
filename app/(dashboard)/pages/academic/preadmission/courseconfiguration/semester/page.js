@@ -11,19 +11,19 @@ import useMounted from 'hooks/useMounted';
 import { CheckCircleFill } from 'react-bootstrap-icons';
 
 
-const Year = () => {
+const Semester = () => {
     const hasMounted = useMounted();
 
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Year" />
+            <PageHeading heading="Semester" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Course</Breadcrumb.Item>
-                <Breadcrumb.Item active>Year</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Course Configuration</Breadcrumb.Item>
+                <Breadcrumb.Item active>Semester</Breadcrumb.Item>
             </Breadcrumb>
 
 
@@ -41,12 +41,30 @@ const Year = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Year Defination</Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Semester No.<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Year Defination" id="yeardefination" required />
+                                                <Form.Control type="text" placeholder="Please Enter Semester No" id="semesternumber" required />
                                             </Col>
                                         </Row>
-
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Semester Description<span className="text-danger">*</span></Form.Label>
+                                            <Col sm={9} className="mb-3 mb-lg-0">
+                                                <Form.Control type="text" placeholder="Please Enter Semester Description" id="semesternumber" required />
+                                            </Col>
+                                        </Row>
+                                        <Row className="mb-3">
+                                            <Form.Label className="col-sm-3 col-form-label form-label">
+                                                Active
+                                            </Form.Label>
+                                            <Col className='mt-2'>
+                                                <Form.Check
+                                                    type="switch"
+                                                    id="checkIfActive"
+                                                    label="Check If Active"
+                                                    defaultChecked
+                                                />
+                                            </Col>
+                                        </Row>
                                         
                                         <Row className="align-items-center">
 
@@ -71,4 +89,4 @@ const Year = () => {
     )
 }
 
-export default Year
+export default Semester
