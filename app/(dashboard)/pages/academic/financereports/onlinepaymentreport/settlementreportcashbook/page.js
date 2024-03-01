@@ -106,14 +106,10 @@ const SettlementReportCashbook = () => {
                     </Row>
                     <Row className="mb-3">
                       <Col className="d-flex align-items-center justify-content-center">
-                       
-                        <Button
-                          variant="secondary"
-                          type=""
-                          style={{ marginLeft: "10px" }}
-                        >
+                        <Button variant="primary" type="submit">
                           Report
                         </Button>
+
                         <Button
                           variant="secondary"
                           type=""

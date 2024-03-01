@@ -67,21 +67,21 @@ const StudentDocumentReceipt = () => {
                                       <span className="text-danger">*</span>
                                     </Form.Label>
 
-                                    <Col>
+                                    <Col className="mt-2">
                                       <Form.Check
                                         label="Student Id."
                                         type="radio"
                                         name="search"
                                       />
                                     </Col>
-                                    <Col>
+                                    <Col className="mt-2">
                                       <Form.Check
                                         label="Name"
                                         type="radio"
                                         name="search"
                                       />
                                     </Col>
-                                    <Col>
+                                    <Col className="mt-2">
                                       <Form.Check
                                         label="Roll No"
                                         type="radio"
@@ -105,30 +105,29 @@ const StudentDocumentReceipt = () => {
                                         required
                                       />
                                     </Col>
-                                    
-                                      <Form.Label
-                                        className="col-sm-3 col-form-label form-label"
-                                        htmlFor="fullName"
-                                      >
-                                        Enter Input
-                                        <span className="text-danger">*</span>
-                                      </Form.Label>
-                                      <Col sm={4} className="mb-3 mb-lg-0">
-                                        <InputGroup>
-                                          <Form.Control
-                                            placeholder="Input group append..."
-                                            aria-label="Input group append..."
-                                            aria-describedby="basic-addon2"
-                                          />
-                                          <Button
-                                            variant="outline-secondary"
-                                            id="button-addon2"
-                                          >
-                                            <FontAwesomeIcon icon={faSearch} />
-                                          </Button>
-                                        </InputGroup>
-                                      </Col>
-                                  
+
+                                    <Form.Label
+                                      className="col-sm-2 col-form-label form-label"
+                                      htmlFor="fullName"
+                                    >
+                                      Enter Input
+                                      <span className="text-danger">*</span>
+                                    </Form.Label>
+                                    <Col sm={4} className="mb-3 mb-lg-0">
+                                      <InputGroup>
+                                        <Form.Control
+                                          placeholder="Input group append..."
+                                          aria-label="Input group append..."
+                                          aria-describedby="basic-addon2"
+                                        />
+                                        <Button
+                                          variant="outline-secondary"
+                                          id="button-addon2"
+                                        >
+                                          <FontAwesomeIcon icon={faSearch} />
+                                        </Button>
+                                      </InputGroup>
+                                    </Col>
                                   </Row>
                                   <Row className="mb-3">
                                     <Form.Label
@@ -175,7 +174,7 @@ const StudentDocumentReceipt = () => {
                                                     />
                                                   </Col>
                                                 </Row>
-                                                <Row className="mt-1">
+                                                <Row className="mt-3">
                                                   <Form.Label className="col-sm-5 col-form-label form-label">
                                                     Upload Document
                                                   </Form.Label>

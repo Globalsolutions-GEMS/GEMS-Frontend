@@ -94,8 +94,12 @@ const FeesReconciliationReport = () => {
                       </Col>
                     </Row>
 
-                    <Row>
+                    <Row className="mb-3">
                       <Col className="d-flex align-items-center justify-content-center">
+                        <Button variant="primary" type="submit">
+                          Report
+                        </Button>
+
                         <Button
                           variant="secondary"
                           type=""
