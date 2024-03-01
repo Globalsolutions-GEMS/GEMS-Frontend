@@ -78,7 +78,7 @@ const PhotoSignReport = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Status
+                          Admission Status
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Select type="text" />

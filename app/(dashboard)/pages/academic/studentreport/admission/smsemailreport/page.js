@@ -14,18 +14,18 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-const SentSMSReport = () => {
+const SMSEmailReport = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Sent SMS Report" />
+      <PageHeading heading="SMS/Email Report" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Student Report</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Admission</Breadcrumb.Item>
-        <Breadcrumb.Item active>Sent SMS Report</Breadcrumb.Item>
+        <Breadcrumb.Item active>SMS/Email Report</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -78,7 +78,7 @@ const SentSMSReport = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-3 col-form-label form-label">
-                            Format
+                            Communication Type
                           </Form.Label>
                           <Col sm={9} className="mb-3 mb-lg-0">
                             <Form.Select type="text" />
@@ -147,4 +147,4 @@ const SentSMSReport = () => {
   );
 };
 
-export default SentSMSReport;
+export default SMSEmailReport;

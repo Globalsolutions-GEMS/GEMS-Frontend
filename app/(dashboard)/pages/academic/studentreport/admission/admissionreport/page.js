@@ -42,21 +42,29 @@ const AdmissionReport = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Programme</Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
+                                            </Col>
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Course</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >To Date<span className="text-danger">*</span></Form.Label>
+                                           
+                                        </Row>
+                                        <Row className="mb-3">
+                                        <Form.Label className="col-sm-2 col-form-label form-label" >To Date<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Control type="date" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
-                                        </Row>
-                                        <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Medium</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Option<span className="text-danger">*</span></Form.Label>
+                                           
+                                        </Row>
+                                        <Row className="mb-3">
+                                        <Form.Label className="col-sm-2 col-form-label form-label" >Option<span className="text-danger">*</span></Form.Label>
                                             <Col sm={2}>
                                                 <Form.Check
                                                     label="With Canceled"
@@ -69,26 +77,27 @@ const AdmissionReport = () => {
                                                     type="radio"
                                                 />
                                             </Col>
-                                        </Row>
-                                        <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Section</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
+                                        </Row>
+                                        <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Report By</Form.Label>
+                                            <Col sm={4} className="mb-3 mb-lg-0">
+                                                <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
+                                            </Col>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Gender</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Gender</Form.Label>
-                                            <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
-                                            </Col>
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Order By</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter " id="mothertongue" required />
                                             </Col>
+    
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Export To Excel</Form.Label>

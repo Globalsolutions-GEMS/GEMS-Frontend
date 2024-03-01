@@ -864,8 +864,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/admission/sentsmsreport",
-                name: "Sent SMS Report",
+                link: "/pages/academic/studentreport/admission/smsemailreport",
+                name: "SMS/EmailReport",
                 icon: "file-text",
               },
               {
