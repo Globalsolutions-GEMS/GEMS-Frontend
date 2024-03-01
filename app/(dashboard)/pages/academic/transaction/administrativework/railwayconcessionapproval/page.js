@@ -94,10 +94,26 @@ const RailwayConcessionApproval = () => {
                         />
                       </Col>
                     </Row>
+                    <Row className="mb-3 mt-3">
+                          <Col sm={2}>
+                            <Form.Label className="col-form-label form-label">
+                              Export To Excel
+                            </Form.Label>
+                          </Col>
+                          <Col sm={9} >
+                            <Form.Check
+                              className="col-form-label form-label"
+                              type="checkbox"
+                              id="active"
+                            >
+                              <Form.Check.Input type="checkbox" />
+                            </Form.Check>
+                          </Col>
+                        </Row>
                     <Row >
                       <Col className="d-flex align-items-center justify-content-center mb-3">
                         <Button variant="primary" type="submit">
-                          Export To Excel
+                          Report
                         </Button>
                         <Button
                           variant="primary"
