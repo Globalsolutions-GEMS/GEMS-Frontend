@@ -9,6 +9,9 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 import { Link } from "react-feather";
+import InputGroup from "react-bootstrap/InputGroup";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const FeesConcession = () => {
   const hasMounted = useMounted();
@@ -61,7 +64,7 @@ const FeesConcession = () => {
                         />
                       </Col>
                     </Row>
-                    
+
                     <Row className="mb-3">
                       <Form.Label className="col-sm-3 col-form-label form-label">
                         Search Crieteria<span className="text-danger">*</span>
@@ -82,10 +85,23 @@ const FeesConcession = () => {
                         className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Search Text<span className="text-danger">*</span>
+                        Search Text
+                        <span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={3} className="mb-3 mb-lg-0">
-                        <Form.Control type="text" id="certificatecode" />
+                        <InputGroup>
+                          <Form.Control
+                            placeholder="Input group append..."
+                            aria-label="Input group append..."
+                            aria-describedby="basic-addon2"
+                          />
+                          <Button
+                            variant="outline-secondary"
+                            id="button-addon2"
+                          >
+                            <FontAwesomeIcon icon={faSearch} />
+                          </Button>
+                        </InputGroup>
                       </Col>
                     </Row>
 

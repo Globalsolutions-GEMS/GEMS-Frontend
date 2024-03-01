@@ -8,6 +8,9 @@ import { PageHeading } from "widgets";
 
 // import sub components
 import useMounted from "hooks/useMounted";
+import InputGroup from "react-bootstrap/InputGroup";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const SearchStudent = () => {
     const hasMounted = useMounted();
@@ -86,19 +89,29 @@ const SearchStudent = () => {
                                             </Col>  
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label
-                                                className="col-sm-2 col-form-label form-label"
-                                                htmlFor="fullName"
-                                            >
-                                                Enter Input
-                                            </Form.Label>
-                                            <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Control
-                                                    type="text"
-                                                    id="certificatecode"
-                                                    placeholder="Enter Minimum 3 Letters"
-                                                />
-                                            </Col>
+                                        <Form.Label
+                                        className="col-sm-2 col-form-label form-label"
+                                        htmlFor="fullName"
+                                      >
+                                        Enter Input
+                                        <span className="text-danger">*</span>
+                                      </Form.Label>
+                                      <Col sm={4} className="mb-3 mb-lg-0">
+                                        <InputGroup>
+                                          <Form.Control
+                                            placeholder="Input group append..."
+                                            aria-label="Input group append..."
+                                            aria-describedby="basic-addon2"
+                                          />
+                                          <Button
+                                            variant="outline-secondary"
+                                            id="button-addon2"
+                                          >
+                                            <FontAwesomeIcon icon={faSearch} />
+                                          </Button>
+                                        </InputGroup>
+                                      </Col>
+                                  
                                             <Form.Label
                                                 className="col-sm-2 col-form-label form-label"
                                                 htmlFor="fullName"

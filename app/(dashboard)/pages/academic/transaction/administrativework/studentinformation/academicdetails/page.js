@@ -27,9 +27,9 @@ const AcademicDetails = () => {
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Name</Form.Label>
                                             
-                                            <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Fee Type</Form.Label>
+                                            <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Fee Category</Form.Label>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Session</Form.Label>
-                                            <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Student Type</Form.Label>
+                                            {/* <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Student Type</Form.Label> */}
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Admission Date</Form.Label>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Course</Form.Label>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Admission Cancel Date</Form.Label>

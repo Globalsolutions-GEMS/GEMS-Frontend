@@ -125,12 +125,7 @@ const FeesRefund = () => {
                                                   type="radio"
                                                 />
                                               </Col>
-                                              <Col className="mt-2" >
-                                                <Form.Check
-                                                  label="User Field"
-                                                  type="radio"
-                                                />
-                                              </Col>
+                                             
                                             </Row>
                                             <Row className="mb-3">
                                               <Form.Label

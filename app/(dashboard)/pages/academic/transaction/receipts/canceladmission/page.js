@@ -9,6 +9,10 @@ import { PageHeading } from 'widgets'
 // import sub components
 import useMounted from 'hooks/useMounted';
 import { CheckCircleFill } from 'react-bootstrap-icons';
+import InputGroup from "react-bootstrap/InputGroup";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+
 
 
 const CancelAdmission = () => {
@@ -79,16 +83,29 @@ const CancelAdmission = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Enter Input<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={2} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Select Course" id="course" required />
-                                            </Col>
-                                            <Col sm={2}>
-                                                <Button variant="primary" type="submit" >
-                                                    Show Balance
-                                                </Button>
-                                            </Col>
-                                        </Row>
+                                    <Form.Label
+                                      className="col-sm-2 col-form-label form-label"
+                                      htmlFor="fullName"
+                                    >
+                                      Enter Input
+                                      <span className="text-danger">*</span>
+                                    </Form.Label>
+                                    <Col sm={3} className="mb-3 mb-lg-0">
+                                      <InputGroup>
+                                        <Form.Control
+                                          placeholder="Input group append..."
+                                          aria-label="Input group append..."
+                                          aria-describedby="basic-addon2"
+                                        />
+                                        <Button
+                                          variant="outline-secondary"
+                                          id="button-addon2"
+                                        >
+                                          <FontAwesomeIcon icon={faSearch} />
+                                        </Button>
+                                      </InputGroup>
+                                    </Col>
+                                  </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Reason</Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
