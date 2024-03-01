@@ -94,6 +94,7 @@ const RailwayConcessionApproval = () => {
                         />
                       </Col>
                     </Row>
+<<<<<<< HEAD
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Export To Excel
@@ -109,6 +110,34 @@ const RailwayConcessionApproval = () => {
                     <Row >
                       <Col className="d-flex align-items-center justify-content-center mb-3">
                         <Button variant="primary" type="submit">
+=======
+                    <Row className="mb-3 mt-3">
+                          <Col sm={2}>
+                            <Form.Label className="col-form-label form-label">
+                              Export To Excel
+                            </Form.Label>
+                          </Col>
+                          <Col sm={9} >
+                            <Form.Check
+                              className="col-form-label form-label"
+                              type="checkbox"
+                              id="active"
+                            >
+                              <Form.Check.Input type="checkbox" />
+                            </Form.Check>
+                          </Col>
+                        </Row>
+                    <Row >
+                      <Col className="d-flex align-items-center justify-content-center mb-3">
+                        <Button variant="primary" type="submit">
+                          Report
+                        </Button>
+                        <Button
+                          variant="primary"
+                          type=""
+                          style={{ marginLeft: "10px" }}
+                        >
+>>>>>>> 949d3699d46894f8b13bd8864bad278f57c2f634
                           Cancel
                         </Button>
                        
