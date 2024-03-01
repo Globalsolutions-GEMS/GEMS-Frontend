@@ -105,7 +105,7 @@ const Occupation = () => {
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Academic Data</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Academic Master</Breadcrumb.Item>
                 <Breadcrumb.Item active>Occupation</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
