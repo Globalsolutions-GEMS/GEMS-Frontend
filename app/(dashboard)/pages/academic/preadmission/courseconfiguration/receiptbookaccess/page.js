@@ -12,7 +12,7 @@ const ReceiptBookAccess = () => {
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Cashbook Rights" />
+            <PageHeading heading="Receipt Book Access" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
