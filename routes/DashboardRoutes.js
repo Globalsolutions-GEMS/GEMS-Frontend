@@ -19,9 +19,12 @@ export const DashboardMenu = [
   },
   {
     id: uuid(),
-    title: "Profile",
-    icon: "home",
-    link: "/",
+    title: "Extra Pages",
+    icon: "lock",
+    children: [
+      { id: uuid(), link: "/profile", name: "Profile" },
+      { id: uuid(), link: "/settings", name: "Settings" },
+    ],
   },
   {
     id: uuid(),
@@ -32,7 +35,7 @@ export const DashboardMenu = [
         id: uuid(),
         link: "#",
         title: "Master",
-        icon:'folder',
+        icon: "folder",
         children: [
           {
             id: uuid(),
@@ -171,7 +174,7 @@ export const DashboardMenu = [
         id: uuid(),
         link: "#",
         title: "Pre Admission",
-        icon:'folder',
+        icon: "folder",
         children: [
           {
             id: uuid(),
@@ -359,7 +362,7 @@ export const DashboardMenu = [
         id: uuid(),
         link: "#",
         title: "Transaction",
-        icon:'folder',
+        icon: "folder",
         children: [
           {
             id: uuid(),
@@ -415,7 +418,7 @@ export const DashboardMenu = [
                 name: "Change Fees- Student",
                 icon: "file-text",
               },
-              
+
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/admissionfees/changefeesbulk",
@@ -439,7 +442,7 @@ export const DashboardMenu = [
                 link: "/pages/academic/transaction/admissionfees/canceladmissionapproval",
                 name: "Cancel Admission Approval",
                 icon: "file-text",
-              }
+              },
             ],
           },
           {
@@ -566,7 +569,7 @@ export const DashboardMenu = [
                 name: "Student Data Update -Bulk",
                 icon: "file-text",
               },
-              
+
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/administrativework/outstandingfeesremainder",
@@ -631,7 +634,7 @@ export const DashboardMenu = [
         id: uuid(),
         link: "#",
         title: "Finance Reports",
-        icon:'folder',
+        icon: "folder",
         children: [
           {
             id: uuid(),
@@ -799,7 +802,7 @@ export const DashboardMenu = [
         id: uuid(),
         link: "#",
         title: "Student Reports",
-        icon:'folder',
+        icon: "folder",
         children: [
           {
             id: uuid(),
@@ -958,7 +961,7 @@ export const DashboardMenu = [
         id: uuid(),
         link: "#",
         title: "Master",
-        icon:'folder',
+        icon: "folder",
         children: [
           {
             id: uuid(),
