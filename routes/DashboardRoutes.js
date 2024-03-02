@@ -19,6 +19,12 @@ export const DashboardMenu = [
   },
   {
     id: uuid(),
+    title: "Profile",
+    icon: "home",
+    link: "/",
+  },
+  {
+    id: uuid(),
     title: "Academic",
     icon: "book",
     children: [
