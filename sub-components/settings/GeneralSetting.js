@@ -41,7 +41,7 @@ const GeneralSetting = () => {
                 <Form.Label className="col-sm-5 col-form-label form-label" htmlFor="fullName">Profile Photo</Form.Label>
                 <div className="d-flex align-items-center">
                   <div className="me-3">
-                    <Image src="/images/avatar/avatar-5.jpg" className="rounded-circle avatar avatar-lg" alt="" />
+                    <Image src="/images/avatar/avatar-4.jpg" className="rounded-circle avatar avatar-lg" alt="" />
                   </div>
                   <div>
                     <Button variant="outline-white" className="me-2" type="submit">Change </Button>
