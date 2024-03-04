@@ -115,6 +115,8 @@ const BasicCourse = () => {
         }
     }, [hasMounted]);
 
+    
+
     useEffect(() => {
         // Fetch titles data from the API when the component mounts
         if (hasMounted) {

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-    baseURL:"http://viaduct.proxy.rlwy.net:52235"
+    baseURL:"http://localhost:8080"
 })
 
 export const createAcademicSession = (academicsession) => apiClient.post('/academicsession',academicsession)

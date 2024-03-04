@@ -1,67 +1,27 @@
-'use client'
-// import node module libraries
-import {  Breadcrumb, Container } from 'react-bootstrap';
-
-// import widget as custom components
-import { PageHeading } from 'widgets'
-
-// import sub components
-import useMounted from 'hooks/useMounted';
-import Bank from '../bankdetails/bank/page'
-import BankAccount from '../bankdetails/bankaccount/page';
-
-import * as React from 'react';
-import PropTypes from 'prop-types';
+"use client";
+// Import necessary modules and components
+import React, { useState } from 'react';
+import { Breadcrumb, Container } from 'react-bootstrap';
+import { PageHeading } from 'widgets';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Bank from '../bankdetails/bank/page';
+import BankAccount from '../bankdetails/bankaccount/page';
 
-function CustomTabPanel(props) {
-    const { children, value, index, ...other } = props;
-
-    return (
-        <div
-            role="tabpanel"
-            hidden={value !== index}
-            id={`simple-tabpanel-${index}`}
-            aria-labelledby={`simple-tab-${index}`}
-            {...other}
-        >
-            {value === index && (
-                <Box sx={{ p: 3 }}>
-                    <Typography>{children}</Typography>
-                </Box>
-            )}
-        </div>
-    );
-}
-
-CustomTabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
-};
-
-function a11yProps(index) {
-    return {
-        id: `simple-tab-${index}`,
-        'aria-controls': `simple-tabpanel-${index}`,
-    };
-}
-
+// Define the BankDetails component
 const BankDetails = () => {
-    const hasMounted = useMounted();
+    // Use useState hook for managing tab value
+    const [value, setValue] = useState(0);
 
-    const [value, setValue] = React.useState(0);
-
+    // Handle tab change
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
 
     return (
         <Container fluid className="p-6">
-
             {/* Page Heading */}
             <PageHeading heading="Bank Details" />
             <Breadcrumb>
@@ -74,20 +34,28 @@ const BankDetails = () => {
             <Box sx={{ width: '100%' }}>
                 <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
                     <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" centered>
-                        <Tab label="Bank" {...a11yProps(0)} ></Tab>
-                        <Tab label="Bank Account" {...a11yProps(1)} />
+                        <Tab label="Bank" id="simple-tab-0" aria-controls="simple-tabpanel-0" />
+                        <Tab label="Bank Account" id="simple-tab-1" aria-controls="simple-tabpanel-1" />
                     </Tabs>
                 </Box>
-                <CustomTabPanel value={value} index={0}>
-                    <Bank />
-                </CustomTabPanel>
-                <CustomTabPanel value={value} index={1}>
-                    <BankAccount/>
-                </CustomTabPanel>
+                {/* Render content based on selected tab */}
+                <div role="tabpanel" hidden={value !== 0} id="simple-tabpanel-0" aria-labelledby="simple-tab-0">
+                    {value === 0 && (
+                        <Box sx={{ p: 3 }}>
+                            <Typography><Bank /></Typography>
+                        </Box>
+                    )}
+                </div>
+                <div role="tabpanel" hidden={value !== 1} id="simple-tabpanel-1" aria-labelledby="simple-tab-1">
+                    {value === 1 && (
+                        <Box sx={{ p: 3 }}>
+                            <Typography><BankAccount /></Typography>
+                        </Box>
+                    )}
+                </div>
             </Box>
-
         </Container>
-    )
-}
+    );
+};
 
-export default BankDetails
+export default BankDetails;
