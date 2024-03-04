@@ -987,6 +987,18 @@ export const DashboardMenu = [
                 name: "Discipline",
                 icon: "file-text",
               },
+              {
+                id: uuid(),
+                link: "/pages/nep/master/masters/applycertificate",
+                name: "Apply Certificate",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/nep/master/masters/canceladmission",
+                name: "Cancel Admission",
+                icon: "file-text",
+              },
             ],
           },
         ],
