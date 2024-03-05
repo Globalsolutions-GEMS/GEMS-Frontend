@@ -999,6 +999,18 @@ export const DashboardMenu = [
                 name: "Cancel Admission",
                 icon: "file-text",
               },
+              {
+                id: uuid(),
+                link: "/pages/nep/master/masters/scholarshipdetailsentry",
+                name: "Schloarship Details Entry",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/nep/master/masters/payablefees",
+                name: "Payable Fees",
+                icon: "file-text",
+              },
             ],
           },
         ],
