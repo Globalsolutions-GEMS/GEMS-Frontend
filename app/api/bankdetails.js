@@ -9,3 +9,7 @@ export const getBanks = () => apiClient.get('/bank')
 export const createBank = (bank) => apiClient.post('/bank',bank)
 
 export const updateBank = (id,bank) => apiClient.put(`/bank/${id}`, bank)
+
+export const createBankAccount = (bankaccount) => apiClient.post('/bankaccount',bankaccount)
+
+export const getAllBankAccounts = () => apiClient.get('/bankaccount')

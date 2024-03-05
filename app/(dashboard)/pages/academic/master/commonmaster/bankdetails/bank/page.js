@@ -8,10 +8,8 @@ import {
   Card,
   Button,
   Table,
-  Pagination,
-  Breadcrumb,
+  Pagination
 } from "react-bootstrap";
-import { PageHeading } from "widgets";
 import { createBank, getBanks, updateBank } from "app/api/bankdetails";
 import useMounted from "hooks/useMounted";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -49,7 +47,7 @@ const Bank = () => {
         success();
       }
       refreshBank();
-      setBankData({
+      setFormData({
         bankCode: "",
         bankName: "",
         bankAddress: "",
@@ -68,7 +66,7 @@ const Bank = () => {
     setFormData((prevFormData) => ({
       ...prevFormData,
       [id]: type === "checkbox" ? checked : event.target.value,
-      checkIfActive: id === "active" ? checked : prevFormData.active,
+      checkIfActive: id === "checkIfActive" ? checked : prevFormData.checkIfActive,
     }));
   };
 
@@ -93,8 +91,6 @@ const Bank = () => {
       bankAddress: editedBank.bankAddress,
       checkIfActive: editedBank.checkIfActive,
     });
-
-    setFormData(editedBank);
     setEditingBank(editedBank);
     setEditingRowIndex(index);
   };
@@ -112,6 +108,7 @@ const Bank = () => {
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = bankData.slice(indexOfFirstItem, indexOfLastItem);
+
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
@@ -120,55 +117,54 @@ const Bank = () => {
         <Col xl={12} lg={8} md={12} xs={12}>
           <Card>
             <Card.Body>
-            <div>
-              {hasMounted && (
-                <Form onSubmit={handleSubmit}>
-                  <Row className="mb-3">
-                    <Form.Label className="col-sm-3 col-form-label form-label">
-                      Bank Code<span className="text-danger">*</span>
-                    </Form.Label>
-                    <Col sm={9} className="mb-3 mb-lg-0">
-                      <Form.Control
-                        type="text"
-                        placeholder="Please Enter Bank Code"
-                        id="bankCode"
-                        value={formData.bankCode}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-3">
-                    <Form.Label className="col-sm-3 col-form-label form-label">
-                      Bank Name<span className="text-danger">*</span>
-                    </Form.Label>
-                    <Col sm={9} className="mb-3 mb-lg-0">
-                      <Form.Control
-                        type="text"
-                        placeholder="Please Enter Bank Name"
-                        id="bankName"
-                        value={formData.bankName}
-                        onChange={handleInputChange}
-                        required
-                      />
-                    </Col>
-                  </Row>
-                  <Row className="mb-3">
-                    <Form.Label className="col-sm-3 col-form-label form-label">
-                      Bank Address
-                    </Form.Label>
-                    <Col sm={9} className="mb-3 mb-lg-0">
-                      <Form.Control
-                        type="text"
-                        placeholder="Please Enter Bank Address"
-                        id="bankAddress"
-                        value={formData.bankAddress}
-                        onChange={handleInputChange}
-                      />
-                    </Col>
-                  </Row>
-
-                  <Row className="mb-3">
+              <div>
+                {hasMounted && (
+                  <Form onSubmit={handleSubmit}>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-3 col-form-label form-label">
+                        Bank Code<span className="text-danger">*</span>
+                      </Form.Label>
+                      <Col sm={9} className="mb-3 mb-lg-0">
+                        <Form.Control
+                          type="text"
+                          placeholder="Please Enter Bank Code"
+                          id="bankCode"
+                          value={formData.bankCode}
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-3 col-form-label form-label">
+                        Bank Name<span className="text-danger">*</span>
+                      </Form.Label>
+                      <Col sm={9} className="mb-3 mb-lg-0">
+                        <Form.Control
+                          type="text"
+                          placeholder="Please Enter Bank Name"
+                          id="bankName"
+                          value={formData.bankName}
+                          onChange={handleInputChange}
+                          required
+                        />
+                      </Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-3 col-form-label form-label">
+                        Bank Address
+                      </Form.Label>
+                      <Col sm={9} className="mb-3 mb-lg-0">
+                        <Form.Control
+                          type="text"
+                          placeholder="Please Enter Bank Address"
+                          id="bankAddress"
+                          value={formData.bankAddress}
+                          onChange={handleInputChange}
+                        />
+                      </Col>
+                    </Row>
+                    <Row className="mb-3">
                       <Form.Label className="col-sm-3 col-form-label form-label">
                         Active
                       </Form.Label>
@@ -179,29 +175,27 @@ const Bank = () => {
                           label="Check If Active"
                           checked={formData.checkIfActive}
                           onChange={handleInputChange}
-                          defaultChecked    
                         />
                       </Col>
                     </Row>
-
-                  <Row className="align-items-center">
-                    <Col className="mt-4 d-flex align-items-center justify-content-center">
-                      <Button variant="primary" type="submit">
-                        {editingBank ? "Update" : "Submit"}
-                      </Button>
-                      <Button
-                        variant="secondary"
-                        type="button"
-                        style={{ marginLeft: "10px" }}
-                        onClick={handleCancel}
-                      >
-                        Cancel
-                      </Button>
-                      <ToastContainer style={{ marginTop: "40px" }} />
-                    </Col>
-                  </Row>
-                </Form>
-              )}
+                    <Row className="align-items-center">
+                      <Col className="mt-4 d-flex align-items-center justify-content-center">
+                        <Button variant="primary" type="submit">
+                          {editingBank ? "Update" : "Submit"}
+                        </Button>
+                        <Button
+                          variant="secondary"
+                          type="button"
+                          style={{ marginLeft: "10px" }}
+                          onClick={handleCancel}
+                        >
+                          Cancel
+                        </Button>
+                        <ToastContainer style={{ marginTop: "40px" }} />
+                      </Col>
+                    </Row>
+                  </Form>
+                )}
               </div>
             </Card.Body>
           </Card>
@@ -243,7 +237,6 @@ const Bank = () => {
           ))}
         </tbody>
       </Table>
-
       <Pagination className="justify-content-end">
         <Pagination.Prev
           onClick={() => paginate(currentPage - 1)}
@@ -267,7 +260,6 @@ const Bank = () => {
           }
         />
       </Pagination>
-
     </Container>
   );
 };
