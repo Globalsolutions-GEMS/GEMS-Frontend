@@ -11,7 +11,7 @@ const EmailSetting = () => {
       <Col xl={3} lg={4} md={12} xs={12}>
         <div className="mb-4 mb-lg-0">
           <h4 className="mb-1">Email Setting</h4>
-          <p className="mb-0 fs-5 text-muted">Add an email settings to profile </p>
+          <p className="mb-0 fs-5 text-muted">Email settings for profile </p>
         </div>
       </Col>
       <Col xl={9} lg={8} md={12} xs={12}>

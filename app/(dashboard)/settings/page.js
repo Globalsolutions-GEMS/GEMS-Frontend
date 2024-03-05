@@ -19,10 +19,10 @@ const Settings = () => {
       <GeneralSetting />
 
       {/* Email Settings */}
-      {/* // DONE ... <EmailSetting /> */}
+      <EmailSetting />
 
       {/* Settings for Preferences */}
-      {/* // DONE ...<Preferences /> */}
+      {/* <Preferences /> */}
 
       {/* Settings for Notifications */}
       {/* <Notifications /> */}

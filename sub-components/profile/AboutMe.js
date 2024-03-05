@@ -37,8 +37,8 @@ const AboutMe = () => {
               <p className="mb-0">2</p>
             </Col>
             <Col xs={6} className="mb-5">
-              <h6 className="text-uppercase fs-5 ls-2">Date of Birth </h6>
-              <p className="mb-0">28.05.1999</p>
+              <h6 className="text-uppercase fs-5 ls-2">College Name</h6>
+              <p className="mb-0">Sinhgad College, Pune</p>
             </Col>
             <Col xs={6} className="mb-5">
               <h6 className="text-uppercase fs-5 ls-2">Phone </h6>
