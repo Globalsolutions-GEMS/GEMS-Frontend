@@ -69,7 +69,7 @@ const OtherDetails = () => {
                       Caste Category
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -78,7 +78,7 @@ const OtherDetails = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Sub Caste</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -88,7 +88,7 @@ const OtherDetails = () => {
                     <span className="text-danger">*</span>
                     <Form.Label htmlFor="inputPassword5">Relegion</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -99,7 +99,7 @@ const OtherDetails = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Handicap</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -110,7 +110,7 @@ const OtherDetails = () => {
                       Handicap Percentage
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -132,7 +132,7 @@ const OtherDetails = () => {
                       ID proof No.
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -154,7 +154,7 @@ const OtherDetails = () => {
                       Family Income
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -165,7 +165,7 @@ const OtherDetails = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">EID Number</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -176,7 +176,7 @@ const OtherDetails = () => {
                       Eligibiliy Number
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -185,7 +185,7 @@ const OtherDetails = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Voter Id</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -198,7 +198,7 @@ const OtherDetails = () => {
                       Board / Council
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -209,7 +209,7 @@ const OtherDetails = () => {
                       Anti Ragging Undertaking Reference No.
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -220,7 +220,7 @@ const OtherDetails = () => {
                       Academic Bank Credit (ABC) No.
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled

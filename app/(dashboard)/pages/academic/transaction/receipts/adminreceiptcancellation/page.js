@@ -23,9 +23,7 @@ const AdminReceiptCancellation = () => {
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Receipts</Breadcrumb.Item>
-        <Breadcrumb.Item active>
-          Admin Receipt Cancellation
-        </Breadcrumb.Item>
+        <Breadcrumb.Item active>Admin Receipt Cancellation</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -162,7 +160,6 @@ const AdminReceiptCancellation = () => {
                         />
                       </Col>
                     </Row>
-                   
 
                     <Row>
                       <Col className="d-flex align-items-center justify-content-center">
@@ -176,7 +173,6 @@ const AdminReceiptCancellation = () => {
                         >
                           Cancel
                         </Button>
-                       
                       </Col>
                       <Col></Col>
                     </Row>

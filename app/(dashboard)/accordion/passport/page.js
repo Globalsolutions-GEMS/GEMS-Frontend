@@ -23,7 +23,7 @@ const Passport = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Passport Number</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -32,7 +32,7 @@ const Passport = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Passport Issue Place</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -41,7 +41,7 @@ const Passport = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Passport Issue Date</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -52,7 +52,7 @@ const Passport = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Passport Expiry Date</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -61,7 +61,7 @@ const Passport = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Visa Number</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -70,7 +70,7 @@ const Passport = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Visa Issue Place</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -83,7 +83,7 @@ const Passport = () => {
                       Visa Issue Date 
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -94,7 +94,7 @@ const Passport = () => {
                       Visa Expiry Date 
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled

@@ -34,7 +34,7 @@ const PayableFees = () => {
                       <Col sm={8}>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                          Course<span className="text-danger">*</span>
+                            Course<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={6} className="mb-3 mb-lg-0">
                             <Form.Select
@@ -45,28 +45,38 @@ const PayableFees = () => {
                             />
                           </Col>
                         </Row>
-                        
-                       
                       </Col>
                       <Col sm={4}></Col>
-                    
-                    <Row>
-                       <Col>
-                        <Table striped border hower>
-                          <thead>
-                            <tr>
-                              <th style={{width:'300px'}} ><b>Fee Type</b></th>
-                              <th style={{width:'300px'}}><b>Total Fee</b></th>
-                              <th className="col-3"><b>Paid/Adjusted Fee</b></th>
-                              <th><b>Balance Fee</b></th>
-                              <th><b>Current Fee</b></th>
-                              <th><b>Action</b></th>
-                            </tr>
-                          </thead>
-                        </Table>
-                      </Col> 
+
+                      <Row>
+                        <Col>
+                          <Table striped border hower>
+                            <thead>
+                              <tr>
+                                <th style={{ width: "300px" }}>
+                                  <b>Fee Type</b>
+                                </th>
+                                <th style={{ width: "300px" }}>
+                                  <b>Total Fee</b>
+                                </th>
+                                <th className="col-3">
+                                  <b>Paid/Adjusted Fee</b>
+                                </th>
+                                <th>
+                                  <b>Balance Fee</b>
+                                </th>
+                                <th>
+                                  <b>Current Fee</b>
+                                </th>
+                                <th>
+                                  <b>Action</b>
+                                </th>
+                              </tr>
+                            </thead>
+                          </Table>
+                        </Col>
                       </Row>
-                      </Row>
+                    </Row>
                   )}
                 </div>
               </Card.Body>

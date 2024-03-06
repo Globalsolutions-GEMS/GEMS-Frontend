@@ -118,7 +118,7 @@ const ReceiptCancel = () => {
                         Receipt Search<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
-                        <InputGroup >
+                        <InputGroup>
                           <Form.Control
                             placeholder="Input group append..."
                             aria-label="Input group append..."
@@ -154,7 +154,7 @@ const ReceiptCancel = () => {
                         <Button variant="primary" type="submit">
                           Receipt Cancel
                         </Button>
-                        
+
                         <Button
                           variant="secondary"
                           type=""

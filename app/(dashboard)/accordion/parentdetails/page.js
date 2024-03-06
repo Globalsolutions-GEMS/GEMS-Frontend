@@ -24,7 +24,7 @@ const ParentDetails = () => {
                   <span className="text-danger">*</span>
                     <Form.Label htmlFor="inputPassword5">Parent Mobile</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -33,7 +33,7 @@ const ParentDetails = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Mother Name</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -42,7 +42,7 @@ const ParentDetails = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Mother Mobile No.</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -53,7 +53,7 @@ const ParentDetails = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Mother Occupation</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -62,7 +62,7 @@ const ParentDetails = () => {
                   <Col>
                     <Form.Label htmlFor="inputPassword5">Mother Organisation</Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -84,7 +84,7 @@ const ParentDetails = () => {
                     Father Organisation 
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -106,7 +106,7 @@ const ParentDetails = () => {
                     Father Organisation Phone No.
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -119,7 +119,7 @@ const ParentDetails = () => {
                     Mother Organisation Phone No. 
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -130,7 +130,7 @@ const ParentDetails = () => {
                       Father Name
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
@@ -141,7 +141,7 @@ const ParentDetails = () => {
                       Father Occupation
                     </Form.Label>
                     <Form.Control
-                      type="password"
+                      type="text"
                       id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
