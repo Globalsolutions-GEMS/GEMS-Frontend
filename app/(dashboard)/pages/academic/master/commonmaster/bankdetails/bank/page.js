@@ -10,7 +10,7 @@ import {
   Table,
   Pagination
 } from "react-bootstrap";
-import { createBank, getBanks, updateBank } from "app/api/bankdetails";
+import { createBankApi, retriveAllBanks, updateBankApi } from "app/api/bankdetails";
 import useMounted from "hooks/useMounted";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { ToastContainer, toast } from "react-toastify";
@@ -39,11 +39,11 @@ const Bank = () => {
     event.preventDefault();
     try {
       if (editingBank) {
-        await updateBank(editingBank.id, formData);
+        await updateBankApi(editingBank.id, formData);
         setEditingBank(null);
         update();
       } else {
-        await createBank(formData);
+        await createBankApi(formData);
         success();
       }
       refreshBank();
@@ -72,7 +72,7 @@ const Bank = () => {
 
   const refreshBank = async () => {
     try {
-      const response = await getBanks();
+      const response = await retriveAllBanks();
       setBankData(response.data);
     } catch (error) {
       console.log(error);

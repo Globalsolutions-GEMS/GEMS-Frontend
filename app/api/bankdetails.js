@@ -1,15 +1,17 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-    baseURL:"http://localhost:8080"
-})
+  baseURL: "http://localhost:8080",
+});
 
-export const getBanks = () => apiClient.get('/bank')
+export const retriveAllBanks = () => apiClient.get(`/bank`);
 
-export const createBank = (bank) => apiClient.post('/bank',bank)
+export const retrieveBankApi = (id) => apiClient.get(`/bank/${id}`);
 
-export const updateBank = (id,bank) => apiClient.put(`/bank/${id}`, bank)
+export const updateBankApi = (id, bank) => apiClient.put(`/bank/${id}`, bank);
 
-export const createBankAccount = (bankaccount) => apiClient.post('/bankaccount',bankaccount)
+export const createBankApi = (bank) => apiClient.post(`/bank`, bank);
 
-export const getAllBankAccounts = () => apiClient.get('/bankaccount')
+export const retrieveAccountForBank = (id) => apiClient.get(`/bank/${id}/bankaccount`)
+
+export const createBankAccountforBank = (id, bankAccount) => apiClient.post(`/bank/${id}/bankaccount`,bankAccount) 

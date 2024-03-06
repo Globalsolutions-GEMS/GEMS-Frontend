@@ -2,7 +2,11 @@
 // import node module libraries
 import { Container, Table } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
-import { getBanks, createBankAccount } from "app/api/bankdetails";
+import {
+  retriveAllBanks,
+  retrieveAccountForBank,
+  createBankAccountforBank,
+} from "app/api/bankdetails";
 
 // import sub components
 import useMounted from "hooks/useMounted";
@@ -14,10 +18,9 @@ import { useEffect, useState } from "react";
 
 const BankAccount = () => {
   const hasMounted = useMounted();
-  const [bankAccountData, setBankAccountData] = useState([]);
   const [itemsPerPage] = useState(5);
   const [formData, setFormData] = useState({
-    bank: "",
+    bankName: "",
     accountNumber: "",
     checkIfActive: false,
   });
@@ -28,60 +31,58 @@ const BankAccount = () => {
 
   const [bank, setBank] = useState([]);
   const [selectedBank, setSelectedBank] = useState("");
+  const [bankAccounts, setBankAccounts] = useState([]);
 
   const success = () => toast.success("Data Submitted Successfully!!!");
   const update = () => toast.success("Data Updated Successfully!!!");
   const errors = () => toast.error("Ooops!!! Somthing went Wrong");
 
+  const handleInputChange = async (event) => {
+    const { id, type, checked, value } = event.target;
+    if (id === "bank") {
+      const selectedBankId = parseInt(value);
+      setSelectedBank(selectedBankId);
+
+      try {
+        const response = await retrieveAccountForBank(selectedBankId);
+        setBankAccounts(response.data);
+      } catch (error) {
+        console.log(error);
+      }
+    } else {
+      const newValue = type === "checkbox" ? checked : value;
+      setFormData((prevFormData) => ({
+        ...prevFormData,
+        [id]: newValue === "on" ? true : newValue,
+        checkIfActive:
+          id === "checkIfActive" ? checked : prevFormData.checkIfActive,
+      }));
+    }
+  };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      if (editingBankAccount) {
-        update();
+      const response = await createBankAccountforBank(selectedBank, formData);
+      if (response.status === 200) {
+        success(); // Show success toast
+        const newBankAccount = response.data; // Assuming the response contains the newly created bank account data
+        setBankAccounts((prevBankAccounts) => [
+          ...prevBankAccounts,
+          newBankAccount,
+        ]); // Add the new bank account to the list
       } else {
-        await createBankAccount(formData);
-        success();
+        errors(); // Show error toast
       }
-      refreshBankAccount();
-      setFormData({
-        bank: "",
-        accountNumber: "",
-        checkIfActive: false,
-      });
-      setShowSuccessAlert(true);
     } catch (error) {
-      console.log(error);
-      errors();
+      console.error(error);
+      errors(); // Show error toast
     }
   };
-
-  const handleInputChange = (event) => {
-    const { id, type, checked, value } = event.target;
-
-    const newValue = type === "checkbox" ? checked : value;
-
-    setFormData((prevFormData) => ({
-      ...prevFormData,
-      [id]: newValue === "on" ? true : newValue, // Convert 'on' to true, otherwise use the value directly
-    }));
-  };
-
-  const refreshBankAccount = async () => {
-    try {
-      const response = await getAllBankAccounts();
-      setBankAccountData(response.data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    refreshBankAccount();
-  }, []);
 
   useEffect(() => {
     if (hasMounted) {
-      getBanks()
+      retriveAllBanks()
         .then((response) => {
           const data = response.data;
           setBank(data);
@@ -108,7 +109,7 @@ const BankAccount = () => {
                           <Col sm={9} className="mb-3 mb-lg-0">
                             <Form.Select
                               id="bank"
-                              value={formData.bank}
+                              value={selectedBank}
                               onChange={handleInputChange}
                               required
                             >
@@ -140,7 +141,7 @@ const BankAccount = () => {
                         </Row>
 
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-2 col-form-label form-label">
+                          <Form.Label className="col-sm-3 col-form-label form-label">
                             Active
                           </Form.Label>
                           <Col className="mt-2">
@@ -148,7 +149,8 @@ const BankAccount = () => {
                               type="switch"
                               id="checkIfActive"
                               label="Check If Active"
-                              defaultChecked
+                              checked={formData.checkIfActive}
+                              onChange={handleInputChange}
                             />
                           </Col>
                         </Row>
@@ -186,6 +188,18 @@ const BankAccount = () => {
                               </th>
                             </tr>
                           </thead>
+                          <tbody>
+                            {bankAccounts.map((bankAccount) => (
+                              <tr key={bankAccount.id}>
+                                <td>{bankAccount.accountNumber}</td>
+                                <td>{bankAccount.checkIfActive ? "Active" : "Deactive"}</td>
+                                {/* Assuming status is a field in the bank account data */}
+                                <td className="col-2">
+                                  {/* Action buttons */}
+                                </td>
+                              </tr>
+                            ))}
+                          </tbody>
                         </Table>
                       </Col>
                     </Row>
