@@ -40,6 +40,7 @@ const AccordionForStudent = () => {
           <Card>
             <Card.Body>
               <div>
+              <h3 className="mb-4">Personal Details</h3>
                 {hasMounted && (
                   <Form>
                     <Accordion defaultActiveKey="0" flush>

@@ -14,7 +14,6 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-
 const OutstandingFees = () => {
   const hasMounted = useMounted();
 
@@ -296,31 +295,7 @@ const OutstandingFees = () => {
                                           </Col>
                                         </Row>
 
-                                        <Row>
-                                          <Col className="d-flex align-items-center justify-content-center">
-                                            <Button
-                                              variant="primary"
-                                              type="submit"
-                                            >
-                                              Submit
-                                            </Button>
-                                            <Button
-                                              variant="secondary"
-                                              type=""
-                                              style={{ marginLeft: "10px" }}
-                                            >
-                                              Cancel
-                                            </Button>
-                                            <Button
-                                              variant="primary"
-                                              type=""
-                                              style={{ marginLeft: "10px" }}
-                                            >
-                                              Adjust
-                                            </Button>
-                                          </Col>
-                                          <Col></Col>
-                                        </Row>
+                                        
                                       </Form>
                                     )}
                                   </div>
@@ -332,6 +307,28 @@ const OutstandingFees = () => {
                         <Col></Col>
                       </Row>
                     </Container>
+                    <Row>
+                      <Col className="d-flex align-items-center justify-content-center">
+                        <Button variant="primary" type="submit">
+                          Submit
+                        </Button>
+                        <Button
+                          variant="secondary"
+                          type=""
+                          style={{ marginLeft: "10px" }}
+                        >
+                          Cancel
+                        </Button>
+                        <Button
+                          variant="primary"
+                          type=""
+                          style={{ marginLeft: "10px" }}
+                        >
+                          Adjust
+                        </Button>
+                      </Col>
+                     
+                    </Row>
                   </Form>
                 )}
               </div>

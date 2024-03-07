@@ -153,6 +153,8 @@ const AdmissionReport = () => {
                       </Col>
                     </Row>
                     <Row className="mb-3">
+                      <Col sm={6}>
+                      </Col>
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Option<span className="text-danger">*</span>
                       </Form.Label>

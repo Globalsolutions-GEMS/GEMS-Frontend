@@ -146,7 +146,7 @@ const ChangeFeesBulk = () => {
                                             <Col></Col>
                                             <Col>
                                                 <Form.Check
-                                                    label="Subject Type"
+                                                    label="Subject"
                                                     type="radio"
                                                     value="Subject"
                                                     onChange={handleRadioChange}
