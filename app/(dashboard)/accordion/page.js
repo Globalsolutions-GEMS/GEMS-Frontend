@@ -21,7 +21,7 @@ const AccordionForStudent = () => {
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Accordion" />
+      {/* <PageHeading heading="Accordion" /> */}
       {/* <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
@@ -29,18 +29,11 @@ const AccordionForStudent = () => {
         <Breadcrumb.Item active>Certificate</Breadcrumb.Item>
       </Breadcrumb> */}
       <Row>
-        <Col sm={3}>
-          <Card>
-            <Card.Body>
-              <div>{hasMounted && <Form></Form>}</div>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm={9}>
+        <Col >
           <Card>
             <Card.Body>
               <div>
-              <h3 className="mb-4">Personal Details</h3>
+              <h3 className="mb-4" style={{width:'800px'}}>Personal Details</h3>
                 {hasMounted && (
                   <Form>
                     <Accordion defaultActiveKey="0" flush>
