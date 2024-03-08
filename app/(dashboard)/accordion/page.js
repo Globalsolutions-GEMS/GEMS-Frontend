@@ -1,8 +1,8 @@
 "use client";
 // import node module libraries
 
-import { Accordion, Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
-import { Col, Row, Form, Card, Button } from "react-bootstrap";
+import { Accordion,Container } from "react-bootstrap";
+import { Col, Row, Form, Card, } from "react-bootstrap";
 
 // import widget as custom components
 import { PageHeading } from "widgets";
@@ -19,21 +19,13 @@ import useMounted from "hooks/useMounted";
 const AccordionForStudent = () => {
   const hasMounted = useMounted();
   return (
-    <Container fluid className="p-6">
-      {/* Page Heading */}
-      {/* <PageHeading heading="Accordion" /> */}
-      {/* <Breadcrumb>
-        <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Academic Master</Breadcrumb.Item>
-        <Breadcrumb.Item active>Certificate</Breadcrumb.Item>
-      </Breadcrumb> */}
+    <Container fluid >
       <Row>
         <Col >
           <Card>
             <Card.Body>
               <div>
-              <h3 className="mb-4" style={{width:'800px'}}>Personal Details</h3>
+              <h3 className="mb-4" >Personal Details</h3>
                 {hasMounted && (
                   <Form>
                     <Accordion defaultActiveKey="0" flush>

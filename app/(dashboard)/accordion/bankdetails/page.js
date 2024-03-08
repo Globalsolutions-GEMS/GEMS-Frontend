@@ -1,10 +1,7 @@
 "use client";
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
-import { Col, Row, Form, Card, Button } from "react-bootstrap";
-
-// import widget as custom components
-import { PageHeading } from "widgets";
+import { Container } from "react-bootstrap";
+import { Col, Row, Form, } from "react-bootstrap";
 
 // import sub components
 import useMounted from "hooks/useMounted";
