@@ -18,25 +18,25 @@ const BankDetails = () => {
               <Form>
                 <Row className="mb-3 mt-2">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Bank Name</Form.Label>
+                    <Form.Label >Bank Name</Form.Label>
                     <Form.Control
                       type="password"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">IFSC Code</Form.Label>
+                    <Form.Label >IFSC Code</Form.Label>
                     <Form.Control
                       type="password"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Aadhar Linked with Bank
                     </Form.Label>
                     <Form.Check // prettier-ignore
@@ -55,12 +55,12 @@ const BankDetails = () => {
                 </Row>
                 <Row>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Account Number
                     </Form.Label>
                     <Form.Control
                       type="password"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />

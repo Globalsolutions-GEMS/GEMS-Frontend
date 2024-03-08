@@ -16,7 +16,7 @@ import OtherDetails from './otherdetails/page'
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const AccordionForStudent = () => {
+const Personal = () => {
   const hasMounted = useMounted();
   return (
     <Container fluid >
@@ -71,4 +71,4 @@ const AccordionForStudent = () => {
   );
 };
 
-export default AccordionForStudent;
+export default Personal;

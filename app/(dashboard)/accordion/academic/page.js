@@ -84,7 +84,7 @@ const AcademicDetails = () => {
                     </Row>
                     <Row className="mb-3 ">
                       <Col>
-                        <Form.Label>Date:</Form.Label>
+                        <Form.Label>Cancel Date:</Form.Label>
                       </Col>
                     </Row>
                     <Row className="mb-3 m">

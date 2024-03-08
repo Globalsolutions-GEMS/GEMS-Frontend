@@ -22,31 +22,27 @@ const MyDetails = () => {
                 <Row className="mb-3 mt-2">
                   <Col>
                     <span className="text-danger">*</span>
-                    <Form.Label htmlFor="inputPassword5">Title</Form.Label>
+                    <Form.Label>Title</Form.Label>
                     <Form.Control
                       type="text"
                       //placeholder="Please Enter Title"
-                      id="inputPassword5"
+
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">First Name</Form.Label>
+                    <Form.Label>First Name</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Middle Name
-                    </Form.Label>
+                    <Form.Label>Middle Name</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -55,31 +51,26 @@ const MyDetails = () => {
                 <Row className="mb-3">
                   <Col>
                     <span className="text-danger">*</span>
-                    <Form.Label htmlFor="inputPassword5">
-                      Last Name/Surname
-                    </Form.Label>
+                    <Form.Label>Last Name/Surname</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
                     <span className="text-danger">*</span>
-                    <Form.Label htmlFor="inputPassword5">Gender</Form.Label>
+                    <Form.Label>Gender</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Mobile</Form.Label>
+                    <Form.Label>Mobile</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -87,30 +78,25 @@ const MyDetails = () => {
                 </Row>
                 <Row className="mb-3">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Phone</Form.Label>
+                    <Form.Label>Phone</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Email</Form.Label>
+                    <Form.Label>Email</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Parent Email
-                    </Form.Label>
+                    <Form.Label>Parent Email</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -120,34 +106,25 @@ const MyDetails = () => {
                 <Row className="mb-3">
                   <Col>
                     <span className="text-danger">*</span>
-                    <Form.Label htmlFor="inputPassword5">
-                      Date Of Birth
-                    </Form.Label>
+                    <Form.Label>Date Of Birth</Form.Label>
                     <Form.Control
                       type="date"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Place Of Birth
-                    </Form.Label>
+                    <Form.Label>Place Of Birth</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Marital Status
-                    </Form.Label>
+                    <Form.Label>Marital Status</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -155,33 +132,26 @@ const MyDetails = () => {
                 </Row>
                 <Row className="mb-3">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Mother Tongue
-                    </Form.Label>
+                    <Form.Label>Mother Tongue</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Blood Group
-                    </Form.Label>
+                    <Form.Label>Blood Group</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
                     <span className="text-danger">*</span>
-                    <Form.Label htmlFor="inputPassword5">Occupation</Form.Label>
+                    <Form.Label>Occupation</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -190,35 +160,26 @@ const MyDetails = () => {
                 <Row>
                   <Col>
                     <span className="text-danger">*</span>
-                    <Form.Label htmlFor="inputPassword5">
-                      Aadhar Number
-                    </Form.Label>
+                    <Form.Label>Aadhar Number</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Pan Card Number
-                    </Form.Label>
+                    <Form.Label>Pan Card Number</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
                     <span className="text-danger">*</span>
-                    <Form.Label htmlFor="inputPassword5">
-                      Nationality
-                    </Form.Label>
+                    <Form.Label>Nationality</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />

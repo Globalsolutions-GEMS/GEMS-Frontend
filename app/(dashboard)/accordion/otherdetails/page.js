@@ -21,7 +21,7 @@ const OtherDetails = () => {
               <Form>
                 <Row className="mb-3 mt-2">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Board Verified
                     </Form.Label>
                     <Form.Check // prettier-ignore
@@ -36,7 +36,7 @@ const OtherDetails = () => {
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Hostel</Form.Label>
+                    <Form.Label >Hostel</Form.Label>
                     <Form.Check // prettier-ignore
                       type="checkbox"
                       id=""
@@ -49,7 +49,7 @@ const OtherDetails = () => {
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Bus</Form.Label>
+                    <Form.Label >Bus</Form.Label>
                     <Form.Check // prettier-ignore
                       type="checkbox"
                       id=""
@@ -65,31 +65,31 @@ const OtherDetails = () => {
                 <Row className="mb-3 mt-2">
                   <Col>
                     <span className="text-danger">*</span>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Caste Category
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Sub Caste</Form.Label>
+                    <Form.Label >Sub Caste</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
                     <span className="text-danger">*</span>
-                    <Form.Label htmlFor="inputPassword5">Relegion</Form.Label>
+                    <Form.Label >Relegion</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -97,30 +97,30 @@ const OtherDetails = () => {
                 </Row>
                 <Row className="mb-3 mt-2">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Handicap</Form.Label>
+                    <Form.Label >Handicap</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Handicap Percentage
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">ID Proof</Form.Label>
+                    <Form.Label >ID Proof</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -128,34 +128,34 @@ const OtherDetails = () => {
                 </Row>
                 <Row className="mb-3">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       ID proof No.
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Total Family Number
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Family Income
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -163,30 +163,30 @@ const OtherDetails = () => {
                 </Row>
                 <Row className="mb-3">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">EID Number</Form.Label>
+                    <Form.Label >EID Number</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Eligibiliy Number
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Voter Id</Form.Label>
+                    <Form.Label >Voter Id</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -194,34 +194,34 @@ const OtherDetails = () => {
                 </Row>
                 <Row className="mb-3">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Board / Council
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Anti Ragging Undertaking Reference No.
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
+                    <Form.Label >
                       Academic Bank Credit (ABC) No.
                     </Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -229,10 +229,10 @@ const OtherDetails = () => {
                 </Row>
                 <Row className="mb-3">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Remark</Form.Label>
+                    <Form.Label >Remark</Form.Label>
                     <Form.Control
                       as="textarea"
-                      id="inputPassword5"
+                      
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />

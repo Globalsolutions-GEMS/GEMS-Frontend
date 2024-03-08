@@ -5,8 +5,9 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import AccordionForStudent from "../accordion/page";
+import Personal from "../accordion/page";
 import AcademicDetails from '../accordion/academic/page'
+import Address from '../accordion/address/page'
 
 import PersonIcon from "@mui/icons-material/Person";
 import SchoolIcon from "@mui/icons-material/School";
@@ -140,13 +141,13 @@ export default function VerticalTabs() {
       </Box>
       <Box sx={{ width: "80%" }}>
         <TabPanel value={value} index={0}>
-          <AccordionForStudent />
+          <Personal />
         </TabPanel>
         <TabPanel value={value} index={1}>
           <AcademicDetails/>
         </TabPanel>
         <TabPanel value={value} index={2}>
-          Item Three
+          <Address />
         </TabPanel>
         <TabPanel value={value} index={3}>
           Item Four

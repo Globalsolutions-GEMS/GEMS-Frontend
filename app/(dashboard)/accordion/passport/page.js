@@ -21,28 +21,25 @@ const Passport = () => {
               <Form>
                 <Row className="mb-3 mt-2">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Passport Number</Form.Label>
+                    <Form.Label>Passport Number</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Passport Issue Place</Form.Label>
+                    <Form.Label>Passport Issue Place</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Passport Issue Date</Form.Label>
+                    <Form.Label>Passport Issue Date</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -50,28 +47,25 @@ const Passport = () => {
                 </Row>
                 <Row className="mb-3 mt-2">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Passport Expiry Date</Form.Label>
+                    <Form.Label>Passport Expiry Date</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Visa Number</Form.Label>
+                    <Form.Label>Visa Number</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Visa Issue Place</Form.Label>
+                    <Form.Label>Visa Issue Place</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -79,23 +73,17 @@ const Passport = () => {
                 </Row>
                 <Row>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Visa Issue Date 
-                    </Form.Label>
+                    <Form.Label>Visa Issue Date</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Visa Expiry Date 
-                    </Form.Label>
+                    <Form.Label>Visa Expiry Date</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />

@@ -21,29 +21,26 @@ const ParentDetails = () => {
               <Form>
                 <Row className="mb-3 mt-2">
                   <Col>
-                  <span className="text-danger">*</span>
-                    <Form.Label htmlFor="inputPassword5">Parent Mobile</Form.Label>
+                    <span className="text-danger">*</span>
+                    <Form.Label>Parent Mobile</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Mother Name</Form.Label>
+                    <Form.Label>Mother Name</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Mother Mobile No.</Form.Label>
+                    <Form.Label>Mother Mobile No.</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -51,28 +48,25 @@ const ParentDetails = () => {
                 </Row>
                 <Row className="mb-3 mt-2">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Mother Occupation</Form.Label>
+                    <Form.Label>Mother Occupation</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Mother Organisation</Form.Label>
+                    <Form.Label>Mother Organisation</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">Mother Organisation Address</Form.Label>
+                    <Form.Label>Mother Organisation Address</Form.Label>
                     <Form.Control
                       as="textarea"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -80,34 +74,25 @@ const ParentDetails = () => {
                 </Row>
                 <Row className="mb-3">
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                    Father Organisation 
-                    </Form.Label>
+                    <Form.Label>Father Organisation</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                    Father Organisation Address
-                    </Form.Label>
+                    <Form.Label>Father Organisation Address</Form.Label>
                     <Form.Control
                       as="textarea"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                    Father Organisation Phone No.
-                    </Form.Label>
+                    <Form.Label>Father Organisation Phone No.</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
@@ -115,34 +100,25 @@ const ParentDetails = () => {
                 </Row>
                 <Row>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                    Mother Organisation Phone No. 
-                    </Form.Label>
+                    <Form.Label>Mother Organisation Phone No.</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Father Name
-                    </Form.Label>
+                    <Form.Label>Father Name</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
                   </Col>
                   <Col>
-                    <Form.Label htmlFor="inputPassword5">
-                      Father Occupation
-                    </Form.Label>
+                    <Form.Label>Father Occupation</Form.Label>
                     <Form.Control
                       type="text"
-                      id="inputPassword5"
                       aria-describedby="passwordHelpBlock"
                       disabled
                     />
