@@ -96,8 +96,8 @@ const Documents = () => {
                       <Card.Body>
                         <PageHeading heading="Select Documents" />
                         <Row className="mb-3">
-                          <span className="text-danger">*</span>
-                          <Form.Label>Select Document</Form.Label>
+                          
+                          <Form.Label> <span className="text-danger">*</span>Select Document</Form.Label>
                           <Form.Select
                             type="text"
                             aria-describedby="passwordHelpBlock"
