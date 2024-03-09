@@ -65,8 +65,8 @@ const Fees = () => {
                       <Col sm={3}>
                       </Col>
                       <Col sm={6}>
-                      <span className="text-danger">*</span>
-                        <Form.Label>Receipt Type</Form.Label>
+                     
+                        <Form.Label> <span className="text-danger">*</span>Receipt Type</Form.Label>
                         <Form.Select
                           type="text"
                           aria-describedby="passwordHelpBlock"
