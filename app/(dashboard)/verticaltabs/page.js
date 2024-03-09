@@ -6,8 +6,12 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Personal from "../accordion/page";
-import AcademicDetails from '../accordion/academic/page'
-import Address from '../accordion/address/page'
+import AcademicDetails from "../accordion/academic/page";
+import Address from "../accordion/address/page";
+import PhotoAndSignDetails from "../accordion/photoandsign/page";
+import Subject from "../accordion/subject/page";
+import Fees from "../accordion/fees/page";
+import Documents from "../accordion/document/page";
 
 import PersonIcon from "@mui/icons-material/Person";
 import SchoolIcon from "@mui/icons-material/School";
@@ -16,6 +20,14 @@ import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import SubjectIcon from "@mui/icons-material/Subject";
 import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import DescriptionIcon from "@mui/icons-material/Description";
+
+const TabLabel = ({ children }) => (
+  <div style={{ display: "flex", alignItems: "center", gap:'5' }}>{children}</div>
+);
+
+TabLabel.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -43,13 +55,6 @@ TabPanel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-function a11yProps(index) {
-  return {
-    id: `vertical-tab-${index}`,
-    "aria-controls": `vertical-tabpanel-${index}`,
-  };
-}
-
 export default function VerticalTabs() {
   const [value, setValue] = React.useState(0);
 
@@ -68,8 +73,6 @@ export default function VerticalTabs() {
           marginTop: "3.5vh",
           borderTopLeftRadius: 10,
           borderBottomLeftRadius: 10,
-          borderTopRightRadius: 10,
-          borderBottomRightRadius: 10,
           overflow: "hidden",
         }}
       >
@@ -84,57 +87,64 @@ export default function VerticalTabs() {
           <Tab
             {...a11yProps(0)}
             label={
-              <>
-                <PersonIcon /> Personal
-              </>
+              <TabLabel>
+                <PersonIcon />
+                <Typography variant="body1">Personal</Typography>
+              </TabLabel>
             }
           />
           <Tab
             {...a11yProps(1)}
             label={
-              <>
-                <SchoolIcon /> Academic
-              </>
+              <TabLabel>
+                <SchoolIcon />
+                <Typography variant="body1">Academic</Typography>
+              </TabLabel>
             }
           />
           <Tab
             {...a11yProps(2)}
             label={
-              <>
-                <LocationOnIcon /> Address
-              </>
+              <TabLabel>
+                <LocationOnIcon />
+                <Typography variant="body1">Address</Typography>
+              </TabLabel>
             }
           />
           <Tab
             {...a11yProps(3)}
             label={
-              <>
-                <PhotoCameraIcon /> Photo and Sign
-              </>
+              <TabLabel>
+                <PhotoCameraIcon />
+                <Typography variant="body1">Photo and Sign</Typography>
+              </TabLabel>
             }
           />
           <Tab
             {...a11yProps(4)}
             label={
-              <>
-                <SubjectIcon /> Subject
-              </>
+              <TabLabel>
+                <SubjectIcon />
+                <Typography variant="body1">Subject</Typography>
+              </TabLabel>
             }
           />
           <Tab
             {...a11yProps(5)}
             label={
-              <>
-                <AttachMoneyIcon /> Fees
-              </>
+              <TabLabel>
+                <AttachMoneyIcon />
+                <Typography variant="body1">Fees</Typography>
+              </TabLabel>
             }
           />
           <Tab
             {...a11yProps(6)}
             label={
-              <>
-                <DescriptionIcon /> Documents
-              </>
+              <TabLabel>
+                <DescriptionIcon />
+                <Typography variant="body1">Documents</Typography>
+              </TabLabel>
             }
           />
         </Tabs>
@@ -144,24 +154,31 @@ export default function VerticalTabs() {
           <Personal />
         </TabPanel>
         <TabPanel value={value} index={1}>
-          <AcademicDetails/>
+          <AcademicDetails />
         </TabPanel>
         <TabPanel value={value} index={2}>
           <Address />
         </TabPanel>
         <TabPanel value={value} index={3}>
-          Item Four
+          <PhotoAndSignDetails />
         </TabPanel>
         <TabPanel value={value} index={4}>
-          Item Five
+          <Subject />
         </TabPanel>
         <TabPanel value={value} index={5}>
-          Item Six
+          <Fees />
         </TabPanel>
         <TabPanel value={value} index={6}>
-          Item Seven
+          <Documents />
         </TabPanel>
       </Box>
     </Box>
   );
+}
+
+function a11yProps(index) {
+  return {
+    id: `vertical-tab-${index}`,
+    "aria-controls": `vertical-tabpanel-${index}`,
+  };
 }
