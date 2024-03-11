@@ -6,11 +6,9 @@ import {
   retriveAllBanks,
   retrieveAccountForBank,
   createBankAccountforBank,
+  updateBankAccount,
 } from "app/api/bankdetails";
-
-// import sub components
 import useMounted from "hooks/useMounted";
-
 import { ToastContainer, toast } from "react-toastify";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -34,8 +32,8 @@ const BankAccount = () => {
   const [bankAccounts, setBankAccounts] = useState([]);
 
   const success = () => toast.success("Data Submitted Successfully!!!");
-  const update = () => toast.success("Data Updated Successfully!!!");
-  const errors = () => toast.error("Ooops!!! Somthing went Wrong");
+  const updateSuccess = () => toast.success("Data Updated Successfully!!!");
+  const errorToast = () => toast.error("Ooops!!! Somthing went Wrong");
 
   const handleInputChange = async (event) => {
     const { id, type, checked, value } = event.target;
@@ -47,7 +45,7 @@ const BankAccount = () => {
         const response = await retrieveAccountForBank(selectedBankId);
         setBankAccounts(response.data);
       } catch (error) {
-        console.log(error);
+        console.error(error);
       }
     } else {
       const newValue = type === "checkbox" ? checked : value;
@@ -63,22 +61,39 @@ const BankAccount = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await createBankAccountforBank(selectedBank, formData);
-      if (response.status === 200) {
-        success(); // Show success toast
-        const newBankAccount = response.data; // Assuming the response contains the newly created bank account data
-        setBankAccounts((prevBankAccounts) => [
-          ...prevBankAccounts,
-          newBankAccount,
-        ]); // Add the new bank account to the list
+      if (editingBankAccount) {
+        await updateBankAccount(selectedBank, editingBankAccount.id, formData);
+        setEditingBankAccount(null);
+        setEditingRowIndex(null);
+        updateSuccess();
       } else {
-        errors(); // Show error toast
+        await createBankAccountforBank(selectedBank, formData);
+        success();
       }
+      refreshAccount();
+      setFormData({
+        bankName: "",
+        accountNumber: "",
+        checkIfActive: false,
+      });
     } catch (error) {
       console.error(error);
-      errors(); // Show error toast
+      errorToast();
     }
   };
+
+  const refreshAccount = async () => {
+    try {
+      const response = await retrieveAccountForBank(selectedBank);
+      setBankAccounts(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    refreshAccount();
+  }, [selectedBank]);
 
   useEffect(() => {
     if (hasMounted) {
@@ -89,7 +104,7 @@ const BankAccount = () => {
         })
         .catch((error) => console.error(error));
     }
-  });
+  }, [hasMounted]);
 
   return (
     <Container fluid>
@@ -135,6 +150,7 @@ const BankAccount = () => {
                               id="accountNumber"
                               value={formData.accountNumber}
                               onChange={handleInputChange}
+                              name="accountNumber"
                               required
                             />
                           </Col>
@@ -161,15 +177,26 @@ const BankAccount = () => {
                             className="mt-4"
                           >
                             <Button variant="primary" type="submit">
-                              Submit
+                              {editingBankAccount ? "Update" : "Submit"}
                             </Button>
                             <Button
                               variant="secondary"
-                              type=""
+                              type="reset"
                               style={{ marginLeft: "10px" }}
+                              onClick={() => {
+                                setFormData({
+                                  bankName: "",
+                                  accountNumber: "",
+                                  checkIfActive: false,
+                                });
+                                setEditingBankAccount(null);
+                                setEditingRowIndex(null);
+                              }}
                             >
                               Cancel
                             </Button>
+
+                            <ToastContainer style={{ marginTop: "40px" }} />
                           </Col>
                         </Row>
                       </Col>
@@ -183,7 +210,7 @@ const BankAccount = () => {
                               <th>
                                 <b>Status</b>
                               </th>
-                              <th className="col-2">
+                              <th className="col-4">
                                 <b>Action</b>
                               </th>
                             </tr>
@@ -192,10 +219,33 @@ const BankAccount = () => {
                             {bankAccounts.map((bankAccount) => (
                               <tr key={bankAccount.id}>
                                 <td>{bankAccount.accountNumber}</td>
-                                <td>{bankAccount.checkIfActive ? "Active" : "Deactive"}</td>
-                                {/* Assuming status is a field in the bank account data */}
-                                <td className="col-2">
-                                  {/* Action buttons */}
+                                <td>
+                                  {bankAccount.checkIfActive
+                                    ? "Active"
+                                    : "Deactive"}
+                                </td>
+                                <td className="d-flex justify-content-center align-items-center">
+                                  <Button
+                                    variant="secondary"
+                                    onClick={() => {
+                                      const index = bankAccounts.findIndex(
+                                        (account) =>
+                                          account.id === bankAccount.id
+                                      );
+                                      setEditingBankAccount(bankAccount);
+                                      setEditingRowIndex(index);
+                                      setFormData({
+                                        ...formData,
+                                        accountNumber:
+                                          bankAccount.accountNumber,
+                                        checkIfActive:
+                                          bankAccount.checkIfActive,
+                                      });
+                                    }}
+                                  >
+                                    <i className="bi bi-pencil-fill me-2" />{" "}
+                                    Edit
+                                  </Button>
                                 </td>
                               </tr>
                             ))}

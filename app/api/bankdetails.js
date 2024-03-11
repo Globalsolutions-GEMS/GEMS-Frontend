@@ -15,3 +15,5 @@ export const createBankApi = (bank) => apiClient.post(`/bank`, bank);
 export const retrieveAccountForBank = (id) => apiClient.get(`/bank/${id}/bankaccount`)
 
 export const createBankAccountforBank = (id, bankAccount) => apiClient.post(`/bank/${id}/bankaccount`,bankAccount) 
+
+export const updateBankAccount = (bankId,accountId,bankAccountData) => apiClient.put(`/bank/${bankId}/bankaccount/${accountId}`,bankAccountData);
