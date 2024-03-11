@@ -25,6 +25,7 @@ export const DashboardMenu = [
       { id: uuid(), link: "/profile", name: "Profile", icon: "file-text" },
       { id: uuid(), link: "/settings", name: "Settings", icon: "file-text" },
       { id: uuid(), link: "/accordion", name: "Accordion", icon: "file-text" },
+      { id: uuid(), link: "/verticaltabs", name: "Vertical Tabs", icon: "file-text" },
       {
         id: uuid(),
         link: "/pages/nep/master/masters/applycertificate",
