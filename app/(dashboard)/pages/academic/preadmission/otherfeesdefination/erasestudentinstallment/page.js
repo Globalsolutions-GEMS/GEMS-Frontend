@@ -94,7 +94,7 @@ const EraseStudentInstallment = () => {
                                       <Form>
                                         <Row className="mb-3">
                                           <Form.Label
-                                            className="col-sm-3 col-form-label form-label"
+                                            className="col-sm-2 col-form-label form-label"
                                             htmlFor="fullName"
                                           >
                                             Search By
@@ -104,22 +104,25 @@ const EraseStudentInstallment = () => {
                                             className="mb-3 mb-lg-0 mt-3"
                                           >
                                             <Row>
-                                              <Col>
+                                              <Col >
                                                 <Form.Check
                                                   label="Student Id"
                                                   type="radio"
+                                                  name="radio"
                                                 />
                                               </Col>
                                               <Col>
                                                 <Form.Check
                                                   label="Name"
                                                   type="radio"
+                                                  name="radio"
                                                 />
                                               </Col>
                                               <Col>
                                                 <Form.Check
                                                   label="User Define"
                                                   type="radio"
+                                                  name="radio"
                                                 />
                                               </Col>
                                             </Row>

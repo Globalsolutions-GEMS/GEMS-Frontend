@@ -41,7 +41,7 @@ const FeesCollection = () => {
                                 <Form>
                                   <Col>
                                     <Row className="mb-3">
-                                      <Form.Label className="col-sm-3 col-form-label form-label">
+                                      <Form.Label className="col-sm-2 col-form-label form-label">
                                         Search Crieteria
                                         <span className="text-danger">*</span>
                                       </Form.Label>
@@ -49,21 +49,24 @@ const FeesCollection = () => {
                                         <Form.Check
                                           label="Student Id."
                                           type="radio"
+                                          name="radio"
                                         />
                                       </Col>
                                       <Col className="mt-2">
-                                        <Form.Check label="Name" type="radio" />
+                                        <Form.Check label="Name" type="radio" name="radio" />
                                       </Col>
                                       <Col className="mt-2">
                                         <Form.Check
                                           label="Roll No"
                                           type="radio"
+                                          name="radio"
                                         />
                                       </Col>
                                       <Col className="mt-2">
                                         <Form.Check
                                           label="User Field"
                                           type="radio"
+                                          name="radio"
                                         />
                                       </Col>
                                     </Row>

@@ -119,7 +119,7 @@ const StudentDirectAdmission = () => {
                     <Container fluid className="p-3">
                       <Row>
                         <Col>
-                          <PageHeading heading="Pervious Course Details" />
+                          <PageHeading heading="Previous Course Details" />
                           <Row className="mb-8">
                             <Col xl={12} lg={8} md={12} xs={12}>
                               <Card>

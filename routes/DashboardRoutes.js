@@ -382,6 +382,33 @@ export const DashboardMenu = [
               },
             ],
           },
+          {
+            id: uuid(),
+            link: "#",
+            title: "Subject",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/academic/preadmission/subject/subjecttype",
+                name: "Subject Type",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/academic/preadmission/subject/subjectdefinition",
+                name: "Subject Definition",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/academic/preadmission/subject/subjectfee",
+                name: "Subject Fee",
+                icon: "file-text",
+              },
+              
+            ],
+          },
         ],
       },
       {

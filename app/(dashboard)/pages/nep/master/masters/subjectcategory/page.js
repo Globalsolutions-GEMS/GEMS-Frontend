@@ -34,7 +34,8 @@ const SubjectCategory = () => {
                       <Col sm={8}>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                          Subject Category Name<span className="text-danger">*</span>
+                            Subject Category Name
+                            <span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Control
@@ -47,7 +48,8 @@ const SubjectCategory = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                          Subject Category Code<span className="text-danger">*</span>
+                            Subject Category Code
+                            <span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Control
@@ -60,7 +62,7 @@ const SubjectCategory = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                          Sequence No.
+                            Sequence No.
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Control
@@ -71,18 +73,18 @@ const SubjectCategory = () => {
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-4 col-form-label form-label">
-                                                Active
-                                            </Form.Label>
-                                            <Col className='mt-2'>
-                                                <Form.Check
-                                                    type="switch"
-                                                    id="checkIfActive"
-                                                    label="Check If Active"
-                                                    defaultChecked
-                                                />
-                                            </Col>
-                                        </Row>
+                          <Form.Label className="col-sm-4 col-form-label form-label">
+                            Active
+                          </Form.Label>
+                          <Col className="mt-2">
+                            <Form.Check
+                              type="switch"
+                              id="checkIfActive"
+                              label="Check If Active"
+                              defaultChecked
+                            />
+                          </Col>
+                        </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
                             Major
@@ -117,25 +119,39 @@ const SubjectCategory = () => {
                         </Row>
                       </Col>
                       <Col sm={4}></Col>
-                    
-                    <Row>
-                       <Col>
-                        <Table striped border hower>
-                          <thead>
-                            <tr>
-                              <th style={{width:'50px'}} ><b>No.</b></th>
-                              <th style={{width:'300px'}}><b>Subject Category Name</b></th>
-                              <th className="col-3"><b>Subject Category Code</b></th>
-                              <th><b>Status</b></th>
-                              <th><b>Major Status</b></th>
-                              <th><b>Sequence No.</b></th>
-                              <th><b>Action</b></th>
-                            </tr>
-                          </thead>
-                        </Table>
-                      </Col> 
+
+                      <Row>
+                        <Col>
+                          <Table striped border hower>
+                            <thead>
+                              <tr>
+                                <th style={{ width: "50px" }}>
+                                  <b>No.</b>
+                                </th>
+                                <th style={{ width: "300px" }}>
+                                  <b>Subject Category Name</b>
+                                </th>
+                                <th className="col-3">
+                                  <b>Subject Category Code</b>
+                                </th>
+                                <th>
+                                  <b>Status</b>
+                                </th>
+                                <th>
+                                  <b>Major Status</b>
+                                </th>
+                                <th>
+                                  <b>Sequence No.</b>
+                                </th>
+                                <th>
+                                  <b>Action</b>
+                                </th>
+                              </tr>
+                            </thead>
+                          </Table>
+                        </Col>
                       </Row>
-                      </Row>
+                    </Row>
                   )}
                 </div>
               </Card.Body>
