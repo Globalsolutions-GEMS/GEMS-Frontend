@@ -33,12 +33,12 @@ const SubjectType = () => {
                   <Form>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Subject Type<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
@@ -49,28 +49,28 @@ const SubjectType = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Type
                       </Form.Label>
-                      <Col sm={6} className="mb-3 mb-lg-0 mt-3">
+                      <Col sm={5} >
                         <Row>
-                          <Col className="mt-2">
+                          <Col sm={3} className="mt-2">
                             <Form.Check
                               label="Theory"
                               type="radio"
                               name="radio"
                             />
                           </Col>
-                          <Col className="mt-2">
+                          <Col sm={3} className="mt-2">
                             <Form.Check
                               label="Practical"
                               type="radio"
                               name="radio"
                             />
                           </Col>
-                          <Col className="mt-2">
+                          <Col sm={6} className="mt-2">
                             <Form.Check
                               label="Theory Cum Practical"
                               type="radio"
@@ -82,7 +82,7 @@ const SubjectType = () => {
                     </Row>
 
                     <Row className="mb-3">
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Active
                       </Form.Label>
                       <Col className="mt-2">

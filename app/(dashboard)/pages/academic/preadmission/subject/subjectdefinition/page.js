@@ -31,13 +31,13 @@ const SubjectDefinition = () => {
                   <Form>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Subject Introduce In Year
                         <span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
@@ -46,12 +46,12 @@ const SubjectDefinition = () => {
                         />
                       </Col>
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Subject Type<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Enter Mother's Name"
@@ -62,12 +62,12 @@ const SubjectDefinition = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Medium<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
@@ -75,7 +75,7 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Optional
                       </Form.Label>
                       <Col className="mt-2">
@@ -89,12 +89,12 @@ const SubjectDefinition = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Part/Category<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
@@ -102,7 +102,7 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Grace Applicable
                       </Form.Label>
                       <Col className="mt-2">
@@ -116,12 +116,12 @@ const SubjectDefinition = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Subject Code<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
@@ -129,7 +129,7 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Avg. 100/2
                       </Form.Label>
                       <Col className="mt-2">
@@ -143,12 +143,12 @@ const SubjectDefinition = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Serial No.<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
@@ -156,7 +156,7 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Passing Head
                       </Form.Label>
                       <Col className="mt-2">
@@ -170,12 +170,12 @@ const SubjectDefinition = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Subject Name<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
@@ -183,7 +183,7 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Exclude For Exam
                       </Form.Label>
                       <Col className="mt-2">
@@ -197,12 +197,12 @@ const SubjectDefinition = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Subject Short Name<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
@@ -210,7 +210,7 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Grade Entry Subjects
                       </Form.Label>
                       <Col className="mt-2">
@@ -224,12 +224,12 @@ const SubjectDefinition = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Credits<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
@@ -237,7 +237,7 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Additional Subject
                       </Form.Label>
                       <Col className="mt-2">
@@ -251,7 +251,7 @@ const SubjectDefinition = () => {
                     </Row>
                     <Row className="mb-3">
                     <Col sm={6}></Col>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Academic Extra Credit
                       </Form.Label>
                       <Col className="mt-2">
@@ -266,7 +266,7 @@ const SubjectDefinition = () => {
 
                     <Row className="mb-3">
                     <Col sm={6}></Col>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Add In Earned Credit
                       </Form.Label>
                       <Col className="mt-2">
@@ -280,7 +280,7 @@ const SubjectDefinition = () => {
                     </Row>
                     <Row className="mb-3">
                     <Col sm={6}></Col>
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Active
                       </Form.Label>
                       <Col className="mt-2">

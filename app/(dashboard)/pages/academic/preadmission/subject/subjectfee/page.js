@@ -31,12 +31,12 @@ const SubjectFee = () => {
                   <Form>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Session<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
@@ -45,12 +45,12 @@ const SubjectFee = () => {
                         />
                       </Col>
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Subjects<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Enter Mother's Name"
@@ -61,12 +61,12 @@ const SubjectFee = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Course Code<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
@@ -75,12 +75,12 @@ const SubjectFee = () => {
                         />
                       </Col>
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Fee Head Type<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Fee Head"
@@ -91,12 +91,12 @@ const SubjectFee = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Course Code<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
@@ -105,12 +105,12 @@ const SubjectFee = () => {
                         />
                       </Col>
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Fee Head Type<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Fee Head Type"
@@ -121,12 +121,12 @@ const SubjectFee = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Medium<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
@@ -135,12 +135,12 @@ const SubjectFee = () => {
                         />
                       </Col>
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Fee Head<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Fee Head"
@@ -151,12 +151,12 @@ const SubjectFee = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Cash Book<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
@@ -165,12 +165,12 @@ const SubjectFee = () => {
                         />
                       </Col>
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Amount<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Control
                           type="text"
                           placeholder="Please Enter Amount"
@@ -181,12 +181,12 @@ const SubjectFee = () => {
                     </Row>
                     <Row className="mb-3">
                       <Form.Label
-                        className="col-sm-3 col-form-label form-label"
+                        className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
                         Payment Type<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
@@ -194,8 +194,7 @@ const SubjectFee = () => {
                           required
                         />
                       </Col>
-
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Active
                       </Form.Label>
                       <Col className="mt-2">
