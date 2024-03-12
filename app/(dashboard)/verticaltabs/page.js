@@ -22,7 +22,9 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import DescriptionIcon from "@mui/icons-material/Description";
 
 const TabLabel = ({ children }) => (
-  <div style={{ display: "flex", alignItems: "center", gap:'5' }}>{children}</div>
+  <div style={{ display: "flex", alignSelf: "flex-start", color:'primary' }}>
+    {children}
+  </div>
 );
 
 TabLabel.propTypes = {
@@ -73,6 +75,8 @@ export default function VerticalTabs() {
           marginTop: "3.5vh",
           borderTopLeftRadius: 10,
           borderBottomLeftRadius: 10,
+          borderTopRightRadius:10,
+          borderBottomRightRadius:10,
           overflow: "hidden",
         }}
       >
