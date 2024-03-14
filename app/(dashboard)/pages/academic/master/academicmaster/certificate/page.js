@@ -125,7 +125,7 @@ const Certificate = () => {
                           id="document"
                         >
                           <Form.Check.Input type="checkbox" />
-                          <Form.Check.Label>Check If Document</Form.Check.Label>
+                          <Form.Check.Label>If Document</Form.Check.Label>
                         </Form.Check>
                       </Col>
                     </Row>
@@ -137,7 +137,7 @@ const Certificate = () => {
                         <Form.Check
                           type="switch"
                           id="checkIfActive"
-                          label="Check If Active"
+                          label="If Active"
                           defaultChecked
                         />
                       </Col>

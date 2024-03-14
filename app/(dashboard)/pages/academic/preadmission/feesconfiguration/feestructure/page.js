@@ -103,7 +103,7 @@ const FeeStructure = () => {
                         <Form.Check
                           type="switch"
                           id="checkIfActive"
-                          label="Check If Active"
+                          label="If Active"
                           defaultChecked
                         />
                       </Col>

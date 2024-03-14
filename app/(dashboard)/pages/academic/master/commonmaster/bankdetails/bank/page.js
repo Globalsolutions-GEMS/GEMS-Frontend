@@ -172,7 +172,7 @@ const Bank = () => {
                         <Form.Check
                           type="switch"
                           id="checkIfActive"
-                          label="Check If Active"
+                          label="If Active"
                           checked={formData.checkIfActive}
                           onChange={handleInputChange}
                         />

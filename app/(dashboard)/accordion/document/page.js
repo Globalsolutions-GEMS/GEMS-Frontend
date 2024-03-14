@@ -60,7 +60,7 @@ const Documents = () => {
 
   const handleUpload = async () => {
     try {
-      // Check if both photo and signature are selected
+      // If both photo and signature are selected
       if (photo && sign) {
         // Use cropper refs to get cropped images
         const croppedPhoto = photoCropperRef.current.getCroppedImage();

@@ -175,7 +175,7 @@ const Degree = () => {
                         <Form.Check
                           type="switch"
                           id="checkIfActive"
-                          label="Check If Active"
+                          label="If Active"
                           onChange={handleInputChange}
                           value={formData.checkIfActive}
                           defaultChecked

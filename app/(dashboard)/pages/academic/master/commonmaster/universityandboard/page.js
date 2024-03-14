@@ -144,15 +144,15 @@ const UniversityAndBoard = () => {
                                             <Col md={9} xs={12}>
                                                 <Form.Check className="col-sm-3 col-form-label form-label" type="checkbox" id="checkIfHomeUniversity" value={formData.checkIfHomeUniversity} onChange={handleInputChange}>
                                                     <Form.Check.Input type="checkbox" id="checkIfHomeUniversity" checked={formData.checkIfHomeUniversity} onChange={handleInputChange} />
-                                                    <Form.Check.Label >Check If Home University</Form.Check.Label>
+                                                    <Form.Check.Label >If Home University</Form.Check.Label>
                                                 </Form.Check>
                                             </Col>
                                         </Row>
 
                                         <Row className="mb-3">
-                                      <Form.Label className="col-sm-3 col-form-label form-label">Check if Active</Form.Label>
+                                      <Form.Label className="col-sm-3 col-form-label form-label">If Active</Form.Label>
                                       <Col md={9} xs={12}>
-                                        <Form.Check type="switch" id="checkIfActive" label="Check If Active" checked={formData.active} onChange={handleInputChange} defaultChecked/> 
+                                        <Form.Check type="switch" id="checkIfActive" label="If Active" checked={formData.active} onChange={handleInputChange} defaultChecked/> 
                                         </Col>
                                     </Row>
                                       

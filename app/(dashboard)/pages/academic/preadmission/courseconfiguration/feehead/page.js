@@ -74,7 +74,7 @@ const FeeHead = () => {
   };
 
   const hasExcessFee = () => {
-    // Check if there is an existing excess fee for the selected cashbook
+    // If there is an existing excess fee for the selected cashbook
     const existingFeeheadWithExcessFee = feeheadData.find((feehead) => {
       return (
         feehead.cashbook &&
@@ -83,7 +83,7 @@ const FeeHead = () => {
       );
     });
 
-    // Check if the excess fee checkbox is checked in the form data
+    // If the excess fee checkbox is checked in the form data
     const formDataHasExcessFee = formData.excessFee === "true";
 
     // Disable the checkbox if there is an existing excess fee or if the excess fee checkbox is checked in the form data
@@ -149,7 +149,7 @@ const FeeHead = () => {
       setFilteredFeeheadData(feeheadData);
     } else {
       const filteredFeeheads = feeheadData.filter((feehead) => {
-        // Check if feehead and feehead.cashbook are not null before accessing their properties
+        // If feehead and feehead.cashbook are not null before accessing their properties
         return feehead.cashbook && feehead.cashbook.id === parseInt(cashbookId);
       });
       setFilteredFeeheadData(filteredFeeheads);
@@ -277,7 +277,7 @@ const FeeHead = () => {
                                 onChange={handleInputChange}
                               />
                               <Form.Check.Label>
-                                Check If Other Fee Head
+                                If Other Fee Head
                               </Form.Check.Label>
                             </Form.Check>
                           </Col>
@@ -300,7 +300,7 @@ const FeeHead = () => {
                                 onChange={handleInputChange}
                               />
                               <Form.Check.Label>
-                                Check If Installment Fee Head
+                                If Installment Fee Head
                               </Form.Check.Label>
                             </Form.Check>
                           </Col>
@@ -310,7 +310,7 @@ const FeeHead = () => {
                                                     <Col md={8} xs={12}>
                                                         <Form.Check className=" col-form-label form-label" type="checkbox" id="excessFee" value={formData.excessFee} onChange={handleInputChange}>
                                                             <Form.Check.Input type="checkbox" value={formData.excessFee} onChange={handleInputChange} />
-                                                            <Form.Check.Label >Check If Excess Fee</Form.Check.Label>
+                                                            <Form.Check.Label >If Excess Fee</Form.Check.Label>
                                                         </Form.Check>
                                                     </Col>
                                                 </Row> */}
@@ -328,7 +328,7 @@ const FeeHead = () => {
                                 disabled={hasExcessFee()}
                               />
                               <Form.Check.Label>
-                                Check If Excess Fee
+                                If Excess Fee
                               </Form.Check.Label>
                             </Form.Check>
                           </Col>
@@ -352,7 +352,7 @@ const FeeHead = () => {
                                 onChange={handleInputChange}
                               />
                               <Form.Check.Label>
-                                Check If GOI Scholarship
+                                If GOI Scholarship
                               </Form.Check.Label>
                             </Form.Check>
                           </Col>
@@ -375,7 +375,7 @@ const FeeHead = () => {
                                 onChange={handleInputChange}
                               />
                               <Form.Check.Label>
-                                Check If GST Applicable
+                                If GST Applicable
                               </Form.Check.Label>
                             </Form.Check>
                           </Col>
@@ -388,7 +388,7 @@ const FeeHead = () => {
                             <Form.Check
                               type="switch"
                               id="checkIfActive"
-                              label="Check If Active"
+                              label="If Active"
                               defaultChecked
                             />
                           </Col>

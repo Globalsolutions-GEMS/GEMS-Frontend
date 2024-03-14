@@ -58,7 +58,7 @@ const Religion = () => {
                           id="minority"
                         >
                           <Form.Check.Input type="checkbox" />
-                          <Form.Check.Label>Check If Minority</Form.Check.Label>
+                          <Form.Check.Label>If Minority</Form.Check.Label>
                         </Form.Check>
                       </Col>
                     </Row>
@@ -70,7 +70,7 @@ const Religion = () => {
                         <Form.Check
                           type="switch"
                           id="checkIfActive"
-                          label="Check If Active"
+                          label="If Active"
                           defaultChecked
                         />
                       </Col>

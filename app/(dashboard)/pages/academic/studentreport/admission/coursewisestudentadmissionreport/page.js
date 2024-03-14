@@ -88,7 +88,7 @@ const CoursewiseStudentAdmissionReport = () => {
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Is Fresh Student</Form.Label>
                                             <Form.Check className="ms-3 col-sm-3 col-form-label form-label" type="checkbox" id="active">
                                                 <Form.Check.Input type="checkbox" />
-                                                <Form.Check.Label >Check if Fresh Student</Form.Check.Label>
+                                                <Form.Check.Label >If Fresh Student</Form.Check.Label>
                                             </Form.Check>
                                         </Row>
                                         <Row className="mb-3">

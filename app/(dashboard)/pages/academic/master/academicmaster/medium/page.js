@@ -184,7 +184,7 @@ const Medium = () => {
                             checked={formData.isDefault}
                             onChange={handleInputChange}
                           />
-                          <Form.Check.Label>Check If Default</Form.Check.Label>
+                          <Form.Check.Label>If Default</Form.Check.Label>
                         </Form.Check>
                       </Col>
                     </Row>
@@ -197,7 +197,7 @@ const Medium = () => {
                         <Form.Check
                           type="switch"
                           id="active"
-                          label="Check If Active"
+                          label="If Active"
                           checked={formData.active}
                           onChange={handleInputChange}
                           defaultChecked

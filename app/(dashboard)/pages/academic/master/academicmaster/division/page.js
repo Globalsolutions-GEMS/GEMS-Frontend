@@ -132,7 +132,7 @@ const Section = () => {
                                         <Row className="mb-3">
                                       <Form.Label className="col-sm-3 col-form-label form-label">Active</Form.Label>
                                       <Col className='mt-2'>
-                                        <Form.Check type="switch" id="active" label="Check If Active" checked={formData.active} onChange={handleInputChange} defaultChecked/> 
+                                        <Form.Check type="switch" id="active" label="If Active" checked={formData.active} onChange={handleInputChange} defaultChecked/> 
                                         </Col>
                                     </Row>
  

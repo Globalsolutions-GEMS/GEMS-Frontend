@@ -211,7 +211,7 @@ const ReceiptBook = () => {
                                                 <Form.Check
                                                     type="checkbox"
                                                     id="checkIfActive"
-                                                    label="Check If GST Applicable"
+                                                    label="If GST Applicable"
                                                     onChange={handleInputChange}
                                                     value={formData.checkIfGstApplicable}
                                                 />
@@ -223,7 +223,7 @@ const ReceiptBook = () => {
                                                 <Form.Check
                                                     type="switch"
                                                     id="checkIfActive"
-                                                    label="Check If Active"
+                                                    label="If Active"
                                                     onChange={handleInputChange}
                                                     value={formData.checkIfActive}
                                                     defaultChecked

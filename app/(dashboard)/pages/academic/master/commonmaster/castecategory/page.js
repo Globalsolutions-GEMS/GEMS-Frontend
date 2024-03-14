@@ -83,7 +83,7 @@ const CasteCategory = () => {
                           id="active"
                         >
                           <Form.Check.Input type="checkbox" />
-                          <Form.Check.Label>Check If Reserved</Form.Check.Label>
+                          <Form.Check.Label>If Reserved</Form.Check.Label>
                         </Form.Check>
                       </Col>
                     </Row>
@@ -96,7 +96,7 @@ const CasteCategory = () => {
                         <Form.Check
                           type="switch"
                           id="checkIfActive"
-                          label="Check If Active"
+                          label="If Active"
                           defaultChecked
                         />
                       </Col>

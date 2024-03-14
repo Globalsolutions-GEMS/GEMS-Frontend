@@ -131,7 +131,7 @@ const Occupation = () => {
                                             <Form.Check
                                             type="switch"
                                             id="active"
-                                            label="Check If Active"
+                                            label="If Active"
                                             checked={formData.active}
                                             onChange={handleInputChange}
                                             defaultChecked

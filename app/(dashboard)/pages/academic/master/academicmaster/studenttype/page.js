@@ -46,7 +46,7 @@ const StudentType = () => {
                                             <Col md={9} xs={12}>
                                                 <Form.Check className="col-sm-3 col-form-label form-label" type="checkbox" id="active">
                                                     <Form.Check.Input type="checkbox" />
-                                                    <Form.Check.Label >Check If Active</Form.Check.Label>
+                                                    <Form.Check.Label >If Active</Form.Check.Label>
                                                 </Form.Check>
                                             </Col>
                                         </Row>

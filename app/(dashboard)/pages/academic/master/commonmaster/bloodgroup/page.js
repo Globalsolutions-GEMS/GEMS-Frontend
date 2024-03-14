@@ -149,13 +149,13 @@ const BloodGroup = () => {
 
                     <Row className="mb-3">
                       <Form.Label className="col-sm-3 col-form-label form-label">
-                        Check if Active
+                        If Active
                       </Form.Label>
                       <Col md={9} xs={12}>
                         <Form.Check
                           type="switch"
                           id="checkIfActive"
-                          label="Check If Active"
+                          label="If Active"
                           checked={formData.active}
                           onChange={handleInputChange}
                           defaultChecked

@@ -166,7 +166,7 @@ const AcademicYear = () => {
                                             <Col md={9} xs={12}>
                                                 <Form.Check className="col-sm-3 col-form-label form-label" type="checkbox" id="active" value={formData.active} onChange={handleInputChange}>
                                                     <Form.Check.Input type="checkbox" id='active' checked={formData.active} onChange={handleInputChange} />
-                                                    <Form.Check.Label >Check If Active</Form.Check.Label>
+                                                    <Form.Check.Label >If Active</Form.Check.Label>
                                                 </Form.Check>
                                             </Col>
                                         </Row> */}
@@ -176,7 +176,7 @@ const AcademicYear = () => {
                                                 <Col md={9} xs={12}>
                                                     <Form.Check className="col-sm-9 col-form-label form-label" type="checkbox" id="oldSession" value={formData.oldSession} onChange={handleInputChange}>
                                                         <Form.Check.Input type="checkbox" id="oldSession" checked={formData.oldSession} onChange={handleInputChange} />
-                                                        <Form.Check.Label >Check If Old Session</Form.Check.Label>
+                                                        <Form.Check.Label >If Old Session</Form.Check.Label>
                                                     </Form.Check>
                                                 </Col>
                                             </Row>
@@ -188,7 +188,7 @@ const AcademicYear = () => {
                                                     <Form.Check
                                                         type="switch"
                                                         id="checkIfActive"
-                                                        label="Check If Active"
+                                                        label="If Active"
                                                         defaultChecked
                                                     />
                                                 </Col>
