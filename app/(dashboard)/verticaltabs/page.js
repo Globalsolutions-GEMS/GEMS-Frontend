@@ -22,7 +22,7 @@ import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
 import DescriptionIcon from "@mui/icons-material/Description";
 
 const TabLabel = ({ children }) => (
-  <div style={{ display: "flex", alignSelf: "flex-start", color:'primary' }}>
+  <div style={{ display: "flex", alignSelf: "flex-start", color: "black" }}>
     {children}
   </div>
 );
@@ -75,8 +75,8 @@ export default function VerticalTabs() {
           marginTop: "3.5vh",
           borderTopLeftRadius: 10,
           borderBottomLeftRadius: 10,
-          borderTopRightRadius:10,
-          borderBottomRightRadius:10,
+          borderTopRightRadius: 10,
+          borderBottomRightRadius: 10,
           overflow: "hidden",
         }}
       >
@@ -96,6 +96,7 @@ export default function VerticalTabs() {
                 <Typography variant="body1">Personal</Typography>
               </TabLabel>
             }
+            sx={value === 0 ? selectedTabStyles : {}}
           />
           <Tab
             {...a11yProps(1)}
@@ -105,6 +106,7 @@ export default function VerticalTabs() {
                 <Typography variant="body1">Academic</Typography>
               </TabLabel>
             }
+            sx={value === 1 ? selectedTabStyles : {}}
           />
           <Tab
             {...a11yProps(2)}
@@ -114,6 +116,7 @@ export default function VerticalTabs() {
                 <Typography variant="body1">Address</Typography>
               </TabLabel>
             }
+            sx={value === 2 ? selectedTabStyles : {}}
           />
           <Tab
             {...a11yProps(3)}
@@ -123,6 +126,7 @@ export default function VerticalTabs() {
                 <Typography variant="body1">Photo and Sign</Typography>
               </TabLabel>
             }
+            sx={value === 3 ? selectedTabStyles : {}}
           />
           <Tab
             {...a11yProps(4)}
@@ -132,6 +136,7 @@ export default function VerticalTabs() {
                 <Typography variant="body1">Subject</Typography>
               </TabLabel>
             }
+            sx={value === 4 ? selectedTabStyles : {}}
           />
           <Tab
             {...a11yProps(5)}
@@ -141,6 +146,7 @@ export default function VerticalTabs() {
                 <Typography variant="body1">Fees</Typography>
               </TabLabel>
             }
+            sx={value === 5 ? selectedTabStyles : {}}
           />
           <Tab
             {...a11yProps(6)}
@@ -150,6 +156,7 @@ export default function VerticalTabs() {
                 <Typography variant="body1">Documents</Typography>
               </TabLabel>
             }
+            sx={value === 6 ? selectedTabStyles : {}}
           />
         </Tabs>
       </Box>
@@ -179,6 +186,12 @@ export default function VerticalTabs() {
     </Box>
   );
 }
+
+const selectedTabStyles = {
+  backgroundColor: "#6777F0",
+  border: "1px solid grey",
+  color: "white",
+};
 
 function a11yProps(index) {
   return {

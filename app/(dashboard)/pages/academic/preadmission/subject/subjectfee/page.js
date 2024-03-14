@@ -34,7 +34,7 @@ const SubjectFee = () => {
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Session<span className="text-danger">*</span>
+                        Academic Year<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -88,22 +88,6 @@ const SubjectFee = () => {
                           required
                         />
                       </Col>
-                    </Row>
-                    <Row className="mb-3">
-                      {/* <Form.Label
-                        className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Medium<span className="text-danger">*</span>
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
-                          type="text"
-                          placeholder="Please Select Medium"
-                          id="session"
-                          required
-                        />
-                      </Col> */}
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
@@ -119,6 +103,7 @@ const SubjectFee = () => {
                         />
                       </Col>
                     </Row>
+                    
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
@@ -171,7 +156,7 @@ const SubjectFee = () => {
                         <Form.Check
                           type="switch"
                           id="checkIfActive"
-                          label="Check If Active"
+                          label="If Active"
                           defaultChecked
                         />
                       </Col>

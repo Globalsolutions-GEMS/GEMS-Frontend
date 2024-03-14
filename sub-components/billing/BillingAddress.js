@@ -7,6 +7,7 @@ import { Row, Col, Card, Modal, Button, Form } from 'react-bootstrap';
 import { FormSelect } from 'widgets';
 
 const BillingAddress = () => {
+
   const [modalShow, setModalShow] = useState(false);
 
   const countryOptions = [
@@ -24,6 +25,7 @@ const BillingAddress = () => {
   ];
 
   const NewBillingAddressModal = (props) => {
+    
     return (
       <Modal
         {...props}

@@ -58,7 +58,7 @@ const BasicCourse = () => {
             }
             refreshBasicCourse();
             setFormData({
-                faculty: '',
+                facultyId: '',
                 degree: '',
                 cashbook: '',
                 courseLevel: '',

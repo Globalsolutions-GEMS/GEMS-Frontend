@@ -22,11 +22,9 @@ const CertificateFee = () => {
             <Breadcrumb>
             <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Other Fees Definition</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Fees Configuration</Breadcrumb.Item>
                 <Breadcrumb.Item active>Certificate Fee</Breadcrumb.Item>
             </Breadcrumb>
-
-
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
                     <Card>

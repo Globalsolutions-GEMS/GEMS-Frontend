@@ -354,32 +354,22 @@ export const DashboardMenu = [
                 name: "Copy Fees Structure",
                 icon: "file-text",
               },
-            ],
-          },
-          {
-            id: uuid(),
-            link: "#",
-            title: "Other Fees Definition",
-            icon: "book-open",
-            children: [
-              
-             
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/otherfeesdefination/studentinstallment",
+                link: "/pages/academic/preadmission/feesconfiguration/erasestudentinstallment",
+                name: "Erase Student Installment",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/academic/preadmission/feesconfiguration/studentinstallment",
                 name: "Student Installment",
                 icon: "file-text",
               },
               {
                 id: uuid(),
-                link: "/pages/academic/preadmission/otherfeesdefination/certificatefee",
+                link: "/pages/academic/preadmission/feesconfiguration/certificatefee",
                 name: "Certificate Fee",
-                icon: "file-text",
-              },
-              {
-                id: uuid(),
-                link: "/pages/academic/preadmission/otherfeesdefination/erasestudentinstallment",
-                name: "Erase Student Installment",
                 icon: "file-text",
               },
             ],
@@ -479,7 +469,7 @@ export const DashboardMenu = [
                 link: "/pages/academic/transaction/admissionfees/changefeesbulk",
                 name: "Change Fees - Bulk",
                 icon: "file-text",
-              }, //Student Type
+              }, 
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/admissionfees/createfeesregisteredpromoted",

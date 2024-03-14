@@ -212,6 +212,8 @@ const ReceiptBook = () => {
                                                     type="checkbox"
                                                     id="checkIfActive"
                                                     label="Check If GST Applicable"
+                                                    onChange={handleInputChange}
+                                                    value={formData.checkIfGstApplicable}
                                                 />
                                             </Col>
                                             <Form.Label className="col-sm-2 col-form-label form-label">
@@ -222,6 +224,8 @@ const ReceiptBook = () => {
                                                     type="switch"
                                                     id="checkIfActive"
                                                     label="Check If Active"
+                                                    onChange={handleInputChange}
+                                                    value={formData.checkIfActive}
                                                     defaultChecked
                                                 />
                                             </Col>
