@@ -39,10 +39,10 @@ const RollCallReport = () => {
                       <Col>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Session<span className="text-danger">*</span>
+                            Academic Year<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Select id="session" required></Form.Select>
+                            <Form.Select id="Academic Year" required></Form.Select>
                           </Col>
                         </Row>
                         <Row className="mb-3">
@@ -81,7 +81,7 @@ const RollCallReport = () => {
                             Subject
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Select id="session" required></Form.Select>
+                            <Form.Select id="Academic Year" required></Form.Select>
                           </Col>
                         </Row>
                         <Row className="mb-3">
@@ -89,7 +89,7 @@ const RollCallReport = () => {
                             Report Type
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Select id="session" required></Form.Select>
+                            <Form.Select id="Academic Year" required></Form.Select>
                           </Col>
                         </Row>
                         <Row className="mb-3">
@@ -97,7 +97,7 @@ const RollCallReport = () => {
                             Order By
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Select id="session" required></Form.Select>
+                            <Form.Select id="Academic Year" required></Form.Select>
                           </Col>
                         </Row>
                         <Row className="mb-3">

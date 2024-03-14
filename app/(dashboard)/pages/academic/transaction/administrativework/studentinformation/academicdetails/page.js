@@ -28,7 +28,7 @@ const AcademicDetails = () => {
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Name</Form.Label>
                                             
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Fee Category</Form.Label>
-                                            <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Session</Form.Label>
+                                            <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Academic Year</Form.Label>
                                             {/* <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Student Type</Form.Label> */}
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Admission Date</Form.Label>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Course</Form.Label>
@@ -38,9 +38,9 @@ const AcademicDetails = () => {
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Registration No.</Form.Label>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Addmission Status</Form.Label>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Roll No.</Form.Label>
-                                            <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Current Session</Form.Label>
+                                            <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Current Academic Year</Form.Label>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Section</Form.Label>
-                                            <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Previous Session</Form.Label>
+                                            <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Previous Academic Year</Form.Label>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Serial No.</Form.Label>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Enrollment No./ University Seat No / Uni.Appl.No.</Form.Label>
                                             <Form.Label className="col-sm-2 col-form-label form-label" htmlFor="fullName">Concession</Form.Label>
@@ -48,7 +48,7 @@ const AcademicDetails = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Unicode Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                 />
                                             </Col>
                                             <Form.Label className="col-sm-6 col-form-label form-label" htmlFor="fullName">Batch</Form.Label>

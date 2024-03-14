@@ -134,7 +134,7 @@ const QuickMenu = () => {
                                     <Image alt="avatar" src='/images/avatar/avatar-4.jpg' className="rounded-circle" />
                                 </div>
                                 <h5 className="mb-2 ms-1">shweta@gserp.gmail.com</h5>
-                                <h5 className="mb-2 ms-1">Session: 2023-2024</h5>
+                                <h5 className="mb-2 ms-1">Academic Year: 2023-2024</h5>
                                 <h5 className="mb-2 ms-1">Working Date: {today}</h5>
                                 <h5 className="mb-2 ms-1">Counter: <Badge bg="secondary">25</Badge></h5>
                                 <div style={{ display: 'flex', justifyContent: 'center' }}>

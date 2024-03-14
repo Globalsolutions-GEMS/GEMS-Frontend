@@ -86,7 +86,7 @@ const FeesCollection = () => {
                                             type="search"
                                             className="form-control"
                                             placeholder="Please Enter Minimum 3 letters of Student Name"
-                                            id="session"
+                                            id="Academic Year"
                                             required
                                           />
                                         </div>
@@ -101,7 +101,7 @@ const FeesCollection = () => {
                                       <Form.Control
                                         type="text"
                                         disabled
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -114,7 +114,7 @@ const FeesCollection = () => {
                                       <Form.Control
                                         type="text"
                                         disabled
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -128,7 +128,7 @@ const FeesCollection = () => {
                                       <Form.Control
                                         type="text"
                                         disabled
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -141,7 +141,7 @@ const FeesCollection = () => {
                                       <Form.Control
                                         type="text"
                                         disabled
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -153,7 +153,7 @@ const FeesCollection = () => {
                                     <Col sm={3} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -164,7 +164,7 @@ const FeesCollection = () => {
                                       <Form.Control
                                         type="text"
                                         disabled
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -177,7 +177,7 @@ const FeesCollection = () => {
                                       <Form.Control
                                         type="text"
                                         disabled
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -189,7 +189,7 @@ const FeesCollection = () => {
                                       <Form.Control
                                         type="text"
                                         disabled
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -202,7 +202,7 @@ const FeesCollection = () => {
                                       <Form.Control
                                         type="text"
                                         disabled
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -214,7 +214,7 @@ const FeesCollection = () => {
                                     <Col sm={3} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -263,7 +263,7 @@ const FeesCollection = () => {
                                       <Form.Select
                                         type="text"
                                         placeholder="Please Select"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -280,7 +280,7 @@ const FeesCollection = () => {
                                       <Form.Control
                                         type="text"
                                         placeholder="Please Select"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>

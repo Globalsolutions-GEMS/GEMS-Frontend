@@ -40,7 +40,7 @@ const SubjectFee = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -54,7 +54,7 @@ const SubjectFee = () => {
                         <Form.Select
                           type="text"
                           placeholder="Enter Mother's Name"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -70,7 +70,7 @@ const SubjectFee = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col> */}
@@ -84,7 +84,7 @@ const SubjectFee = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Subject"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -98,7 +98,7 @@ const SubjectFee = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Fee Head"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -115,7 +115,7 @@ const SubjectFee = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Receipt Book"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -129,7 +129,7 @@ const SubjectFee = () => {
                         <Form.Control
                           type="text"
                           placeholder="Please Enter Amount"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -145,7 +145,7 @@ const SubjectFee = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Course"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>

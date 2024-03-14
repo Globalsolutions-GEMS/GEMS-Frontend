@@ -41,14 +41,14 @@ const OutstandingFeesRemainder = () => {
                                                 className="col-sm-3 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Session<span className="text-danger">*</span>
+                                                Academic Year<span className="text-danger">*</span>
                                             </Form.Label>
 
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Enter Subject"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -65,7 +65,7 @@ const OutstandingFeesRemainder = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Select"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -82,7 +82,7 @@ const OutstandingFeesRemainder = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter U"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -97,7 +97,7 @@ const OutstandingFeesRemainder = () => {
                                                 <Form.Control
                                                     type="date"
                                                     placeholder="Please Enter U"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>

@@ -34,13 +34,13 @@ const BulkUpdation = () => {
                         className="col-sm-2 col-form-label form-label"
 
                       >
-                        Session<span className="text-danger">*</span>
+                        Academic Year<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -54,7 +54,7 @@ const BulkUpdation = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -70,7 +70,7 @@ const BulkUpdation = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -84,7 +84,7 @@ const BulkUpdation = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -100,7 +100,7 @@ const BulkUpdation = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter First Name"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -114,7 +114,7 @@ const BulkUpdation = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -130,7 +130,7 @@ const BulkUpdation = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -144,7 +144,7 @@ const BulkUpdation = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -161,7 +161,7 @@ const BulkUpdation = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>

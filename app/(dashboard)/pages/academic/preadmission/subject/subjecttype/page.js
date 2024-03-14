@@ -42,7 +42,7 @@ const SubjectType = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>

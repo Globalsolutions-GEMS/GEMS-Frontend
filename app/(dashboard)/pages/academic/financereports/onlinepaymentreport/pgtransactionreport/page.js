@@ -70,7 +70,7 @@ const PGTransactionReport = () => {
                             type="search"
                             className="form-control"
                             placeholder="Please Enter Minimum 3 letters of Student Name"
-                            id="session"
+                            id="Academic Year"
                             required
                           />
                         </div>

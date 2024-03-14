@@ -41,7 +41,7 @@ const Discipline = () => {
                             <Form.Control
                               type="text"
                               placeholder="Please Enter Discipline Name"
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -55,7 +55,7 @@ const Discipline = () => {
                             <Form.Control
                               type="text"
                               placeholder="Please Enter Discipline Code"
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>

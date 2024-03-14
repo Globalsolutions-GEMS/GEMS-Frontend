@@ -41,7 +41,7 @@ const SubjectDefinition = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -55,7 +55,7 @@ const SubjectDefinition = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -71,7 +71,7 @@ const SubjectDefinition = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -85,7 +85,7 @@ const SubjectDefinition = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select  Serial No."
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -101,7 +101,7 @@ const SubjectDefinition = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -115,7 +115,7 @@ const SubjectDefinition = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Subject Type"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -131,7 +131,7 @@ const SubjectDefinition = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -145,7 +145,7 @@ const SubjectDefinition = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Medium"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>

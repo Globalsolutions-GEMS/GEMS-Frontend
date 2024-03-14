@@ -41,7 +41,7 @@ const SubjectCategory = () => {
                             <Form.Control
                               type="text"
                               placeholder="Please Enter Subject Category Name"
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -55,7 +55,7 @@ const SubjectCategory = () => {
                             <Form.Control
                               type="text"
                               placeholder="Please Enter Subject Category Code"
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -68,7 +68,7 @@ const SubjectCategory = () => {
                             <Form.Control
                               type="text"
                               placeholder="Please Enter Sequence No."
-                              id="session"
+                              id="Academic Year"
                             />
                           </Col>
                         </Row>

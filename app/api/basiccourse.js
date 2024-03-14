@@ -11,4 +11,4 @@ export const getAllCashbook = () => apiClient.get('/cashbook')
 export const getAllBasicCourse = () => apiClient.get('/basiccourse')
 export const createBasicCourse = (basiccourse) => apiClient.post('/basiccourse',basiccourse)
 
-export const updateAcademicSession = (id,academicsession) => apiClient.put(`/academicsession/${id}`,academicsession)
+export const updateAcademicAcademic Year = (id,academicAcademic Year) => apiClient.put(`/academicAcademic Year/${id}`,academicAcademic Year)

@@ -35,13 +35,13 @@ const ReceiptReconciliation = () => {
                                                 className="col-sm-2 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Session
+                                                Academic Year
                                             </Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Select"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -55,7 +55,7 @@ const ReceiptReconciliation = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Enter Mother's Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -71,7 +71,7 @@ const ReceiptReconciliation = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Last Name/Surname"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -85,7 +85,7 @@ const ReceiptReconciliation = () => {
                                                 <Form.Control
                                                     type="date"
                                                     placeholder="Please Enter Unicode Mother Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -101,7 +101,7 @@ const ReceiptReconciliation = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter First Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -115,7 +115,7 @@ const ReceiptReconciliation = () => {
                                                 <Form.Control
                                                     type="date"
                                                     placeholder="Please Enter Father's Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -131,7 +131,7 @@ const ReceiptReconciliation = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Middle Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -145,7 +145,7 @@ const ReceiptReconciliation = () => {
                                                 <Form.Control
                                                     type="date"
                                                     placeholder="Please Enter Unicode Father's Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -161,7 +161,7 @@ const ReceiptReconciliation = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Middle Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -175,7 +175,7 @@ const ReceiptReconciliation = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Enter Mother's Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>

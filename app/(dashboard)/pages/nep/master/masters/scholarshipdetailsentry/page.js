@@ -44,7 +44,7 @@ const ScholarshipDetailsEntry = () => {
                             <Form.Select
                               type="text"
                               placeholder="Please Select Scholarship Name"
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -59,7 +59,7 @@ const ScholarshipDetailsEntry = () => {
                             <Form.Control
                               type="date"
                               placeholder="Please Enter Application Date"
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -75,7 +75,7 @@ const ScholarshipDetailsEntry = () => {
                             <Form.Select
                               type="text"
                               placeholder="Please Select Course"
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -90,7 +90,7 @@ const ScholarshipDetailsEntry = () => {
                             <Form.Control
                               type="text"
                               placeholder="Please Enter Application Number"
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>

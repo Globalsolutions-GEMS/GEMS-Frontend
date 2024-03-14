@@ -35,9 +35,9 @@ const CourseInstallment = () => {
                                 {hasMounted &&
                                     <Form>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Session<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Academic Year<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                                <Form.Select type="text" placeholder="Please Enter " id="Academic Year" required />
                                             </Col>
                                         
                                         </Row>

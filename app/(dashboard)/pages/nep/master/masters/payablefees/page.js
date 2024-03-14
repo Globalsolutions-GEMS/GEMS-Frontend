@@ -40,7 +40,7 @@ const PayableFees = () => {
                             <Form.Select
                               type="text"
                               placeholder="Please Enter Subject Category Name"
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>

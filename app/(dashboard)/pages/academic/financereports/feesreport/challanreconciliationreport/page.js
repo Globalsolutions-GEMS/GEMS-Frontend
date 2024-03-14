@@ -34,37 +34,37 @@ const ChallanReconciliationReport = () => {
                                 {hasMounted &&
                                     <Form>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-2 col-form-label form-label" >Session<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-2 col-form-label form-label" >Academic Year<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                                <Form.Select type="text" placeholder="Please Enter " id="Academic Year" required />
                                             </Col>
                                             <Form.Label className="col-sm-2 col-form-label form-label" >From Date<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Control type="date" placeholder="Please Enter " id="session" required />
+                                                <Form.Control type="date" placeholder="Please Enter " id="Academic Year" required />
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
                                         <Form.Label className="col-sm-2 col-form-label form-label" >Receipt Book</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter Student ID No." id="session" required />
+                                                <Form.Select type="text" placeholder="Please Enter Student ID No." id="Academic Year" required />
                                             </Col>
                                             <Form.Label className="col-sm-2 col-form-label form-label" >To Date<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Control type="date" placeholder="Please Enter " id="session" required />
+                                                <Form.Control type="date" placeholder="Please Enter " id="Academic Year" required />
                                             </Col>
                                         </Row>
                                        
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Programme</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter " id="session" required />
+                                                <Form.Select type="text" placeholder="Please Enter " id="Academic Year" required />
                                             </Col>
                                             <Col></Col>
                                         </Row>
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Course</Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="date" placeholder="Please Enter " id="session" required />
+                                                <Form.Select type="date" placeholder="Please Enter " id="Academic Year" required />
                                             </Col>
                                             <Col></Col>
                                         </Row>

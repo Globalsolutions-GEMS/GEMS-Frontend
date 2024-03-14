@@ -38,7 +38,7 @@ const FeesRefundReport = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -51,7 +51,7 @@ const FeesRefundReport = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -64,7 +64,7 @@ const FeesRefundReport = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -78,7 +78,7 @@ const FeesRefundReport = () => {
                         <Form.Control
                           type="date"
                           placeholder="Please Enter From Date"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -104,7 +104,7 @@ const FeesRefundReport = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>

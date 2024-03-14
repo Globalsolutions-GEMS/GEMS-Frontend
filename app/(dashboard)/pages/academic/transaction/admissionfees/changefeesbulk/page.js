@@ -41,14 +41,14 @@ const ChangeFeesBulk = () => {
                                                 className="col-sm-2 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Session
+                                                Academic Year
                                             </Form.Label>
                                             
                                             <Col sm={4} className="mb-3 mb-lg-0">
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Enter Course"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -63,7 +63,7 @@ const ChangeFeesBulk = () => {
                                                     type="text"
                                                     placeholder={`Please Enter ${isSubjectGroup ? "Subject Group" : "Subject"
                                                         }`}
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -79,7 +79,7 @@ const ChangeFeesBulk = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Select"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -93,7 +93,7 @@ const ChangeFeesBulk = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter U"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -109,7 +109,7 @@ const ChangeFeesBulk = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter "
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -123,7 +123,7 @@ const ChangeFeesBulk = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter "
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -139,7 +139,7 @@ const ChangeFeesBulk = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Middle Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -175,7 +175,7 @@ const ChangeFeesBulk = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Unicode Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -189,7 +189,7 @@ const ChangeFeesBulk = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Unicode Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -206,7 +206,7 @@ const ChangeFeesBulk = () => {
                                                 <Form.Control
                                                     type="text"
                                                     placeholder="Please Enter Amount"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>

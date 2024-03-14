@@ -93,7 +93,7 @@ const DailyCollectionReport = () => {
                           </Col>
                           <Col className="mt-2">
                             <Form.Check
-                              label="Prev Session Detailed"
+                              label="Prev Academic Year Detailed"
                               type="radio"
                               name="report"
                             />
@@ -110,7 +110,7 @@ const DailyCollectionReport = () => {
                           </Col>
                           <Col className="mt-2">
                             <Form.Check
-                              label="Academic Session Summary"
+                              label="Academic Academic Year Summary"
                               type="radio"
                               name="report"
                             />
@@ -181,7 +181,7 @@ const DailyCollectionReport = () => {
                         <Row className="mb-3 mt-3">
                           <Col sm={3}>
                             <Form.Label className="col-form-label form-label">
-                              Session
+                              Academic Year
                               <span className="text-danger">*</span>
                             </Form.Label>
                           </Col>
@@ -189,7 +189,7 @@ const DailyCollectionReport = () => {
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -205,7 +205,7 @@ const DailyCollectionReport = () => {
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -221,7 +221,7 @@ const DailyCollectionReport = () => {
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -236,7 +236,7 @@ const DailyCollectionReport = () => {
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -251,7 +251,7 @@ const DailyCollectionReport = () => {
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -361,7 +361,7 @@ const DailyCollectionReport = () => {
                             <Form.Select
                               type="text"
                               placeholder="Please Enter "
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -377,7 +377,7 @@ const DailyCollectionReport = () => {
                             <Form.Control
                               type="date"
                               placeholder="Please Enter "
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -393,7 +393,7 @@ const DailyCollectionReport = () => {
                             <Form.Control
                               type="date"
                               placeholder="Please Enter "
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>
@@ -409,7 +409,7 @@ const DailyCollectionReport = () => {
                             <Form.Select
                               type="date"
                               placeholder="Please Enter "
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>

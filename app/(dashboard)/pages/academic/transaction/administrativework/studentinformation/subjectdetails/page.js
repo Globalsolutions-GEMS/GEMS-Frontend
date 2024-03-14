@@ -23,7 +23,7 @@ const SubjectDetails = () => {
                                         <Row className="mb-3 d-flex align-item-center justify-content-center">
                                             <Form.Label className="col-sm-2 col-form-label form-label" >Medium<span className="text-danger">*</span></Form.Label>
                                             <Col sm={4} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter Exam Name" id="session" required />
+                                                <Form.Select type="text" placeholder="Please Enter Exam Name" id="Academic Year" required />
                                             </Col>
                                         </Row>
                                     </Form>

@@ -42,13 +42,13 @@ const StudentInstallment = () => {
                         className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Session<span className="text-danger">*</span>
+                        Academic Year<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={3} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
-                          placeholder="Please Enter Session"
-                          id="session"
+                          placeholder="Please Enter Academic Year"
+                          id="Academic Year"
                           required
                         />
                       </Col>

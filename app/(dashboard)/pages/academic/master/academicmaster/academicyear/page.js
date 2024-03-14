@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Card, Button, Table, Pagination, Breadcrumb, Alert } from 'react-bootstrap';
 import { PageHeading } from 'widgets';
-import { createAcademicSession, getAcademicSession, updateAcademicSession } from 'app/api/academicyear';
+import { createAcademicAcademic Year, getAcademicAcademic Year, updateAcademicAcademic Year } from 'app/api/academicyear';
 import useMounted from 'hooks/useMounted';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { ToastContainer, toast } from 'react-toastify';
@@ -10,19 +10,19 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const AcademicYear = () => {
     const hasMounted = useMounted();
-    const [academicsessionData, setAcademicSessionData] = useState([]);
+    const [academicAcademic YearData, setAcademicAcademic YearData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [itemsPerPage] = useState(5);
     const [formData, setFormData] = useState({
-        sessionName: '',
+        Academic YearName: '',
         shortName: '',
         startDate: '',
         endDate: '',
         active: false,
-        oldSession: false
+        oldAcademic Year: false
     });
     const [editingRowIndex, setEditingRowIndex] = useState(null);
-    const [editingAcademicSession, setEditingAcademicSession] = useState(null);
+    const [editingAcademicAcademic Year, setEditingAcademicAcademic Year] = useState(null);
     const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
     const success = () => toast.success("Data Submitted Successfully!!!");
@@ -32,22 +32,22 @@ const AcademicYear = () => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            if (editingAcademicSession) {
-                await updateAcademicSession(editingAcademicSession.id, formData);
-                setEditingAcademicSession(null);
+            if (editingAcademicAcademic Year) {
+                await updateAcademicAcademic Year(editingAcademicAcademic Year.id, formData);
+                setEditingAcademicAcademic Year(null);
                 update()
             } else {
-                await createAcademicSession(formData);
+                await createAcademicAcademic Year(formData);
                 success()
             }
-            refreshAcademicSession();
+            refreshAcademicAcademic Year();
             setFormData({
-                sessionName: '',
+                Academic YearName: '',
                 shortName: '',
                 startDate: '',
                 endDate: '',
                 active: false,
-                oldSession: false
+                oldAcademic Year: false
             });
             setShowSuccessAlert(true);
         } catch (error) {
@@ -63,54 +63,54 @@ const AcademicYear = () => {
             ...prevFormData,
             [id]: type === 'checkbox' ? checked : event.target.value,
             active: id === 'active' ? checked : prevFormData.active,
-            oldSession: id === 'oldSession' ? checked : prevFormData.oldSession,
+            oldAcademic Year: id === 'oldAcademic Year' ? checked : prevFormData.oldAcademic Year,
         }));
     };
 
-    const refreshAcademicSession = async () => {
+    const refreshAcademicAcademic Year = async () => {
         try {
-            const response = await getAcademicSession();
-            setAcademicSessionData(response.data);
+            const response = await getAcademicAcademic Year();
+            setAcademicAcademic YearData(response.data);
         } catch (error) {
             console.log(error);
         }
     };
 
     useEffect(() => {
-        refreshAcademicSession();
+        refreshAcademicAcademic Year();
     }, []);
 
     const editRow = (index) => {
-        const editedAcademicSession = academicsessionData[index];
+        const editedAcademicAcademic Year = academicAcademic YearData[index];
 
         setFormData({
-            sessionName: editedAcademicSession.sessionName,
-            shortName: editedAcademicSession.shortName,
-            startDate: editedAcademicSession.startDate,
-            endDate: editedAcademicSession.endDate,
-            active: editedAcademicSession.active,
-            oldSession: editedAcademicSession.oldSession
+            Academic YearName: editedAcademicAcademic Year.Academic YearName,
+            shortName: editedAcademicAcademic Year.shortName,
+            startDate: editedAcademicAcademic Year.startDate,
+            endDate: editedAcademicAcademic Year.endDate,
+            active: editedAcademicAcademic Year.active,
+            oldAcademic Year: editedAcademicAcademic Year.oldAcademic Year
         });
-        setFormData(editedAcademicSession);
-        setEditingAcademicSession(editedAcademicSession);
+        setFormData(editedAcademicAcademic Year);
+        setEditingAcademicAcademic Year(editedAcademicAcademic Year);
         setEditingRowIndex(index);
     };
 
     const handleCancel = () => {
         setFormData({
-            sessionName: '',
+            Academic YearName: '',
             shortName: '',
             startDate: '',
             endDate: '',
             active: false,
-            oldSession: false
+            oldAcademic Year: false
         });
-        setEditingAcademicSession(null);
+        setEditingAcademicAcademic Year(null);
     };
 
     const indexOfLastItem = currentPage * itemsPerPage;
     const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-    const currentItems = academicsessionData.slice(indexOfFirstItem, indexOfLastItem);
+    const currentItems = academicAcademic YearData.slice(indexOfFirstItem, indexOfLastItem);
     const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
@@ -135,9 +135,9 @@ const AcademicYear = () => {
                                     >
                                         <Row><Col>
                                             <Row className="mb-3">
-                                                <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Session name</Form.Label>
+                                                <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Academic Year name</Form.Label>
                                                 <Col sm={9} className="mb-3 mb-lg-0">
-                                                    <Form.Control type="text" placeholder="Please Enter Session Name" id="sessionName" value={formData.sessionName} onChange={handleInputChange} required />
+                                                    <Form.Control type="text" placeholder="Please Enter Academic Year Name" id="Academic YearName" value={formData.Academic YearName} onChange={handleInputChange} required />
                                                 </Col>
                                             </Row>
                                             <Row className="mb-3">
@@ -172,11 +172,11 @@ const AcademicYear = () => {
                                         </Row> */}
 
                                             <Row className='mb-3'>
-                                                <Form.Check.Label className="col-sm-3 col-form-label form-label" >Old Session</Form.Check.Label>
+                                                <Form.Check.Label className="col-sm-3 col-form-label form-label" >Old Academic Year</Form.Check.Label>
                                                 <Col md={9} xs={12}>
-                                                    <Form.Check className="col-sm-9 col-form-label form-label" type="checkbox" id="oldSession" value={formData.oldSession} onChange={handleInputChange}>
-                                                        <Form.Check.Input type="checkbox" id="oldSession" checked={formData.oldSession} onChange={handleInputChange} />
-                                                        <Form.Check.Label >If Old Session</Form.Check.Label>
+                                                    <Form.Check className="col-sm-9 col-form-label form-label" type="checkbox" id="oldAcademic Year" value={formData.oldAcademic Year} onChange={handleInputChange}>
+                                                        <Form.Check.Input type="checkbox" id="oldAcademic Year" checked={formData.oldAcademic Year} onChange={handleInputChange} />
+                                                        <Form.Check.Label >If Old Academic Year</Form.Check.Label>
                                                     </Form.Check>
                                                 </Col>
                                             </Row>
@@ -196,7 +196,7 @@ const AcademicYear = () => {
                                             <Row className="align-items-center">
                                                 <Col className="mt-4 d-flex align-items-center justify-content-center">
                                                     <Button variant="primary" type="submit">
-                                                        {editingAcademicSession ? "Update" : "Submit"}
+                                                        {editingAcademicAcademic Year ? "Update" : "Submit"}
                                                     </Button>
                                                     <ToastContainer style={{ marginTop: '40px' }} />
                                                     <Button variant="secondary" type="reset" style={{ marginLeft: '10px' }} onClick={handleCancel} >
@@ -210,7 +210,7 @@ const AcademicYear = () => {
                                                     <thead>
                                                         <tr>
                                                             <th>
-                                                                <b>Session Name</b>
+                                                                <b>Academic Year Name</b>
                                                             </th>
                                                             <th>
                                                                 <b>Start Date</b>
@@ -224,11 +224,11 @@ const AcademicYear = () => {
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        {currentItems.map((academicsession, index) => (
-                                                            <tr key={academicsession.id}>
-                                                                <td>{academicsession.sessionName}</td>
-                                                                <td>{academicsession.startDate}</td>
-                                                                <td>{academicsession.endDate}</td>
+                                                        {currentItems.map((academicAcademic Year, index) => (
+                                                            <tr key={academicAcademic Year.id}>
+                                                                <td>{academicAcademic Year.Academic YearName}</td>
+                                                                <td>{academicAcademic Year.startDate}</td>
+                                                                <td>{academicAcademic Year.endDate}</td>
                                                                 <td className="d-flex justify-content-center align-items-center">
                                                                     <Button variant='secondary' onClick={() => editRow(index)} >
                                                                         <i className="bi bi-pencil-fill me-2" /> Edit
@@ -241,12 +241,12 @@ const AcademicYear = () => {
 
                                                 <Pagination className="justify-content-end">
                                                     <Pagination.Prev onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1} />
-                                                    {[...Array(Math.ceil(academicsessionData.length / itemsPerPage))].map((_, index) => (
+                                                    {[...Array(Math.ceil(academicAcademic YearData.length / itemsPerPage))].map((_, index) => (
                                                         <Pagination.Item key={index} active={index + 1 === currentPage} onClick={() => paginate(index + 1)}>
                                                             {index + 1}
                                                         </Pagination.Item>
                                                     ))}
-                                                    <Pagination.Next onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(academicsessionData.length / itemsPerPage)} />
+                                                    <Pagination.Next onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(academicAcademic YearData.length / itemsPerPage)} />
                                                 </Pagination>
 
                                             </Col>

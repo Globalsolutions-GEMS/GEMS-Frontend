@@ -34,13 +34,13 @@ const CreateFeesRegisteredPromoted = () => {
                                                 className="col-sm-3 col-form-label form-label"
                                                 htmlFor="fullName"
                                             >
-                                                Session<span className="text-danger">*</span>
+                                                Academic Year<span className="text-danger">*</span>
                                             </Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Select"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -54,7 +54,7 @@ const CreateFeesRegisteredPromoted = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Enter Mother's Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -70,7 +70,7 @@ const CreateFeesRegisteredPromoted = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Last Name/Surname"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -84,7 +84,7 @@ const CreateFeesRegisteredPromoted = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter First Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -100,7 +100,7 @@ const CreateFeesRegisteredPromoted = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Middle Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -114,7 +114,7 @@ const CreateFeesRegisteredPromoted = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Unicode Father's Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>
@@ -133,7 +133,7 @@ const CreateFeesRegisteredPromoted = () => {
                                                 <Form.Select
                                                     type="text"
                                                     placeholder="Please Enter Unicode Name"
-                                                    id="session"
+                                                    id="Academic Year"
                                                     required
                                                 />
                                             </Col>

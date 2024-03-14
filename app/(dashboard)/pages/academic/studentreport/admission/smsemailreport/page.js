@@ -43,7 +43,7 @@ const SMSEmailReport = () => {
                           </Form.Label>
                           <Col sm={9} className="mb-3 mb-lg-0">
                             <Form.Select
-                              id="session    "
+                              id="Academic Year    "
                               required
                             ></Form.Select>
                           </Col>
@@ -54,7 +54,7 @@ const SMSEmailReport = () => {
                           </Form.Label>
                           <Col sm={9} className="mb-3 mb-lg-0">
                             <Form.Select
-                              id="session    "
+                              id="Academic Year    "
                               required
                             ></Form.Select>
                           </Col>

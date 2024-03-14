@@ -50,7 +50,7 @@ const GeneralFineCollection = () => {
                                       <Col sm={3} className="mb-3 mb-lg-0">
                                         <Form.Select
                                           type="text"
-                                          id="session"
+                                          id="Academic Year"
                                           required
                                         />
                                       </Col>
@@ -61,7 +61,7 @@ const GeneralFineCollection = () => {
                                       <Col sm={3} className="mb-3 mb-lg-0">
                                         <Form.Select
                                           type="text"
-                                          id="session"
+                                          id="Academic Year"
                                           required
                                         />
                                       </Col>
@@ -129,7 +129,7 @@ const GeneralFineCollection = () => {
                                     <Col sm={3} className="mb-3 mb-lg-0">
                                       <Form.Select
                                         type="text"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -140,7 +140,7 @@ const GeneralFineCollection = () => {
                                     <Col sm={3} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -152,7 +152,7 @@ const GeneralFineCollection = () => {
                                     <Col sm={3} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -162,7 +162,7 @@ const GeneralFineCollection = () => {
                                     <Col sm={3} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -175,7 +175,7 @@ const GeneralFineCollection = () => {
                                       <Form.Control
                                         type="text"
                                         disabled
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -185,7 +185,7 @@ const GeneralFineCollection = () => {
                                     <Col sm={3} className="mb-3 mb-lg-0">
                                       <Form.Control
                                         type="text"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>

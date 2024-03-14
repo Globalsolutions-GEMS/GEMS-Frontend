@@ -45,7 +45,7 @@ const Fees = () => {
                               <b>Refund</b>
                             </th>
                             <th>
-                              <b>Consession</b>
+                              <b>ConAcademic Year</b>
                             </th>
                             <th>
                               <b>Total</b>

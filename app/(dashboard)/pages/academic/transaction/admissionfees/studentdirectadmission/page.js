@@ -50,7 +50,7 @@ const StudentDirectAdmission = () => {
                                       <Form.Select
                                         type="text"
                                         placeholder="Please Select"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -65,7 +65,7 @@ const StudentDirectAdmission = () => {
                                       <Form.Select
                                         type="text"
                                         placeholder="Please Select"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -82,7 +82,7 @@ const StudentDirectAdmission = () => {
                                       <Form.Select
                                         type="text"
                                         placeholder="Please Select"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                       />
                                     </Col>
@@ -96,7 +96,7 @@ const StudentDirectAdmission = () => {
                                       <Form.Control
                                         type="text"
                                         placeholder="Standard Fee"
-                                        id="session"
+                                        id="Academic Year"
                                         required
                                         disabled
                                       />
@@ -157,7 +157,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Select
                                               type="text"
                                               placeholder="Please Select"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -171,7 +171,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Control
                                               type="text"
                                               placeholder="Enter Mother's Name"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -190,7 +190,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Control
                                               type="text"
                                               placeholder="Please Enter Last Name/Surname"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -204,7 +204,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Control
                                               type="text"
                                               placeholder="Please Enter Father's Name"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -220,7 +220,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Control
                                               type="text"
                                               placeholder="Please Enter First Name"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -234,7 +234,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Control
                                               type="text"
                                               placeholder="Please Enter 10 Digit Mobile Number"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -250,7 +250,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Control
                                               type="text"
                                               placeholder="Please Enter Middle Name"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -264,7 +264,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Control
                                               type="text"
                                               placeholder="Please Enter Email"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -280,7 +280,7 @@ const StudentDirectAdmission = () => {
                                           <Col sm={3} className="mb-3 mb-lg-0">
                                             <Form.Select
                                               type="text"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -294,7 +294,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Control
                                               type="text"
                                               placeholder="Enter Remark"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -310,7 +310,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Select
                                               type="text"
                                               placeholder="Please Enter Unicode Name"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>
@@ -324,7 +324,7 @@ const StudentDirectAdmission = () => {
                                             <Form.Select
                                               type="text"
                                               placeholder="Please Enter Email"
-                                              id="session"
+                                              id="Academic Year"
                                               required
                                             />
                                           </Col>

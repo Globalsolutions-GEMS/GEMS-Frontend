@@ -33,13 +33,13 @@ const SettlementDateWiseDCR = () => {
                    
                     <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Session<span className="text-danger">*</span>
+                        Academic Year<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -54,7 +54,7 @@ const SettlementDateWiseDCR = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -68,7 +68,7 @@ const SettlementDateWiseDCR = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -82,7 +82,7 @@ const SettlementDateWiseDCR = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -97,7 +97,7 @@ const SettlementDateWiseDCR = () => {
                         <Form.Control
                           type="date"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -111,7 +111,7 @@ const SettlementDateWiseDCR = () => {
                         <Form.Control
                           type="date"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -125,7 +125,7 @@ const SettlementDateWiseDCR = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>

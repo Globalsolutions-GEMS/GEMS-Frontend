@@ -35,13 +35,13 @@ const StudentSubjectUpdation = () => {
                         className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Session<span className="text-danger">*</span>
+                        Academic Year<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={9} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -57,7 +57,7 @@ const StudentSubjectUpdation = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Enter "
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>

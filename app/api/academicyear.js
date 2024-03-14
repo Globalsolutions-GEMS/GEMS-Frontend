@@ -4,8 +4,8 @@ const apiClient = axios.create({
     baseURL:"http://localhost:8080"
 })
 
-export const createAcademicSession = (academicsession) => apiClient.post('/academicsession',academicsession)
+export const createAcademicAcademic Year = (academicAcademic Year) => apiClient.post('/academicAcademic Year',academicAcademic Year)
 
-export const getAcademicSession = () => apiClient.get('/academicsession')
+export const getAcademicAcademic Year = () => apiClient.get('/academicAcademic Year')
 
-export const updateAcademicSession = (id,academicsession) => apiClient.put(`/academicsession/${id}`,academicsession)
+export const updateAcademicAcademic Year = (id,academicAcademic Year) => apiClient.put(`/academicAcademic Year/${id}`,academicAcademic Year)

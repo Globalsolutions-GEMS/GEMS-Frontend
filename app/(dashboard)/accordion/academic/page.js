@@ -25,7 +25,7 @@ const AcademicDetails = () => {
                         <Form.Label>Name:</Form.Label>
                       </Col>
                       <Col>
-                        <Form.Label>Session:</Form.Label>
+                        <Form.Label>Academic Year:</Form.Label>
                       </Col>
                       <Col>
                         <Form.Label>Course:</Form.Label>
@@ -89,10 +89,10 @@ const AcademicDetails = () => {
                     </Row>
                     <Row className="mb-3 m">
                       <Col>
-                        <Form.Label>Current Session:</Form.Label>
+                        <Form.Label>Current Academic Year:</Form.Label>
                       </Col>
                       <Col>
-                        <Form.Label>Previous Session:</Form.Label>
+                        <Form.Label>Previous Academic Year:</Form.Label>
                       </Col>
                       <Col>
                         <Form.Label>Concession:</Form.Label>

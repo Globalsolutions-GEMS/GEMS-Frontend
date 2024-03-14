@@ -40,7 +40,7 @@ const BoardOfStudy = () => {
                             <Form.Control
                               type="text"
                               placeholder="Please Enter Board Of Study"
-                              id="session"
+                              id="Academic Year"
                               required
                             />
                           </Col>

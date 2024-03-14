@@ -36,13 +36,13 @@ const EraseStudentInstallment = () => {
                         className="col-sm-3 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Academic Session<span className="text-danger">*</span>
+                        Academic Academic Year<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={3} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
                           placeholder="Please Select"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>
@@ -58,7 +58,7 @@ const EraseStudentInstallment = () => {
                         <Form.Select
                           type="text"
                           placeholder="Please Select Programme"
-                          id="session"
+                          id="Academic Year"
                           required
                         />
                       </Col>

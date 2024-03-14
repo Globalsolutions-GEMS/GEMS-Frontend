@@ -29,7 +29,7 @@ const FeeHeadGrouping = () => {
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Receipt Book</Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter Session Name" id="sessionname" required />
+                                                <Form.Select type="text" placeholder="Please Enter Academic Year Name" id="Academic Yearname" required />
                                             </Col>
                                         </Row>
 
