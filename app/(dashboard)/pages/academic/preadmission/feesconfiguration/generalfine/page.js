@@ -20,7 +20,7 @@ const GeneralFine = () => {
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Other Fees Definition</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Fees Configuration</Breadcrumb.Item>
         <Breadcrumb.Item active>General Fine</Breadcrumb.Item>
       </Breadcrumb>
 
@@ -122,12 +122,14 @@ const GeneralFine = () => {
                                                 <Form.Check
                                                   label="Course Wise"
                                                   type="radio"
+                                                  name="radio"
                                                 />
                                               </Col>
                                               <Col className="mb-2">
                                                 <Form.Check
                                                   label="Student Wise"
                                                   type="radio"
+                                                  name="radio"
                                                 />
                                               </Col>
                                             </Row>

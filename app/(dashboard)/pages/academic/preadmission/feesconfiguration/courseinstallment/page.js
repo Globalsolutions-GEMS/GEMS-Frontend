@@ -22,7 +22,7 @@ const CourseInstallment = () => {
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Other Fees Definition</Breadcrumb.Item>
+                <Breadcrumb.Item href="#">Fees Configuration</Breadcrumb.Item>
                 <Breadcrumb.Item active>Course Installment</Breadcrumb.Item>
             </Breadcrumb>
 

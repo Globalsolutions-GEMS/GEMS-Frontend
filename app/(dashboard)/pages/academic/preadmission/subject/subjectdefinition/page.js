@@ -49,68 +49,14 @@ const SubjectDefinition = () => {
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Subject Type<span className="text-danger">*</span>
+                        Credits<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
-                          placeholder="Enter Mother's Name"
+                          placeholder="Please Select Medium"
                           id="session"
                           required
-                        />
-                      </Col>
-                    </Row>
-                    <Row className="mb-3">
-                      <Form.Label
-                        className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Medium<span className="text-danger">*</span>
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
-                          type="text"
-                          placeholder="Please Select Course"
-                          id="session"
-                          required
-                        />
-                      </Col>
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Optional
-                      </Form.Label>
-                      <Col className="mt-2">
-                        <Form.Check
-                          type="switch"
-                          id="checkIfActive"
-                          label="Check If Optional"
-                          defaultChecked
-                        />
-                      </Col>
-                    </Row>
-                    <Row className="mb-3">
-                      <Form.Label
-                        className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Part/Category<span className="text-danger">*</span>
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
-                          type="text"
-                          placeholder="Please Select Course"
-                          id="session"
-                          required
-                        />
-                      </Col>
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Grace Applicable
-                      </Form.Label>
-                      <Col className="mt-2">
-                        <Form.Check
-                          type="switch"
-                          id="checkIfActive"
-                          label="Check If Grace Applicable"
-                          defaultChecked
                         />
                       </Col>
                     </Row>
@@ -129,19 +75,6 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Avg. 100/2
-                      </Form.Label>
-                      <Col className="mt-2">
-                        <Form.Check
-                          type="switch"
-                          id="checkIfActive"
-                          label="Check If Avg. 100/2"
-                          defaultChecked
-                        />
-                      </Col>
-                    </Row>
-                    <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
@@ -151,20 +84,9 @@ const SubjectDefinition = () => {
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
-                          placeholder="Please Select Medium"
+                          placeholder="Please Select  Serial No."
                           id="session"
                           required
-                        />
-                      </Col>
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Passing Head
-                      </Form.Label>
-                      <Col className="mt-2">
-                        <Form.Check
-                          type="switch"
-                          id="checkIfActive"
-                          label="Check If Passing Head"
-                          defaultChecked
                         />
                       </Col>
                     </Row>
@@ -183,15 +105,18 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Exclude For Exam
+                      <Form.Label
+                        className="col-sm-2 col-form-label form-label"
+                        htmlFor="fullName"
+                      >
+                        Subject Type<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col className="mt-2">
-                        <Form.Check
-                          type="switch"
-                          id="checkIfActive"
-                          label="Check If Exclude For Exam"
-                          defaultChecked
+                      <Col sm={4} className="mb-3 mb-lg-0">
+                        <Form.Select
+                          type="text"
+                          placeholder="Please Select Subject Type"
+                          id="session"
+                          required
                         />
                       </Col>
                     </Row>
@@ -210,24 +135,11 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Grade Entry Subjects
-                      </Form.Label>
-                      <Col className="mt-2">
-                        <Form.Check
-                          type="switch"
-                          id="checkIfActive"
-                          label="Check If Grade Entry Subjects"
-                          defaultChecked
-                        />
-                      </Col>
-                    </Row>
-                    <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Credits<span className="text-danger">*</span>
+                        Category<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
@@ -237,72 +149,126 @@ const SubjectDefinition = () => {
                           required
                         />
                       </Col>
+                    </Row>
+                    <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Additional Subject
+                        Optional
                       </Form.Label>
                       <Col className="mt-2">
                         <Form.Check
                           type="switch"
-                          id="checkIfActive"
-                          label="Check If Additional Subject"
+                          id="ifActive"
+                          label="If Optional"
+                         
+                        />
+                      </Col>
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Avg. 100/2
+                      </Form.Label>
+                      <Col className="mt-2">
+                        <Form.Check
+                          type="switch"
+                          id="iffActive"
+                          label="If Avg. 100/2"
+                         
+                        />
+                      </Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Grace Applicable
+                      </Form.Label>
+                      <Col className="mt-2">
+                        <Form.Check
+                          type="switch"
+                          id="ifActive"
+                          label="If Grace Applicable"
+                          defaultChecked
+                        />
+                      </Col>
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Passing Head
+                      </Form.Label>
+                      <Col className="mt-2">
+                        <Form.Check
+                          type="switch"
+                          id="iffActive"
+                          label="If Passing Head"
                           defaultChecked
                         />
                       </Col>
                     </Row>
                     <Row className="mb-3">
-                    <Col sm={6}></Col>
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Additinal Subject
+                      </Form.Label>
+                      <Col className="mt-2">
+                        <Form.Check
+                          type="switch"
+                          id="ifActive"
+                          label="If Additinal Subject"
+                          defaultChecked
+                        />
+                      </Col>
+                      <Form.Label className="col-sm-2 col-form-label form-label">
+                        Exclude For Exam
+                      </Form.Label>
+                      <Col className="mt-2">
+                        <Form.Check
+                          type="switch"
+                          id="iffActive"
+                          label="If Exclude For Exam"
+                          defaultChecked
+                        />
+                      </Col>
+                    </Row>
+                    <Row className="mb-3">
                       <Form.Label className="col-sm-2 col-form-label form-label">
                         Academic Extra Credit
                       </Form.Label>
                       <Col className="mt-2">
                         <Form.Check
                           type="switch"
-                          id="checkIfActive"
-                          label="Check If  Academic Extra Credit"
+                          id="ifActive"
+                          label="If Academic Extra Credit"
                           defaultChecked
+                        />
+                      </Col>
+                      <Form.Label
+                        className="col-sm-2 col-form-label form-label"
+                        htmlFor="fullName"
+                      >
+                        Student Status<span className="text-danger">*</span>
+                      </Form.Label>
+
+                      <Col sm={2} className="mt-2">
+                        <Form.Check
+                          label="New"
+                          type="radio"
+                          name="search"
+                        />
+                      </Col>
+                      <Col sm={2} className="mt-2">
+                        <Form.Check
+                          label="Old"
+                          type="radio"
+                          name="search"
                         />
                       </Col>
                     </Row>
 
                     <Row className="mb-3">
-                    <Col sm={6}></Col>
+                      <Col sm={6}></Col>
                       <Form.Label className="col-sm-2 col-form-label form-label">
-                        Add In Earned Credit
+                        If Active
                       </Form.Label>
                       <Col className="mt-2">
                         <Form.Check
                           type="switch"
-                          id="checkIfActive"
-                          label="Check If Add In Earned Credit"
+                          id="iffActive"
+                          label="If Active"
                           defaultChecked
                         />
-                      </Col>
-                    </Row>
-                    <Row className="mb-3">
-                    <Col sm={6}></Col>
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Active
-                      </Form.Label>
-                      <Col className="mt-2">
-                        <Form.Check
-                          type="switch"
-                          id="checkIfActive"
-                          label="Check If Active"
-                          defaultChecked
-                        />
-                      </Col>
-                    </Row>
-                    <Row className="mb-3">
-                         <Col sm={6}></Col>
-                      <Form.Label className="col-sm-2 col-form-label form-label">
-                        Student Status
-                      </Form.Label>
-
-                      <Col sm={2} className="mt-2">
-                        <Form.Check label="New" type="radio" name="radio" />
-                      </Col>
-                      <Col sm={2} className="mt-2">
-                        <Form.Check label="Old" type="radio" name="radio" />
                       </Col>
                     </Row>
                     <Row className="mb-3">

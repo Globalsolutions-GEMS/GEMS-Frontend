@@ -308,6 +308,18 @@ export const DashboardMenu = [
             children: [
               {
                 id: uuid(),
+                link: "/pages/academic/preadmission/feesconfiguration/generalfine",
+                name: "General Fine",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/academic/preadmission/feesconfiguration/courseinstallment",
+                name: "Course Installment",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
                 link: "/pages/academic/preadmission/feesconfiguration/basiccourse",
                 name: "Programme",
                 icon: "file-text",
@@ -350,18 +362,8 @@ export const DashboardMenu = [
             title: "Other Fees Definition",
             icon: "book-open",
             children: [
-              {
-                id: uuid(),
-                link: "/pages/academic/preadmission/otherfeesdefination/generalfine",
-                name: "General Fine",
-                icon: "file-text",
-              },
-              {
-                id: uuid(),
-                link: "/pages/academic/preadmission/otherfeesdefination/courseinstallment",
-                name: "Course Installment",
-                icon: "file-text",
-              },
+              
+             
               {
                 id: uuid(),
                 link: "/pages/academic/preadmission/otherfeesdefination/studentinstallment",
@@ -1042,6 +1044,49 @@ export const DashboardMenu = [
               },
             ],
           },
+          
+        ],
+      },
+      {
+        id: uuid(),
+        link: "#",
+        title: "Transaction",
+        icon: "folder",
+        children: [
+          {
+            id: uuid(),
+            link: "#",
+            title: "Transactions",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/nep/transaction/transactions/subjectbucketcreation",
+                name: "Subject Bucket Creation",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/nep/transaction/transactions/majorsubjectbucket",
+                name: "Major Subject Bucket",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/nep/transaction/transactions/subjectallocationtostudent",
+                name: "Subject Allocation To Student",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/nep/transaction/transactions/subjectcategoryanddisciplineallocation",
+                name: "Subject Category & Discipline Allocation",
+                icon: "file-text",
+              },
+              
+            ],
+          },
+          
         ],
       },
     ],

@@ -60,7 +60,7 @@ const SubjectFee = () => {
                       </Col>
                     </Row>
                     <Row className="mb-3">
-                      <Form.Label
+                      {/* <Form.Label
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
@@ -73,54 +73,24 @@ const SubjectFee = () => {
                           id="session"
                           required
                         />
-                      </Col>
+                      </Col> */}
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Fee Head Type<span className="text-danger">*</span>
+                        Subject Type<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
-                          placeholder="Please Select Fee Head"
+                          placeholder="Please Select Subject"
                           id="session"
                           required
                         />
                       </Col>
                     </Row>
                     <Row className="mb-3">
-                      <Form.Label
-                        className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Course Code<span className="text-danger">*</span>
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
-                          type="text"
-                          placeholder="Please Select Course"
-                          id="session"
-                          required
-                        />
-                      </Col>
-                      <Form.Label
-                        className="col-sm-2 col-form-label form-label"
-                        htmlFor="fullName"
-                      >
-                        Fee Head Type<span className="text-danger">*</span>
-                      </Form.Label>
-                      <Col sm={4} className="mb-3 mb-lg-0">
-                        <Form.Select
-                          type="text"
-                          placeholder="Please Select Fee Head Type"
-                          id="session"
-                          required
-                        />
-                      </Col>
-                    </Row>
-                    <Row className="mb-3">
-                      <Form.Label
+                      {/* <Form.Label
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
@@ -133,7 +103,7 @@ const SubjectFee = () => {
                           id="session"
                           required
                         />
-                      </Col>
+                      </Col> */}
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
@@ -154,12 +124,12 @@ const SubjectFee = () => {
                         className="col-sm-2 col-form-label form-label"
                         htmlFor="fullName"
                       >
-                        Cash Book<span className="text-danger">*</span>
+                        Receipt Book<span className="text-danger">*</span>
                       </Form.Label>
                       <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
                           type="text"
-                          placeholder="Please Select Course"
+                          placeholder="Please Select Receipt Book"
                           id="session"
                           required
                         />
