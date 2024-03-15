@@ -998,6 +998,132 @@ export const DashboardMenu = [
   },
   {
     id: uuid(),
+    title: "Attendance",
+    icon: "lock",
+    children:  [
+      {
+        id: uuid(),
+        link: "#",
+        title: "Master",
+        icon: "folder",
+        children: [
+          {
+            id: uuid(),
+            link: "#",
+            title: "Common Master",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/attendance/master/commonmaster/attendancesession",
+                name: "Attendance Session",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/master/commonmaster/room",
+                name: "Room",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/master/commonmaster/attendancestatus",
+                name: "Attendance Status",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/master/commonmaster/slotmaster",
+                name: "Slot Master",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/master/commonmaster/slotallotment",
+                name: "Slot Allotment",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/master/commonmaster/attendancebackdatedconfiguration",
+                name: "Attendance Backdated Configuration",
+                icon: "file-text",
+              },
+            ],
+          },
+          {
+            id: uuid(),
+            link: "#",
+            title: "Holiday",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/attendance/master/holiday/holidayentry",
+                name: "Holiday Entry",
+                icon: "file-text",
+              },
+              
+            ],
+          },
+          {
+            id: uuid(),
+            link: "#",
+            title: "Batch",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/attendance/master/batch/createpracticalbatch",
+                name: "Create Practical Batch",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/master/batch/createtheorybatch",
+                name: "Create Theory Batch",
+                icon: "file-text",
+              },
+              
+            ],
+          },
+        ],
+      },
+      {
+        id: uuid(),
+        link: "#",
+        title: "Reports",
+        icon: "folder",
+        children: [
+          {
+            id: uuid(),
+            link: "#",
+            title: "Timetable Reports",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/attendance/reports/timetablereports/classtimetable",
+                name: "Class Timetable",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/reports/timetablereports/teachertimetable",
+                name: "Teacher Timetable",
+                icon: "file-text",
+              },
+             
+            ],
+          },
+          
+        ],
+      },
+    ],
+    },
+    
+  {
+    id: uuid(),
     link: "#",
     title: "NEP",
     icon: "home",
