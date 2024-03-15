@@ -9,18 +9,18 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const AttendanceStatus = () => {
+const BackdatedAttendanceConfig = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Attendance Status" />
+      <PageHeading heading="Backdated Attendance Config" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Attendance</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Common Master</Breadcrumb.Item>
-        <Breadcrumb.Item active>Attendance Status</Breadcrumb.Item>
+        <Breadcrumb.Item active>Backdated Attendance Config</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -34,7 +34,7 @@ const AttendanceStatus = () => {
                       <Col>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Status Name<span className="text-danger">*</span>
+                          Attendance Session<span className="text-danger">*</span>
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
                             <Form.Select
@@ -46,45 +46,43 @@ const AttendanceStatus = () => {
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Status Description
-                            <span className="text-danger">*</span>
+                            Basic Course
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Control
+                            <Form.Select
                               type="text"
                               placeholder=""
                               id="Academic Year"
-                              disabled
+                              
                             />
                           </Col>
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Status Points
-                            <span className="text-danger">*</span>
+                            Course
                           </Form.Label>
                           <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Control
+                            <Form.Select
                               type="text"
                               placeholder=""
                               id="Academic Year"
-                              disabled
+                              
                             />
                           </Col>
                         </Row>
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
-                            Default
+                          Number of Back Days
                           </Form.Label>
-                          <Col className="mt-2">
-                            <Form.Check
-                              type="switch"
-                              id="checkIfActive"
-                              label="If Default"
-                              defaultChecked
+                          <Col sm={8} className="mb-3 mb-lg-0">
+                            <Form.Control
+                              type="text"
+                              placeholder="Please Enter Number of Back Days"
+                              id="Academic Year"
                             />
                           </Col>
                         </Row>
+                        
                         <Row className="mb-3">
                           <Form.Label className="col-sm-4 col-form-label form-label">
                             Active
@@ -123,13 +121,7 @@ const AttendanceStatus = () => {
                           <thead>
                             <tr>
                               <th>
-                                <b>Room Name</b>
-                              </th>
-                              <th>
-                                <b>Active Status</b>
-                              </th>
-                              <th>
-                                <b>Action</b>
+                                <b>Number of Back Days</b>
                               </th>
                             </tr>
                           </thead>
@@ -147,4 +139,4 @@ const AttendanceStatus = () => {
   );
 };
 
-export default AttendanceStatus;
+export default BackdatedAttendanceConfig;

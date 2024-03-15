@@ -1045,8 +1045,8 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/attendance/master/commonmaster/attendancebackdatedconfiguration",
-                name: "Attendance Backdated Configuration",
+                link: "/pages/attendance/master/commonmaster/backdetedattendanceconfig",
+                name: "Backdeted Attendance Config",
                 icon: "file-text",
               },
             ],
