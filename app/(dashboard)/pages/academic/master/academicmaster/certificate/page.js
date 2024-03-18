@@ -9,7 +9,7 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 import { useState } from "react";
-import { creteCertifcate } from "app/api/certificate";
+import { createCertificate } from "app/api/certificate";
 
 const Certificate = () => {
   const hasMounted = useMounted();
@@ -26,7 +26,7 @@ const Certificate = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await creteCertifcate(formData);
+      const response = await createCertificate(formData);
       console.log(response.data);
     } catch (error) {
       console.log(error);
