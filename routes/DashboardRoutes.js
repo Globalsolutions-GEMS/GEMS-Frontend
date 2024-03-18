@@ -1119,6 +1119,71 @@ export const DashboardMenu = [
           
         ],
       },
+      {
+        id: uuid(),
+        link: "#",
+        title: "Transaction",
+        icon: "folder",
+        children: [
+          {
+            id: uuid(),
+            link: "#",
+            title: "Attendance",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/attendance/transaction/attendance/markattendance",
+                name: "Mark Attendance",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/transaction/attendance/unmarkattendance",
+                name: "Unmark Attendance",
+                icon: "file-text",
+              },
+              
+            ],
+          },
+          {
+            id: uuid(),
+            link: "#",
+            title: "Configuration",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/attendance/transaction/configuration/batchallotment",
+                name: "Batch Allotment",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/transaction/configuration/subjectteacherallotment",
+                name: "Subject Teacher Allotment",
+                icon: "file-text",
+              },
+              
+            ],
+          },
+          {
+            id: uuid(),
+            link: "#",
+            title: "Communication",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/attendance/transaction/communication/dailyattendancesms",
+                name: "Daily Attendance SMS",
+                icon: "file-text",
+              },
+              
+            ],
+          },
+        ],
+      },
     ],
     },
     
@@ -1205,6 +1270,7 @@ export const DashboardMenu = [
           
         ],
       },
+      
     ],
   },
 ];
