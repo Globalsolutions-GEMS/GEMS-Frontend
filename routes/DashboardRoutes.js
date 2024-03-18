@@ -1116,6 +1116,28 @@ export const DashboardMenu = [
              
             ],
           },
+          {
+            id: uuid(),
+            link: "#",
+            title: "Attendance Reports",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/attendance/reports/attendancereports/missingattendancereport",
+                name: "Missing Attendance Report",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/reports/attendancereports/teachertimetable",
+                name: "Teacher Timetable",
+                icon: "file-text",
+              },
+             
+            ],
+          },
+          
           
         ],
       },
