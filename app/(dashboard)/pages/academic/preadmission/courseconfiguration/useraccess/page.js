@@ -33,7 +33,7 @@ const UserAccess = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">User Name<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >User Name<span className="text-danger">*</span></Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Select type="email" placeholder="0" id="shortname" required />
                                             </Col>

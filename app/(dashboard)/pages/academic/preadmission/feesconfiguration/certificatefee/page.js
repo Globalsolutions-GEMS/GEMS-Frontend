@@ -37,7 +37,7 @@ const CertificateFee = () => {
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter Receipt Book Code" id="certificatecode" required />
                                             </Col>
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Cashbook<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Cashbook<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="email" placeholder="Please Enter Receipt Book Name" id="certificatename" required />
                                             </Col>
@@ -47,7 +47,7 @@ const CertificateFee = () => {
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter Cash Receipt No." id="certificatecode" required />
                                             </Col>
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Fee Head<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Fee Head<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="email" placeholder="Please Enter Bank Rececipt No." id="certificatename" required />
                                             </Col>
@@ -57,7 +57,7 @@ const CertificateFee = () => {
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Enter Document Receipt No." id="certificatecode" required />
                                             </Col>
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Fees<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Fees<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Control type="email" placeholder="Please Enter Fees" id="certificatename" required />
                                             </Col>

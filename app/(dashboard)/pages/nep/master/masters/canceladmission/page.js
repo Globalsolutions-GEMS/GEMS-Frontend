@@ -34,7 +34,7 @@ const CancelAdmission = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         Bank<span className="text-danger">*</span>
                       </Form.Label>
@@ -48,7 +48,7 @@ const CancelAdmission = () => {
                       </Col>
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         IFSC Code<span className="text-danger">*</span>
                       </Form.Label>
@@ -64,7 +64,7 @@ const CancelAdmission = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         Bank Location<span className="text-danger">*</span>
                       </Form.Label>
@@ -78,7 +78,7 @@ const CancelAdmission = () => {
                       </Col>
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         MICR Number<span className="text-danger">*</span>
                       </Form.Label>
@@ -94,7 +94,7 @@ const CancelAdmission = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         Account Number<span className="text-danger">*</span>
                       </Form.Label>
@@ -108,7 +108,7 @@ const CancelAdmission = () => {
                       </Col>
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         Account Holder Name<span className="text-danger">*</span>
                       </Form.Label>
@@ -125,7 +125,7 @@ const CancelAdmission = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         Cancel Reason<span className="text-danger">*</span>
                       </Form.Label>

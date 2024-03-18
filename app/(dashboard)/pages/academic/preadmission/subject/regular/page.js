@@ -39,7 +39,7 @@ const Regular = () => {
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select Exam Academic Year" id="examAcademic Year" required />
                                             </Col>
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Course<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Course<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="email" placeholder="Please Select Course" id="course" required />
                                             </Col>
@@ -49,7 +49,7 @@ const Regular = () => {
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="text" placeholder="Please Select" id="regular" required />
                                             </Col>
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Cashbook<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Cashbook<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
                                                 <Form.Select type="email" placeholder="Please Select Cashbook" id="cashbook" required />
                                             </Col>

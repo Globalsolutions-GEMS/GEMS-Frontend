@@ -596,13 +596,13 @@ function MyVerticallyCenteredModal(props) {
           </Col>
         </Row>
         <Row className="mb-3">
-          <Form.Label className="col-sm-4 col-form-label form-label">
+          <Form.Label className="col-sm-3 col-form-label form-label">
             Subject Type<span className="text-danger">*</span>
           </Form.Label>
-          <Col sm={4}>
+          <Col sm={4} className="mt-2">
             <Form.Check label="Subject" type="radio" name="medium" />
           </Col>
-          <Col sm={4}>
+          <Col sm={4} className="mt-2">
             <Form.Check label="Group" type="radio" name="medium" />
           </Col>
         </Row>

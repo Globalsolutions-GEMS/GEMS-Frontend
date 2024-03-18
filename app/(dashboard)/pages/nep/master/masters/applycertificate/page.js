@@ -34,7 +34,7 @@ const ApplyCertificate = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         Certificate<span className="text-danger">*</span>
                       </Form.Label>
@@ -48,7 +48,7 @@ const ApplyCertificate = () => {
                       </Col>
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         Fees<span className="text-danger">*</span>
                       </Form.Label>
@@ -64,7 +64,7 @@ const ApplyCertificate = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         No. Of Copies<span className="text-danger">*</span>
                       </Form.Label>
@@ -93,7 +93,7 @@ const ApplyCertificate = () => {
                     <Row className="mb-3">
                       <Form.Label
                         className="col-sm-2 col-form-label form-label"
-                        htmlFor="email"
+                        
                       >
                         Reason<span className="text-danger">*</span>
                       </Form.Label>

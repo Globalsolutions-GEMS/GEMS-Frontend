@@ -63,7 +63,7 @@ const GeneralSetting = () => {
                 </Row>
                 {/* row */}
                 <Row className="mb-3">
-                <Form.Label className="col-sm-4 col-form-label form-label" htmlFor="email">Email</Form.Label>
+                <Form.Label className="col-sm-4 col-form-label form-label" >Email</Form.Label>
                   <Col md={8} xs={12}>
                     <Form.Control type="email" placeholder="Email" id="email" required />
                   </Col>

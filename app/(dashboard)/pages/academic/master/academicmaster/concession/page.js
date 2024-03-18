@@ -41,14 +41,14 @@ const Concession = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Concession Description</Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Concession Description</Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Control type="email" placeholder="Please Enter Concession Description" id="concessiondescription" required />
                                             </Col>
                                         </Row>
 
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Percentage</Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Percentage</Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Control type="email" placeholder="Please Enter Percentage" id="percentage" required />
                                             </Col>

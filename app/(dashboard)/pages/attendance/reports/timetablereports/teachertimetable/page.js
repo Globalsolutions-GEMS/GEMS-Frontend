@@ -19,13 +19,13 @@ const TeacherTimeTable = () => {
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Teacher Time  Report" />
+      <PageHeading heading="Teacher Timetable" />
       <Breadcrumb>
-                <Breadcrumb.Item href="#">Attendance</Breadcrumb.Item>
-                <Breadcrumb.Item href="#">Reports</Breadcrumb.Item>
-                <Breadcrumb.Item href="#"> Timetable Reports</Breadcrumb.Item>
-                <Breadcrumb.Item active>Teacher Timetable</Breadcrumb.Item>
-            </Breadcrumb>
+        <Breadcrumb.Item href="#">Attendance</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Reports</Breadcrumb.Item>
+        <Breadcrumb.Item href="#"> Timetable Reports</Breadcrumb.Item>
+        <Breadcrumb.Item active>Teacher Timetable</Breadcrumb.Item>
+      </Breadcrumb>
 
       <Row className="mb-8">
         <Col xl={12} lg={8} md={12} xs={12}>
@@ -72,35 +72,56 @@ const TeacherTimeTable = () => {
                           required
                         />
                       </Col>
-                    </Row>
-                         <Row>
-                      <Col className="d-flex align-items-center justify-content-center">
-                        <Button variant="primary" type="submit">
+                      </Row>
+                      <Row className="mb-3">
+                        <Form.Label className="col-sm-2 col-form-label form-label">
                           Format 1
-                        </Button>
-                        <Button
-                          variant="primary"
-                          type=""
-                          style={{ marginLeft: "10px" }}
-                        >
+                        </Form.Label>
+                        <Col className="mt-2">
+                          <Form.Check
+                            type="radio"
+                            name="radio"
+                           
+                          />
+                        </Col>
+                      </Row>
+                      <Row className="mb-3">
+                        <Form.Label className="col-sm-2 col-form-label form-label">
                           Format 2
-                        </Button>
-                        <Button
-                          variant="primary"
-                          type=""
-                          style={{ marginLeft: "10px" }}
-                        >
+                        </Form.Label>
+                        <Col className="mt-2">
+                          <Form.Check
+                            type="radio"
+                            name="radio"
+                            
+                          />
+                        </Col>
+                      </Row>
+                      <Row className="mb-3">
+                        <Form.Label className="col-sm-2 col-form-label form-label">
                           Format 3
-                        </Button>
-                        <Button
-                          variant="secondary"
-                          type=""
-                          style={{ marginLeft: "10px" }}
-                        >
-                          Cancel
-                        </Button>
+                        </Form.Label>
+                        <Col className="mt-2">
+                          <Form.Check
+                            type="radio"
+                            name="radio"
+                          
+                          />
+                        </Col>
+                      </Row>
+                   
+                    <Row>
+                      <Col className="d-flex align-items-center justify-content-center">
+                       <Button
+                        variant="secondary"
+                        type=""
+                        style={{ marginLeft: "10px" }}
+                      >
+                        Cancel
+                      </Button>
                       </Col>
                       <Col></Col>
+                     
                     </Row>
                   </Form>
                 )}

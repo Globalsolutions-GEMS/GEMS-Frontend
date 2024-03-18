@@ -33,7 +33,7 @@ const ReceiptBookAccess = () => {
                                             </Col>
                                         </Row>
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="email">Counter<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" >Counter<span className="text-danger">*</span></Form.Label>
                                             <Col md={9} xs={12}>
                                                 <Form.Control type="email" placeholder="0" id="shortname" required disabled />
                                             </Col>

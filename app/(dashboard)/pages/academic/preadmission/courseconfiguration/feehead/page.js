@@ -213,7 +213,7 @@ const FeeHead = () => {
                         <Row className="mb-3">
                           <Form.Label
                             className="col-sm-4 col-form-label form-label"
-                            htmlFor="email"
+                            
                           >
                             Fee Head Description
                             <span className="text-danger">*</span>
