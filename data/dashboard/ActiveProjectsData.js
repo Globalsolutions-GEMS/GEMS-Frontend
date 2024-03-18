@@ -1,7 +1,7 @@
 export const ActiveProjectsData = [
     {
        id:1,
-       projectName : "Dropbox Design System",
+       projectName : "BA Student Admission",
        priority : "Medium",
        priorityBadgeBg : 'warning',
        hours: 34,
@@ -16,7 +16,7 @@ export const ActiveProjectsData = [
     },
     {
         id:2,
-        projectName : "Slack Team UI Design",
+        projectName : "Rechecking Fees Statement",
         priority : "High",
         priorityBadgeBg : 'danger',
         hours: 47,
@@ -31,10 +31,10 @@ export const ActiveProjectsData = [
      },
      {
         id:3,
-        projectName : "GitHub Satellite",
+        projectName : "Meeting with Principle",
         priority : "Low",
         priorityBadgeBg : 'info',
-        hours: 120,
+        hours: 2,
         progress: 75,
         brandLogo:'/images/brand/github-logo.svg',
         brandLogoBg : 'bg-white',
@@ -46,7 +46,7 @@ export const ActiveProjectsData = [
      },
      {
         id:4,
-        projectName : "3D Character Modelling",
+        projectName : "Resolve Students Doubts",
         priority : "Medium",
         priorityBadgeBg : 'warning',
         hours: 89,
@@ -59,35 +59,35 @@ export const ActiveProjectsData = [
             {image:'images/avatar/avatar-12.jpg'}
         ] 
      },
-     {
-        id:3,
-        projectName : "Webapp Design System",
-        priority : "Track",
-        priorityBadgeBg : 'success',
-        hours: 108,
-        progress: 100,
-        brandLogo:'/images/brand/layers-logo.svg',
-        brandLogoBg : 'bg-primary',
-        members:[
-            {image:'images/avatar/avatar-13.jpg'},
-            {image:'images/avatar/avatar-14.jpg'},
-            {image:'images/avatar/avatar-15.jpg'}
-        ] 
-     },
-     {
-        id:4,
-        projectName : "Github Event Design",
-        priority : "Low",
-        priorityBadgeBg : 'info',
-        hours: 120,
-        progress: 75,
-        brandLogo:'/images/brand/github-logo.svg',
-        brandLogoBg : 'bg-white',
-        members:[
-            {image:'images/avatar/avatar-16.jpg'},
-            {image:'images/avatar/avatar-17.jpg'},
-            {image:'images/avatar/avatar-18.jpg'}
-        ] 
-     }
+    //  {
+    //     id:3,
+    //     projectName : "Webapp Design System",
+    //     priority : "Track",
+    //     priorityBadgeBg : 'success',
+    //     hours: 108,
+    //     progress: 100,
+    //     brandLogo:'/images/brand/layers-logo.svg',
+    //     brandLogoBg : 'bg-primary',
+    //     members:[
+    //         {image:'images/avatar/avatar-13.jpg'},
+    //         {image:'images/avatar/avatar-14.jpg'},
+    //         {image:'images/avatar/avatar-15.jpg'}
+    //     ] 
+    //  },
+    //  {
+    //     id:4,
+    //     projectName : "Github Event Design",
+    //     priority : "Low",
+    //     priorityBadgeBg : 'info',
+    //     hours: 120,
+    //     progress: 75,
+    //     brandLogo:'/images/brand/github-logo.svg',
+    //     brandLogoBg : 'bg-white',
+    //     members:[
+    //         {image:'images/avatar/avatar-16.jpg'},
+    //         {image:'images/avatar/avatar-17.jpg'},
+    //         {image:'images/avatar/avatar-18.jpg'}
+    //     ] 
+    //  }
 ];
 export default ActiveProjectsData;

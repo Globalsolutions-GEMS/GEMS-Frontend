@@ -14,9 +14,9 @@ import {
 } from "react-bootstrap";
 import { PageHeading } from "widgets";
 import {
-  createAcademicAcademicYear,
-  getAcademicAcademicYear,
-  updateAcademicAcademicYear,
+  createAcademicYear,
+  getAcademicYear,
+  updateAcademicYear,
 } from "app/api/academicyear";
 import useMounted from "hooks/useMounted";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -25,11 +25,11 @@ import "react-toastify/dist/ReactToastify.css";
 
 const AcademicYear = () => {
   const hasMounted = useMounted();
-  const [academicAcademicYearData, setAcademicAcademicYearData] = useState([]);
+  const [academicYearData, setAcademicYearData] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(5);
   const [formData, setFormData] = useState({
-    AcademicYearName: "",
+    academicYearName: "",
     shortName: "",
     startDate: "",
     endDate: "",
@@ -37,7 +37,7 @@ const AcademicYear = () => {
     oldAcademicYear: false,
   });
   const [editingRowIndex, setEditingRowIndex] = useState(null);
-  const [editingAcademicAcademicYear, setEditingAcademicAcademicYear] =
+  const [editingAcademicYear, setEditingAcademicYear] =
     useState(null);
   const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
@@ -48,20 +48,20 @@ const AcademicYear = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      if (editingAcademicAcademicYear) {
-        await updateAcademicAcademicYear(
-          editingAcademicAcademicYear.id,
+      if (editingAcademicYear) {
+        await updateAcademicYear(
+          editingAcademicYear.id,
           formData
         );
-        setEditingAcademicAcademicYear(null);
+        setEditingAcademicYear(null);
         update();
       } else {
-        await createAcademicAcademicYear(formData);
+        await createAcademicYear(formData);
         success();
       }
-      refreshAcademicAcademicYear();
+      refreshAcademicYear();
       setFormData({
-        AcademicYearName: "",
+        academicYearName: "",
         shortName: "",
         startDate: "",
         endDate: "",
@@ -87,50 +87,50 @@ const AcademicYear = () => {
     }));
   };
 
-  const refreshAcademicAcademicYear = async () => {
+  const refreshAcademicYear = async () => {
     try {
-      const response = await getAcademicAcademicYear();
-      setAcademicAcademicYearData(response.data);
+      const response = await getAcademicYear();
+      setAcademicYearData(response.data);
     } catch (error) {
       console.log(error);
     }
   };
 
   useEffect(() => {
-    refreshAcademicAcademicYear();
+    refreshAcademicYear();
   }, []);
 
   const editRow = (index) => {
-    const editedAcademicAcademicYear = academicAcademicYearData[index];
+    const editedAcademicYear = academicYearData[index];
 
     setFormData({
-      AcademicYearName: editedAcademicAcademicYear.AcademicYearName,
-      shortName: editedAcademicAcademicYear.shortName,
-      startDate: editedAcademicAcademicYear.startDate,
-      endDate: editedAcademicAcademicYear.endDate,
-      active: editedAcademicAcademicYear.active,
-      oldAcademicYear: editedAcademicAcademicYear.oldAcademicYear,
+      academicYearName: editedAcademicYear.academicYearName,
+      shortName: editedAcademicYear.shortName,
+      startDate: editedAcademicYear.startDate,
+      endDate: editedAcademicYear.endDate,
+      active: editedAcademicYear.active,
+      oldAcademicYear: editedAcademicYear.oldAcademicYear,
     });
-    setFormData(editedAcademicAcademicYear);
-    setEditingAcademicAcademicYear(editedAcademicAcademicYear);
+    setFormData(editedAcademicYear);
+    setEditingAcademicYear(editedAcademicYear);
     setEditingRowIndex(index);
   };
 
   const handleCancel = () => {
     setFormData({
-      AcademicYearName: "",
+      academicYearName: "",
       shortName: "",
       startDate: "",
       endDate: "",
       active: false,
       oldAcademicYear: false,
     });
-    setEditingAcademicAcademicYear(null);
+    setEditingAcademicYear(null);
   };
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = academicAcademicYearData.slice(
+  const currentItems = academicYearData.slice(
     indexOfFirstItem,
     indexOfLastItem
   );
@@ -139,7 +139,7 @@ const AcademicYear = () => {
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="AcademicYear" />
+      <PageHeading heading="Academic Year" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
@@ -166,8 +166,8 @@ const AcademicYear = () => {
                             <Form.Control
                               type="text"
                               placeholder="Please Enter AcademicYear Name"
-                              id="AcademicYearName"
-                              value={formData.AcademicYearName}
+                              id="sessionName"
+                              value={formData.academicYearName}
                               onChange={handleInputChange}
                               required
                             />
@@ -236,7 +236,7 @@ const AcademicYear = () => {
 
                         <Row className="mb-3">
                           <Form.Check.Label className="col-sm-3 col-form-label form-label">
-                            Old AcademicYear
+                            Old Academic Year
                           </Form.Check.Label>
                           <Col md={9} xs={12}>
                             <Form.Check
@@ -253,7 +253,7 @@ const AcademicYear = () => {
                                 onChange={handleInputChange}
                               />
                               <Form.Check.Label>
-                                If Old AcademicYear
+                                If Old Academic Year
                               </Form.Check.Label>
                             </Form.Check>
                           </Col>
@@ -274,7 +274,7 @@ const AcademicYear = () => {
                         <Row className="align-items-center">
                           <Col className="mt-4 d-flex align-items-center justify-content-center">
                             <Button variant="primary" type="submit">
-                              {editingAcademicAcademicYear
+                              {editingAcademicYear
                                 ? "Update"
                                 : "Submit"}
                             </Button>
@@ -295,7 +295,7 @@ const AcademicYear = () => {
                           <thead>
                             <tr>
                               <th>
-                                <b>AcademicYear Name</b>
+                                <b>Academic Year Name</b>
                               </th>
                               <th>
                                 <b>Start Date</b>
@@ -309,11 +309,11 @@ const AcademicYear = () => {
                             </tr>
                           </thead>
                           <tbody>
-                            {currentItems.map((academicAcademicYear, index) => (
-                              <tr key={academicAcademicYear.id}>
-                                <td>{academicAcademicYear.AcademicYearName}</td>
-                                <td>{academicAcademicYear.startDate}</td>
-                                <td>{academicAcademicYear.endDate}</td>
+                            {currentItems.map((academicYear, index) => (
+                              <tr key={academicYear.id}>
+                                <td>{academicYear.sessionName}</td>
+                                <td>{academicYear.startDate}</td>
+                                <td>{academicYear.endDate}</td>
                                 <td className="d-flex justify-content-center align-items-center">
                                   <Button
                                     variant="secondary"
@@ -336,7 +336,7 @@ const AcademicYear = () => {
                           {[
                             ...Array(
                               Math.ceil(
-                                academicAcademicYearData.length / itemsPerPage
+                                academicYearData.length / itemsPerPage
                               )
                             ),
                           ].map((_, index) => (
@@ -353,7 +353,7 @@ const AcademicYear = () => {
                             disabled={
                               currentPage ===
                               Math.ceil(
-                                academicAcademicYearData.length / itemsPerPage
+                                academicYearData.length / itemsPerPage
                               )
                             }
                           />

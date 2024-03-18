@@ -42,7 +42,7 @@ const QuickMenu = () => {
         query: '(min-width: 1224px)'
     })
 
-    const collegeName = "Sinhgad Academy of Engineering Kondhwa Bk, Pune";
+    const employeeName = "Shweta Madhav Katore";
 
     const Notifications = () => {
         return (
@@ -78,7 +78,7 @@ const QuickMenu = () => {
 
         return (
             <ListGroup as="ul" bsPrefix='navbar-nav' className="navbar-right-wrap ms-auto d-flex nav-top-wrap">
-                <Form.Label className='mt-2' style={{ marginRight: '15px' }} >{collegeName}</Form.Label>
+                <Form.Label className='mt-2' style={{ marginRight: '15px' }} >{employeeName}</Form.Label>
                 <Dropdown as="li" className="stopevent">
                     <Dropdown.Toggle as="a"
                         bsPrefix=' '
