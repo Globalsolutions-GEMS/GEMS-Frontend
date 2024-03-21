@@ -11,12 +11,6 @@ export const DashboardMenu = [
   // 		{ id: uuid(), link: '/authentication/forget-password', name: 'Forget Password'}
   // 	]
   // },
-  {
-    id: uuid(),
-    title: "Certificate",
-    icon: "home",
-    link: "/pages/extrapages/commoncertificate",
-  },
 
   {
     id: uuid(),
@@ -1013,7 +1007,7 @@ export const DashboardMenu = [
               },
               {
                 id: uuid(),
-                link: "/pages/academic/studentreport/certificate/commoncertificates",
+                link: "/pages/academic/studentreport/certificate/commoncertificate",
                 name: "Common Certificates",
                 icon: "file-text",
               },
