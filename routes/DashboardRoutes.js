@@ -992,6 +992,33 @@ export const DashboardMenu = [
               },
             ],
           },
+          {
+            id: uuid(),
+            link: "#",
+            title: "Certificate",
+            icon: "book-open",
+            children: [
+              {
+                id: uuid(),
+                link: "/pages/academic/studentreport/certificate/transferleavingcertificate",
+                name: "Transfer/Leaving Certificate",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/academic/studentreport/certificate/studenticard",
+                name: "Student I Card",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/academic/studentreport/certificate/commoncertificates",
+                name: "Common Certificates",
+                icon: "file-text",
+              },
+              
+            ],
+          },
         ],
       },
     ],
@@ -1232,6 +1259,18 @@ export const DashboardMenu = [
                 id: uuid(),
                 link: "/pages/attendance/transaction/attendancereport/missingtimetable",
                 name: "Mising Timetable",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/transaction/attendancereport/topiccoveredreport",
+                name: "Topic Covered Report",
+                icon: "file-text",
+              },
+              {
+                id: uuid(),
+                link: "/pages/attendance/transaction/attendancereport/teacherremunerationreport",
+                name: "Teacher Remuneration Report",
                 icon: "file-text",
               },
             ],

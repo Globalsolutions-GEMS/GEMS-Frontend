@@ -18,7 +18,7 @@ import ProjectsStatsData from "data/dashboard/ProjectsStatsData";
 const Home = () => {
     return (
         <Fragment>
-            <div className="bg-gray-600 pt-10 pb-21"></div>
+            {/* <div className="bg-gray-600 pt-10 pb-21"></div>
             <Container fluid className="mt-n22 px-6">
                 <Row>
                     <Col lg={12} md={12} xs={12}>
@@ -60,7 +60,7 @@ const Home = () => {
 
                     </Col>
                 </Row>
-            </Container>
+            </Container> */}
         </Fragment>
     )
 }
