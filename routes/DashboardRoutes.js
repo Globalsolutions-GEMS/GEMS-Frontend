@@ -11,12 +11,13 @@ export const DashboardMenu = [
   // 		{ id: uuid(), link: '/authentication/forget-password', name: 'Forget Password'}
   // 	]
   // },
-  // {
-  //   id: uuid(),
-  //   title: "Dashboard",
-  //   icon: "home",
-  //   link: "/",
-  // },
+  {
+    id: uuid(),
+    title: "Certificate",
+    icon: "home",
+    link: "/pages/extrapages/commoncertificate",
+  },
+
   {
     id: uuid(),
     title: "Extra Pages",
