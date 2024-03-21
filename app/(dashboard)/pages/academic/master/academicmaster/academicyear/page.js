@@ -158,7 +158,6 @@ const AcademicYear = () => {
                         <Row className="mb-3">
                           <Form.Label
                             className="col-sm-3 col-form-label form-label"
-                            htmlFor="fullName"
                           >
                             Academic Year name
                           </Form.Label>
@@ -166,7 +165,7 @@ const AcademicYear = () => {
                             <Form.Control
                               type="text"
                               placeholder="Please Enter AcademicYear Name"
-                              id="sessionName"
+                              id="academicYearName"
                               value={formData.academicYearName}
                               onChange={handleInputChange}
                               required
