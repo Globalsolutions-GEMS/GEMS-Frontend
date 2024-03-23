@@ -19,8 +19,7 @@ const ExternalStudent = () => {
     <Container fluid>
       <Row className="mb-8">
         <Col xl={12} lg={8} md={12} xs={12}>
-          <Card>
-            <Card.Body>
+
               <div>
                 {hasMounted && (
                   <Form >
@@ -233,8 +232,7 @@ const ExternalStudent = () => {
                   </Form>
                 )}
               </div>
-            </Card.Body>
-          </Card>
+
         </Col>
       </Row>
     </Container>

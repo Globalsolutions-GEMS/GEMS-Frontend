@@ -5,11 +5,15 @@ import { Breadcrumb, Container } from 'react-bootstrap';
 import { PageHeading } from 'widgets';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
-import RegularStudent from './regularstudent/page';
-import ExternalStudent from './externalstudent/page';
+
+import NoObjectionCertificate from './noobjectioncertificate/page'
+import DOBCertificate from './dobcertificate/page'
+import RegularStudentMaster from './student'
+import MigrationCertificate from './migrationcertificate/page'
+import AttemptCertificate from './attemptcertificate/page'
 
 // Define the BankDetails component
-const BankDetails = () => {
+const CommonCertificate = () => {
     // Use useState hook for managing tab value
     const [value, setValue] = useState(0);
 
@@ -20,16 +24,22 @@ const BankDetails = () => {
 
     return (
         <Container fluid className="p-6">
-            <PageHeading heading="Common Certificate" />
+            <PageHeading heading="Common Certificates" />
 
             <Tabs value={value} onChange={handleChange} centered>
-                <Tab label="Regular Student" id="simple-tab-0" />
-                <Tab label="External Student" id="simple-tab-1" />
+                <Tab label="Bonafide Certificate" id="simple-tab-0" />
+                <Tab label="NOC Certificate" id="simple-tab-1" />
+                <Tab label="DOB Certificate" id="simple-tab-2" />
+                <Tab label="Migration Certificate" id="simple-tab-3" />
+                <Tab label="Attempt Certificate" id="simple-tab-4" />
             </Tabs>
-            {value === 0 && <RegularStudent />}
-            {value === 1 && <ExternalStudent />}
+            {value === 0 && <RegularStudentMaster/>}
+            {value === 1 && <NoObjectionCertificate />}
+            {value === 2 && <DOBCertificate />}
+            {value === 3 && <MigrationCertificate />}
+            {value === 4 && <AttemptCertificate />}
         </Container>
     );
 };
 
-export default BankDetails;
+export default CommonCertificate;
