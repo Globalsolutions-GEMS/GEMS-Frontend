@@ -18,7 +18,6 @@ const BoardOfStudy = () => {
       <PageHeading heading="Board Of Study" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">NEP</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Masters</Breadcrumb.Item>
         <Breadcrumb.Item active>Board Of Study</Breadcrumb.Item>
       </Breadcrumb>

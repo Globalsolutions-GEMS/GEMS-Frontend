@@ -13,18 +13,17 @@ import InputGroup from "react-bootstrap/InputGroup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const MajorSubjectBucket = () => {
+const FillAndLockBucket = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Major Subject Bucket" />
+      <PageHeading heading="Fill & Lock Bucket" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">NEP</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transactions</Breadcrumb.Item>
-        <Breadcrumb.Item active>Major Subject Bucket</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Configurations</Breadcrumb.Item>
+        <Breadcrumb.Item active>Fill & Lock Bucket</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -152,4 +151,4 @@ const MajorSubjectBucket = () => {
   );
 };
 
-export default MajorSubjectBucket;
+export default FillAndLockBucket;

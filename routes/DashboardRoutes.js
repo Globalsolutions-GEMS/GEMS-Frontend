@@ -20,7 +20,12 @@ export const DashboardMenu = [
       { id: uuid(), link: "/profile", name: "Profile", icon: "file-text" },
       { id: uuid(), link: "/settings", name: "Settings", icon: "file-text" },
       { id: uuid(), link: "/accordion", name: "Accordion", icon: "file-text" },
-      { id: uuid(), link: "/verticaltabs", name: "Vertical Tabs", icon: "file-text" },
+      {
+        id: uuid(),
+        link: "/verticaltabs",
+        name: "Vertical Tabs",
+        icon: "file-text",
+      },
       {
         id: uuid(),
         link: "/pages/nep/master/masters/applycertificate",
@@ -393,7 +398,6 @@ export const DashboardMenu = [
                 name: "Subject Fee",
                 icon: "file-text",
               },
-              
             ],
           },
         ],
@@ -464,7 +468,7 @@ export const DashboardMenu = [
                 link: "/pages/academic/transaction/admissionfees/changefeesbulk",
                 name: "Change Fees - Bulk",
                 icon: "file-text",
-              }, 
+              },
               {
                 id: uuid(),
                 link: "/pages/academic/transaction/admissionfees/createfeesregisteredpromoted",
@@ -1011,7 +1015,6 @@ export const DashboardMenu = [
                 name: "Common Certificates",
                 icon: "file-text",
               },
-              
             ],
           },
         ],
@@ -1022,7 +1025,7 @@ export const DashboardMenu = [
     id: uuid(),
     title: "Attendance",
     icon: "lock",
-    children:  [
+    children: [
       {
         id: uuid(),
         link: "#",
@@ -1085,7 +1088,6 @@ export const DashboardMenu = [
                 name: "Holiday Entry",
                 icon: "file-text",
               },
-              
             ],
           },
           {
@@ -1106,7 +1108,6 @@ export const DashboardMenu = [
                 name: "Create Theory Batch",
                 icon: "file-text",
               },
-              
             ],
           },
         ],
@@ -1135,7 +1136,6 @@ export const DashboardMenu = [
                 name: "Teacher Timetable",
                 icon: "file-text",
               },
-             
             ],
           },
           {
@@ -1156,11 +1156,8 @@ export const DashboardMenu = [
                 name: "Teacher Timetable",
                 icon: "file-text",
               },
-             
             ],
           },
-          
-          
         ],
       },
       {
@@ -1187,7 +1184,6 @@ export const DashboardMenu = [
                 name: "Unmark Attendance",
                 icon: "file-text",
               },
-              
             ],
           },
           {
@@ -1208,7 +1204,6 @@ export const DashboardMenu = [
                 name: "Subject Teacher Allotment",
                 icon: "file-text",
               },
-              
             ],
           },
           {
@@ -1223,7 +1218,6 @@ export const DashboardMenu = [
                 name: "Daily Attendance SMS",
                 icon: "file-text",
               },
-              
             ],
           },
           {
@@ -1273,8 +1267,8 @@ export const DashboardMenu = [
         ],
       },
     ],
-    },
-    
+  },
+
   {
     id: uuid(),
     link: "#",
@@ -1289,76 +1283,146 @@ export const DashboardMenu = [
         children: [
           {
             id: uuid(),
-            link: "#",
-            title: "Masters",
-            icon: "book-open",
-            children: [
-              {
-                id: uuid(),
-                link: "/pages/nep/master/masters/boardofstudy",
-                name: "Board Of Study",
-                icon: "file-text",
-              },
-              {
-                id: uuid(),
-                link: "/pages/nep/master/masters/subjectcategory",
-                name: "Subject Category",
-                icon: "file-text",
-              },
-              {
-                id: uuid(),
-                link: "/pages/nep/master/masters/discipline",
-                name: "Discipline",
-                icon: "file-text",
-              },
-            ],
+            link: "/pages/nep/master/boardofstudy",
+            name: "Board Of Study",
+            icon: "file-text",
           },
-          
+          {
+            id: uuid(),
+            link: "/pages/nep/master/discipline",
+            name: "Discipline",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/master/subjectcategory",
+            name: "Subject Category",
+            icon: "file-text",
+          },
         ],
       },
       {
         id: uuid(),
         link: "#",
-        title: "Transaction",
+        title: "Configurations",
         icon: "folder",
         children: [
           {
             id: uuid(),
-            link: "#",
-            title: "Transactions",
-            icon: "book-open",
-            children: [
-              {
-                id: uuid(),
-                link: "/pages/nep/transaction/transactions/subjectbucketcreation",
-                name: "Subject Bucket Creation",
-                icon: "file-text",
-              },
-              {
-                id: uuid(),
-                link: "/pages/nep/transaction/transactions/majorsubjectbucket",
-                name: "Major Subject Bucket",
-                icon: "file-text",
-              },
-              {
-                id: uuid(),
-                link: "/pages/nep/transaction/transactions/subjectallocationtostudent",
-                name: "Subject Allocation To Student",
-                icon: "file-text",
-              },
-              {
-                id: uuid(),
-                link: "/pages/nep/transaction/transactions/subjectcategoryanddisciplineallocation",
-                name: "Subject Category & Discipline Allocation",
-                icon: "file-text",
-              },
-              
-            ],
+            link: "/pages/nep/configurations/subjectcategoryanddisciplineallocation",
+            name: "Subject Category & Discipline Mapping",
+            icon: "file-text",
           },
-          
+          {
+            id: uuid(),
+            link: "/pages/nep/configurations/createbucket",
+            name: "Create Bucket",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/configurations/fillandlockbucket",
+            name: "Fill & Lock Bucket",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/configurations/subjectcategorypreference",
+            name: "Subject Category Preferences",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/configurations/removeandunlockbucket",
+            name: "Remove & Unlock Bucket",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/configurations/majorsubjectcapping",
+            name: "Major Subject Capping",
+            icon: "file-text",
+          },
         ],
       },
-      
+      {
+        id: uuid(),
+        link: "#",
+        title: "Transactions",
+        icon: "folder",
+        children: [
+          {
+            id: uuid(),
+            link: "/pages/nep/transactions/subjectallocationtostudent",
+            name: "Subject Allocation To Student",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/transactions/changemajorallotment",
+            name: "Change Major Allotment",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/transactions/preferenceallocationsingle",
+            name: "Preference Allocation-Single",
+            icon: "file-text",
+          },
+        ],
+      },
+      {
+        id: uuid(),
+        link: "#",
+        title: "Reports",
+        icon: "folder",
+        children: [
+          {
+            id: uuid(),
+            link: "/pages/nep/reports/subjectcategoryreportstudentwise",
+            name: "Subject Category Report - Student Wise",
+            icon: "file-text",
+          },
+        ],
+      },
+      {
+        id: uuid(),
+        link: "#",
+        title: "Course Registration",
+        icon: "folder",
+        children: [
+          {
+            id: uuid(),
+            link: "/pages/nep/courseregistration/nepallocationconfig",
+            name: "NEP Allocation Config",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/courseregistration/registrationdatesconfig",
+            name: "Registrantion Dates Config",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/courseregistration/nepsubjectmapping",
+            name: "NEP Subject Mapping",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/courseregistration/subjectallotmentbymappingsingle",
+            name: "Subject Allotment by Mapping - Single",
+            icon: "file-text",
+          },
+          {
+            id: uuid(),
+            link: "/pages/nep/courseregistration/subjectallotmentbymappingbulk",
+            name: "Subject Allotment by Mapping - Bulk",
+            icon: "file-text",
+          },
+        ],
+      },
     ],
   },
 ];

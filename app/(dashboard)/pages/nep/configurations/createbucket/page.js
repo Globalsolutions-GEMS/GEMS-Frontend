@@ -1,6 +1,6 @@
 "use client";
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container } from "react-bootstrap";
+import { Breadcrumb, Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -8,23 +8,18 @@ import { PageHeading } from "widgets";
 
 // import sub components
 import useMounted from "hooks/useMounted";
-import { CheckCircleFill } from "react-bootstrap-icons";
-import InputGroup from "react-bootstrap/InputGroup";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
-const SubjectBucketCreation = () => {
+const CreateBucket = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Subject Bucket Creation" />
+      <PageHeading heading="Create Bucket" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">NEP</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transactions</Breadcrumb.Item>
-        <Breadcrumb.Item active>Subject Bucket Creation</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Configurations</Breadcrumb.Item>
+        <Breadcrumb.Item active>Create Bucket</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -138,4 +133,4 @@ const SubjectBucketCreation = () => {
   );
 };
 
-export default SubjectBucketCreation;
+export default CreateBucket;

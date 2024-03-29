@@ -1,6 +1,6 @@
 "use client";
 // import node module libraries
-import { Alert, Badge, Breadcrumb, Container, Table } from "react-bootstrap";
+import { Breadcrumb, Container } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 // import widget as custom components
@@ -9,18 +9,17 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 
-const Discipline = () => {
+const NEPAllocationConfig = () => {
   const hasMounted = useMounted();
 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
-      <PageHeading heading="Discipline" />
+      <PageHeading heading="NEP Allocation Config" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">NEP</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Masters</Breadcrumb.Item>
-        <Breadcrumb.Item active>Discipline</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Course Registration</Breadcrumb.Item>
+        <Breadcrumb.Item active>NEP Allocation Config</Breadcrumb.Item>
       </Breadcrumb>
 
       <Row className="mb-8">
@@ -31,45 +30,40 @@ const Discipline = () => {
                 <div>
                   {hasMounted && (
                     <Row>
-                      <Col>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
-                            Discipline Name
+                          <Form.Label className="col-sm-2 col-form-label form-label">
+                            Session
                             <span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Control
+                          <Col sm={4} className="mb-3 mb-lg-0">
+                            <Form.Select
                               type="text"
-                              placeholder="Please Enter Discipline Name"
                               id="Academic Year"
                               required
                             />
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
-                            Discipline Code
+                          <Form.Label className="col-sm-2 col-form-label form-label">
+                            Programme
                             <span className="text-danger">*</span>
                           </Form.Label>
-                          <Col sm={8} className="mb-3 mb-lg-0">
-                            <Form.Control
+                          <Col sm={4} className="mb-3 mb-lg-0">
+                            <Form.Select
                               type="text"
-                              placeholder="Please Enter Discipline Code"
                               id="Academic Year"
                               required
                             />
                           </Col>
                         </Row>
                         <Row className="mb-3">
-                          <Form.Label className="col-sm-4 col-form-label form-label">
-                            Active
+                          <Form.Label className="col-sm-2 col-form-label form-label">
+                            Medium
                           </Form.Label>
-                          <Col className="mt-2">
-                            <Form.Check
-                              type="switch"
-                              id="checkIfActive"
-                              label="If Active"
-                              defaultChecked
+                          <Col sm={4} className="mb-3 mb-lg-0">
+                            <Form.Select
+                              type="text"
+                              id="Academic Year"
                             />
                           </Col>
                         </Row>
@@ -80,9 +74,8 @@ const Discipline = () => {
                               type="submit"
                               style={{ marginLeft: "10px" }}
                             >
-                              Submit
+                              Save
                             </Button>
-
                             <Button
                               variant="secondary"
                               type=""
@@ -91,31 +84,9 @@ const Discipline = () => {
                               Cancel
                             </Button>
                           </Col>
+                          <Col></Col>
                         </Row>
-                      </Col>
-                      <Col>
-                        <Table striped border hower>
-                          <thead>
-                            <tr>
-                              <th>
-                                <b>No.</b>
-                              </th>
-                              <th>
-                                <b>Discipline Name</b>
-                              </th>
-                              <th>
-                                <b>Discipline Code</b>
-                              </th>
-                              <th>
-                                <b>Status</b>
-                              </th>
-                              <th>
-                                <b>Active</b>
-                              </th>
-                            </tr>
-                          </thead>
-                        </Table>
-                      </Col>
+                    
                     </Row>
                   )}
                 </div>
@@ -128,4 +99,4 @@ const Discipline = () => {
   );
 };
 
-export default Discipline;
+export default NEPAllocationConfig;

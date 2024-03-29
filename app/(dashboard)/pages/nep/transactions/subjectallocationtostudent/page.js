@@ -22,7 +22,6 @@ const StudentAllocationToStudent = () => {
       <PageHeading heading="Student Allocation To Student" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">NEP</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Transactions</Breadcrumb.Item>
         <Breadcrumb.Item active>Student Allocation To Student</Breadcrumb.Item>
       </Breadcrumb>

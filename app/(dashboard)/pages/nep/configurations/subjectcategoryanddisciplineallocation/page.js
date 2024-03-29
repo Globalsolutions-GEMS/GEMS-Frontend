@@ -22,8 +22,7 @@ const SubjectCategoryAndDisciplineAllocation = () => {
       <PageHeading heading="Subject Category & Discipline Allocation" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">NEP</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transaction</Breadcrumb.Item>
-        <Breadcrumb.Item href="#">Transactions</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Configurations</Breadcrumb.Item>
         <Breadcrumb.Item active>
           Subject Category & Discipline Allocation
         </Breadcrumb.Item>
