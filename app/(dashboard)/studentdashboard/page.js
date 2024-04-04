@@ -11,7 +11,7 @@ import Attendance from "../../../sub-components/studentdashboard/Attendance";
 import TodaysEvents from "../../../sub-components/studentdashboard/TodaysEvents"
 
 
-const Home = () => {
+const StudentDashboard = () => {
   return (
     <Fragment>
       <Container fluid className="mt-n22 px-6 pt-18">
@@ -38,10 +38,4 @@ const Home = () => {
   );
 };
 
-const SafeHome = () => {
-  if (typeof window !== 'undefined') {
-    return <Home />;
-  }
-  return null;
-};
-export default SafeHome;
+export default StudentDashboard;
