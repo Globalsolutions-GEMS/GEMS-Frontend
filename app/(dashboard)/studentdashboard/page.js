@@ -37,4 +37,11 @@ const Home = () => {
     </Fragment>
   );
 };
-export default Home;
+
+const SafeHome = () => {
+  if (typeof window !== 'undefined') {
+    return <Home />;
+  }
+  return null;
+};
+export default SafeHome;
