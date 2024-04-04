@@ -33,7 +33,7 @@ const Home = () => {
                   </h3>
                 </div>
                 <div>
-                  <Link href="./studentdashboard" className="btn btn-white">
+                  <Link href="#" className="btn btn-white">
                     Student Section
                   </Link>
                 </div>
