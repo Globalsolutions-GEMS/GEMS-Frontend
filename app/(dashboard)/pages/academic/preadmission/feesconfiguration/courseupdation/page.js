@@ -1,4 +1,5 @@
 "use client";
+import { useEffect, useState } from "react";
 // import node module libraries
 import { Breadcrumb, Container, Modal, Table } from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
@@ -9,6 +10,8 @@ import { PageHeading } from "widgets";
 // import sub components
 import useMounted from "hooks/useMounted";
 import React from "react";
+
+import { getBasicCourse } from "../../../../../../api/coursecreation";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -121,6 +124,33 @@ function MyVerticallyCenteredModal(props) {
 const CourseUpdation = () => {
   const hasMounted = useMounted();
   const [modalShow, setModalShow] = React.useState(false);
+  const [basicCourse, setBasicCourse] = useState([]);
+  const [formData, setFormData] = useState({
+    basicCourse: "",
+  });
+  
+  const handleInputChange = (event) => {
+    const { id, type, checked, value } = event.target;
+
+    const newValue = type === "checkbox" ? checked : value;
+
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [id]: newValue === "on" ? true : newValue, // Convert 'on' to true, otherwise use the value directly
+    }));
+  };
+
+  useEffect(() => {
+    if (hasMounted) {
+      getBasicCourse()
+        .then((response) => {
+          const data = response.data; // Access data from the response
+          setBasicCourse(data);
+        })
+        .catch((error) => console.error("Error fetching Faculty:", error));
+    }
+  }, [hasMounted]);
+
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
@@ -140,16 +170,24 @@ const CourseUpdation = () => {
                 {hasMounted && (
                   <Form>
                     <Row className="mb-3">
-                      <Form.Label className="col-sm-3 col-form-label form-label">
+                      <Form.Label className="col-sm-2 col-form-label form-label">
                         Programme<span className="text-danger">*</span>
                       </Form.Label>
-                      <Col sm={3} className="mb-3 mb-lg-0">
+                      <Col sm={4} className="mb-3 mb-lg-0">
                         <Form.Select
-                          type="text"
-                          placeholder="Please Enter Programme"
-                          id="certificatecode"
-                          required
-                        />
+                          id="basicCourse"
+                          // value={formData.basicCourse}
+                          onChange={handleInputChange}
+                        >
+                          <option value="" disabled>
+                            Please Select a Programme
+                          </option>
+                          {basicCourse.map((basicCourse) => (
+                            <option key={basicCourse.id} value={basicCourse.id}>
+                              {basicCourse.basicCourse}
+                            </option>
+                          ))}
+                        </Form.Select>
                       </Col>
                       <Col sm={3} className="mb-3 mb-lg-0">
                         <Button

@@ -9,7 +9,7 @@ import { Container, Col, Row, Card } from "react-bootstrap";
 import { StatRightTopIcon } from "widgets";
 
 // import sub components
-import { ActiveProjects, Teams, TasksPerformance } from "sub-components";
+import { ActiveProjects, Teams, TasksPerformance, GenderWisePosition, CasteCategoryWiseStrength } from "sub-components";
 
 // import required data files
 import ProjectsStatsData from "data/dashboard/ProjectsStatsData";
@@ -49,7 +49,7 @@ const Home = () => {
           })}
         </Row>
 
-        <ActiveProjects />
+        {/* <ActiveProjects /> */}
 
         <Row className="my-6">
           <Col xl={4} lg={12} md={12} xs={12} className="mb-6 mb-xl-0">
@@ -61,6 +61,16 @@ const Home = () => {
           </Col>
         </Row>
         <Row className="my-6">
+
+          <Col xl={5} lg={12} md={12} xs={12}>
+            {/* <Teams /> */}
+            <CasteCategoryWiseStrength/>
+          </Col>
+          <Col xl={4} lg={12} md={12} xs={12} className="mb-6 mb-xl-0">
+            <GenderWisePosition />
+          </Col>
+        </Row>
+        {/* <Row className="my-6">
           <Col sm={8}></Col>
           <Col sm={4}>
             <Card className="h-100">
@@ -72,7 +82,7 @@ const Home = () => {
             </LocalizationProvider>
             </Card>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </Fragment>
   );

@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic';
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
 
-const Charts = () => {
+const GenderWisePosition = () => {
     const perfomanceChartSeries = [100, 78, 89];
     const perfomanceChartOptions = {
         dataLabels: { enabled: !1 },
@@ -91,7 +91,7 @@ const Charts = () => {
             <Card.Body>
                 <div className="d-flex align-items-center justify-content-between">
                     <div>
-                        <h4 className="mb-0">Admission Position</h4>
+                        <h4 className="mb-0">Gender Wise Position</h4>
                     </div>
                     <ActionMenu />
                 </div>
@@ -108,17 +108,17 @@ const Charts = () => {
                     <div className="text-center">
                         <i className="fe fe-check-circle text-success fs-3"></i>
                         <h1 className="mt-3  mb-1 fw-bold">76%</h1>
-                        <p>Completed</p>
+                        <p>Male</p>
                     </div>
                     <div className="text-center">
                         <i className="fe fe-trending-up text-warning fs-3"></i>
                         <h1 className="mt-3  mb-1 fw-bold">32%</h1>
-                        <p>In-Progress</p>
+                        <p>Female</p>
                     </div>
                     <div className="text-center">
                         <i className="fe fe-trending-down text-danger fs-3"></i>
                         <h1 className="mt-3  mb-1 fw-bold">13%</h1>
-                        <p>Balance</p>
+                        <p>Other</p>
                     </div>
                 </div>
             </Card.Body>
@@ -126,4 +126,4 @@ const Charts = () => {
     )
 }
 
-export default Charts
+export default GenderWisePosition

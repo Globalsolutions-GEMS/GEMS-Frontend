@@ -1,57 +1,35 @@
 'use client'
 import React from "react";
-import Link from 'next/link';
 import { Card, Dropdown } from 'react-bootstrap';
 import { MoreVertical } from 'react-feather';
 import dynamic from 'next/dynamic';
 const Chart = dynamic(() => import('react-apexcharts'), { ssr: false });
 
-
-const Charts = () => {
-    const perfomanceChartSeries = [100, 78, 89];
-    const perfomanceChartOptions = {
-        dataLabels: { enabled: !1 },
-        labels: ['Direct', 'Referral', 'Organic'],
-        colors: ['#28a745', '#ffc107', '#dc3545'],
-        plotOptions: {
-            radialBar: {
-                startAngle: -168,
-                endAngle: -450,
-                hollow: {
-                    size: '55%',
-                },
-                track: {
-                    background: 'transaprent',
-                },
-                dataLabels: {
-                    show: false,
-                }
-            }
+const CasteCategoryWiseStrength = () => {
+    const strengthChartSeries = [65, 30, 5];
+    const strengthChartOptions = {
+        chart: {
+            type: 'donut',
+            fontFamily: 'Arial, sans-serif',
+            height: '100%'
         },
-        chart: { type: 'radialBar' },
-        stroke: { lineCap: "round" },
-        responsive: [
-            {
-                breakpoint: 480,
-                options: {
-                    chart: {
-                        height: 300
-                    }
-                }
-            },
-            {
-                breakpoint: 5000,
-                options: {
-                    chart: {
-                        height: 320
-                    }
+        colors: ['#007bff', '#28a745', '#dc3545'],
+        labels: ['General', 'OBC', 'SC/ST'],
+        responsive: [{
+            breakpoint: 480,
+            options: {
+                chart: {
+                    width: 200
+                },
+                legend: {
+                    position: 'bottom'
                 }
             }
-        ]
+        }]
     };
 
     const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
-        (<Link
+        <a
             href=""
             ref={ref}
             onClick={(e) => {
@@ -60,7 +38,7 @@ const Charts = () => {
             }}
             className="text-muted text-primary-hover">
             {children}
-        </Link>)
+        </a>
     ));
 
     CustomToggle.displayName = 'CustomToggle';
@@ -91,39 +69,36 @@ const Charts = () => {
             <Card.Body>
                 <div className="d-flex align-items-center justify-content-between">
                     <div>
-                        <h4 className="mb-0">Admission Position</h4>
+                        <h4 className="mb-0">Caste Category Wise Strength</h4>
                     </div>
                     <ActionMenu />
                 </div>
-                <div className="mb-8">
+                <div >
                     <Chart
-                        options={perfomanceChartOptions}
-                        series={perfomanceChartSeries}
-                        type="radialBar"
+                        options={strengthChartOptions}
+                        series={strengthChartSeries}
+                        type="donut"
                         width="100%"
                     />
                 </div>
                 {/* icon with content  */}
                 <div className="d-flex align-items-center justify-content-around">
                     <div className="text-center">
-                        <i className="fe fe-check-circle text-success fs-3"></i>
-                        <h1 className="mt-3  mb-1 fw-bold">76%</h1>
-                        <p>Completed</p>
+                        <h1 className="mt-3  mb-1 fw-bold">65%</h1>
+                        <p>General</p>
                     </div>
                     <div className="text-center">
-                        <i className="fe fe-trending-up text-warning fs-3"></i>
-                        <h1 className="mt-3  mb-1 fw-bold">32%</h1>
-                        <p>In-Progress</p>
+                        <h1 className="mt-3  mb-1 fw-bold">30%</h1>
+                        <p>OBC</p>
                     </div>
                     <div className="text-center">
-                        <i className="fe fe-trending-down text-danger fs-3"></i>
-                        <h1 className="mt-3  mb-1 fw-bold">13%</h1>
-                        <p>Balance</p>
+                        <h1 className="mt-3  mb-1 fw-bold">5%</h1>
+                        <p>SC/ST</p>
                     </div>
                 </div>
             </Card.Body>
         </Card>
-    )
+    );
 }
 
-export default Charts
+export default CasteCategoryWiseStrength;

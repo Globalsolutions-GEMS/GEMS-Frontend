@@ -7,6 +7,8 @@
 import ActiveProjects from 'sub-components/dashboard/ActiveProjects';
 import TasksPerformance from 'sub-components/dashboard/TasksPerformance';
 import Teams from 'sub-components/dashboard/Teams';
+import GenderWisePosition from './dashboard/GenderWisePosition';
+import CasteCategoryWiseStrength from './dashboard/CasteCateWisePosition';
 
 // sub components for /pages/profile
 import AboutMe from 'sub-components/profile/AboutMe';
@@ -32,6 +34,8 @@ export {
    ActiveProjects,
    TasksPerformance,
    Teams,
+   GenderWisePosition,
+   CasteCategoryWiseStrength,
    
    AboutMe,
    ActivityFeed,
