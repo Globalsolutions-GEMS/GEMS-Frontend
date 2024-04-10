@@ -1,7 +1,7 @@
 "use client";
 // import node module libraries
 import { Fragment, useState } from "react";
-import * as React from 'react';
+import * as React from "react";
 import Link from "next/link";
 import { Container, Col, Row, Card } from "react-bootstrap";
 
@@ -9,14 +9,20 @@ import { Container, Col, Row, Card } from "react-bootstrap";
 import { StatRightTopIcon } from "widgets";
 
 // import sub components
-import { ActiveProjects, Teams, TasksPerformance, GenderWisePosition, CasteCategoryWiseStrength } from "sub-components";
+import {
+  ActiveProjects,
+  Teams,
+  TasksPerformance,
+  GenderWisePosition,
+  CasteCategoryWiseStrength,
+} from "sub-components";
 
 // import required data files
 import ProjectsStatsData from "data/dashboard/ProjectsStatsData";
 
-import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
+import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 
 const Home = () => {
   return (
@@ -55,20 +61,19 @@ const Home = () => {
           <Col xl={4} lg={12} md={12} xs={12} className="mb-6 mb-xl-0">
             <TasksPerformance />
           </Col>
-
-          <Col xl={8} lg={12} md={12} xs={12}>
-            <Teams />
-          </Col>
-        </Row>
-        <Row className="my-6">
-
-          <Col xl={5} lg={12} md={12} xs={12}>
-            {/* <Teams /> */}
-            <CasteCategoryWiseStrength/>
-          </Col>
           <Col xl={4} lg={12} md={12} xs={12} className="mb-6 mb-xl-0">
             <GenderWisePosition />
           </Col>
+          <Col xl={4} lg={12} md={12} xs={12} className="mb-6 mb-xl-0">
+            <CasteCategoryWiseStrength />
+          </Col>
+        </Row>
+        <Row className="my-6">
+          <Col xl={8} lg={12} md={12} xs={12}>
+            <Teams />
+          </Col>
+         
+          <Col xl={4} lg={12} md={12} xs={12} className="mb-6 mb-xl-0"></Col>
         </Row>
         {/* <Row className="my-6">
           <Col sm={8}></Col>

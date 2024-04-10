@@ -128,13 +128,19 @@ const handleCancel = () => {
                                         
 
                                         <Row className='mb-3'>
-                                            <Form.Check.Label className="col-sm-3 col-form-label form-label" >Active</Form.Check.Label>
-                                            <Col md={9} xs={12}>
-                                                <Form.Check className="col-sm-3 col-form-label form-label" type="checkbox" id="checkIfActive" value={formData.checkIfActive} onChange={handleInputChange}>
-                                                    <Form.Check.Input type="checkbox" id="checkIfActive" checked={formData.checkIfActive} onChange={handleInputChange} />
-                                                    <Form.Check.Label >Check If Active</Form.Check.Label>
-                                                </Form.Check>
-                                            </Col>
+                                        <Form.Label className="col-sm-3 col-form-label form-label">
+                        Active
+                      </Form.Label>
+                      <Col className="mt-2">
+                        <Form.Check
+                          type="switch"
+                          id="active"
+                          label="Check If Active"
+                          checked={formData.active}
+                          onChange={handleInputChange}
+                          defaultChecked
+                        />
+                      </Col>
                                         </Row>
 
                                         

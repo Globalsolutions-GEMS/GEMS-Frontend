@@ -106,17 +106,17 @@ const GenderWisePosition = () => {
                 {/* icon with content  */}
                 <div className="d-flex align-items-center justify-content-around">
                     <div className="text-center">
-                        <i className="fe fe-check-circle text-success fs-3"></i>
+                        <i className="fa fa-male text-success fs-3"></i>
                         <h1 className="mt-3  mb-1 fw-bold">76%</h1>
                         <p>Male</p>
                     </div>
                     <div className="text-center">
-                        <i className="fe fe-trending-up text-warning fs-3"></i>
+                        <i className="fa fa-female text-warning fs-3"></i>
                         <h1 className="mt-3  mb-1 fw-bold">32%</h1>
                         <p>Female</p>
                     </div>
                     <div className="text-center">
-                        <i className="fe fe-trending-down text-danger fs-3"></i>
+                        <i className="fa fa-transgender text-danger fs-3"></i>
                         <h1 className="mt-3  mb-1 fw-bold">13%</h1>
                         <p>Other</p>
                     </div>

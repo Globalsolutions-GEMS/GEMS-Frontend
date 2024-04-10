@@ -48,14 +48,16 @@ const Teams = () => {
     return (
         <Card className="h-100">
             <Card.Header className="bg-white py-4">
-                <h4 className="mb-0">CourseWise Admissions</h4>
+                <h4 className="mb-0">Program Wise Admissions</h4>
             </Card.Header>
             <Table responsive className="text-nowrap">
                 <thead className="table-light">
                     <tr>
-                        <th>Name</th>
-                        <th>Role</th>
-                        <th>Last Activity</th>
+                        <th>Programme</th>
+                        <th>Intake</th>
+                        <th>Admission</th>
+                        <th>Vacant</th>
+                        <th>Progress</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -65,17 +67,16 @@ const Teams = () => {
                             <tr key={index}>
                                 <td className="align-middle">
                                     <div className="d-flex align-items-center">
-                                        <div>
-                                            <Image src={item.image} alt="" className="avatar-md avatar rounded-circle" />
-                                        </div>
-                                        <div className="ms-3 lh-1">
-                                            <h5 className=" mb-1">{item.name}</h5>
+                                        <div >
+                                            <h5 className=" mb-1">{item.programme}</h5>
                                             <p className="mb-0">{item.email}</p>
                                         </div>
                                     </div>
                                 </td>
-                                <td className="align-middle">{item.role}</td>
-                                <td className="align-middle">{item.lastActivity}</td>
+                                <td className="align-middle">{item.intake}</td>
+                                <td className="align-middle">{item.admission}</td>
+                                <td className="align-middle">{item.vacant}</td>
+                                <td className="align-middle">{item.progress}</td>
                                 <td className="align-middle">
                                     <ActionMenu />
                                 </td>
