@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-// import node module libraries
 import {
   Breadcrumb,
   Container,
@@ -9,15 +8,10 @@ import {
   Form,
   Card,
   Button,
+  Table
 } from "react-bootstrap";
-
-// import widget as custom components
 import { PageHeading } from "widgets";
-
-// import sub components
-import useMounted from "hooks/useMounted";
-
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -26,27 +20,24 @@ import {
   getCoursePattern,
   getFeePattern,
   createCourse,
+  findCourses
 } from "../../../../../../api/coursecreation";
 
 const CourseCreation = () => {
-  const hasMounted = useMounted();
-
-  const [courseCretionData, setCourseCreationData] = useState([]);
-  const [itemsPerPage] = useState(5);
   const [formData, setFormData] = useState({
-    basicCourse: "",
+    basicCourseId: "",
     duration: "",
-    coursePattern: "",
-    feePattern: "",
+    coursePatternId: "",
+    feePatternId: "",
     checkIfActive: false,
   });
 
   const [basicCourse, setBasicCourse] = useState([]);
   const [coursePattern, setCoursePattern] = useState([]);
   const [feePattern, setFeePattern] = useState([]);
+  const [courses, setCourses] = useState([]);
 
   const success = () => toast.success("Data Submitted Successfully!!!");
-  const update = () => toast.success("Data Updated Successfully!!!");
   const errors = () => toast.error("Ooops!!! Somthing went Wrong");
 
   const handleInputChange = (event) => {
@@ -72,41 +63,56 @@ const CourseCreation = () => {
   };
 
   useEffect(() => {
-    if (hasMounted) {
-      getBasicCourse()
-        .then((response) => {
-          const data = response.data; // Access data from the response
-          setBasicCourse(data);
-        })
-        .catch((error) => console.error("Error fetching Faculty:", error));
-    }
-  }, [hasMounted]);
+    getBasicCourse()
+      .then((response) => {
+        setBasicCourse(response.data);
+      })
+      .catch((error) => console.error("Error fetching Basic Courses:", error));
+  }, []);
 
   useEffect(() => {
-    if (hasMounted) {
-      getCoursePattern()
-        .then((response) => {
-          const data = response.data; // Access data from the response
-          setCoursePattern(data);
-        })
-        .catch((error) => console.error("Error fetching Faculty:", error));
-    }
-  }, [hasMounted]);
+    getCoursePattern()
+      .then((response) => {
+        setCoursePattern(response.data);
+      })
+      .catch((error) =>
+        console.error("Error fetching Course Patterns:", error)
+      );
+  }, []);
 
   useEffect(() => {
-    if (hasMounted) {
-      getFeePattern()
-        .then((response) => {
-          const data = response.data; // Access data from the response
-          setFeePattern(data);
-        })
-        .catch((error) => console.error("Error fetching Faculty:", error));
+    getFeePattern()
+      .then((response) => {
+        setFeePattern(response.data);
+      })
+      .catch((error) => console.error("Error fetching Fee Patterns:", error));
+  }, []);
+
+  const fetchCourses = async () => {
+    try {
+      const response = await findCourses(
+        formData.basicCourseId,
+        formData.coursePatternId,
+        formData.feePatternId
+      );
+      setCourses(response.data);
+    } catch (error) {
+      console.error("Error fetching courses:", error);
     }
-  }, [hasMounted]);
+  };
+
+  useEffect(() => {
+    if (
+      formData.basicCourseId &&
+      formData.coursePatternId &&
+      formData.feePatternId
+    ) {
+      fetchCourses();
+    }
+  }, [formData]);
 
   return (
     <Container fluid className="p-6">
-      {/* Page Heading */}
       <PageHeading heading="Course Creation" />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
@@ -119,135 +125,143 @@ const CourseCreation = () => {
         <Col xl={12} lg={8} md={12} xs={12}>
           <Card>
             <Card.Body>
-              <div>
-                {hasMounted && (
-                  <Form onSubmit={handleSubmit}>
-                    <Row>
-                      <Col>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-3 col-form-label form-label">
-                            Programme<span className="text-danger">*</span>
-                          </Form.Label>
-                          <Col sm={9} className="mb-3 mb-lg-0">
-                            <Form.Select
-                              id="basicCourse"
-                              value={formData.basicCourse}
-                              onChange={handleInputChange}
-                            >
-                              <option value="" disabled>
-                                Please Select a Programme
-                              </option>
-                              {basicCourse.map((basicCourse) => (
-                                <option
-                                  key={basicCourse.id}
-                                  value={basicCourse.id}
-                                >
-                                  {basicCourse.basicCourse}
-                                </option>
-                              ))}
-                            </Form.Select>
-                          </Col>
-                        </Row>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-3 col-form-label form-label">
-                            Duration<span className="text-danger">*</span>
-                          </Form.Label>
-                          <Col sm={9} className="mb-3 mb-lg-0">
-                            <Form.Control
-                              type="text"
-                              placeholder="Please Enter Duration"
-                              id="duration"
-                              value={formData.duration}
-                              onChange={handleInputChange}
-                            />
-                          </Col>
-                        </Row>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-3 col-form-label form-label">
-                            Course Pattern<span className="text-danger">*</span>
-                          </Form.Label>
-                          <Col sm={9} className="mb-3 mb-lg-0">
-                            <Form.Select
-                              id="coursePattern"
-                              value={formData.coursePattern}
-                              onChange={handleInputChange}
-                            >
-                              <option value="" disabled>
-                                Please Select a Course Pattern
-                              </option>
-                              {coursePattern.map((coursepattern) => (
-                                <option
-                                  key={coursepattern.id}
-                                  value={coursepattern.id}
-                                >
-                                  {coursepattern.coursePatternName}
-                                </option>
-                              ))}
-                            </Form.Select>
-                          </Col>
-                        </Row>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-3 col-form-label form-label">
-                            Fee Pattern<span className="text-danger">*</span>
-                          </Form.Label>
-                          <Col sm={9} className="mb-3 mb-lg-0">
-                            <Form.Select
-                              id="feePattern"
-                              value={formData.feePattern}
-                              onChange={handleInputChange}
-                            >
-                              <option value="" disabled>
-                                Please Select a Fee Pattern
-                              </option>
-                              {feePattern.map((feepattern) => (
-                                <option
-                                  key={feepattern.id}
-                                  value={feepattern.id}
-                                >
-                                  {feepattern.feePatternName}
-                                </option>
-                              ))}
-                            </Form.Select>
-                          </Col>
-                        </Row>
-                        <Row className="mb-3">
-                          <Form.Label className="col-sm-3 col-form-label form-label">
-                            Active
-                          </Form.Label>
-                          <Col className="mt-2">
-                            <Form.Check
-                              type="switch"
-                              id="checkIfActive"
-                              label="If Active"
-                              defaultChecked
-                            />
-                          </Col>
-                        </Row>
-
-                        <Row className="align-items-center">
-                          <Col
-                            md={{ offset: 4, span: 8 }}
-                            xs={12}
-                            className="mt-4"
-                          >
-                            <Button variant="primary" type="submit">
-                              Submit
-                            </Button>
-                            <Button
-                              variant="secondary"
-                              type=""
-                              style={{ marginLeft: "10px" }}
-                            >
-                              Cancel
-                            </Button>
-                          </Col>
-                        </Row>
+              <Form onSubmit={handleSubmit}>
+                <Row>
+                  <Col>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-3 col-form-label form-label">
+                        Programme<span className="text-danger">*</span>
+                      </Form.Label>
+                      <Col sm={9} className="mb-3 mb-lg-0">
+                        <Form.Select
+                          id="basicCourseId"
+                          value={formData.basicCourseId}
+                          onChange={handleInputChange}
+                        >
+                          <option value="" disabled>
+                            Please Select a Programme
+                          </option>
+                          {basicCourse.map((basicCourse) => (
+                            <option key={basicCourse.id} value={basicCourse.id}>
+                              {basicCourse.basicCourse}
+                            </option>
+                          ))}
+                        </Form.Select>
                       </Col>
-                      <Col></Col>
                     </Row>
-                  </Form>
-                )}
-              </div>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-3 col-form-label form-label">
+                        Duration<span className="text-danger">*</span>
+                      </Form.Label>
+                      <Col sm={9} className="mb-3 mb-lg-0">
+                        <Form.Control
+                          type="text"
+                          placeholder="Please Enter Duration"
+                          id="duration"
+                          value={formData.duration}
+                          onChange={handleInputChange}
+                        />
+                      </Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-3 col-form-label form-label">
+                        Course Pattern<span className="text-danger">*</span>
+                      </Form.Label>
+                      <Col sm={9} className="mb-3 mb-lg-0">
+                        <Form.Select
+                          id="coursePatternId"
+                          value={formData.coursePatternId}
+                          onChange={handleInputChange}
+                        >
+                          <option value="" disabled>
+                            Please Select a Course Pattern
+                          </option>
+                          {coursePattern.map((coursepattern) => (
+                            <option
+                              key={coursepattern.id}
+                              value={coursepattern.id}
+                            >
+                              {coursepattern.coursePatternName}
+                            </option>
+                          ))}
+                        </Form.Select>
+                      </Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-3 col-form-label form-label">
+                        Fee Pattern<span className="text-danger">*</span>
+                      </Form.Label>
+                      <Col sm={9} className="mb-3 mb-lg-0">
+                        <Form.Select
+                          id="feePatternId"
+                          value={formData.feePatternId}
+                          onChange={handleInputChange}
+                        >
+                          <option value="" disabled>
+                            Please Select a Fee Pattern
+                          </option>
+                          {feePattern.map((feepattern) => (
+                            <option key={feepattern.id} value={feepattern.id}>
+                              {feepattern.feePatternName}
+                            </option>
+                          ))}
+                        </Form.Select>
+                      </Col>
+                    </Row>
+                    <Row className="mb-3">
+                      <Form.Label className="col-sm-3 col-form-label form-label">
+                        Active
+                      </Form.Label>
+                      <Col className="mt-2">
+                        <Form.Check
+                          type="checkbox"
+                          id="checkIfActive"
+                          label="If Active"
+                          checked={formData.checkIfActive}
+                          onChange={handleInputChange}
+                        />
+                      </Col>
+                    </Row>
+
+                    <Row className="align-items-center">
+                      <Col md={{ offset: 4, span: 8 }} xs={12} className="mt-4">
+                        <Button variant="primary" type="submit">
+                          Submit
+                        </Button>
+                        <Button
+                          variant="secondary"
+                          type=""
+                          style={{ marginLeft: "10px" }}
+                        >
+                          Cancel
+                        </Button>
+                      </Col>
+                    </Row>
+                  </Col>
+                  <Col>
+                    <Table striped bordered hover>
+                      <thead>
+                        <tr>
+                          <th>
+                            <b>Course Name</b>
+                          </th>
+                          <th>
+                            <b>Active</b>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {courses.map((course) => (
+                          <tr key={course.id}>
+                            <td>{course.courseName}</td>
+                            <td>{course.checkIfActive ? "Yes" : "No"}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </Table>
+                  </Col>
+                </Row>
+              </Form>
             </Card.Body>
           </Card>
         </Col>
