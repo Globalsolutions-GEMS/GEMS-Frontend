@@ -1,14 +1,27 @@
 "use client";
 import React from "react";
+import { useEffect, useState } from "react";
 // import node module libraries
 import { Breadcrumb, Container, Modal } from "react-bootstrap";
-import { Col, Row, Form, Card, Button } from "react-bootstrap";
+import { Col, Row, Form, Card, Button , Table, Pagination } from "react-bootstrap";
 
 // import widget as custom components
 import { PageHeading } from "widgets";
 
 // import sub components
 import useMounted from "hooks/useMounted";
+
+import {
+  getBasicCourse,
+  getCoursePattern,
+  getFeePattern,
+  createCourse,
+  findCourses,
+  getAllCourses,
+  getSpecificCourse,
+  findCoursesbypro,
+  updateCourse
+} from "../../../../../../api/coursecreation";
 
 function MyVerticallyCenteredModal(props) {
   return (
@@ -111,6 +124,64 @@ function MyVerticallyCenteredModal(props) {
 const CourseDivision = () => {
   const hasMounted = useMounted();
   const [modalShow, setModalShow] = React.useState(false);
+  const [formData, setFormData] = useState({
+    basicCourseId: "",
+    courseId:""
+  });
+  const [updateFormData, setUpdateFormData] = useState({
+    section: "",
+    seats: 0,
+    rangeFrom: false,
+    rangeTo: 0,
+    prefix: "",
+    active: 0
+  });
+
+  const [basicCourse, setBasicCourse] = useState([]);
+  const [courses, setCourses] = useState([]);
+
+  const success = () => toast.success("Data Submitted Successfully!!!");
+  const errors = () => toast.error("Ooops!!! Somthing went Wrong");
+
+  const handleUpdateInputChange = (event) => {
+    const { id, value } = event.target;
+    setUpdateFormData((prevFormData) => ({
+      ...prevFormData,
+      [id]: value,
+    }));
+  };
+
+  const handleEditButtonClick = (courseId) => {
+    setSelectedCourseId(courseId); // Set the selected course ID when the "Edit" button is clicked
+    setModalShow(true); // Open the modal
+  };
+
+  const refreshCourseDivision = async () => {
+    try {
+      const response = await findCoursesbypro(formData.basicCourseId); 
+      setCourses(response.data); 
+      setShowSuccessAlert(true); 
+    } catch (error) {
+      console.error("Error refreshing course updation:", error);
+    }
+  };
+
+  useEffect(() => {
+    refreshCourseDivision();
+  }, []);
+
+
+  const handleInputChange = (event) => {
+    const { id, type, checked, value } = event.target;
+
+    const newValue = type === "checkbox" ? checked : value;
+
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [id]: newValue === "on" ? true : newValue,
+    }));
+  };
+
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
@@ -136,13 +207,22 @@ const CourseDivision = () => {
                       >
                         Programme<span className="text-danger">*</span>
                       </Form.Label>
+                      
                       <Col sm={9} className="mb-3 mb-lg-0">
                         <Form.Select
-                          type="text"
-                          placeholder="Please Enter Degree/Diploma Short Name"
-                          id="degreediploma"
-                          required
-                        />
+                          id="basicCourseId"
+                          value={formData.basicCourseId}
+                          onChange={handleInputChange}
+                        >
+                          <option value="" disabled>
+                            Please Select a Programme
+                          </option>
+                          {basicCourse.map((basicCourse) => (
+                            <option key={basicCourse.id} value={basicCourse.id}>
+                              {basicCourse.basicCourse}
+                            </option>
+                          ))}
+                        </Form.Select>
                       </Col>
                     </Row>
                     <Row className="mb-3">

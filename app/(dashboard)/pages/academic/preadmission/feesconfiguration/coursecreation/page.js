@@ -8,19 +8,25 @@ import {
   Form,
   Card,
   Button,
-  Table
+  Table,
+  Pagination
 } from "react-bootstrap";
 import { PageHeading } from "widgets";
-import { toast } from "react-toastify";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "react-toastify/dist/ReactToastify.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 import {
   getBasicCourse,
   getCoursePattern,
   getFeePattern,
   createCourse,
-  findCourses
+  findCourses,
+  getAllCourses,
+  getSpecificCourse,
+  findCoursesbypro,
+  updateCourse
 } from "../../../../../../api/coursecreation";
 
 const CourseCreation = () => {
@@ -36,6 +42,10 @@ const CourseCreation = () => {
   const [coursePattern, setCoursePattern] = useState([]);
   const [feePattern, setFeePattern] = useState([]);
   const [courses, setCourses] = useState([]);
+  const [coursecreationData, setCourseCreationData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(5);
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
   const success = () => toast.success("Data Submitted Successfully!!!");
   const errors = () => toast.error("Ooops!!! Somthing went Wrong");
@@ -47,20 +57,31 @@ const CourseCreation = () => {
 
     setFormData((prevFormData) => ({
       ...prevFormData,
-      [id]: newValue === "on" ? true : newValue, // Convert 'on' to true, otherwise use the value directly
+      [id]: newValue === "on" ? true : newValue,
     }));
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      await createCourse(formData);
-      success();
+      await createCourse(formData); // Submit form data
+      success(); // Show success toast
+      refreshCourseCreation(); // Refresh course data
+      setFormData({
+        basicCourseId: "",
+        duration: "",
+        coursePatternId: "",
+        feePatternId: "",
+        checkIfActive: false,
+      }); // Reset form data
+      setShowSuccessAlert(true);
     } catch (error) {
       console.log(error);
-      errors();
+      errors(); // Show error toast
     }
   };
+  
+  
 
   useEffect(() => {
     getBasicCourse()
@@ -110,6 +131,39 @@ const CourseCreation = () => {
       fetchCourses();
     }
   }, [formData]);
+
+
+  // const refreshCourseCreation = async () => {
+  //   try {
+  //     const response = await getSpecificCourse();
+  //     setCourseCreationData(response.data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
+  const refreshCourseCreation = async () => {
+    try {
+      const response = await getAllCourses(); // Fetch all courses
+      const sortedCourses = response.data.sort((a, b) => b.id - a.id); // Sort by ID in descending order
+      setCourses(sortedCourses); // Update courses state
+      setCurrentPage(1); // Reset pagination to first page
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
+  
+
+  useEffect(() => {
+    refreshCourseCreation();
+  }, []);
+
+
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = courses.slice(indexOfFirstItem, indexOfLastItem);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
   return (
     <Container fluid className="p-6">
@@ -228,9 +282,9 @@ const CourseCreation = () => {
                         <Button variant="primary" type="submit">
                           Submit
                         </Button>
+                        <ToastContainer style={{ marginTop: '40px' }} />
                         <Button
                           variant="secondary"
-                          type=""
                           style={{ marginLeft: "10px" }}
                         >
                           Cancel
@@ -251,7 +305,8 @@ const CourseCreation = () => {
                         </tr>
                       </thead>
                       <tbody>
-                        {courses.map((course) => (
+                      {/* {courses.map((course) => ( */}
+                        {currentItems.map((course) => (
                           <tr key={course.id}>
                             <td>{course.courseName}</td>
                             <td>{course.checkIfActive ? "Yes" : "No"}</td>
@@ -259,6 +314,15 @@ const CourseCreation = () => {
                         ))}
                       </tbody>
                     </Table>
+                    <Pagination className="justify-content-end">
+                      <Pagination.Prev onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1} />
+                      {[...Array(Math.ceil(courses.length / itemsPerPage))].map((_, index) => (
+                        <Pagination.Item key={index} active={index + 1 === currentPage} onClick={() => paginate(index + 1)}>
+                          {index + 1}
+                        </Pagination.Item>
+                      ))}
+                      <Pagination.Next onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(courses.length / itemsPerPage)} />
+                    </Pagination>
                   </Col>
                 </Row>
               </Form>

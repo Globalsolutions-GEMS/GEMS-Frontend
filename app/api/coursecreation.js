@@ -14,6 +14,8 @@ export const updateCourse = (id,formData) => apiClient.put(`/courses/update/${id
 
 export const getSpecificCourse = (id) => apiClient.get(`/courses/${id}`)
 
+export const getAllCourses = () => apiClient.get(`/courses`)
+
 export const findCourses = (basicCourseId, coursePatternId, feePatternId) =>
   apiClient.get("/courses/find", {
     params: {

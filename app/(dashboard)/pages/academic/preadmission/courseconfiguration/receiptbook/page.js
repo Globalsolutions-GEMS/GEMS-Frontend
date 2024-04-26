@@ -102,7 +102,7 @@ const Cashbook = () => {
             receiptBookType: editedCashBook.receiptBookType,
             srNo: editedCashBook.srNo,
             checkIfGstApplicable: editedCashBook.checkIfGstApplicable,
-            checkIfActive:editedFaculty.checkIfActive,
+            checkIfActive:editedCashBook.checkIfActive,
         });
         setFormData(editedCashBook);
         setEditingCashBook(editedCashBook);
@@ -183,27 +183,16 @@ const Cashbook = () => {
                                             </Col>
                                         </Row>
 
-                                        {/* <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" >Bank Name<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="text" placeholder="Please Enter Receipt Book Code" id="certificatecode" required />
-                                            </Col>
-                                            <Form.Label className="col-sm-3 col-form-label form-label" >Bank A/c No.<span className="text-danger">*</span></Form.Label>
-                                            <Col sm={3} className="mb-3 mb-lg-0">
-                                                <Form.Select type="email" placeholder="Please Enter Receipt Book Name" id="certificatename" required />
-                                            </Col>
-                                        </Row> */}
+                                    
                                         <Row className="mb-3">
                                             <Form.Label className="col-sm-3 col-form-label form-label" >Receipt Book Type<span className="text-danger">*</span></Form.Label>
                                             <Col sm={3} className="mb-3 mb-lg-0">
-                                                {/* <Form.Control type="text" placeholder="Please Enter Receipt Book Name" id="receiptBookType" value={formData.receiptBookType} onChange={handleInputChange} required /> */}
 
                                                 <Form.Select type="text" placeholder="Please Enter Receipt Book Name" id="receiptBookType" value={formData.receiptBookType} onChange={handleInputChange} required>
                                                     <option value="">Select a Receipt Book Type</option>
                                                     <option value="Book 1">Book 1</option>
                                                     <option value="Book 2">Book 2</option>
                                                     <option value="Book 3">Book 3</option>
-                                                    {/* Add more option value if we need to add the data manually */}
                                                 </Form.Select>
 
                                             </Col>
@@ -250,7 +239,7 @@ const Cashbook = () => {
             </Row>
             <>
                 <Table striped bordered hover>
-                    <thead>
+                <thead>
                         <tr>
                         <th><b>ReceiptBook Code</b></th>
                         <th><b>ReceiptBook Name</b></th>
@@ -258,8 +247,6 @@ const Cashbook = () => {
                         <th><b>Bank Receipt No</b></th>
                         <th><b>Document Receipt No</b></th>
                         <th><b>HsnsacNo</b></th>
-                        {/* <th><b>Bank Name</b></th>
-                        <th><b>Bank Account No</b></th> */}
                         <th><b>Receipt Book Type</b></th>
                         <th><b>Sr No</b></th>
                         <th><b>Gst Applicable</b></th>

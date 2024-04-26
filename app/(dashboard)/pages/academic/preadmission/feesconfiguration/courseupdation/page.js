@@ -1,18 +1,22 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Breadcrumb, Container, Modal, Table } from "react-bootstrap";
+import { Breadcrumb, Container, Modal, Table , Pagination} from "react-bootstrap";
 import { Col, Row, Form, Card, Button } from "react-bootstrap";
 
 import { PageHeading } from "widgets";
 
 import useMounted from "hooks/useMounted";
 import React from "react";
+import "react-toastify/dist/ReactToastify.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 import {
   getBasicCourse,
   findCoursesbypro,
   updateCourse,
-  getSpecificCourse
+  getSpecificCourse,
+  getAllCourses
 } from "../../../../../../api/coursecreation";
 
 const CourseUpdation = () => {
@@ -25,7 +29,6 @@ const CourseUpdation = () => {
     basicCourseId: "",
   });
   const [updateFormData, setUpdateFormData] = useState({
-    // Initialize the state with empty values or fetch initial data from the server
     courseName: "",
     shortName: "",
     checkIfActive: true,
@@ -38,8 +41,17 @@ const CourseUpdation = () => {
     maxCredits: 0,
     minCredits: 0,
     maxSeats: 0,
-    // Add other fields here...
   });
+
+  const [courseupdationData, setCourseUpdationData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage] = useState(5);
+  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+
+  const success = () => toast.success("Data Submitted Successfully!!!");
+  const errors = () => toast.error("Ooops!!! Somthing went Wrong");
+  const update = () => toast.success("Data Updated Successfully!!!");
+
 
   const handleUpdateInputChange = (event) => {
     const { id, value } = event.target;
@@ -54,17 +66,45 @@ const CourseUpdation = () => {
     setModalShow(true); // Open the modal
   };
 
+
   const handleUpdateCourse = async () => {
     try {
       const response = await updateCourse(selectedCourseId, updateFormData); // Send PUT request to update the course
       // Handle success response
       console.log("Course updated successfully:", response.data);
+      // Update the courses state with the updated course
+      setCourses((prevCourses) =>
+        prevCourses.map((course) =>
+          course.id === selectedCourseId ? { ...course, shortName: updateFormData.shortName } : course
+        )
+      );
       // Close the modal or perform any other necessary actions
       setModalShow(false);
+      update();
+      setShowSuccessAlert(true);
     } catch (error) {
       console.error("Error updating course:", error);
+      errors();
     }
   };
+  
+  
+  const refreshCourseUpdation = async () => {
+    try {
+      const response = await findCoursesbypro(formData.basicCourseId); 
+      setCourses(response.data); 
+      setShowSuccessAlert(true); 
+    } catch (error) {
+      console.error("Error refreshing course updation:", error);
+    }
+  };
+  
+
+  useEffect(() => {
+    refreshCourseUpdation();
+  }, []);
+
+
 
   useEffect(() => {
     const fetchSpecificCourse = async () => {
@@ -112,6 +152,7 @@ const CourseUpdation = () => {
       console.error("Error fetching courses:", error);
     }
   };
+  
 
   useEffect(() => {
     if (formData.basicCourseId) {
@@ -119,10 +160,31 @@ const CourseUpdation = () => {
     }
   }, [formData]);
 
+  const fetchAllCourses = async () => {
+    try {
+      const response = await getAllCourses();
+      setCourses(response.data);
+    } catch (error) {
+      console.error("Error fetching courses:", error);
+    }
+  };
+
+  useEffect(() => {
+    if (hasMounted) {
+      fetchAllCourses();
+    }
+  }, [hasMounted]);
+
+ const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = courses.slice(indexOfFirstItem, indexOfLastItem);
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
       <PageHeading heading="Course Updation" />
+      <ToastContainer style={{ marginTop: '40px' }} />
       <Breadcrumb>
         <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Pre Admission</Breadcrumb.Item>
@@ -192,7 +254,8 @@ const CourseUpdation = () => {
           </tr>
         </thead>
         <tbody>
-          {courses.map((course) => (
+          {/* {courses.map((course) => ( */}
+          {currentItems.map((course) => (
             <tr key={course.id}>
               <td>{course.courseName}</td>
               <td>{course.shortName}</td>
@@ -209,6 +272,15 @@ const CourseUpdation = () => {
           ))}
         </tbody>
       </Table>
+      <Pagination className="justify-content-end">
+                      <Pagination.Prev onClick={() => paginate(currentPage - 1)} disabled={currentPage === 1} />
+                      {[...Array(Math.ceil(courses.length / itemsPerPage))].map((_, index) => (
+                        <Pagination.Item key={index} active={index + 1 === currentPage} onClick={() => paginate(index + 1)}>
+                          {index + 1}
+                        </Pagination.Item>
+                      ))}
+                      <Pagination.Next onClick={() => paginate(currentPage + 1)} disabled={currentPage === Math.ceil(courses.length / itemsPerPage)} />
+                    </Pagination>
       <Modal
         show={modalShow}
         onHide={() => setModalShow(false)}
@@ -222,7 +294,7 @@ const CourseUpdation = () => {
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Form>
+          <Form> 
             <Row className="mb-3">
               <Form.Label className="col-sm-4 col-form-label form-label">
                 Course/Year Name<span className="text-danger">*</span>
@@ -345,6 +417,7 @@ const CourseUpdation = () => {
           <Button type="submit" variant="primary" onClick={handleUpdateCourse}>
             Update
           </Button>
+          <ToastContainer style={{ marginTop: '40px' }} />
           <Button variant="secondary" onClick={() => setModalShow(false)}>
             Close
           </Button>

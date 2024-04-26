@@ -164,6 +164,8 @@ const handleCancel = () => {
                                                     type="switch"
                                                     id="checkIfActive"
                                                     label="If Active"
+                                                    checked={formData.checkIfActive}
+                                                    onChange={handleInputChange}
                                                     defaultChecked
                                                 />
                                             </Col>

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Form, Card, Button, Table, Pagination, Breadcrumb, Alert } from 'react-bootstrap';
 import { PageHeading } from 'widgets';
-import { createReligion,getReligion,updateReligion } from 'app/api/religion';
+import { createReligion, getReligion, updateReligion } from 'app/api/religion';
 import useMounted from 'hooks/useMounted';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { ToastContainer, toast } from 'react-toastify';
@@ -20,7 +20,7 @@ const Relegion = () => {
         checkIfMinority: false
     });
     const [editingRowIndex, setEditingRowIndex] = useState(null);
-    const [editingReligion, setEditingReligion] = useState(null); 
+    const [editingReligion, setEditingReligion] = useState(null);
     const [showSuccessAlert, setShowSuccessAlert] = useState(false);
 
     const success = () => toast.success("Data Submitted Successfully!!!");
@@ -31,15 +31,15 @@ const Relegion = () => {
         event.preventDefault();
         try {
             if (editingReligion) {
-                await updateReligion(editingReligion.id, formData); 
-                setEditingReligion(null); 
+                await updateReligion(editingReligion.id, formData);
+                setEditingReligion(null);
                 update()
             } else {
-                await createReligion(formData); 
+                await createReligion(formData);
                 success()
             }
             refreshReligion();
-            setFormData({ 
+            setFormData({
                 religion: '',
                 checkIfActive: false,
                 checkIfMinority: false
@@ -58,7 +58,7 @@ const Relegion = () => {
             ...prevFormData,
             [id]: type === 'checkbox' ? checked : event.target.value,
             checkIfActive: id === 'checkIfActive' ? checked : prevFormData.checkIfActive,
-            checkIfMinority : id === 'checkIfMinority' ? checked : prevFormData.checkIfMinority,
+            checkIfMinority: id === 'checkIfMinority' ? checked : prevFormData.checkIfMinority,
         }));
     };
 
@@ -77,9 +77,9 @@ const Relegion = () => {
 
     const editRow = (index) => {
         const editedReligion = religionData[index];
-    
+
         setFormData({
-            nationality : editedReligion.religion,
+            nationality: editedReligion.religion,
             checkIfActive: editedReligion.checkIfActive,
             checkIfMinority: editedReligion.checkIfMinority,
         });
@@ -90,28 +90,28 @@ const Relegion = () => {
 
     const handleCancel = () => {
         setFormData({
-        religion: '',
-        checkIfActive: false,
-        checkIfMinority: false
+            religion: '',
+            checkIfActive: false,
+            checkIfMinority: false
         });
         setEditingReligion(null);
     };
-    
-        const indexOfLastItem = currentPage * itemsPerPage;
-        const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-        const currentItems = religionData.slice(indexOfFirstItem, indexOfLastItem);
-        const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const currentItems = religionData.slice(indexOfFirstItem, indexOfLastItem);
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
     return (
         <Container fluid className="p-6">
 
             {/* Page Heading */}
-            <PageHeading heading="Relegion" />
+            <PageHeading heading="Religion" />
             <Breadcrumb>
                 <Breadcrumb.Item href="#">Academic</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Master</Breadcrumb.Item>
                 <Breadcrumb.Item href="#">Common Master</Breadcrumb.Item>
-                <Breadcrumb.Item active>Relegion</Breadcrumb.Item>
+                <Breadcrumb.Item active>Religion</Breadcrumb.Item>
             </Breadcrumb>
             <Row className="mb-8">
                 <Col xl={12} lg={8} md={12} xs={12}>
@@ -120,15 +120,15 @@ const Relegion = () => {
                             <div>
                                 {hasMounted &&
                                     <Form
-                                    onSubmit={handleSubmit}
+                                        onSubmit={handleSubmit}
                                     >
                                         <Row className="mb-3">
-                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Relegion<span className="text-danger">*</span></Form.Label>
+                                            <Form.Label className="col-sm-3 col-form-label form-label" htmlFor="fullName">Religion<span className="text-danger">*</span></Form.Label>
                                             <Col sm={9} className="mb-3 mb-lg-0">
-                                                <Form.Control type="text" placeholder="Please Enter Relegion" id="religion" value={formData.religion} onChange={handleInputChange} required />
+                                                <Form.Control type="text" placeholder="Please Enter Religion" id="religion" value={formData.religion} onChange={handleInputChange} required />
                                             </Col>
                                         </Row>
-                                        
+
 
 
                                         <Row className='mb-3'>
@@ -140,26 +140,26 @@ const Relegion = () => {
                                                 </Form.Check>
                                             </Col>
                                         </Row>
-                                      
+
                                         <Row className='mb-3'>
-                                        <Form.Label className="col-sm-3 col-form-label form-label">
-                        Active
-                      </Form.Label>
-                      <Col className="mt-2">
-                        <Form.Check
-                          type="switch"
-                          id="active"
-                          label="Check If Active"
-                          checked={formData.active}
-                          onChange={handleInputChange}
-                          defaultChecked
-                        />
-                      </Col>
+                                            <Form.Label className="col-sm-3 col-form-label form-label">
+                                                Active
+                                            </Form.Label>
+                                            <Col className="mt-2">
+                                                <Form.Check
+                                                    type="switch"
+                                                    id="checkIfActive"
+                                                    label="Check If Active"
+                                                    checked={formData.checkIfActive}
+                                                    onChange={handleInputChange}
+                                                    defaultChecked
+                                                />
+                                            </Col>
                                         </Row>
                                         <Row className="align-items-center">
 
-                                        <Col className="mt-4 d-flex align-items-center justify-content-center">
-                                            <Button variant="primary" type="submit">
+                                            <Col className="mt-4 d-flex align-items-center justify-content-center">
+                                                <Button variant="primary" type="submit">
                                                     {editingReligion ? "Update" : "Submit"}
                                                 </Button>
                                                 <ToastContainer style={{ marginTop: '40px' }} />
@@ -180,7 +180,7 @@ const Relegion = () => {
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                        <th><b>Religion</b></th>
+                            <th><b>Religion</b></th>
                             <th><b>Active</b></th>
                             <th><b>Is Minor</b></th>
                             <th className="col-2"><b>Action</b></th>

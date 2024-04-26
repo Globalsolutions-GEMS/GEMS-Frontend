@@ -134,9 +134,9 @@ const handleCancel = () => {
                       <Col className="mt-2">
                         <Form.Check
                           type="switch"
-                          id="active"
+                          id="checkIfActive"
                           label="Check If Active"
-                          checked={formData.active}
+                          checked={formData.checkIfActive}
                           onChange={handleInputChange}
                           defaultChecked
                         />
