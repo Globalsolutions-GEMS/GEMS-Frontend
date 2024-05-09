@@ -16,10 +16,11 @@ const SignIn = () => {
         <Card className="smooth-shadow-md">
           {/* Card body */}
           <Card.Body className="p-6">
-            <div className="mb-4">
+            <div className="mb-4" style={{textAlign:'center'}}>
               <Link href="/"><Image src="/images/brand/logo/logo-primary.svg" className="mb-2" alt="" /></Link>
-              <p className="mb-6">Please enter your user information.</p>
+              
             </div>
+            <p className="mb-6">Please enter your user information.</p>
             {/* Form */}
             {hasMounted &&
               <Form>
@@ -57,8 +58,6 @@ const SignIn = () => {
                   </div>
                 </div>
               </Form>}
-
-
           </Card.Body>
         </Card>
       </Col>

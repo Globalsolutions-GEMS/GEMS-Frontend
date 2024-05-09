@@ -1,5 +1,5 @@
 // import theme style scss file
-import 'styles/theme.scss';
+import '../styles/theme.scss';
 
 export const metadata = {
     title: 'Global Solutions - ERP',
