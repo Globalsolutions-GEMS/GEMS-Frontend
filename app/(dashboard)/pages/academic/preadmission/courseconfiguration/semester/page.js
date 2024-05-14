@@ -173,7 +173,7 @@ const Semester = () => {
         refreshSemester();
     }, []);
 
-///// for year display in dropdown
+
     const refreshYear = async () => {
         try {
             const response = await getYear();

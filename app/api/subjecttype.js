@@ -6,6 +6,6 @@ const apiClient = axios.create({
 
 export const createSubject = (subject) => apiClient.post('/subject/create' , subject)
 
-export const getSpecificSubject = (id) => apiClient.get(`subject/find/${id}`)
+export const getSpecificSubject = (id) => apiClient.get(`/subject/find/${id}`)
 
 export const getAllSubject = () => apiClient.get(`/subject/all`)

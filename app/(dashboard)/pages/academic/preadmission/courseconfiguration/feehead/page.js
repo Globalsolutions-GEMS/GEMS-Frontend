@@ -33,16 +33,27 @@ const FeeHead = () => {
   const [selectedCashbook, setSelectedCashbook] = useState("");
 
   const [formData, setFormData] = useState({
+    // receiptBook: "",
+    // headDescription: "",
+    // shortName: "",
+    // otherFeeHead: "",
+    // installmentFeeHead: "",
+    // excessFee: false,
+    // goiScholarship: "",
+    // serialNo: "",
+    // gstApplicable: "",
+    // active: "",
+
     receiptBook: "",
     headDescription: "",
     shortName: "",
-    otherFeeHead: "",
-    installmentFeeHead: "",
-    excessFee: "",
-    goiScholarship: "",
+    otherFeeHead: false, // Default to false for checkboxes
+    installmentFeeHead: false,
+    excessFee: false,
+    goiScholarship: false,
     serialNo: "",
-    gstApplicable: "",
-    active: "",
+    gstApplicable: false,
+    active: true, // Default to true for switch
   });
 
   const success = () => toast.success("Data Submitted Successfully!!!");
@@ -113,16 +124,26 @@ const FeeHead = () => {
         // Clear form fields after successful submission if needed
         refreshFeehead();
         setFormData({
+          // receiptBook: "",
+          // headDescription: "",
+          // shortName: "",
+          // otherFeeHead: "",
+          // installmentFeeHead: "",
+          // excessFee: false,
+          // goiScholarship: "",
+          // serialNo: "",
+          // gstApplicable: "",
+          // active: "",
           receiptBook: "",
-          headDescription: "",
-          shortName: "",
-          otherFeeHead: "",
-          installmentFeeHead: "",
-          excessFee: "",
-          goiScholarship: "",
-          serialNo: "",
-          gstApplicable: "",
-          active: "",
+                    headDescription: "",
+                    shortName: "",
+                    otherFeeHead: false,
+                    installmentFeeHead: false,
+                    excessFee: false,
+                    goiScholarship: false,
+                    serialNo: "",
+                    gstApplicable: false,
+                    active: true,
         });
       })
       .catch(() => {

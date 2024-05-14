@@ -42,8 +42,10 @@ const SubjectType = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+
     try {
-      await createSubject(formData);
+      await createSubject(formData);d
+      console.log(formData);
       success();
       refreshSubjectType();
       setFormData({
@@ -51,7 +53,7 @@ const SubjectType = () => {
         theory: false,
         practical: false,
         theoryCumPractical: false,
-        isActive: false
+        active: false
       });
       setShowSuccessAlert(true);
     } catch (error) {
@@ -80,6 +82,7 @@ const SubjectType = () => {
       ...prevFormData,
       [id]: type === "checkbox" ? checked : event.target.value,
       active : id === "active" ? checked : prevFormData.active,
+      theory : id === "theory" ? checked : prevFormData.theory,
       // theory: false,
       // practical: false,
       // theoryCumPractical: false,
@@ -92,7 +95,7 @@ const SubjectType = () => {
       theory: false,
       practical: false,
       theoryCumPractical: false,
-      isActive: false
+      active: false
     });
     setEditingSubjectType(null);
   };

@@ -53,7 +53,7 @@ const BasicCourse = () => {
   const [degree, setDegree] = useState([]);
   const [selectedDegree, setSelectedDegree] = useState("");
   const [cashbook, setCashbook] = useState([]);
-  const [selectedCashbook, setSelectedCashbok] = useState("");
+  //const [selectedCashbook, setSelectedCashbok] = useState("");
 
   const success = () => toast.success("Data Submitted Successfully!!!");
   const update = () => toast.success("Data Updated Successfully!!!");
@@ -112,14 +112,14 @@ const BasicCourse = () => {
     refreshBasicCourse();
   }, []);
 
-  const editRow = (index) => {};
+  // const editRow = (index) => {};
+  
 
   useEffect(() => {
-    // Fetch titles data from the API when the component mounts
     if (hasMounted) {
       getAllFaculty()
         .then((response) => {
-          const data = response.data; // Access data from the response
+          const data = response.data; 
           setFaculty(data);
         })
         .catch((error) => console.error("Error fetching Faculty:", error));
@@ -127,11 +127,11 @@ const BasicCourse = () => {
   }, [hasMounted]);
 
   useEffect(() => {
-    // Fetch titles data from the API when the component mounts
+
     if (hasMounted) {
       getAllDegree()
         .then((response) => {
-          const data = response.data; // Access data from the response
+          const data = response.data;
           setDegree(data);
         })
         .catch((error) => console.error("Error fetching Degree:", error));
@@ -139,11 +139,11 @@ const BasicCourse = () => {
   }, [hasMounted]);
 
   useEffect(() => {
-    // Fetch titles data from the API when the component mounts
+    
     if (hasMounted) {
       getAllCashbook()
         .then((response) => {
-          const data = response.data; // Access data from the response
+          const data = response.data; 
           setCashbook(data);
         })
         .catch((error) => console.error("Error fetching Cashbook:", error));
@@ -156,6 +156,7 @@ const BasicCourse = () => {
     { value: "DIPLOMA", label: "Diploma" },
   ];
 
+ 
   return (
     <Container fluid className="p-6">
       {/* Page Heading */}
@@ -186,7 +187,7 @@ const BasicCourse = () => {
                           required
                         >
                           <option value="" disabled>
-                            Please Select a Faculty
+                            Please Select Faculty
                           </option>
                           {faculty.map((faculty) => (
                             <option key={faculty.id} value={faculty.id}>
